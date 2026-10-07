@@ -24,7 +24,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel
 
 def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts=()):
     og = og or 'media/og/home.jpg'
-    scripts = ['vendor/lenis.min.js', 'js/config.js', 'js/catalog.js', 'js/motion.js', 'js/common.js', 'js/chrome.js', *scripts]
+    scripts = ['vendor/lenis.min.js', 'js/config.js', 'js/catalog.js', 'js/motion.js', 'js/common.js', 'js/chrome.js', 'js/micro.js', *scripts]
     return f'''<!doctype html>
 <html lang="en" data-base="{base}">
 <head>
@@ -46,6 +46,7 @@ def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts
 {FONTS}
 <link rel="stylesheet" href="{base}styles.css?v={V}">
 <link rel="stylesheet" href="{base}chrome.css?v={V}">
+<link rel="stylesheet" href="{base}micro.css?v={V}">
 {extra_head}</head>
 <body class="sub">
 <canvas class="stars" id="stars" aria-hidden="true"></canvas>
@@ -323,7 +324,7 @@ ADMIN = '''<section class="wrap admin" id="admin">
 def stamp_home():
     # index.html is hand-written: refresh the ?v= on its local CSS/JS links
     f = PUB / 'index.html'; t = f.read_text()
-    t = re.sub(r'((?:href|src)="(?:styles|home|chrome)\.css)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
+    t = re.sub(r'((?:href|src)="(?:styles|home|chrome|micro)\.css)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
     t = re.sub(r'(src="js/[\w-]+\.js)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
     f.write_text(t)
 

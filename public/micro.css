@@ -1,0 +1,170 @@
+/* Micro-interactions shared by every page. Loaded last so it can refine button, field and dialog transitions.
+   Everything here switches off under prefers-reduced-motion (bottom of file). */
+:root {
+  --ease-out: cubic-bezier(.2, .9, .2, 1);
+  --ease-in-out: cubic-bezier(.7, 0, .2, 1);
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+/* ---------- springy press on everything you can tap ---------- */
+.btn, .pill, .chip, .tabs [role=tab], .tip-amounts button, .close, .dl, .pager a, .sound, .linkish, .menu-btn, .cart-btn {
+  transition: transform .3s var(--ease-out), background-color .25s, color .25s, border-color .25s, opacity .25s, scale .5s var(--spring);
+}
+:is(.btn, .pill, .chip, .tabs [role=tab], .tip-amounts button, .cta, .close, .dl, .pager a, .sound, .menu-btn, .cart-btn):active:not(:disabled) {
+  scale: .95; transition-duration: .3s, .25s, .25s, .25s, .25s, .12s;
+}
+
+/* home's GSAP owns .cta transforms, so only colours and the press spring transition here */
+.cta { transition: background-color .25s, color .25s, border-color .25s, scale .5s var(--spring); }
+
+/* ---------- rolling labels: letters slide up and a copy rolls in from below ---------- */
+.roll { display: inline-block; overflow: hidden; vertical-align: top; white-space: pre; line-height: 1.25; height: 1.25em; }
+.roll .rl { display: inline-block; text-shadow: 0 1.25em 0 currentColor; transition: transform .55s var(--ease-in-out); transition-delay: calc(var(--i) * 12ms); }
+:is(a, button, [role=tab]):is(:hover, :focus-visible) > .roll .rl,
+.cta:is(:hover, :focus-visible) .roll .rl { transform: translateY(-1.25em); }
+:disabled > .roll .rl { transform: none !important; }
+/* a label that just changed ("Copied", "Close") rolls in */
+.roll.swap .rl { animation: roll-in .5s var(--ease-out) both; animation-delay: calc(var(--i) * 18ms); }
+@keyframes roll-in { from { transform: translateY(110%); } }
+
+/* ---------- the logo's dot orbits once on hover; the footer O orbits when it scrolls in ---------- */
+.mark circle:last-child, .follow-logo circle:last-child { transform-box: view-box; transform-origin: 20px 20px; }
+.brand:hover .mark circle:last-child { animation: orbit 1.1s var(--ease-in-out); }
+.wordmark .o circle:last-child { transform-box: view-box; transform-origin: 50px 50px; }
+.wordmark.mi-in .o circle:last-child { animation: orbit 1.8s var(--ease-in-out) .2s both; }
+.wordmark:hover .o circle:last-child { animation: orbit 1.2s var(--ease-in-out); }
+@keyframes orbit { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+
+/* ---------- reading progress line (sub pages) ---------- */
+.mi-progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 30; background: var(--ember); transform-origin: 0 50%; transform: scaleX(0); pointer-events: none; }
+
+/* ---------- scroll reveals (sub pages): JS adds .mi, then .mi-in when it scrolls into view ---------- */
+.mi { opacity: 0; transform: translateY(26px); }
+.mi.mi-in { opacity: 1; transform: none; transition: opacity .7s var(--ease-out), transform .9s var(--ease-out); transition-delay: var(--d, 0s); }
+.label.mi { transform: none; }
+.label.mi::before { scale: 0; rotate: -90deg; }
+.label.mi-in::before { scale: 1; rotate: 0deg; transition: scale .6s var(--spring) calc(var(--d, 0s) + .15s), rotate .6s var(--ease-out) calc(var(--d, 0s) + .15s); }
+
+/* headline words rise out of a mask */
+.hw { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .1em; margin-bottom: -.1em; }
+.hw > span { display: inline-block; transform: translateY(105%); transition: transform 1s var(--ease-out); transition-delay: calc(var(--i) * 55ms + .05s); }
+.hw-in .hw > span { transform: none; }
+
+/* ---------- cards ---------- */
+.product { transition: border-color .35s; }
+.sub .product { transition: transform .6s var(--ease-out), border-color .35s; }
+.product:hover { border-color: rgba(243, 238, 228, .28); }
+.sub .product:hover { transform: translateY(-6px); }
+.product .shot img { transition: transform .8s var(--ease-out); }
+.product:hover .shot img:nth-child(1):not(:only-child) { transform: translateX(-42%) rotate(-10deg) translateY(-4px); }
+.product:hover .shot img:nth-child(2) { transform: translateX(42%) rotate(9deg) translateY(-4px); }
+.product:hover .shot img:only-child { transform: scale(1.04); }
+.product .label::before, .stat .label::before { transition: rotate .5s var(--spring); }
+.product:hover .label::before, .stat:hover .label::before { rotate: 45deg; }
+.price { display: inline-block; transition: transform .4s var(--spring); }
+.product:hover .price { transform: translateY(-2px); }
+
+.how li { transition: border-color .3s, transform .5s var(--ease-out); }
+.how li::before { transition: transform .5s var(--spring), letter-spacing .5s var(--ease-out); }
+.how li:hover { border-color: rgba(243, 238, 228, .3); }
+.how li:hover::before { transform: translateX(4px); letter-spacing: .24em; }
+
+.pager a, .dl, .stat, .mk-stats dl > div, .rates > li, .panel { transition: border-color .3s, transform .5s var(--ease-out), background-color .3s; }
+.pager a:hover, .stat:hover { transform: translateY(-3px); }
+.pager .prev small::before { content: "← "; display: inline-block; transition: transform .4s var(--spring); }
+.pager .next small::after { content: " →"; display: inline-block; transition: transform .4s var(--spring); }
+.pager .prev:hover small::before { transform: translateX(-4px); }
+.pager .next:hover small::after { transform: translateX(4px); }
+.dl:hover { transform: translateX(4px); }
+.dl i { display: inline-block; }
+.dl:hover i { animation: drop 1s var(--ease-out) infinite; }
+@keyframes drop { 0% { transform: translateY(-6px); opacity: 0; } 40% { transform: none; opacity: 1; } 100% { transform: translateY(3px); opacity: 0; } }
+
+/* ---------- links: the underline wipes away to the right and redraws from the left ---------- */
+:is(.sources a, .contact a, .alt-cta a, .legal p a, .story a, #order-body p a, .menu-foot a) {
+  text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 1px;
+}
+:is(.sources a, .contact a, .alt-cta a, .legal p a, .story a, #order-body p a, .menu-foot a):hover { animation: uline .75s var(--ease-in-out); }
+@keyframes uline {
+  0% { background-size: 100% 1px; background-position: 100% 100%; }
+  45% { background-size: 0 1px; background-position: 100% 100%; }
+  46% { background-size: 0 1px; background-position: 0 100%; }
+  100% { background-size: 100% 1px; background-position: 0 100%; }
+}
+.foot-links a, .hud-clock { transition: color .3s, opacity .3s; }
+
+/* ---------- chips and amounts pop when picked ---------- */
+.tip-amounts button[aria-checked="true"], .chip[aria-pressed="true"] { animation: pop .5s var(--spring); }
+@keyframes pop { 0% { scale: .9; } 60% { scale: 1.06; } 100% { scale: 1; } }
+.bump { animation: bump .45s var(--ease-out); display: inline-block; }
+@keyframes bump { 0% { transform: translateY(8px); opacity: 0; } 100% { transform: none; opacity: 1; } }
+
+/* ---------- dialogs ease in and out; their contents arrive in a short cascade ---------- */
+dialog.viewer[open] { animation: dlg-in .6s var(--ease-out) both; }
+dialog.viewer[open]::backdrop { animation: fade-in .45s ease both; }
+dialog.viewer.closing { animation: dlg-out .24s ease-in both; }
+dialog.viewer.closing::backdrop { animation: fade-out .24s ease-in both; }
+@keyframes dlg-in { from { opacity: 0; transform: translateY(28px) scale(.97); } }
+@keyframes dlg-out { to { opacity: 0; transform: translateY(14px) scale(.98); } }
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes fade-out { to { opacity: 0; } }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > * { animation: rise-in .6s var(--ease-out) both; }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > :nth-child(1) { animation-delay: .08s; }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > :nth-child(2) { animation-delay: .12s; }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > :nth-child(3) { animation-delay: .16s; }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > :nth-child(4) { animation-delay: .2s; }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > :nth-child(5) { animation-delay: .24s; }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > :nth-child(6) { animation-delay: .28s; }
+dialog.viewer[open] :is(.tip-text, .viewer-text) > :nth-child(n+7) { animation-delay: .32s; }
+dialog.viewer[open] .tip-qr { animation: qr-in .8s var(--ease-out) .2s both; }
+@keyframes rise-in { from { opacity: 0; transform: translateY(14px); } }
+@keyframes qr-in { from { opacity: 0; transform: scale(.92) rotate(-2deg); } }
+.close { transition: transform .5s var(--spring), border-color .25s, scale .5s var(--spring); }
+.close:hover { transform: rotate(90deg); border-color: var(--cream); }
+
+/* ---------- fields ---------- */
+.pf-field { position: relative; }
+.pf-field > span:first-child { display: flex; align-items: center; transition: color .3s; }
+.pf-field > span:first-child::before { content: ""; width: 0; height: 6px; margin-right: 0; background: var(--ember); transition: width .35s var(--ease-out), margin .35s var(--ease-out); }
+.pf-field:focus-within > span:first-child { color: var(--cream); }
+.pf-field:focus-within > span:first-child::before { width: 6px; margin-right: 8px; }
+.pf-field input, .signup input, .admin-login input { transition: border-color .3s, background-color .3s; }
+.pf-field input:hover, .signup input:hover { border-color: rgba(243, 238, 228, .3); }
+.pf-tick { position: absolute; right: 14px; bottom: 15px; width: 18px; height: 18px; fill: none; stroke: var(--ember); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
+.pf-tick path { stroke-dasharray: 18; stroke-dashoffset: 18; transition: stroke-dashoffset .45s var(--ease-out); }
+.pf-field.is-ok .pf-tick path { stroke-dashoffset: 0; }
+.pf-field.is-ok input { padding-right: 42px; }
+.pf-meter { position: absolute; left: 14px; right: 14px; bottom: 0; height: 2px; border-radius: 2px; overflow: hidden; background: transparent; pointer-events: none; }
+.pf-meter i { display: block; height: 100%; width: calc(var(--p, 0) * 100%); background: var(--ember); transition: width .35s var(--ease-out), background-color .3s; }
+.pf-field.is-ok .pf-meter i { background: var(--cream); }
+.pf-count { position: absolute; right: 0; top: 0; font: 400 11px var(--mono); letter-spacing: .08em; color: var(--muted); font-variant-numeric: tabular-nums; transition: color .3s; }
+.pf-field.is-ok .pf-count { color: var(--cream); }
+.shake { animation: shake .45s cubic-bezier(.36, .07, .19, .97); }
+@keyframes shake { 15%, 85% { translate: -2px 0; } 30%, 70% { translate: 5px 0; } 45% { translate: -7px 0; } 60% { translate: 7px 0; } }
+.form-msg.say { animation: rise-in .4s var(--ease-out); }
+
+/* ---------- busy buttons: a tiny orbit spins while we wait ---------- */
+.btn.busy { gap: 10px; }
+.btn.busy::before { content: ""; flex: none; width: 16px; height: 16px; border-radius: 50%; box-sizing: border-box;
+  border: 2px solid color-mix(in srgb, currentColor 30%, transparent);
+  background: radial-gradient(circle at 50% 1px, var(--ember) 0 2.6px, transparent 3.2px) border-box;
+  animation: spin .9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.orbit-spin { display: inline-block; width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--line); vertical-align: -3px; margin-right: 10px;
+  background: radial-gradient(circle at 50% 1px, var(--ember) 0 3px, transparent 3.6px) border-box; animation: spin 1.4s linear infinite; }
+.waiting { font: 400 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--cream); }
+
+/* ---------- menu button + toast ---------- */
+.toast { transition: transform .55s var(--spring), opacity .3s; }
+.toast::before { content: ""; display: inline-block; width: 7px; height: 7px; background: var(--ember); margin-right: 10px; vertical-align: 1px; }
+
+/* focus ring glides in rather than snapping */
+:focus-visible { animation: focus-in .35s var(--ease-out); }
+@keyframes focus-in { from { outline-offset: 9px; outline-color: transparent; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .roll .rl, .hw > span, .mi, .mi.mi-in { transition: none !important; transform: none !important; animation: none !important; opacity: 1 !important; }
+  .label.mi::before { scale: 1; rotate: 0deg; }
+  dialog.viewer[open], dialog.viewer[open]::backdrop, dialog.viewer[open] *, .btn.busy::before, .orbit-spin, .dl:hover i, .shake, :focus-visible { animation: none !important; }
+  .mi-progress { display: none; }
+}

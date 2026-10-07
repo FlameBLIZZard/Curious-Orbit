@@ -227,7 +227,7 @@
       if (!data.name.trim()) { msg.textContent = 'Add your name so we can match your payment.'; return; }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { msg.textContent = 'That email address does not look right.'; return; }
       if (!/^\d{12}$/.test(data.utr)) { msg.textContent = 'The UPI reference is the 12-digit number (UTR) in your payment app, under the payment details.'; return; }
-      const btn = f.querySelector('button'); btn.disabled = true; msg.textContent = 'Saving…';
+      const btn = f.querySelector('button'); btn.disabled = true; btn.classList.add('busy'); msg.textContent = 'Saving…';
       try {
         const r = await fetch('/api/order', { method: 'POST', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ ...data, kind, sku, amount: typeof amount === 'function' ? amount() : amount }) });
@@ -235,7 +235,7 @@
         if (!r.ok) throw new Error(j.error || 'Something went wrong. Try again in a minute.');
         msg.textContent = done(j); f.querySelectorAll('input').forEach((i) => { i.disabled = true; });
         if (j.url && kind === 'order') { try { localStorage.setItem('co-last-order', j.url); } catch (err) {} setTimeout(() => { location.href = j.url; }, 900); }
-      } catch (err) { msg.textContent = err.message; btn.disabled = false; }
+      } catch (err) { msg.textContent = err.message; btn.disabled = false; btn.classList.remove('busy'); }
     });
     return f;
   }

@@ -71,6 +71,7 @@
     } else {
       title.replaceChildren('Checking your ', h('span', { class: 'ember', text: 'payment.' }));
       body.replaceChildren(meta,
+        h('p', { class: 'waiting' }, h('span', { class: 'orbit-spin', 'aria-hidden': 'true' }), 'Waiting for the payment check'),
         h('p', { text: 'We match every UPI reference by hand, usually within a few hours. This page refreshes by itself and your downloads appear here as soon as it\'s confirmed.' }),
         h('p', {}, 'Bookmark this page or copy its link. Questions? Message ', igLink(), ' with your order number.'),
         h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Copy this page\'s link', onclick: async (e) => {
