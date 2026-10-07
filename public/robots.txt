@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://curiousorbit.vercel.app/sitemap.xml
+Disallow: /admin
+Disallow: /order
+Sitemap: https://curious-orbit.vercel.app/sitemap.xml

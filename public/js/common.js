@@ -14,7 +14,7 @@
       if (k === 'class') el.className = v; else if (k === 'text') el.textContent = v;
       else if (k.startsWith('on')) el.addEventListener(k.slice(2), v); else el.setAttribute(k, v === true ? '' : v);
     }
-    for (const kid of kids.flat()) if (kid != null) el.append(kid);
+    for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid);
     return el;
   };
   const pad = (n) => String(n).padStart(2, '0');
@@ -151,39 +151,149 @@
     return el;
   }
 
-  // ---------- shop ----------
-  const PRODUCTS = [
-    { id: 'quiz-pack', name: 'Quiz Night Pack', price: '$7', unit: 'PDF + slides',
-      text: '50 fact-checked trivia questions in five rounds: space, body, animals, physics and myths. Answers, sources and ready-to-show slides for a pub night, classroom or family game.',
-      shots: ['media/day10-post.webp', 'media/day06-post.webp'] },
-    { id: 'wallpapers', name: 'Orbit Wallpapers', price: '$3', unit: '12 images',
-      text: 'Twelve phone wallpapers in the Curious Orbit look, each carrying one fact. A new mind-bender every time you unlock your phone.',
-      shots: ['media/day09-cover.webp', 'media/day04-cover.webp'] },
-    { id: 'fact-cards', name: 'Classroom Fact Cards', price: '$9', unit: '60 printable cards',
-      text: 'A question on the front, the answer and its source on the back. Made for teachers, parents and anyone who likes a "wait, what?" at the dinner table.',
-      shots: ['media/day05-slide-03.webp', 'media/day08-slide-04.webp'] },
-  ];
+  // ---------- shop (catalog from js/catalog.js, generated from lib/catalog.json) ----------
+  const CAT = window.CO_CATALOG || { products: [] };
+  const UPI_ID = CAT.upiId || (CFG.upi && CFG.upi.id) || '';
+  const rupees = (n) => `₹${Number(n).toLocaleString('en-IN')}`;
+  const PRODUCTS = CAT.products;
+  const ready = (p) => !!UPI_ID && p.fileCount > 0;
+  function productCard(p) {
+    const buy = h('button', { class: 'btn', type: 'button', text: ready(p) ? `Buy for ${rupees(p.price)}` : 'Coming soon', 'data-cursor': 'Buy' });
+    if (ready(p)) buy.addEventListener('click', () => checkout(p)); else buy.disabled = true;
+    const shots = (p.shots || []).slice(0, 2);
+    const shot = shots.length
+      ? h('div', { class: 'shot' }, shots.map((src) => h('img', { src: asset(src), alt: '', loading: 'lazy' })))
+      : h('div', { class: 'shot shot-type' }, h('span', { class: 'label', text: p.unit }), h('strong', { text: p.name }));
+    return h('li', { class: 'product', id: p.sku },
+      shot,
+      h('div', { class: 'body' },
+        h('h3', { text: p.name }), h('p', { text: p.text }),
+        h('div', { class: 'row' }, h('span', { class: 'price' }, rupees(p.price), h('small', { text: p.unit })), buy)));
+  }
   function renderShop(listEl) {
     if (!listEl) return;
-    PRODUCTS.forEach((p) => {
-      const link = CFG.shop && CFG.shop[p.id];
-      const buy = link
-        ? moneyLink(h('a', { class: 'btn', target: '_blank', rel: 'noopener', text: `Get it for ${p.price}` }), link)
-        : h('button', { class: 'btn btn-ghost', type: 'button', text: 'Join the waitlist' });
-      const body = h('div', { class: 'body' },
-        h('h3', { text: p.name }), h('p', { text: p.text }),
-        h('div', { class: 'row' }, h('span', { class: 'price' }, p.price, h('small', { text: p.unit })), buy));
-      if (!link) {
-        const form = signupForm(`waitlist-${p.id}`, { label: 'Notify me', note: 'One email when it launches. Nothing else.' });
-        form.dataset.done = `You're on the list. We'll email you when the ${p.name} is out.`;
-        form.hidden = true;
-        buy.addEventListener('click', () => { form.hidden = false; buy.hidden = true; form.querySelector('input').focus(); });
-        body.append(form);
-      }
-      listEl.append(h('li', { class: 'product' },
-        h('div', { class: 'shot' }, !link && h('span', { class: 'soon', text: 'Coming soon' }), p.shots.map((src) => h('img', { src: asset(src), alt: '', loading: 'lazy' }))),
-        body));
+    const all = listEl.hasAttribute('data-all');
+    const list = all ? PRODUCTS : PRODUCTS.filter((p) => p.featured);
+    list.forEach((p) => listEl.append(productCard(p)));
+    if (!all && PRODUCTS.length > list.length) listEl.after(h('p', { class: 'shop-more' },
+      h('a', { class: 'cta', href: asset('shop.html'), 'data-cursor': 'Shop' }, h('span', { text: `See all ${PRODUCTS.length} products` }), h('i', { 'aria-hidden': 'true', text: '→' }))));
+  }
+
+  // ---------- checkout: pay by UPI, then send the reference ----------
+  let coEl;
+  function checkout(p) {
+    if (coEl) coEl.remove();
+    const link = upiLink(p.price, `Curious Orbit ${p.name}`.slice(0, 50));
+    const qr = h('div', { class: 'tip-qr' });
+    loadQr().then(() => { qr.innerHTML = qrSvg(link); }).catch(() => qr.remove());
+    const copy = h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Copy UPI ID', onclick: async () => {
+      try { await navigator.clipboard.writeText(UPI_ID); copy.textContent = 'Copied'; } catch (err) { copy.textContent = 'Select and copy it'; }
+      setTimeout(() => { copy.textContent = 'Copy UPI ID'; }, 2000);
+    } });
+    coEl = h('dialog', { class: 'viewer tipjar checkout', 'aria-labelledby': 'co-title' },
+      h('div', { class: 'tip-inner' },
+        h('div', { class: 'tip-text' },
+          h('p', { class: 'label', text: `Checkout · ${p.unit}` }),
+          h('h3', { id: 'co-title', text: p.name }),
+          h('p', { class: 'co-price' }, h('b', { text: rupees(p.price) }), h('span', { text: ' by UPI' })),
+          h('p', { class: 'co-step', text: '1. Pay the exact amount' }),
+          h('a', { class: 'btn', href: link, text: `Pay ${rupees(p.price)} with a UPI app` }),
+          h('p', { class: 'tip-id' }, h('span', { text: 'UPI ID ' }), h('code', { text: UPI_ID }), copy),
+          h('p', { class: 'tip-note', text: 'On a computer? Scan the code with your phone. Any UPI app works: GPay, PhonePe, Paytm, BHIM.' }),
+          h('p', { class: 'co-step', text: '2. Tell us you paid' }),
+          h('p', { class: 'tip-note', text: 'Find the 12-digit UPI reference (UTR or UPI Ref No.) in your app under this payment.' }),
+          paidForm({ kind: 'order', sku: p.sku, amount: p.price, button: 'I have paid, unlock my order',
+            done: (r) => `Saved as ${r.id}. Taking you to your order page…` })),
+        qr),
+      h('button', { class: 'close', type: 'button', 'aria-label': 'Close', text: '×', onclick: () => coEl.close() }));
+    coEl.addEventListener('click', (e) => { if (e.target === coEl) coEl.close(); });
+    document.body.append(coEl); coEl.showModal();
+  }
+
+  // ---------- "I've paid" form: name, email, UPI reference -> /api/order ----------
+  function paidForm({ kind, sku, amount, button, done }) {
+    const uid = `${kind}-${sku || 'tip'}`;
+    const field = (name, label, attrs) => h('label', { class: 'pf-field' }, h('span', { text: label }), h('input', { name, id: `${uid}-${name}`, required: true, ...attrs }));
+    const msg = h('p', { class: 'form-msg', 'aria-live': 'polite' });
+    const f = h('form', { class: 'paid-form', novalidate: true },
+      field('name', 'Your name', { autocomplete: 'name', maxlength: 80 }),
+      field('email', 'Email', { type: 'email', autocomplete: 'email', maxlength: 120 }),
+      field('utr', 'UPI reference (12 digits)', { inputmode: 'numeric', pattern: '[0-9 ]{12,14}', maxlength: 14, placeholder: 'e.g. 428915736201' }),
+      h('button', { class: 'btn', type: 'submit', text: button }), msg);
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(f));
+      data.utr = String(data.utr || '').replace(/\s/g, '');
+      if (!data.name.trim()) { msg.textContent = 'Add your name so we can match your payment.'; return; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { msg.textContent = 'That email address does not look right.'; return; }
+      if (!/^\d{12}$/.test(data.utr)) { msg.textContent = 'The UPI reference is the 12-digit number (UTR) in your payment app, under the payment details.'; return; }
+      const btn = f.querySelector('button'); btn.disabled = true; msg.textContent = 'Saving…';
+      try {
+        const r = await fetch('/api/order', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...data, kind, sku, amount: typeof amount === 'function' ? amount() : amount }) });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error(j.error || 'Something went wrong. Try again in a minute.');
+        msg.textContent = done(j); f.querySelectorAll('input').forEach((i) => { i.disabled = true; });
+        if (j.url && kind === 'order') { try { localStorage.setItem('co-last-order', j.url); } catch (err) {} setTimeout(() => { location.href = j.url; }, 900); }
+      } catch (err) { msg.textContent = err.message; btn.disabled = false; }
     });
+    return f;
+  }
+
+  // ---------- tip jar (UPI, India only) ----------
+  // A UPI link opens GPay / PhonePe / Paytm / BHIM on a phone; the QR is for paying from another phone.
+  let tipEl;
+  // pa stays unencoded: some UPI apps reject %40 in the ID
+  const upiLink = (amount, note) => `upi://pay?pa=${UPI_ID}&pn=${encodeURIComponent(CAT.payee || 'Curious Orbit')}`
+    + `${amount ? `&am=${amount}` : ''}&cu=INR&tn=${encodeURIComponent(note || 'Tip for Curious Orbit')}`;
+  function qrSvg(text) {
+    const q = window.qrcode(0, 'M'); q.addData(text); q.make();
+    const n = q.getModuleCount(); let d = '';
+    for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) if (q.isDark(y, x)) d += `M${x} ${y}h1v1h-1z`;
+    return `<svg viewBox="-3 -3 ${n + 6} ${n + 6}" role="img" aria-label="UPI QR code" shape-rendering="crispEdges"><rect x="-3" y="-3" width="${n + 6}" height="${n + 6}" fill="#F3EEE4"/><path d="${d}" fill="#0B0E17"/></svg>`;
+  }
+  const loadQr = () => window.qrcode ? Promise.resolve() : new Promise((ok, no) => {
+    document.head.append(h('script', { src: asset('vendor/qrcode.js'), onload: ok, onerror: no }));
+  });
+  async function tipJar() {
+    try { await loadQr(); } catch (err) { /* QR is a bonus: the link and ID still work */ }
+    if (!tipEl) {
+      const amounts = (CFG.upi && CFG.upi.amounts) || [29, 49, 99, 199];
+      let amount = amounts[1] || amounts[0];
+      const qr = h('div', { class: 'tip-qr' });
+      const pay = h('a', { class: 'btn', text: '' });
+      const chips = h('div', { class: 'tip-amounts', role: 'radiogroup', 'aria-label': 'Tip amount' });
+      const draw = () => {
+        const link = upiLink(amount);
+        if (window.qrcode) qr.innerHTML = qrSvg(link);
+        pay.href = link; pay.textContent = `Pay ₹${amount} with a UPI app`;
+        chips.querySelectorAll('button').forEach((b) => b.setAttribute('aria-checked', String(+b.dataset.amt === amount)));
+      };
+      amounts.forEach((a) => chips.append(h('button', { type: 'button', role: 'radio', 'data-amt': a, text: `₹${a}`, onclick: () => { amount = a; draw(); } })));
+      const idText = h('code', { id: 'tip-upi-id', text: UPI_ID });
+      const copy = h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Copy UPI ID', onclick: async () => {
+        try { await navigator.clipboard.writeText(UPI_ID); copy.textContent = 'Copied'; } catch (err) { copy.textContent = 'Select and copy it'; }
+        setTimeout(() => { copy.textContent = 'Copy UPI ID'; }, 2000);
+      } });
+      // Optional: the tipper logs their payment so it shows in the admin records.
+      const thanks = h('details', { class: 'tip-log' }, h('summary', { text: 'Paid? Tell us so we can say thanks' }),
+        paidForm({ kind: 'tip', amount: () => amount, button: 'Send', done: (r) => `Thank you! Logged as ${r.id}.` }));
+      tipEl = h('dialog', { class: 'viewer tipjar', 'aria-labelledby': 'tip-title' },
+        h('div', { class: 'tip-inner' },
+          h('div', { class: 'tip-text' },
+            h('p', { class: 'label', text: 'Tip jar · UPI' }),
+            h('h3', { id: 'tip-title', text: 'Buy us a chai.' }),
+            h('p', { text: 'Each fact takes about an hour to research, check and animate. Tips keep it free for everyone.' }),
+            chips, pay,
+            h('p', { class: 'tip-id' }, h('span', { text: 'UPI ID ' }), idText, copy),
+            h('p', { class: 'tip-note', text: 'Scan the code from another phone, or tap the button on this one. Works with GPay, PhonePe, Paytm, BHIM and any UPI app. Indian bank accounts only.' }),
+            thanks),
+          qr),
+        h('button', { class: 'close', type: 'button', 'aria-label': 'Close', text: '×', onclick: () => tipEl.close() }));
+      tipEl.addEventListener('click', (e) => { if (e.target === tipEl) tipEl.close(); });
+      document.body.append(tipEl); draw();
+    }
+    tipEl.showModal();
   }
 
   // ---------- sponsors + tips ----------
@@ -196,10 +306,13 @@
       catch (err) { const r = document.createRange(); r.selectNodeContents(target); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); b.textContent = 'Selected, copy it'; }
       setTimeout(() => { b.textContent = 'Copy email'; }, 2000);
     }));
-    document.querySelectorAll('[data-tip]').forEach((a) => moneyLink(a, CFG.tipUrl));
+    document.querySelectorAll('[data-tip]').forEach((a) => {
+      a.removeAttribute('target'); a.href = '#tip';
+      a.addEventListener('click', (e) => { e.preventDefault(); if (UPI_ID) tipJar(); else toast('Tips switch on soon.'); });
+    });
     document.querySelectorAll('[data-ig]').forEach((a) => { a.href = IG; });
     if (CFG.demo) document.querySelectorAll('[data-demo-banner]').forEach((el) => { el.hidden = false; });
   }
 
-  window.CO = { M, CFG, IG, reduce, $, h, pad, asset, run, onceVisible, toast, reel, carousel, post, media, wireForm, signupForm, moneyLink, renderShop, wireMoney, PRODUCTS };
+  window.CO = { M, CFG, IG, reduce, $, h, pad, asset, run, onceVisible, toast, reel, carousel, post, media, wireForm, signupForm, moneyLink, renderShop, wireMoney, PRODUCTS, paidForm, upiLink, qrSvg, loadQr, rupees, checkout, CAT };
 })();

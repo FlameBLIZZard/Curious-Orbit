@@ -11,7 +11,7 @@ Static site, no build step. Vercel serves `public/` (see `vercel.json`).
 Everything marked DUMMY is a placeholder. `demo: true` shows an orange "Demo mode" banner and makes buy/tip buttons and signup forms show a notice instead of doing anything. To go live: fill in the real values, set `demo: false`, then rebuild (below).
 - Email list "The Daily Orbit": forms post to `api/subscribe.js` (beehiiv). Set `BEEHIIV_API_KEY` and `BEEHIIV_PUBLICATION_ID` in Vercel, then `newsletterLive: true`.
 - Orbit Shop: each product's Gumroad / Lemon Squeezy link in `shop`. Empty = waitlist signup instead of a buy button. The products themselves still need making.
-- `tipUrl` (Ko-fi / Buy Me a Coffee), `sponsorEmail`, `siteUrl` (real domain, used in sitemap and share links).
+- `upi.id` (tip jar: UPI ID, shown with a QR code; Indian payments only), `sponsorEmail`, `siteUrl` (real domain, used in sitemap and share links).
 - Media kit (`tools/build-pages.py`, MEDIA_KIT): audience numbers and rates are SAMPLE figures. Replace them with real ones before pitching brands.
 
 ## Rebuild after changes (adding a day, new siteUrl)

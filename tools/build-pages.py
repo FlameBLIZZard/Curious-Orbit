@@ -20,7 +20,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel
 
 def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts=()):
     og = og or 'media/og/home.jpg'
-    scripts = ['js/config.js', 'js/motion.js', 'js/common.js', *scripts]
+    scripts = ['js/config.js', 'js/catalog.js', 'js/motion.js', 'js/common.js', *scripts]
     return f'''<!doctype html>
 <html lang="en" data-base="{base}">
 <head>
@@ -44,7 +44,7 @@ def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts
 {extra_head}</head>
 <body>
 <canvas class="stars" id="stars" aria-hidden="true"></canvas>
-<div class="demo-banner" data-demo-banner hidden>Demo mode: shop, tips and email signups are placeholders</div>
+<div class="demo-banner" data-demo-banner hidden>Demo mode: email signups are placeholders</div>
 <header class="bar">
   <a class="brand" href="{base}index.html" aria-label="Curious Orbit home">
     <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="3.2"/><circle cx="31.3" cy="13.5" r="4.4" class="ember-fill"/></svg>
@@ -52,7 +52,7 @@ def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts
   </a>
   <nav class="nav" aria-label="Sections">
     <a href="{base}index.html#log">The log</a>
-    <a href="{base}index.html#shop">Shop</a>
+    <a href="{base}shop.html">Shop</a>
     <a href="{base}media-kit.html">Advertise</a>
   </nav>
   <a class="btn btn-small" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Follow</a>
@@ -191,9 +191,9 @@ MEDIA_KIT = '''<section class="mk wrap">
 <section class="mk wrap" aria-labelledby="mk-formats">
   <div class="section-head"><div><p class="label">Formats and rates</p><h2 id="mk-formats">Three ways to work with us.</h2></div><p class="section-note">Sample rates. Bundles and multi-week deals on request.</p></div>
   <ul class="rates">
-    <li class="panel"><h3>Sponsored reel</h3><p>A 20-second fact reel in our look about a fact linked to your product, with your brand on the follow card and in the caption.</p><p class="price">$150<small>per reel</small></p></li>
-    <li class="panel"><h3>Newsletter slot</h3><p>One short line and a link at the top of The Daily Orbit, written in our voice.</p><p class="price">$50<small>per issue</small></p></li>
-    <li class="panel"><h3>Story mention</h3><p>A story with your link sticker, shared the same day as a post.</p><p class="price">$40<small>per story</small></p></li>
+    <li class="panel"><h3>Sponsored reel</h3><p>A 20-second fact reel in our look about a fact linked to your product, with your brand on the follow card and in the caption.</p><p class="price">₹2,500<small>per reel</small></p></li>
+    <li class="panel"><h3>Newsletter slot</h3><p>One short line and a link at the top of The Daily Orbit, written in our voice.</p><p class="price">₹800<small>per issue</small></p></li>
+    <li class="panel"><h3>Story mention</h3><p>A story with your link sticker, shared the same day as a post.</p><p class="price">₹600<small>per story</small></p></li>
   </ul>
 </section>
 <section class="mk wrap" aria-labelledby="mk-rules">
@@ -217,15 +217,16 @@ PRIVACY = '''<section class="legal wrap">
   <h1>Privacy policy</h1>
   <p class="meta">Last updated 7 October 2026</p>
   <h2>What we collect</h2>
-  <p>If you subscribe to The Daily Orbit or join a product waitlist, we store your email address and which form you used. We don't ask for anything else.</p>
+  <p>If you subscribe to The Daily Orbit or join a waitlist, we store your email address and which form you used.</p>
+  <p>If you buy something or log a tip, we store your name, email, the amount, the product and the UPI reference number (UTR) you give us, so we can match your payment and send your download. We never see your bank details or UPI PIN: you pay in your own UPI app.</p>
   <h2>How we use it</h2>
-  <p>We use your email only to send the newsletter and the launch emails you asked for. We never sell or rent it. Every email has a one-click unsubscribe link.</p>
+  <p>We use your email only to send the newsletter, the launch emails you asked for, or help with your order. We never sell or rent it. Every newsletter has a one-click unsubscribe link. Order records are kept for our accounts.</p>
   <h2>Who handles it</h2>
-  <p>Our newsletter is sent by beehiiv, and purchases are processed by our shop provider (Gumroad or Lemon Squeezy). They store your details under their own privacy policies. We never see your card details.</p>
+  <p>Our newsletter is sent by beehiiv. Orders are stored privately on Vercel, which hosts this site. Payments go directly between your UPI app and ours.</p>
   <h2>Cookies and analytics</h2>
   <p>The site may use privacy-friendly, cookie-free page-view counts. We don't run advertising trackers.</p>
   <h2>Your rights</h2>
-  <p>You can ask us to show, correct or delete what we hold about you at <code data-sponsor-email>hello@curiousorbit.com</code>.</p>
+  <p>You can ask us to show, correct or delete what we hold about you. Message us on Instagram at <a data-ig href="https://www.instagram.com/curiousorbit.daily/">@curiousorbit.daily</a>.</p>
 </section>'''
 
 TERMS = '''<section class="legal wrap">
@@ -237,11 +238,12 @@ TERMS = '''<section class="legal wrap">
   <h2>Accuracy</h2>
   <p>We check every fact against reliable sources and link them. Science moves on, though: if you spot something out of date, tell us and we'll fix it.</p>
   <h2>Digital products</h2>
-  <p>Shop items are instant downloads for personal and classroom use. Teachers may print and share them with their own students. Because downloads can't be returned, we offer refunds within 14 days only if a file doesn't work and we can't fix it.</p>
+  <p>Shop items are digital downloads for personal and classroom use. Teachers may print and share them with their own students; please don't resell or re-upload them.</p>
+  <p>You pay by UPI to our UPI ID, then send us the payment's UPI reference number. We check it against our account and unlock your download, usually within a few hours. If we can't find the payment, we'll tell you on your order page. Because downloads can't be returned, we refund within 14 days only if a file doesn't work and we can't fix it, or if you paid and never got access.</p>
   <h2>Sponsored content</h2>
   <p>Paid partnerships are always labelled. A sponsor never changes whether a fact is true.</p>
   <h2>Contact</h2>
-  <p><code data-sponsor-email>hello@curiousorbit.com</code></p>
+  <p>Message us on Instagram at <a data-ig href="https://www.instagram.com/curiousorbit.daily/">@curiousorbit.daily</a>, and include your order number if it's about a purchase.</p>
 </section>'''
 
 NOT_FOUND = '''<section class="legal wrap lost">
@@ -253,7 +255,49 @@ NOT_FOUND = '''<section class="legal wrap lost">
 </section>'''
 
 
+CATALOG = json.loads((ROOT / 'lib/catalog.json').read_text())
+
+def write_catalog_js():
+    # Browser copy of lib/catalog.json without the private file paths
+    pub = {'upiId': CATALOG['upiId'], 'payee': CATALOG['payee'], 'products': [
+        {k: v for k, v in p.items() if k != 'files'} | {'fileCount': len(p.get('files', [])) if 'includes' not in p else
+                                                      sum(len(q.get('files', [])) for q in CATALOG['products'] if q['sku'] in p['includes'])}
+        for p in CATALOG['products']]}
+    (PUB / 'js/catalog.js').write_text('// Generated by tools/build-pages.py from lib/catalog.json. Edit that file, not this one.\n'
+                                      f'window.CO_CATALOG = {json.dumps(pub, ensure_ascii=False, indent=1)};\n')
+
+SHOP = '''<section class="shop-page wrap">
+  <p class="label">Orbit Shop · pay by UPI</p>
+  <h1>Take the facts <span class="ember">offline.</span></h1>
+  <p class="lede">Quiz packs, printable cards, posters and wallpapers, every fact checked against a real source. Pay with any UPI app; your download unlocks as soon as we confirm the payment.</p>
+  <ol class="how">
+    <li><b>Pick</b> a product and tap Buy.</li>
+    <li><b>Pay</b> the exact amount by UPI (scan or tap).</li>
+    <li><b>Send</b> us the 12-digit UPI reference.</li>
+    <li><b>Download</b> from your order page once we've checked it.</li>
+  </ol>
+  <ul class="products shop-grid" id="products" data-all></ul>
+</section>'''
+
+ORDER = '''<section class="legal wrap order-page" id="order">
+  <p class="label">Your order</p>
+  <h1 id="order-title">Loading your order…</h1>
+  <div id="order-body"></div>
+</section>'''
+
+ADMIN = '''<section class="wrap admin" id="admin">
+  <p class="label">Orders · private</p>
+  <h1>Payments <span class="ember">log.</span></h1>
+  <form class="admin-login" id="admin-login">
+    <label class="pf-field"><span>Password</span><input type="password" name="key" autocomplete="current-password" required></label>
+    <button class="btn" type="submit">Open</button>
+    <p class="form-msg" aria-live="polite"></p>
+  </form>
+  <div id="admin-app" hidden></div>
+</section>'''
+
 def main():
+    write_catalog_js()
     (PUB / 'facts').mkdir(exist_ok=True)
     for old in (PUB / 'facts').glob('day-*.html'): old.unlink()
     for i, d in enumerate(made):
@@ -261,11 +305,15 @@ def main():
     (PUB / 'media-kit.html').write_text(page('Advertise with Curious Orbit', 'Sponsored reels, newsletter slots and story mentions on a fact-checked science page for curious 16 to 35 year olds.', MEDIA_KIT, path='media-kit', og='media/og/media-kit.jpg'))
     (PUB / 'privacy.html').write_text(page('Privacy | Curious Orbit', 'How Curious Orbit handles your email address and data.', PRIVACY, path='privacy'))
     (PUB / 'terms.html').write_text(page('Terms | Curious Orbit', 'Terms of use for the Curious Orbit site and shop.', TERMS, path='terms'))
+    shop_js = ['js/shop.js']
+    (PUB / 'shop.html').write_text(page('Orbit Shop | Curious Orbit', 'Fact-checked quiz packs, printable fact cards, posters and wallpapers. Pay by UPI.', SHOP, path='shop', scripts=shop_js))
+    (PUB / 'order.html').write_text(page('Your order | Curious Orbit', 'Check your Curious Orbit order and download your files.', ORDER, path='order', scripts=shop_js, extra_head='<meta name="robots" content="noindex">\n'))
+    (PUB / 'admin.html').write_text(page('Orders | Curious Orbit', 'Private.', ADMIN, path='admin', scripts=['js/admin.js'], extra_head='<meta name="robots" content="noindex">\n'))
     (PUB / '404.html').write_text(page('Lost in space | Curious Orbit', 'This page does not exist.', NOT_FOUND, path='404'))
-    urls = ['', 'media-kit', 'privacy', 'terms'] + [f'facts/day-{pad(d["n"])}' for d in made]
+    urls = ['', 'shop', 'media-kit', 'privacy', 'terms'] + [f'facts/day-{pad(d["n"])}' for d in made]
     (PUB / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + ''.join(f'  <url><loc>{SITE}/{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls) + '</urlset>\n')
-    (PUB / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
+    (PUB / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /order\nSitemap: {SITE}/sitemap.xml\n')
     print(f'{len(made)} fact pages + media kit, privacy, terms, 404, sitemap ({len(urls)} urls), robots')
 
 

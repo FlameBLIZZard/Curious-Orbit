@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0B0E17">
 <meta property="og:title" content="Curious Orbit">
 <meta property="og:description" content="One surprising, true science fact every day. @curiousorbit.daily">
-<meta property="og:image" content="https://curiousorbit.vercel.app/media/og/home.jpg">
+<meta property="og:image" content="https://curious-orbit.vercel.app/media/og/home.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="media/profile.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -30,7 +30,7 @@
 <canvas class="space" id="space" aria-hidden="true"></canvas>
 <div class="grain" aria-hidden="true"></div>
 <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span><span class="cursor-label" id="cursor-label"></span></div>
-<div class="demo-banner" data-demo-banner hidden>Demo mode: shop, tips and email signups are placeholders</div>
+<div class="demo-banner" data-demo-banner hidden>Demo mode: email signups are placeholders</div>
 
 <header class="hud" id="hud">
   <a class="brand" href="#top" aria-label="Curious Orbit, back to top">
@@ -40,7 +40,7 @@
   <nav class="hud-nav" aria-label="Sections">
     <a href="#today" data-cursor="Go">Today</a>
     <a href="#log" data-cursor="Go">The log</a>
-    <a href="#shop" data-cursor="Go">Shop</a>
+    <a href="shop.html" data-cursor="Go">Shop</a>
     <a href="media-kit.html" data-cursor="Go">Advertise</a>
   </nav>
   <p class="hud-clock" aria-live="off"><span id="hud-clock">--:--</span><span class="hud-sep">/</span><span id="hud-next">Next fact soon</span></p>
@@ -156,7 +156,7 @@
   <!-- 9. LINK ROWS: advertise, media kit, tip -->
   <section class="rows wrap" id="advertise" aria-label="Work with us">
     <a class="rowlink" href="media-kit.html" data-cursor="Open"><span class="rl-k">01</span><span class="rl-t">Advertise with us</span><span class="rl-d">Sponsored reels, newsletter slots and story mentions</span><i aria-hidden="true">→</i></a>
-    <a class="rowlink" href="#" data-tip target="_blank" rel="noopener" data-cursor="Tip"><span class="rl-k">02</span><span class="rl-t">Buy us a coffee</span><span class="rl-d">Each fact takes about an hour to research, check and animate</span><i aria-hidden="true">→</i></a>
+    <a class="rowlink" href="#" data-tip data-cursor="Tip"><span class="rl-k">02</span><span class="rl-t">Buy us a chai</span><span class="rl-d">Each fact takes about an hour to research, check and animate</span><i aria-hidden="true">→</i></a>
     <a class="rowlink" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener" data-cursor="Follow"><span class="rl-k">03</span><span class="rl-t">Follow on Instagram</span><span class="rl-d">@curiousorbit.daily · reels at 7 pm, carousels at 1 pm</span><i aria-hidden="true">→</i></a>
   </section>
 </main>
@@ -194,6 +194,7 @@
 <script src="vendor/ScrollTrigger.min.js"></script>
 <script src="vendor/lenis.min.js"></script>
 <script src="js/config.js"></script>
+<script src="js/catalog.js"></script>
 <script src="js/motion.js"></script>
 <script src="js/days.js"></script>
 <script src="js/common.js"></script>

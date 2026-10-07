@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Terms | Curious Orbit</title>
-<meta name="description" content="Terms of use for the Curious Orbit site and shop.">
+<title>Orbit Shop | Curious Orbit</title>
+<meta name="description" content="Fact-checked quiz packs, printable fact cards, posters and wallpapers. Pay by UPI.">
 <meta name="theme-color" content="#0B0E17">
-<link rel="canonical" href="https://curious-orbit.vercel.app/terms">
+<link rel="canonical" href="https://curious-orbit.vercel.app/shop">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Curious Orbit">
-<meta property="og:title" content="Terms | Curious Orbit">
-<meta property="og:description" content="Terms of use for the Curious Orbit site and shop.">
+<meta property="og:title" content="Orbit Shop | Curious Orbit">
+<meta property="og:description" content="Fact-checked quiz packs, printable fact cards, posters and wallpapers. Pay by UPI.">
 <meta property="og:image" content="https://curious-orbit.vercel.app/media/og/home.jpg">
-<meta property="og:url" content="https://curious-orbit.vercel.app/terms">
+<meta property="og:url" content="https://curious-orbit.vercel.app/shop">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="media/profile.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -37,21 +37,17 @@
   <a class="btn btn-small" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Follow</a>
 </header>
 <main>
-<section class="legal wrap">
-  <p class="label">Terms</p>
-  <h1>Terms of use</h1>
-  <p class="meta">Last updated 7 October 2026</p>
-  <h2>Our content</h2>
-  <p>The reels, carousels, posts and text on this site are made by Curious Orbit. You're welcome to share links to them. Please don't re-upload them as your own.</p>
-  <h2>Accuracy</h2>
-  <p>We check every fact against reliable sources and link them. Science moves on, though: if you spot something out of date, tell us and we'll fix it.</p>
-  <h2>Digital products</h2>
-  <p>Shop items are digital downloads for personal and classroom use. Teachers may print and share them with their own students; please don't resell or re-upload them.</p>
-  <p>You pay by UPI to our UPI ID, then send us the payment's UPI reference number. We check it against our account and unlock your download, usually within a few hours. If we can't find the payment, we'll tell you on your order page. Because downloads can't be returned, we refund within 14 days only if a file doesn't work and we can't fix it, or if you paid and never got access.</p>
-  <h2>Sponsored content</h2>
-  <p>Paid partnerships are always labelled. A sponsor never changes whether a fact is true.</p>
-  <h2>Contact</h2>
-  <p>Message us on Instagram at <a data-ig href="https://www.instagram.com/curiousorbit.daily/">@curiousorbit.daily</a>, and include your order number if it's about a purchase.</p>
+<section class="shop-page wrap">
+  <p class="label">Orbit Shop · pay by UPI</p>
+  <h1>Take the facts <span class="ember">offline.</span></h1>
+  <p class="lede">Quiz packs, printable cards, posters and wallpapers, every fact checked against a real source. Pay with any UPI app; your download unlocks as soon as we confirm the payment.</p>
+  <ol class="how">
+    <li><b>Pick</b> a product and tap Buy.</li>
+    <li><b>Pay</b> the exact amount by UPI (scan or tap).</li>
+    <li><b>Send</b> us the 12-digit UPI reference.</li>
+    <li><b>Download</b> from your order page once we've checked it.</li>
+  </ol>
+  <ul class="products shop-grid" id="products" data-all></ul>
 </section>
 </main>
 <footer class="foot wrap">
@@ -67,6 +63,7 @@
 <script src="js/catalog.js"></script>
 <script src="js/motion.js"></script>
 <script src="js/common.js"></script>
+<script src="js/shop.js"></script>
 <script>CO.wireMoney();</script>
 </body>
 </html>
