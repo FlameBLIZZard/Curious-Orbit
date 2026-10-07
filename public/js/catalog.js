@@ -10,6 +10,7 @@ window.CO_CATALOG = {
    "unit": "PDF host sheet + slides",
    "featured": true,
    "text": "50 fact-checked trivia questions in five rounds: space, body, animals, earth and myths. Host sheet with answers and sources, plus ready-to-show slides for a pub night, classroom or family game.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -18,6 +19,7 @@ window.CO_CATALOG = {
    "price": 99,
    "unit": "30 cards + caller sheet",
    "text": "Read a question, players hunt for the answer on their card. 30 different bingo cards and a caller sheet with every answer and its source. Prints on A4.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -27,6 +29,7 @@ window.CO_CATALOG = {
    "unit": "60 printable cards",
    "featured": true,
    "text": "A question on the front, the answer and its source on the back. Prints double-sided on A4 and cuts into 60 cards. Made for teachers, parents and dinner tables.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -35,6 +38,7 @@ window.CO_CATALOG = {
    "price": 79,
    "unit": "24 myths, A5 PDF",
    "text": "24 things almost everyone believes, and what's actually true, with the science and a source for each. Read it on your phone or print it as a mini book.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -43,6 +47,7 @@ window.CO_CATALOG = {
    "price": 99,
    "unit": "A3 + A4 PDF",
    "text": "Every planet with its strangest true fact, in the Curious Orbit look. Prints sharp at A3 for a wall, or A4 for a notebook.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -51,6 +56,7 @@ window.CO_CATALOG = {
    "price": 99,
    "unit": "A3 + A4 PDF",
    "text": "The most surprising numbers inside you, checked against medical sources. A3 for the wall, A4 for the desk.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -59,6 +65,7 @@ window.CO_CATALOG = {
    "price": 99,
    "unit": "A3 + A4 PDF",
    "text": "The animal kingdom's weirdest true talents on one page. A3 and A4, ready to print.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -67,6 +74,7 @@ window.CO_CATALOG = {
    "price": 49,
    "unit": "10 phone wallpapers",
    "text": "Ten phone wallpapers, each with one mind-bending space fact. Sized for modern phones.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -75,6 +83,7 @@ window.CO_CATALOG = {
    "price": 49,
    "unit": "10 phone wallpapers",
    "text": "Ten wallpapers about your body, animals and our planet. A new 'wait, what?' every time you unlock.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -84,6 +93,7 @@ window.CO_CATALOG = {
    "unit": "10 worksheets + answers",
    "featured": true,
    "text": "Ten printable worksheets for ages 8 to 12: true or false, match-ups, word searches and fill-the-gap, all built on checked facts, with an answer key.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -92,6 +102,7 @@ window.CO_CATALOG = {
    "price": 99,
    "unit": "30 printable pages",
    "text": "One true fact a day for 30 days, each with a question to think about and space to write. Print it or fill it in on a tablet.",
+   "shots": [],
    "fileCount": 0
   },
   {
@@ -113,6 +124,7 @@ window.CO_CATALOG = {
     "kids-pack",
     "journal"
    ],
+   "shots": [],
    "fileCount": 0
   }
  ]
