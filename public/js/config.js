@@ -3,7 +3,7 @@
 // and signup forms say nothing was sent.
 window.CO_CONFIG = {
   demo: true,
-  siteUrl: 'https://curious-orbit.vercel.app',        // live Vercel address (switch to the custom domain once it works)
+  siteUrl: 'https://curiousorbit.aditya-dev.com',   // live custom domain (curious-orbit.vercel.app also works)
   instagram: 'https://www.instagram.com/curiousorbit.daily/',
   // Email list: forms post to /api/subscribe (api/subscribe.js -> beehiiv).
   // Set BEEHIIV_API_KEY and BEEHIIV_PUBLICATION_ID in Vercel > Settings > Environment Variables, then set this to true.

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /order
-Sitemap: https://curious-orbit.vercel.app/sitemap.xml
+Sitemap: https://curiousorbit.aditya-dev.com/sitemap.xml
