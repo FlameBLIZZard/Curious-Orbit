@@ -11,7 +11,7 @@
 
   // ---------- schedule ----------
   const postTime = (d) => new Date(`${d.date}T${d.time.startsWith('7') ? '19' : '13'}:00:00`);
-  const isLive = (d) => !!d.title && (preview || Date.now() >= postTime(d));
+  const isLive = (d) => !!d.title && (preview || d.posted || Date.now() >= postTime(d));
   const live = DAYS.filter(isLive);
   const current = live[live.length - 1] || null;
   const next = DAYS.find((d) => !isLive(d)) || null;
@@ -127,7 +127,7 @@
     $('#today-title').append('The first fact ', h('span', { class: 'ember', text: 'drops Thursday.' }));
     todayMedia.append(window.CO.reel({ n: 0, format: 'reel', title: 'Welcome to Curious Orbit', video: 'media/welcome.mp4', poster: 'media/welcome-cover.webp' }));
     cap.append(h('p', { text: 'For 20 days there is a new fact every day: reels at 7 pm, carousels and posts at 1 pm. Space, the human body, animals, everyday physics and a few myths school got wrong.' }));
-    if (next) cap.append(h('p', { text: `Day 1 lands ${fmtDate(next)} at ${next.time}, in ${until(postTime(next))}.` }));
+    if (next) cap.append(h('p', { text: `Day ${next.n} lands ${fmtDate(next)} at ${next.time}, in ${until(postTime(next))}.` }));
     acts.append(btn('Get it by email', '#daily', false, 'Join'), btn('Follow on Instagram', IG, true, 'Follow'));
   }
   // tilt the floating frame toward the pointer with a kit spring
@@ -182,7 +182,7 @@
       h('button', on ? { type: 'button', 'aria-label': `Open day ${d.n}: ${d.title}`, 'data-cursor': d.format === 'reel' ? 'Play' : 'Open', onclick: () => openViewer(d) }
                      : { type: 'button', 'aria-disabled': 'true', tabindex: '-1' },
         h('span', { class: 'pic' }, on ? h('img', { src: thumb, alt: '', loading: 'lazy' }) : ring()),
-        h('span', { class: 'meta-k' }, h('span', { text: `${d.topic} · ${d.format}` }), h('span', { text: on ? fmtDate(d) : isNext ? `in ${until(postTime(d))}` : fmtDate(d) })),
+        h('span', { class: 'meta-k' }, h('span', { text: `${d.topic} · ${d.format}` }), h('span', { text: on ? (d.posted ? 'On Instagram' : fmtDate(d)) : isNext ? `in ${until(postTime(d))}` : fmtDate(d) })),
         h('span', { class: 't', text: on ? d.title : isNext ? 'Next drop' : 'Coming soon' })));
     logTrack.append(li);
   });

@@ -12,7 +12,10 @@ titles = {1:'A day on Venus is longer than its year.',2:'5 things that are older
           7:'Wombat poop is cube-shaped.',8:'Your body, by the numbers.',9:'A teaspoon of neutron star weighs a billion tonnes.',
           10:'More chess games than atoms in the universe.',11:'5 facts school got wrong.'}
 emoji = re.compile(r'\s*[\U0001F000-\U0001FFFF⌀-⏿☀-➿️‍]+')
-start = datetime.date(2026, 10, 8)
+# Days 1-11 were all on Instagram by 7 Oct 2026 (Aditya posted ahead of the plan).
+# The rest follow one a day from the next morning.
+POSTED, POSTED_BY = 11, datetime.date(2026, 10, 7)
+start = POSTED_BY + datetime.timedelta(days=1)
 # Sources and claim counts per day, from the fact-check table
 import openpyxl
 checks = {}
@@ -25,8 +28,9 @@ for r in list(openpyxl.load_workbook(CO / 'Curious-Orbit-Fact-Check.xlsx')['Fact
 days = []
 for m in re.finditer(r'^Day (\d+) · (\w+ \d+ \w+) · (\w+) at (\d+ pm)\n\nWhat it is: (.+)$', txt, re.M):
     n = int(m.group(1)); fmt = m.group(3).lower()
-    d = {'n': n, 'date': (start + datetime.timedelta(days=n-1)).isoformat(), 'time': m.group(4),
+    d = {'n': n, 'date': (POSTED_BY if n <= POSTED else start + datetime.timedelta(days=n-POSTED-1)).isoformat(), 'time': m.group(4),
          'format': fmt, 'topic': topics[n], 'summary': m.group(5).strip()}
+    if n <= POSTED: d['posted'] = True
     folder = CO / f'day-{n:02d}'
     cap = folder / 'caption.txt'
     if n in titles:

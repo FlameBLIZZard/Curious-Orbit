@@ -2,11 +2,12 @@
 window.CO_DAYS = [
  {
   "n": 1,
-  "date": "2026-10-08",
+  "date": "2026-10-07",
   "time": "7 pm",
   "format": "reel",
   "topic": "Space",
   "summary": "Venus spins so slowly that one day there (243 Earth days) outlasts its year (225).",
+  "posted": true,
   "title": "A day on Venus is longer than its year.",
   "caption": [
    "Venus takes 243 Earth days to spin once, but only 225 days to go around the Sun. So one spin lasts longer than its year.",
@@ -37,11 +38,12 @@ window.CO_DAYS = [
  },
  {
   "n": 2,
-  "date": "2026-10-09",
+  "date": "2026-10-07",
   "time": "1 pm",
   "format": "carousel",
   "topic": "History",
   "summary": "Five things that existed far earlier than people assume.",
+  "posted": true,
   "title": "5 things that are older than you think.",
   "caption": [
    "History is weirder than the timeline in your head. Which one surprised you most? Tell us below",
@@ -98,11 +100,12 @@ window.CO_DAYS = [
  },
  {
   "n": 3,
-  "date": "2026-10-10",
+  "date": "2026-10-07",
   "time": "1 pm",
   "format": "post",
   "topic": "Plants",
   "summary": "Botany says bananas are berries and strawberries aren't.",
+  "posted": true,
   "title": "Bananas are berries. Strawberries aren't.",
   "caption": [
    "Botany doesn't care about your fruit bowl.",
@@ -138,11 +141,12 @@ window.CO_DAYS = [
  },
  {
   "n": 4,
-  "date": "2026-10-11",
+  "date": "2026-10-07",
   "time": "7 pm",
   "format": "reel",
   "topic": "Body",
   "summary": "Your spinal discs compress during the day, so you're about 1 to 2 cm shorter by night.",
+  "posted": true,
   "title": "You're 1 to 2 cm taller in the morning.",
   "caption": [
    "Measure yourself in the morning and again at night. You'll be about 1 to 2 cm shorter by bedtime.",
@@ -173,11 +177,12 @@ window.CO_DAYS = [
  },
  {
   "n": 5,
-  "date": "2026-10-12",
+  "date": "2026-10-07",
   "time": "1 pm",
   "format": "carousel",
   "topic": "Space",
   "summary": "Six scale facts that show how huge space is.",
+  "posted": true,
   "title": "How big is space, really?",
   "caption": [
    "We tried to explain how big space is in six slides. Slide 4 is the one that keeps us up at night.",
@@ -231,11 +236,12 @@ window.CO_DAYS = [
  },
  {
   "n": 6,
-  "date": "2026-10-13",
+  "date": "2026-10-07",
   "time": "1 pm",
   "format": "post",
   "topic": "Animals",
   "summary": "Octopuses have three hearts and copper-based blue blood.",
+  "posted": true,
   "title": "Octopuses have 3 hearts and blue blood.",
   "caption": [
    "Octopuses run on three hearts.",
@@ -271,11 +277,12 @@ window.CO_DAYS = [
  },
  {
   "n": 7,
-  "date": "2026-10-14",
+  "date": "2026-10-07",
   "time": "7 pm",
   "format": "reel",
   "topic": "Animals",
   "summary": "Wombats make cube-shaped poop, 80 to 100 cubes a night.",
+  "posted": true,
   "title": "Wombat poop is cube-shaped.",
   "caption": [
    "Yes, really. Wombats poop cubes.",
@@ -306,11 +313,12 @@ window.CO_DAYS = [
  },
  {
   "n": 8,
-  "date": "2026-10-15",
+  "date": "2026-10-07",
   "time": "1 pm",
   "format": "carousel",
   "topic": "Body",
   "summary": "Five huge numbers about the human body.",
+  "posted": true,
   "title": "Your body, by the numbers.",
   "caption": [
    "You're a walking pile of very big numbers. Which one did you not know?",
@@ -363,11 +371,12 @@ window.CO_DAYS = [
  },
  {
   "n": 9,
-  "date": "2026-10-16",
+  "date": "2026-10-07",
   "time": "7 pm",
   "format": "reel",
   "topic": "Space",
   "summary": "Neutron star matter is so dense a teaspoon weighs about a billion tonnes.",
+  "posted": true,
   "title": "A teaspoon of neutron star weighs a billion tonnes.",
   "caption": [
    "When a star 7 to 20 times the Sun's mass dies, its core collapses into a ball the size of a city: a neutron star.",
@@ -398,11 +407,12 @@ window.CO_DAYS = [
  },
  {
   "n": 10,
-  "date": "2026-10-17",
+  "date": "2026-10-07",
   "time": "1 pm",
   "format": "post",
   "topic": "Maths",
   "summary": "There are more possible chess games (10^120) than atoms in the observable universe (10^80).",
+  "posted": true,
   "title": "More chess games than atoms in the universe.",
   "caption": [
    "There are more possible games of chess than atoms in the observable universe.",
@@ -434,11 +444,12 @@ window.CO_DAYS = [
  },
  {
   "n": 11,
-  "date": "2026-10-18",
+  "date": "2026-10-07",
   "time": "1 pm",
   "format": "carousel",
   "topic": "Myths",
   "summary": "Five common myths from school, busted.",
+  "posted": true,
   "title": "5 facts school got wrong.",
   "caption": [
    "School taught us a few things that just aren't true. Which one did you believe?",
@@ -491,7 +502,7 @@ window.CO_DAYS = [
  },
  {
   "n": 12,
-  "date": "2026-10-19",
+  "date": "2026-10-08",
   "time": "7 pm",
   "format": "reel",
   "topic": "Physics",
@@ -499,7 +510,7 @@ window.CO_DAYS = [
  },
  {
   "n": 13,
-  "date": "2026-10-20",
+  "date": "2026-10-09",
   "time": "1 pm",
   "format": "post",
   "topic": "Animals",
@@ -507,7 +518,7 @@ window.CO_DAYS = [
  },
  {
   "n": 14,
-  "date": "2026-10-21",
+  "date": "2026-10-10",
   "time": "7 pm",
   "format": "reel",
   "topic": "Earth",
@@ -515,7 +526,7 @@ window.CO_DAYS = [
  },
  {
   "n": 15,
-  "date": "2026-10-22",
+  "date": "2026-10-11",
   "time": "1 pm",
   "format": "carousel",
   "topic": "Animals",
@@ -523,7 +534,7 @@ window.CO_DAYS = [
  },
  {
   "n": 16,
-  "date": "2026-10-23",
+  "date": "2026-10-12",
   "time": "7 pm",
   "format": "reel",
   "topic": "Body",
@@ -531,7 +542,7 @@ window.CO_DAYS = [
  },
  {
   "n": 17,
-  "date": "2026-10-24",
+  "date": "2026-10-13",
   "time": "1 pm",
   "format": "post",
   "topic": "Space",
@@ -539,7 +550,7 @@ window.CO_DAYS = [
  },
  {
   "n": 18,
-  "date": "2026-10-25",
+  "date": "2026-10-14",
   "time": "1 pm",
   "format": "carousel",
   "topic": "Quiz",
@@ -547,7 +558,7 @@ window.CO_DAYS = [
  },
  {
   "n": 19,
-  "date": "2026-10-26",
+  "date": "2026-10-15",
   "time": "7 pm",
   "format": "reel",
   "topic": "Physics",
@@ -555,7 +566,7 @@ window.CO_DAYS = [
  },
  {
   "n": 20,
-  "date": "2026-10-27",
+  "date": "2026-10-16",
   "time": "1 pm",
   "format": "carousel",
   "topic": "Recap",

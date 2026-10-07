@@ -126,13 +126,13 @@ def fact_page(d, i):
     nav += (f'<a href="day-{pad(prev_d["n"])}.html"><small>← Day {pad(prev_d["n"])}</small>{e(prev_d["title"])}</a>' if prev_d else '<span></span>')
     nav += (f'<a class="next" href="day-{pad(next_d["n"])}.html"><small>Day {pad(next_d["n"])} →</small>{e(next_d["title"])}</a>' if next_d else '<span></span>')
     nav += '</nav>'
-    body = f'''<article class="fact wrap" data-day="{n}" data-post="{d['date']}T{'19' if d['time'].startswith('7') else '13'}:00:00">
+    body = f'''<article class="fact wrap" data-day="{n}" data-post="{d['date']}T{'00' if d.get('posted') else '19' if d['time'].startswith('7') else '13'}:00:00">
   <div class="fact-grid">
     <div class="fact-media">{media_html(d, base)}</div>
     <div class="fact-text">
       <p class="label">{e(d['topic'])} · Day {pad(n)} · {d['format']}</p>
       <h1>{e(d['title'])}</h1>
-      <p class="meta">Posted {when}</p>
+      <p class="meta">{'On Instagram now' if d.get('posted') else 'Posted ' + when}</p>
       <div class="story">{caption}</div>
       <aside class="sources" aria-labelledby="src-{n}">
         <h2 id="src-{n}">How we checked this</h2>
