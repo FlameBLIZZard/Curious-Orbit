@@ -1,0 +1,272 @@
+"""Builds the extra pages from public/js/days.js and public/js/config.js:
+facts/day-NN.html (one page per made day, with sources), media-kit.html, privacy.html, terms.html,
+404.html, sitemap.xml and robots.txt.
+Run from the curious-orbit-site folder: python3 tools/make-data.py && python3 tools/build-pages.py"""
+import json, re, html, pathlib, datetime
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+PUB = ROOT / 'public'
+days = json.loads(re.search(r'window\.CO_DAYS = (\[.*\]);', (PUB / 'js/days.js').read_text(), re.S).group(1))
+cfg_js = (PUB / 'js/config.js').read_text()
+SITE = re.search(r"siteUrl:\s*'([^']+)'", cfg_js).group(1).rstrip('/')
+made = [d for d in days if d.get('title')]
+e = html.escape
+pad = lambda n: f'{n:02d}'
+TODAY = datetime.date.today().isoformat()
+
+FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap">')
+
+
+def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts=()):
+    og = og or 'media/og/home.jpg'
+    scripts = ['js/config.js', 'js/motion.js', 'js/common.js', *scripts]
+    return f'''<!doctype html>
+<html lang="en" data-base="{base}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{e(title)}</title>
+<meta name="description" content="{e(desc)}">
+<meta name="theme-color" content="#0B0E17">
+<link rel="canonical" href="{SITE}/{path}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Curious Orbit">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(desc)}">
+<meta property="og:image" content="{SITE}/{og}">
+<meta property="og:url" content="{SITE}/{path}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{base}media/profile.png">
+<link rel="apple-touch-icon" href="{base}apple-touch-icon.png">
+{FONTS}
+<link rel="stylesheet" href="{base}styles.css">
+{extra_head}</head>
+<body>
+<canvas class="stars" id="stars" aria-hidden="true"></canvas>
+<div class="demo-banner" data-demo-banner hidden>Demo mode: shop, tips and email signups are placeholders</div>
+<header class="bar">
+  <a class="brand" href="{base}index.html" aria-label="Curious Orbit home">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="3.2"/><circle cx="31.3" cy="13.5" r="4.4" class="ember-fill"/></svg>
+    <span>Curious Orbit</span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="{base}index.html#log">The log</a>
+    <a href="{base}index.html#shop">Shop</a>
+    <a href="{base}media-kit.html">Advertise</a>
+  </nav>
+  <a class="btn btn-small" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Follow</a>
+</header>
+<main>
+{body}
+</main>
+{footer(base)}
+{''.join(f'<script src="{base}{s}"></script>' + chr(10) for s in scripts)}<script>CO.wireMoney();</script>
+</body>
+</html>
+'''
+
+
+def footer(base=''):
+    return f'''<footer class="foot wrap">
+  <span>© 2026 Curious Orbit</span>
+  <nav class="foot-links" aria-label="Site">
+    <a href="{base}media-kit.html">Advertise</a>
+    <a href="{base}privacy.html">Privacy</a>
+    <a href="{base}terms.html">Terms</a>
+    <a data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</footer>'''
+
+
+def signup_band(source):
+    return f'''<section class="daily wrap" aria-labelledby="daily-{source}">
+  <div class="daily-card">
+    <div class="daily-copy">
+      <p class="label">The Daily Orbit · free newsletter</p>
+      <h2 id="daily-{source}">Get tomorrow's fact <span class="ember">first.</span></h2>
+      <p>One fact every morning with the full story and the source we checked. Two minutes with your coffee.</p>
+    </div>
+    <form class="signup signup-stack" data-source="{source}" novalidate>
+      <label class="sr" for="email-{source}">Email address</label>
+      <input id="email-{source}" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
+      <button class="btn" type="submit">Subscribe free</button>
+      <p class="form-msg" aria-live="polite">No spam. Unsubscribe in one click.</p>
+    </form>
+  </div>
+</section>'''
+
+
+def media_html(d, base):
+    if d['format'] == 'reel':
+        return (f'<div class="frame reel"><video controls playsinline preload="metadata" poster="{base}{d["poster"]}" '
+                f'src="{base}{d["video"]}" aria-label="Day {d["n"]} reel: {e(d["title"])}"></video></div>')
+    if d['format'] == 'post':
+        return f'<div class="frame post"><img src="{base}{d["images"][0]}" alt="Day {d["n"]} post: {e(d["title"])}"></div>'
+    imgs = ''.join(f'<img src="{base}{src}" alt="Slide {i + 1} of {len(d["images"])}" loading="{"eager" if i == 0 else "lazy"}">'
+                   for i, src in enumerate(d['images']))
+    return f'<div class="frame carousel" data-carousel="{d["n"]}"><div class="track" tabindex="0">{imgs}</div></div>'
+
+
+def fact_page(d, i):
+    base = '../'
+    n = d['n']
+    when = datetime.date.fromisoformat(d['date']).strftime('%A %-d %B %Y')
+    prev_d = made[i - 1] if i > 0 else None
+    next_d = made[i + 1] if i + 1 < len(made) else None
+    check = d.get('check', {'claims': 0, 'sources': []})
+    sources = ''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["name"])}</a></li>' for s in check['sources'])
+    caption = ''.join(f'<p>{e(p)}</p>' for p in d['caption'])
+    tags = ' '.join(d['tags'])
+    ld = {'@context': 'https://schema.org', '@type': 'Article', 'headline': d['title'], 'description': d['summary'],
+          'datePublished': d['date'], 'image': f'{SITE}/media/og/day{pad(n)}.jpg', 'url': f'{SITE}/facts/day-{pad(n)}',
+          'author': {'@type': 'Organization', 'name': 'Curious Orbit'},
+          'citation': [s['url'] for s in check['sources']]}
+    nav = '<nav class="pager" aria-label="More facts">'
+    nav += (f'<a href="day-{pad(prev_d["n"])}.html"><small>← Day {pad(prev_d["n"])}</small>{e(prev_d["title"])}</a>' if prev_d else '<span></span>')
+    nav += (f'<a class="next" href="day-{pad(next_d["n"])}.html"><small>Day {pad(next_d["n"])} →</small>{e(next_d["title"])}</a>' if next_d else '<span></span>')
+    nav += '</nav>'
+    body = f'''<article class="fact wrap" data-day="{n}" data-post="{d['date']}T{'19' if d['time'].startswith('7') else '13'}:00:00">
+  <div class="fact-grid">
+    <div class="fact-media">{media_html(d, base)}</div>
+    <div class="fact-text">
+      <p class="label">{e(d['topic'])} · Day {pad(n)} · {d['format']}</p>
+      <h1>{e(d['title'])}</h1>
+      <p class="meta">Posted {when}</p>
+      <div class="story">{caption}</div>
+      <aside class="sources" aria-labelledby="src-{n}">
+        <h2 id="src-{n}">How we checked this</h2>
+        <p>{check['claims']} claim{'s' if check['claims'] != 1 else ''} in this post, checked against:</p>
+        <ul>{sources}</ul>
+      </aside>
+      <p class="tags">{e(tags)}</p>
+      <div class="actions">
+        <a class="btn" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">See it on Instagram</a>
+        <a class="btn btn-ghost" href="../index.html#log">All facts</a>
+      </div>
+    </div>
+  </div>
+  <div class="fact-locked" hidden>
+    <p class="label">Day {pad(n)} · {d['format']}</p>
+    <h1>This fact drops <span class="ember">{datetime.date.fromisoformat(d['date']).strftime('%a %-d %b')}, {d['time']}.</span></h1>
+    <p>No spoilers. Get it in your inbox the morning after, or follow along on Instagram.</p>
+  </div>
+  {nav}
+</article>
+{signup_band(f'fact{pad(n)}')}
+<section class="shop wrap" aria-labelledby="shop-{n}">
+  <div class="section-head"><div><p class="label">The Orbit Shop</p><h2 id="shop-{n}">Liked this one? <span class="ember">Take 50 more offline.</span></h2></div></div>
+  <ul class="products" id="products"></ul>
+</section>'''
+    head = f'<script type="application/ld+json">{json.dumps(ld)}</script>\n'
+    return page(f'{d["title"]} | Curious Orbit', d['summary'], body, base=base, path=f'facts/day-{pad(n)}',
+                og=f'media/og/day{pad(n)}.jpg', extra_head=head, scripts=['js/days.js', 'js/fact.js'])
+
+
+MEDIA_KIT = '''<section class="mk wrap">
+  <div class="mk-hero">
+    <p class="label">Media kit · 2026</p>
+    <h1>Reach people who <span class="ember">love learning.</span></h1>
+    <p class="lede">Curious Orbit posts one surprising, fact-checked science fact every day on Instagram and in The Daily Orbit newsletter. Our audience is curious 16 to 35 year olds who save facts and send them to friends.</p>
+    <div class="actions"><a class="btn" href="#book">Book a slot</a></div>
+  </div>
+  <div class="mk-stats" aria-label="Audience numbers">
+    <p class="sample">Sample figures until launch numbers are in</p>
+    <dl>
+      <div><dt>Instagram followers</dt><dd>12,400</dd></div>
+      <div><dt>Avg. reel views</dt><dd>38,000</dd></div>
+      <div><dt>Newsletter subscribers</dt><dd>3,100</dd></div>
+      <div><dt>Newsletter open rate</dt><dd>52%</dd></div>
+    </dl>
+  </div>
+</section>
+<section class="mk wrap" aria-labelledby="mk-audience">
+  <div class="section-head"><div><p class="label">Who reads us</p><h2 id="mk-audience">Students, young professionals, teachers.</h2></div></div>
+  <div class="mk-cols">
+    <div class="panel"><h3>Age</h3><p>Mostly 18 to 34, with a strong student group.</p></div>
+    <div class="panel"><h3>Interests</h3><p>Space, the human body, animals, everyday physics, trivia and quizzes.</p></div>
+    <div class="panel"><h3>Behaviour</h3><p>High saves and shares: people send our facts to friends and use them in class.</p></div>
+  </div>
+</section>
+<section class="mk wrap" aria-labelledby="mk-formats">
+  <div class="section-head"><div><p class="label">Formats and rates</p><h2 id="mk-formats">Three ways to work with us.</h2></div><p class="section-note">Sample rates. Bundles and multi-week deals on request.</p></div>
+  <ul class="rates">
+    <li class="panel"><h3>Sponsored reel</h3><p>A 20-second fact reel in our look about a fact linked to your product, with your brand on the follow card and in the caption.</p><p class="price">$150<small>per reel</small></p></li>
+    <li class="panel"><h3>Newsletter slot</h3><p>One short line and a link at the top of The Daily Orbit, written in our voice.</p><p class="price">$50<small>per issue</small></p></li>
+    <li class="panel"><h3>Story mention</h3><p>A story with your link sticker, shared the same day as a post.</p><p class="price">$40<small>per story</small></p></li>
+  </ul>
+</section>
+<section class="mk wrap" aria-labelledby="mk-rules">
+  <div class="checked">
+    <div class="checked-copy">
+      <p class="label">Our rules</p>
+      <h2 id="mk-rules">Trust is the product.</h2>
+      <p>We only work with brands that fit a science page: edtech, books, museums, science kits, apps and outdoor gear. Every sponsored post is labelled as a paid partnership, and every fact in it goes through the same check as everything else we post.</p>
+    </div>
+    <div class="panel" id="book">
+      <p class="label">Book a slot</p>
+      <h3>Email us with your dates and goal.</h3>
+      <div class="contact"><code id="mk-email" data-sponsor-email>hello@curiousorbit.com</code><button class="btn btn-small btn-ghost" type="button" data-copy="mk-email">Copy email</button></div>
+      <p>We reply within two working days.</p>
+    </div>
+  </div>
+</section>'''
+
+PRIVACY = '''<section class="legal wrap">
+  <p class="label">Privacy</p>
+  <h1>Privacy policy</h1>
+  <p class="meta">Last updated 7 October 2026</p>
+  <h2>What we collect</h2>
+  <p>If you subscribe to The Daily Orbit or join a product waitlist, we store your email address and which form you used. We don't ask for anything else.</p>
+  <h2>How we use it</h2>
+  <p>We use your email only to send the newsletter and the launch emails you asked for. We never sell or rent it. Every email has a one-click unsubscribe link.</p>
+  <h2>Who handles it</h2>
+  <p>Our newsletter is sent by beehiiv, and purchases are processed by our shop provider (Gumroad or Lemon Squeezy). They store your details under their own privacy policies. We never see your card details.</p>
+  <h2>Cookies and analytics</h2>
+  <p>The site may use privacy-friendly, cookie-free page-view counts. We don't run advertising trackers.</p>
+  <h2>Your rights</h2>
+  <p>You can ask us to show, correct or delete what we hold about you at <code data-sponsor-email>hello@curiousorbit.com</code>.</p>
+</section>'''
+
+TERMS = '''<section class="legal wrap">
+  <p class="label">Terms</p>
+  <h1>Terms of use</h1>
+  <p class="meta">Last updated 7 October 2026</p>
+  <h2>Our content</h2>
+  <p>The reels, carousels, posts and text on this site are made by Curious Orbit. You're welcome to share links to them. Please don't re-upload them as your own.</p>
+  <h2>Accuracy</h2>
+  <p>We check every fact against reliable sources and link them. Science moves on, though: if you spot something out of date, tell us and we'll fix it.</p>
+  <h2>Digital products</h2>
+  <p>Shop items are instant downloads for personal and classroom use. Teachers may print and share them with their own students. Because downloads can't be returned, we offer refunds within 14 days only if a file doesn't work and we can't fix it.</p>
+  <h2>Sponsored content</h2>
+  <p>Paid partnerships are always labelled. A sponsor never changes whether a fact is true.</p>
+  <h2>Contact</h2>
+  <p><code data-sponsor-email>hello@curiousorbit.com</code></p>
+</section>'''
+
+NOT_FOUND = '''<section class="legal wrap lost">
+  <svg class="follow-logo" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="62" fill="none" stroke="#F3EEE4" stroke-width="7"/><circle cx="153.7" cy="69" r="14" class="ember-fill"/></svg>
+  <p class="label">Error 404</p>
+  <h1>This page drifted <span class="ember">out of orbit.</span></h1>
+  <p>Fun fact while you're here: Voyager 1 is more than 25 billion km from Earth and still sending data home.</p>
+  <div class="actions"><a class="btn" href="/">Back to today's fact</a></div>
+</section>'''
+
+
+def main():
+    (PUB / 'facts').mkdir(exist_ok=True)
+    for old in (PUB / 'facts').glob('day-*.html'): old.unlink()
+    for i, d in enumerate(made):
+        (PUB / 'facts' / f'day-{pad(d["n"])}.html').write_text(fact_page(d, i))
+    (PUB / 'media-kit.html').write_text(page('Advertise with Curious Orbit', 'Sponsored reels, newsletter slots and story mentions on a fact-checked science page for curious 16 to 35 year olds.', MEDIA_KIT, path='media-kit', og='media/og/media-kit.jpg'))
+    (PUB / 'privacy.html').write_text(page('Privacy | Curious Orbit', 'How Curious Orbit handles your email address and data.', PRIVACY, path='privacy'))
+    (PUB / 'terms.html').write_text(page('Terms | Curious Orbit', 'Terms of use for the Curious Orbit site and shop.', TERMS, path='terms'))
+    (PUB / '404.html').write_text(page('Lost in space | Curious Orbit', 'This page does not exist.', NOT_FOUND, path='404'))
+    urls = ['', 'media-kit', 'privacy', 'terms'] + [f'facts/day-{pad(d["n"])}' for d in made]
+    (PUB / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + ''.join(f'  <url><loc>{SITE}/{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls) + '</urlset>\n')
+    (PUB / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
+    print(f'{len(made)} fact pages + media kit, privacy, terms, 404, sitemap ({len(urls)} urls), robots')
+
+
+main()

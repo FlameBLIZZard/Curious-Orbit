@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" class="home-doc">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Curious Orbit</title>
+<meta name="description" content="One surprising, true science fact every day. Space, the body, animals and everyday physics, fact-checked and told in 20 calm seconds.">
+<meta name="theme-color" content="#0B0E17">
+<meta property="og:title" content="Curious Orbit">
+<meta property="og:description" content="One surprising, true science fact every day. @curiousorbit.daily">
+<meta property="og:image" content="https://curiousorbit.vercel.app/media/og/home.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="media/profile.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body class="home">
+<script>document.documentElement.classList.add("js","home-doc");try{if(sessionStorage.getItem("co-seen"))document.documentElement.classList.add("seen")}catch(e){}</script>
+
+<!-- Preloader: the orbit draws itself while the universe loads -->
+<div class="loader" id="loader" aria-hidden="true">
+  <svg viewBox="0 0 200 200"><circle class="loader-ring" cx="100" cy="100" r="62" pathLength="1"/><circle class="loader-dot" cx="153.7" cy="69" r="11"/></svg>
+  <p class="loader-count"><span id="loader-num">00</span><span>Calibrating orbit</span></p>
+</div>
+
+<canvas class="space" id="space" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span><span class="cursor-label" id="cursor-label"></span></div>
+<div class="demo-banner" data-demo-banner hidden>Demo mode: shop, tips and email signups are placeholders</div>
+
+<header class="hud" id="hud">
+  <a class="brand" href="#top" aria-label="Curious Orbit, back to top">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="3.2"/><circle cx="31.3" cy="13.5" r="4.4" class="ember-fill"/></svg>
+    <span>Curious Orbit</span>
+  </a>
+  <nav class="hud-nav" aria-label="Sections">
+    <a href="#today" data-cursor="Go">Today</a>
+    <a href="#log" data-cursor="Go">The log</a>
+    <a href="#shop" data-cursor="Go">Shop</a>
+    <a href="media-kit.html" data-cursor="Go">Advertise</a>
+  </nav>
+  <p class="hud-clock" aria-live="off"><span id="hud-clock">--:--</span><span class="hud-sep">/</span><span id="hud-next">Next fact soon</span></p>
+  <a class="pill" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener" data-cursor="Follow">Follow</a>
+</header>
+
+<main id="top">
+  <!-- 1. HERO: a 3D orbit you fly through on scroll -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="sq"></span><span id="hero-kicker">Science · one fact a day · est. 2026</span></p>
+      <h1 class="mega" aria-label="One true fact. Every single day.">
+        <span class="row" aria-hidden="true"><span class="split">One true fact.</span></span>
+        <span class="row" aria-hidden="true"><span class="split">Every single</span></span>
+        <span class="row" aria-hidden="true"><span class="split ember">day.</span></span>
+      </h1>
+      <div class="hero-foot">
+        <p class="hero-lede">Space, the body, animals and everyday physics. Checked against NASA, ESA and peer-reviewed science, then told in twenty calm seconds.</p>
+        <div class="hero-cta">
+          <a class="cta" href="#daily" data-cursor="Join"><span>Get the daily fact</span><i aria-hidden="true">→</i></a>
+          <a class="cta cta-ghost" href="#today" data-cursor="Watch"><span>See today's</span><i aria-hidden="true">↓</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span>Scroll to enter orbit</span><i></i></div>
+  </section>
+
+  <!-- 2. MANIFESTO: words light up as you read -->
+  <section class="manifesto wrap" aria-label="What Curious Orbit is">
+    <p class="eyebrow"><span class="sq"></span>The mission</p>
+    <p class="manifesto-text" id="manifesto">Every day we find one fact that <em>sounds completely fake.</em> Then we check it against NASA, ESA and peer-reviewed science, cut it down to twenty calm seconds, and send it into your orbit. No noise, no clickbait. Just <em>one true thing</em> you'll want to tell someone.</p>
+  </section>
+
+  <!-- 3. TODAY: the reel in a floating frame with orbiting text -->
+  <section class="today-x" id="today" aria-labelledby="today-title">
+    <div class="today-stage wrap">
+      <div class="today-copy">
+        <p class="eyebrow"><span class="sq"></span><span id="today-kicker">Today</span></p>
+        <h2 class="big" id="today-title">Today's fact</h2>
+        <div class="today-caption" id="today-caption"></div>
+        <div class="today-actions" id="today-actions"></div>
+      </div>
+      <div class="today-orbit">
+        <svg class="orbit-text" viewBox="0 0 600 600" aria-hidden="true">
+          <defs><path id="circ" d="M300,300 m-262,0 a262,262 0 1,1 524,0 a262,262 0 1,1 -524,0"/></defs>
+          <text><textPath href="#circ" id="orbit-text-path">TODAY'S FACT · ONE TRUE THING · TODAY'S FACT · ONE TRUE THING · </textPath></text>
+        </svg>
+        <div class="tilt" id="today-media"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MARQUEE of facts, speed follows your scroll -->
+  <section class="marquee" aria-label="Facts from the log">
+    <div class="marquee-track" id="marquee"></div>
+  </section>
+
+  <!-- 5. THE LOG: a horizontal journey along the 20-day orbit -->
+  <section class="log-x" id="log" aria-labelledby="log-title">
+    <div class="log-pin">
+      <div class="log-head wrap">
+        <p class="eyebrow"><span class="sq"></span>The log · 20 days</p>
+        <h2 class="big" id="log-title">Every fact <span class="ember">so far.</span></h2>
+        <p class="log-hint">Scroll to travel the orbit. Tap a fact to open it.</p>
+      </div>
+      <div class="log-rail" id="log-rail">
+        <div class="log-track" id="log-track"></div>
+        <div class="log-ruler" aria-hidden="true"><i id="log-progress"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. NUMBERS: the fact-check, scrubbed -->
+  <section class="numbers wrap" id="checked" aria-labelledby="checked-title">
+    <div class="numbers-big" aria-hidden="true"><span class="count" data-to="63">63</span></div>
+    <div class="numbers-copy">
+      <p class="eyebrow"><span class="sq"></span>Claims checked before launch</p>
+      <h2 class="big" id="checked-title">Nothing posts <span class="ember">until it's true.</span></h2>
+      <p>We checked every claim in the 20-day plan against NASA, ESA, encyclopaedias and university and peer-reviewed sources. Anything almost right got reworded. The one that was wrong was replaced.</p>
+      <div class="audit-bar" aria-hidden="true"><span class="seg ok" style="--w:48"></span><span class="seg tweak" style="--w:14"></span><span class="seg bad" style="--w:1"></span></div>
+      <dl class="tally">
+        <div><dt>Correct as written</dt><dd class="count" data-to="48">48</dd></div>
+        <div><dt>Needed a tweak</dt><dd class="count" data-to="14">14</dd></div>
+        <div><dt>Wrong, replaced</dt><dd class="count" data-to="1">1</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 7. NEWSLETTER -->
+  <section class="daily-x wrap" id="daily" aria-labelledby="daily-title">
+    <p class="eyebrow"><span class="sq"></span>The Daily Orbit · free newsletter</p>
+    <h2 class="mega-2" id="daily-title"><span class="row"><span class="split">Get the universe</span></span><span class="row"><span class="split ember">in your inbox.</span></span></h2>
+    <div class="daily-grid">
+      <p class="daily-lede">The fact, plus the why: how we know it, the source we checked, and a bonus fact that didn't fit in the reel. Every morning at 7. Two minutes with your coffee.</p>
+      <form class="signup big-form" data-source="newsletter" novalidate>
+        <label class="sr" for="email-daily">Email address</label>
+        <input id="email-daily" name="email" type="email" autocomplete="email" placeholder="your@email.com" required>
+        <button class="orb" type="submit" aria-label="Subscribe free" data-cursor="Join"><span>Join</span></button>
+        <p class="form-msg" aria-live="polite">Free. No spam. Unsubscribe in one click.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 8. SHOP -->
+  <section class="shop-x wrap" id="shop" aria-labelledby="shop-title">
+    <div class="shop-head">
+      <p class="eyebrow"><span class="sq"></span>The Orbit Shop</p>
+      <h2 class="big" id="shop-title">Take the facts <span class="ember">offline.</span></h2>
+    </div>
+    <ul class="products" id="products"></ul>
+  </section>
+
+  <!-- 9. LINK ROWS: advertise, media kit, tip -->
+  <section class="rows wrap" id="advertise" aria-label="Work with us">
+    <a class="rowlink" href="media-kit.html" data-cursor="Open"><span class="rl-k">01</span><span class="rl-t">Advertise with us</span><span class="rl-d">Sponsored reels, newsletter slots and story mentions</span><i aria-hidden="true">→</i></a>
+    <a class="rowlink" href="#" data-tip target="_blank" rel="noopener" data-cursor="Tip"><span class="rl-k">02</span><span class="rl-t">Buy us a coffee</span><span class="rl-d">Each fact takes about an hour to research, check and animate</span><i aria-hidden="true">→</i></a>
+    <a class="rowlink" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener" data-cursor="Follow"><span class="rl-k">03</span><span class="rl-t">Follow on Instagram</span><span class="rl-d">@curiousorbit.daily · reels at 7 pm, carousels at 1 pm</span><i aria-hidden="true">→</i></a>
+  </section>
+</main>
+
+<!-- FOOTER: giant wordmark -->
+<footer class="big-foot">
+  <div class="wrap foot-top">
+    <p class="foot-line">Follow for <span class="ember">a fact a day.</span></p>
+    <nav class="foot-links" aria-label="Site">
+      <a href="media-kit.html">Media kit</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+  <p class="wordmark" aria-hidden="true">Curious<span class="o"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="9"/><circle cx="83" cy="31" r="9" class="ember-fill"/></svg></span>rbit</p>
+  <div class="wrap foot-bottom"><span>© 2026 Curious Orbit</span><span>Made on Earth. Checked against space.</span></div>
+</footer>
+
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+  <div class="viewer-inner">
+    <div class="viewer-media" id="viewer-media"></div>
+    <div class="viewer-text">
+      <p class="label" id="viewer-label"></p>
+      <h3 id="viewer-title"></h3>
+      <div id="viewer-caption"></div>
+      <p class="tags" id="viewer-tags"></p>
+      <a class="btn btn-ghost btn-small" id="viewer-more" href="#">Full story and sources →</a>
+    </div>
+    <button class="close" id="viewer-close" type="button" aria-label="Close">×</button>
+  </div>
+</dialog>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/days.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+<script type="module" src="js/space.js"></script>
+</body>
+</html>
