@@ -486,3 +486,6 @@ section { scroll-margin-top: 80px; }
 .linkish { background: none; border: 0; color: var(--ember); font: 400 12px var(--mono); cursor: pointer; margin-left: 8px; text-decoration: underline; }
 .ord-act { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .empty { color: var(--muted); padding: 28px 0; }
+
+.tabs-gap { flex: 1; }
+.shop-tabs { margin: 0 0 22px; }

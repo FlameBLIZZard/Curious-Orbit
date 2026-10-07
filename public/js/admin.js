@@ -34,21 +34,29 @@
     document.body.append(a); a.click(); a.remove();
   }
 
+  const TABS = ['pending', 'approved', 'rejected', 'all'];
+  let shell;
   function render() {
     const { orders, totals } = data;
     const count = (s) => orders.filter((o) => s === 'all' || o.status === s).length;
     const shown = orders.filter((o) => tab === 'all' || o.status === tab);
     const stat = (k, v, sub) => h('div', { class: 'stat' }, h('span', { class: 'label', text: k }), h('b', { text: v }), h('small', { text: sub }));
-    app.replaceChildren(
-      h('div', { class: 'stats' },
-        stat('Earned', rupees(totals.earned), `${totals.approvedCount} approved`),
-        stat('To check', rupees(totals.pending), `${totals.pendingCount} waiting`),
-        stat('All records', String(orders.length), 'orders and tips')),
-      h('div', { class: 'tabs', role: 'tablist' }, ['pending', 'approved', 'rejected', 'all'].map((t) =>
-        h('button', { type: 'button', role: 'tab', 'aria-selected': String(t === tab), text: `${t} (${count(t)})`, onclick: () => { tab = t; render(); } })),
+    if (!shell) {
+      shell = { stats: h('div', { class: 'stats' }), tabs: h('div', { class: 'tabs', role: 'tablist' }), list: h('div', { class: 'orders-wrap' }) };
+      TABS.forEach((t) => shell.tabs.append(h('button', { type: 'button', role: 'tab', 'data-tab': t, onclick: () => { tab = t; render(); } })));
+      shell.tabs.append(h('span', { class: 'tabs-gap' }),
         h('button', { type: 'button', class: 'btn btn-ghost btn-small', text: 'Download CSV', onclick: csv }),
-        h('button', { type: 'button', class: 'btn btn-ghost btn-small', text: 'Refresh', onclick: () => load() })),
-      shown.length ? h('ul', { class: 'orders' }, shown.map((o) => h('li', { class: `ord ord-${o.status}` },
+        h('button', { type: 'button', class: 'btn btn-ghost btn-small', text: 'Refresh', onclick: () => load() }));
+      app.replaceChildren(shell.stats, shell.tabs, shell.list,
+        h('p', { class: 'tip-note', text: 'Before approving: open your UPI app, find a payment with this UTR and the same amount. Then tap Approve and the buyer\'s download unlocks straight away.' }));
+    }
+    shell.stats.replaceChildren(
+      stat('Earned', rupees(totals.earned), `${totals.approvedCount} approved`),
+      stat('To check', rupees(totals.pending), `${totals.pendingCount} waiting`),
+      stat('All records', String(orders.length), 'orders and tips'));
+    shell.tabs.querySelectorAll('[role=tab]').forEach((b) => { b.textContent = `${b.dataset.tab} (${count(b.dataset.tab)})`; b.setAttribute('aria-selected', String(b.dataset.tab === tab)); });
+    if (window.CO.ink) window.CO.ink(shell.tabs, '[role=tab]', '[aria-selected=true]');
+    const list = shown.length ? h('ul', { class: 'orders' }, shown.map((o) => h('li', { class: `ord ord-${o.status}` },
         h('div', { class: 'ord-main' },
           h('p', { class: 'label', text: `${o.id} · ${o.kind} · ${when(o.createdAt)}` }),
           h('h3', {}, `${o.product} `, h('span', { class: 'ember', text: rupees(o.amount) })),
@@ -60,8 +68,9 @@
           o.status !== 'approved' && h('button', { class: 'btn btn-small', type: 'button', text: 'Approve', onclick: () => setStatus(o, 'approved') }),
           o.status !== 'rejected' && h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Not paid', onclick: () => setStatus(o, 'rejected') }),
           o.status !== 'pending' && h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Back to pending', onclick: () => setStatus(o, 'pending') })))))
-        : h('p', { class: 'empty', text: tab === 'pending' ? 'Nothing waiting. New payments show up here.' : 'No records here yet.' }),
-      h('p', { class: 'tip-note', text: 'Before approving: open your UPI app, find a payment with this UTR and the same amount. Then tap Approve and the buyer\'s download unlocks straight away.' }));
+      : h('p', { class: 'empty', text: tab === 'pending' ? 'Nothing waiting. New payments show up here.' : 'No records here yet.' });
+    shell.list.replaceChildren(list);
+    list.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 420, easing: 'cubic-bezier(.2,.9,.2,1)' });
   }
   if (key) load(); else form.hidden = false;
 })();

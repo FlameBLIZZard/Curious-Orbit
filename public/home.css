@@ -27,37 +27,8 @@ html:not(.js) .loader, .seen .loader { display: none; }
 /* ---------- space canvas, grain, cursor ---------- */
 .space { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; display: block; }
 .no-webgl .space { background: radial-gradient(1px 1px at 20% 30%, var(--cream) 50%, transparent 51%), var(--ink); }
-.grain { position: fixed; inset: -50%; z-index: 90; pointer-events: none; opacity: .06; background-size: 180px; animation: grain 1s steps(6) infinite; }
-@keyframes grain { 0%{transform:translate(0,0)} 20%{transform:translate(-3%,2%)} 40%{transform:translate(2%,-3%)} 60%{transform:translate(-2%,-1%)} 80%{transform:translate(3%,3%)} 100%{transform:translate(0,0)} }
-main, .big-foot, .hud { position: relative; z-index: 2; }
 
-.cursor { position: fixed; left: 0; top: 0; z-index: 95; pointer-events: none; mix-blend-mode: normal; display: none; }
-.has-cursor .cursor { display: block; }
-.has-cursor, .has-cursor a, .has-cursor button { cursor: none; }
-.has-cursor input { cursor: text; }
-.cursor-dot { position: absolute; width: 8px; height: 8px; margin: -4px 0 0 -4px; border-radius: 50%; background: var(--ember); }
-.cursor-ring { position: absolute; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; border: 1.5px solid var(--cream); opacity: .7; transition: width .35s cubic-bezier(.2,.8,.2,1), height .35s cubic-bezier(.2,.8,.2,1), margin .35s cubic-bezier(.2,.8,.2,1), background .25s, opacity .25s; }
-.cursor-label { position: absolute; transform: translate(-50%, -50%); font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); opacity: 0; transition: opacity .2s; white-space: nowrap; }
-.cursor.is-hover .cursor-ring { width: 92px; height: 92px; margin: -46px 0 0 -46px; background: var(--cream); opacity: 1; border-color: var(--cream); }
-.cursor.is-hover .cursor-label { opacity: 1; }
-.cursor.is-hover .cursor-dot { opacity: 0; }
 
-/* ---------- HUD ---------- */
-.hud { position: fixed; top: env(safe-area-inset-top, 0px); left: 0; right: 0; z-index: 20; display: flex; align-items: center; gap: 28px; padding: 18px var(--gutter); mix-blend-mode: difference; color: #F3EEE4; }
-.hud .brand { margin-right: auto; display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.02em; font-size: 18px; text-decoration: none; }
-.hud .mark { width: 28px; height: 28px; }
-.hud .ember-fill { fill: #F3EEE4; }
-.hud-nav { display: flex; gap: 26px; }
-.hud-nav a, .hud-clock { font: 400 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; }
-.hud-nav a { position: relative; }
-.hud-nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -5px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .45s cubic-bezier(.2,.8,.2,1); }
-.hud-nav a:hover::after { transform: scaleX(1); transform-origin: left; }
-.hud-clock { margin: 0; opacity: .7; font-variant-numeric: tabular-nums; display: flex; gap: 8px; }
-.pill { font: 700 13px/1 var(--display); padding: 11px 18px; border-radius: 999px; border: 1px solid currentColor; text-decoration: none; transition: background .25s, color .25s; }
-.pill:hover { background: #F3EEE4; color: #000; }
-@media (max-width: 1100px) { .hud-clock { display: none; } }
-@media (max-width: 760px) { .hud-nav { display: none; } .hud { padding-block: 14px; } }
-.home .demo-banner { position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 80; border-radius: 999px; padding: 8px 14px; font-size: 10px; max-width: calc(100% - 32px); }
 
 /* ---------- 1. hero ---------- */
 .hero { position: relative; min-height: 100svh; display: grid; grid-template-columns: minmax(0, 1fr); align-items: end; padding: 120px var(--gutter) clamp(36px, 6vh, 72px); }
@@ -211,16 +182,6 @@ main, .big-foot, .hud { position: relative; z-index: 2; }
 @media (max-width: 760px) { .rowlink { grid-template-columns: 34px minmax(0, 1fr) 30px; } .rl-d { display: none; } }
 
 /* ---------- footer ---------- */
-.big-foot { padding-top: clamp(80px, 14vh, 160px); overflow: hidden; border-top: 1px solid var(--line); background: var(--ink); }
-.foot-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 24px; }
-.foot-line { margin: 0; font: 700 clamp(30px, 4vw, 60px)/1 var(--display); letter-spacing: -0.04em; }
-.big-foot .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
-.big-foot .foot-links a { font: 400 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
-.big-foot .foot-links a:hover { color: var(--cream); }
-.wordmark { margin: clamp(30px, 6vh, 60px) 0 0; padding-inline: 1.5vw; font: 700 17.6vw/.8 var(--display); letter-spacing: -0.07em; white-space: nowrap; display: flex; align-items: baseline; color: var(--cream); }
-.wordmark .o { display: inline-block; flex: none; width: .6em; height: .6em; margin: 0 .01em 0 .12em; align-self: baseline; }
-.wordmark .o svg { width: 100%; height: 100%; overflow: visible; }
-.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding-block: 24px; font: 400 12px var(--mono); color: var(--muted); letter-spacing: .06em; }
 
 /* viewer on home sits above everything */
 .home .viewer { z-index: 99; }

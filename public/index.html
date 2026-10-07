@@ -15,8 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=9217b891">
-<link rel="stylesheet" href="home.css?v=9217b891">
+<link rel="stylesheet" href="styles.css?v=605eee3f">
+<link rel="stylesheet" href="home.css?v=605eee3f">
+<link rel="stylesheet" href="chrome.css?v=605eee3f">
 </head>
 <body class="home">
 <script>document.documentElement.classList.add("js","home-doc");try{if(sessionStorage.getItem("co-seen"))document.documentElement.classList.add("seen")}catch(e){}</script>
@@ -45,7 +46,9 @@
   </nav>
   <p class="hud-clock" aria-live="off"><span id="hud-clock">--:--</span><span class="hud-sep">/</span><span id="hud-next">Next fact soon</span></p>
   <a class="pill" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener" data-cursor="Follow">Follow</a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-controls="menu" aria-expanded="false">Menu</button>
 </header>
+<nav class="menu" id="menu" aria-label="Menu"><a href="#today">Today</a><a href="#log">The log</a><a href="shop.html">Shop</a><a href="media-kit.html">Advertise</a><a data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Instagram</a><p class="menu-foot">@curiousorbit.daily · one true fact at a time</p></nav>
 
 <main id="top">
   <!-- 1. HERO: a 3D orbit you fly through on scroll -->
@@ -166,6 +169,7 @@
   <div class="wrap foot-top">
     <p class="foot-line">Follow for <span class="ember">a fact a day.</span></p>
     <nav class="foot-links" aria-label="Site">
+      <a href="shop.html">Shop</a>
       <a href="media-kit.html">Media kit</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
@@ -193,12 +197,13 @@
 <script src="vendor/gsap.min.js"></script>
 <script src="vendor/ScrollTrigger.min.js"></script>
 <script src="vendor/lenis.min.js"></script>
-<script src="js/config.js?v=9217b891"></script>
-<script src="js/catalog.js?v=9217b891"></script>
-<script src="js/motion.js?v=9217b891"></script>
-<script src="js/days.js?v=9217b891"></script>
-<script src="js/common.js?v=9217b891"></script>
-<script src="js/home.js?v=9217b891"></script>
-<script type="module" src="js/space.js?v=9217b891"></script>
+<script src="js/config.js?v=605eee3f"></script>
+<script src="js/catalog.js?v=605eee3f"></script>
+<script src="js/motion.js?v=605eee3f"></script>
+<script src="js/days.js?v=605eee3f"></script>
+<script src="js/common.js?v=605eee3f"></script>
+<script src="js/chrome.js?v=605eee3f"></script>
+<script src="js/home.js?v=605eee3f"></script>
+<script type="module" src="js/space.js?v=605eee3f"></script>
 </body>
 </html>

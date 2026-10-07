@@ -25,15 +25,6 @@
   const kicker = (d) => `Day ${pad(d.n)} · ${d.topic}`;
   window.CO_STATE = { day: current ? current.n : 0 };
 
-  // ---------- grain texture (generated, no image file) ----------
-  (() => {
-    const c = document.createElement('canvas'); c.width = c.height = 180;
-    const x = c.getContext('2d'), img = x.createImageData(180, 180);
-    for (let i = 0; i < img.data.length; i += 4) { const v = Math.random() * 255; img.data[i] = img.data[i + 1] = img.data[i + 2] = v; img.data[i + 3] = 255; }
-    x.putImageData(img, 0, 0);
-    $('.grain').style.backgroundImage = `url(${c.toDataURL()})`;
-  })();
-
   // ---------- split text into characters ----------
   document.querySelectorAll('.split').forEach((el) => {
     const words = el.textContent.split(' ');
@@ -50,7 +41,7 @@
   // ---------- smooth scroll ----------
   let lenis = null;
   if (motion && window.Lenis && ST) {
-    lenis = new window.Lenis({ duration: 1.15, smoothWheel: true });
+    lenis = new window.Lenis({ duration: 1.15, smoothWheel: true, prevent: (node) => !!node.closest && !!node.closest('dialog, .menu') });
     lenis.on('scroll', ST.update);
     gsap.ticker.add((t) => lenis.raf(t * 1000));
     gsap.ticker.lagSmoothing(0);
@@ -242,30 +233,6 @@
       gsap.to(orb, { x: d < 160 ? dx * 0.35 : 0, y: d < 160 ? dy * 0.35 : 0, duration: 0.6, ease: 'power3.out' });
     });
     area.addEventListener('pointerleave', () => gsap.to(orb, { x: 0, y: 0, duration: 0.8, ease: 'elastic.out(1, 0.5)' }));
-  }
-
-  // ---------- custom cursor: a ring that springs after an ember dot ----------
-  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
-  if (fine && !reduce) {
-    document.documentElement.classList.add('has-cursor');
-    const cur = $('#cursor'), ringEl = cur.querySelector('.cursor-ring'), dot = cur.querySelector('.cursor-dot'), label = $('#cursor-label');
-    let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my, vx = 0, vy = 0;
-    addEventListener('pointermove', (e) => { mx = e.clientX; my = e.clientY; dot.style.transform = `translate(${mx}px,${my}px)`; label.style.left = `${mx}px`; label.style.top = `${my}px`; }, { passive: true });
-    // critically damped spring (kit 'default' feel), integrated per frame
-    const { omega: w, zeta: z } = M.PRESETS.default;
-    let last = performance.now();
-    (function loop(now) {
-      const dt = Math.min(0.05, (now - last) / 1000); last = now;
-      vx += (-2 * z * w * vx - w * w * (rx - mx)) * dt; vy += (-2 * z * w * vy - w * w * (ry - my)) * dt;
-      rx += vx * dt; ry += vy * dt;
-      ringEl.style.transform = `translate(${rx}px,${ry}px)`;
-      requestAnimationFrame(loop);
-    })(last);
-    document.addEventListener('pointerover', (e) => {
-      const t = e.target.closest('a, button, [data-cursor]');
-      if (t) { cur.classList.add('is-hover'); label.textContent = t.dataset.cursor || (t.tagName === 'A' ? 'Open' : 'Click'); }
-    });
-    document.addEventListener('pointerout', (e) => { if (e.target.closest('a, button, [data-cursor]')) cur.classList.remove('is-hover'); });
   }
 
   // ---------- HUD clock ----------

@@ -24,7 +24,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel
 
 def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts=()):
     og = og or 'media/og/home.jpg'
-    scripts = ['js/config.js', 'js/catalog.js', 'js/motion.js', 'js/common.js', *scripts]
+    scripts = ['vendor/lenis.min.js', 'js/config.js', 'js/catalog.js', 'js/motion.js', 'js/common.js', 'js/chrome.js', *scripts]
     return f'''<!doctype html>
 <html lang="en" data-base="{base}">
 <head>
@@ -45,22 +45,14 @@ def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts
 <link rel="apple-touch-icon" href="{base}apple-touch-icon.png">
 {FONTS}
 <link rel="stylesheet" href="{base}styles.css?v={V}">
+<link rel="stylesheet" href="{base}chrome.css?v={V}">
 {extra_head}</head>
-<body>
+<body class="sub">
 <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span><span class="cursor-label" id="cursor-label"></span></div>
 <div class="demo-banner" data-demo-banner hidden>Demo mode: email signups are placeholders</div>
-<header class="bar">
-  <a class="brand" href="{base}index.html" aria-label="Curious Orbit home">
-    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="3.2"/><circle cx="31.3" cy="13.5" r="4.4" class="ember-fill"/></svg>
-    <span>Curious Orbit</span>
-  </a>
-  <nav class="nav" aria-label="Sections">
-    <a href="{base}index.html#log">The log</a>
-    <a href="{base}shop.html">Shop</a>
-    <a href="{base}media-kit.html">Advertise</a>
-  </nav>
-  <a class="btn btn-small" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Follow</a>
-</header>
+{hud(base)}
 <main>
 {body}
 </main>
@@ -71,15 +63,37 @@ def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts
 '''
 
 
+def hud(base=''):
+    # Same header as the home page (index.html), plus the mobile menu
+    links = [('index.html#log', 'The log'), ('shop.html', 'Shop'), ('media-kit.html', 'Advertise')]
+    nav = ''.join(f'<a href="{base}{h}" data-cursor="Go">{t}</a>' for h, t in links)
+    menu = ''.join(f'<a href="{base}{h}">{t}</a>' for h, t in [('index.html', 'Home'), *links])
+    return f'''<header class="hud" id="hud">
+  <a class="brand" href="{base}index.html" aria-label="Curious Orbit home">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="3.2"/><circle cx="31.3" cy="13.5" r="4.4" class="ember-fill"/></svg>
+    <span>Curious Orbit</span>
+  </a>
+  <nav class="hud-nav" aria-label="Sections">{nav}</nav>
+  <a class="pill" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener" data-cursor="Follow">Follow</a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-controls="menu" aria-expanded="false">Menu</button>
+</header>
+<nav class="menu" id="menu" aria-label="Menu">{menu}<a data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Instagram</a><p class="menu-foot">@curiousorbit.daily · one true fact at a time</p></nav>'''
+
+
 def footer(base=''):
-    return f'''<footer class="foot wrap">
-  <span>© 2026 Curious Orbit</span>
-  <nav class="foot-links" aria-label="Site">
-    <a href="{base}media-kit.html">Advertise</a>
-    <a href="{base}privacy.html">Privacy</a>
-    <a href="{base}terms.html">Terms</a>
-    <a data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Instagram</a>
-  </nav>
+    return f'''<footer class="big-foot">
+  <div class="wrap foot-top">
+    <p class="foot-line">Follow for <span class="ember">a fact a day.</span></p>
+    <nav class="foot-links" aria-label="Site">
+      <a href="{base}shop.html">Shop</a>
+      <a href="{base}media-kit.html">Media kit</a>
+      <a href="{base}privacy.html">Privacy</a>
+      <a href="{base}terms.html">Terms</a>
+      <a data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+  <p class="wordmark" aria-hidden="true">Curious<span class="o"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="9"/><circle cx="83" cy="31" r="9" class="ember-fill"/></svg></span>rbit</p>
+  <div class="wrap foot-bottom"><span>© 2026 Curious Orbit</span><span>Made on Earth. Checked against space.</span></div>
 </footer>'''
 
 
@@ -309,7 +323,7 @@ ADMIN = '''<section class="wrap admin" id="admin">
 def stamp_home():
     # index.html is hand-written: refresh the ?v= on its local CSS/JS links
     f = PUB / 'index.html'; t = f.read_text()
-    t = re.sub(r'((?:href|src)="(?:styles|home)\.css)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
+    t = re.sub(r'((?:href|src)="(?:styles|home|chrome)\.css)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
     t = re.sub(r'(src="js/[\w-]+\.js)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
     f.write_text(t)
 

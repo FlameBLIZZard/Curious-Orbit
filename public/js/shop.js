@@ -3,6 +3,31 @@
   const { $, h, renderShop, rupees, IG } = window.CO;
   renderShop($('#products'));
 
+  // Category tabs on the shop page: the ink slides, cards fade between filters
+  const grid = $('#products[data-all]');
+  if (grid) {
+    const cats = ['All', ...new Set(window.CO.PRODUCTS.map((p) => p.category).filter(Boolean))];
+    let cur = 'All';
+    const bar = h('div', { class: 'tabs shop-tabs', role: 'tablist', 'aria-label': 'Product types' },
+      cats.map((c) => h('button', { type: 'button', role: 'tab', 'aria-selected': String(c === cur), text: c, onclick: (e) => pick(c, e.currentTarget) })));
+    grid.before(bar);
+    const ink = () => window.CO.ink && window.CO.ink(bar, '[role=tab]', '[aria-selected=true]');
+    ink(); document.fonts && document.fonts.ready.then(ink);
+    function pick(c, btn) {
+      if (c === cur) return; cur = c;
+      bar.querySelectorAll('[role=tab]').forEach((b) => b.setAttribute('aria-selected', String(b === btn)));
+      ink();
+      const cards = [...grid.children];
+      cards.forEach((li) => {
+        const p = window.CO.PRODUCTS.find((x) => x.sku === li.id);
+        const show = c === 'All' || (p && p.category === c);
+        li.hidden = !show;
+      });
+      cards.filter((li) => !li.hidden).forEach((li, i) => li.animate([{ opacity: 0, transform: 'translateY(18px) scale(.98)' }, { opacity: 1, transform: 'none' }],
+        { duration: 520, delay: i * 45, easing: 'cubic-bezier(.2,.9,.2,1)', fill: 'backwards' }));
+    }
+  }
+
   const box = $('#order');
   if (!box) return;
   const q = new URLSearchParams(location.search);

@@ -1,0 +1,94 @@
+/* Shared chrome for every page: HUD header, sliding tab ink, mobile menu, grain, spring cursor,
+   giant wordmark footer and page-to-page transitions. Loaded after styles.css (and home.css on the home page). */
+.grain { position: fixed; inset: -50%; z-index: 90; pointer-events: none; opacity: .06; background-size: 180px; animation: grain 1s steps(6) infinite; }
+@keyframes grain { 0%{transform:translate(0,0)} 20%{transform:translate(-3%,2%)} 40%{transform:translate(2%,-3%)} 60%{transform:translate(-2%,-1%)} 80%{transform:translate(3%,3%)} 100%{transform:translate(0,0)} }
+
+main, .big-foot, .hud { position: relative; z-index: 2; }
+
+.cursor { position: fixed; left: 0; top: 0; z-index: 95; pointer-events: none; mix-blend-mode: normal; display: none; }
+.has-cursor .cursor { display: block; opacity: 0; transition: opacity .3s; }
+.has-cursor .cursor.live { opacity: 1; }
+.has-cursor, .has-cursor a, .has-cursor button { cursor: none; }
+.has-cursor input { cursor: text; }
+.cursor-dot { position: absolute; width: 8px; height: 8px; margin: -4px 0 0 -4px; border-radius: 50%; background: var(--ember); }
+.cursor-ring { position: absolute; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; border: 1.5px solid var(--cream); opacity: .7; transition: width .35s cubic-bezier(.2,.8,.2,1), height .35s cubic-bezier(.2,.8,.2,1), margin .35s cubic-bezier(.2,.8,.2,1), background .25s, opacity .25s; }
+.cursor-label { position: absolute; transform: translate(-50%, -50%); font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); opacity: 0; transition: opacity .2s; white-space: nowrap; }
+.cursor.is-hover .cursor-ring { width: 92px; height: 92px; margin: -46px 0 0 -46px; background: var(--cream); opacity: 1; border-color: var(--cream); }
+.cursor.is-hover .cursor-label { opacity: 1; }
+.cursor.is-hover .cursor-dot { opacity: 0; }
+
+/* ---------- HUD ---------- */
+.hud { position: fixed; top: env(safe-area-inset-top, 0px); left: 0; right: 0; z-index: 20; display: flex; align-items: center; gap: 28px; padding: 18px var(--gutter); mix-blend-mode: difference; color: #F3EEE4; }
+.hud .brand { margin-right: auto; display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.02em; font-size: 18px; text-decoration: none; }
+.hud .mark { width: 28px; height: 28px; }
+.hud .ember-fill { fill: #F3EEE4; }
+.hud-nav { display: flex; gap: 26px; }
+.hud-nav a, .hud-clock { font: 400 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; }
+.hud-nav { position: relative; }
+.hud-nav a { position: relative; padding-block: 6px; opacity: .72; transition: opacity .3s; }
+.hud-nav a:hover, .hud-nav a[aria-current] { opacity: 1; }
+.hud-clock { margin: 0; opacity: .7; font-variant-numeric: tabular-nums; display: flex; gap: 8px; }
+.pill { font: 700 13px/1 var(--display); padding: 11px 18px; border-radius: 999px; border: 1px solid currentColor; text-decoration: none; transition: background .25s, color .25s; }
+.pill:hover { background: #F3EEE4; color: #000; }
+@media (max-width: 1100px) { .hud-clock { display: none; } }
+@media (max-width: 760px) { .hud-nav { display: none; } .hud { padding-block: 14px; } }
+.demo-banner { position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 80; border-radius: 999px; padding: 8px 14px; font-size: 10px; max-width: calc(100% - 32px); }
+
+.big-foot { padding-top: clamp(80px, 14vh, 160px); overflow: hidden; border-top: 1px solid var(--line); background: var(--ink); }
+.foot-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 24px; }
+.foot-line { margin: 0; font: 700 clamp(30px, 4vw, 60px)/1 var(--display); letter-spacing: -0.04em; }
+.big-foot .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
+.big-foot .foot-links a { font: 400 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+.big-foot .foot-links a:hover { color: var(--cream); }
+.wordmark { margin: clamp(30px, 6vh, 60px) 0 0; padding-inline: 1.5vw; font: 700 17.6vw/.8 var(--display); letter-spacing: -0.07em; white-space: nowrap; display: flex; align-items: baseline; color: var(--cream); }
+.wordmark .o { display: inline-block; flex: none; width: .6em; height: .6em; margin: 0 .01em 0 .12em; align-self: baseline; }
+.wordmark .o svg { width: 100%; height: 100%; overflow: visible; }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding-block: 24px; font: 400 12px var(--mono); color: var(--muted); letter-spacing: .06em; }
+
+.demo-banner { top: auto; right: auto; text-align: left; }
+
+/* ---------- sliding ink: one line that glides between tabs / nav links ---------- */
+.ink { position: absolute; left: 0; bottom: 0; height: 1.5px; width: 0; background: currentColor; border-radius: 2px; pointer-events: none; opacity: 0;
+  transition: transform .55s cubic-bezier(.2,.9,.2,1), width .55s cubic-bezier(.2,.9,.2,1), opacity .3s; }
+.ink.on { opacity: 1; }
+.hud-nav .ink { bottom: -2px; }
+[data-ink] { position: relative; }
+.tabs { position: relative; }
+.tabs .ink { bottom: auto; top: 0; height: 100%; border-radius: 999px; background: var(--cream); z-index: 0; }
+.tabs [role=tab] { position: relative; z-index: 1; transition: color .35s; }
+.tabs [role=tab][aria-selected=true] { background: transparent !important; border-color: transparent !important; color: var(--ink) !important; }
+
+/* ---------- mobile menu ---------- */
+.menu-btn { display: none; font: 400 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; background: none; border: 0; color: inherit; padding: 10px 0; cursor: pointer; }
+@media (max-width: 760px) { .menu-btn { display: block; } .hud .pill { display: none; } }
+.menu { position: fixed; inset: 0; z-index: 85; background: var(--ink); display: flex; flex-direction: column; justify-content: flex-end; gap: 6px;
+  padding: 96px var(--gutter) calc(32px + env(safe-area-inset-bottom, 0px)); clip-path: circle(0% at calc(100% - 40px) 34px);
+  transition: clip-path .8s cubic-bezier(.7,0,.2,1); visibility: hidden; }
+.menu-open .menu { clip-path: circle(150% at calc(100% - 40px) 34px); visibility: visible; }
+.menu a { font: 700 clamp(44px, 13vw, 72px)/1 var(--display); letter-spacing: -0.045em; text-decoration: none; color: var(--cream);
+  transform: translateY(40px); opacity: 0; transition: transform .7s cubic-bezier(.2,.9,.2,1), opacity .5s; }
+.menu a[aria-current], .menu a:hover { color: var(--ember); }
+.menu-open .menu a { transform: none; opacity: 1; }
+.menu-open .menu a:nth-child(2) { transition-delay: .05s; } .menu-open .menu a:nth-child(3) { transition-delay: .1s; }
+.menu-open .menu a:nth-child(4) { transition-delay: .15s; } .menu-open .menu a:nth-child(5) { transition-delay: .2s; }
+.menu .menu-foot { margin-top: 28px; font: 400 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.menu-open { overflow: hidden; }
+.menu-open .hud { mix-blend-mode: normal; }
+
+/* ---------- sub pages share the home HUD + footer ---------- */
+.sub main { padding-top: 84px; position: relative; z-index: 2; }
+.sub .big-foot { margin-top: clamp(40px, 8vh, 100px); }
+
+/* ---------- page transitions: pages glide into each other (cross-document view transitions) ---------- */
+@view-transition { navigation: auto; }
+.hud { view-transition-name: hud; }
+::view-transition-old(root) { animation: co-out .38s cubic-bezier(.4,0,.2,1) both; }
+::view-transition-new(root) { animation: co-in .7s cubic-bezier(.2,.9,.2,1) both; }
+@keyframes co-out { to { opacity: 0; transform: translateY(-18px) scale(.985); filter: blur(4px); } }
+@keyframes co-in { from { opacity: 0; transform: translateY(26px); } }
+/* browsers without view transitions still get a soft entrance */
+@supports not (view-transition-name: x) { .sub main { animation: co-in .7s cubic-bezier(.2,.9,.2,1) both; } }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root), ::view-transition-new(root), .sub main { animation: none; }
+  .ink, .menu, .menu a { transition: none; }
+}
