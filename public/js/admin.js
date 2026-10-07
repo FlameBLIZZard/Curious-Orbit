@@ -1,6 +1,7 @@
 // Private orders log. The password is checked by /api/admin (ADMIN_KEY on Vercel) and kept on this device only.
 (() => {
-  const { $, h, rupees, toast } = window.CO;
+  const { $, h, toast } = window.CO;
+  const rupees = window.CO.rupees || ((n) => `₹${Number(n).toLocaleString('en-IN')}`);
   const form = $('#admin-login'), app = $('#admin-app');
   let key = ''; try { key = localStorage.getItem('co-admin') || ''; } catch (err) {}
   let data = null, tab = 'pending', timer;

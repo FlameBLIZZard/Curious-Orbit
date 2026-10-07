@@ -13,6 +13,10 @@ made = [d for d in days if d.get('title')]
 e = html.escape
 pad = lambda n: f'{n:02d}'
 TODAY = datetime.date.today().isoformat()
+import hashlib
+# Cache-buster: changes whenever any local CSS/JS changes, so browsers never mix old and new files.
+V = hashlib.sha1(b''.join(f.read_bytes() for f in sorted([*PUB.glob('*.css'), *PUB.glob('js/*.js')]) if f.name != 'catalog.js')
+                 + (ROOT / 'lib/catalog.json').read_bytes()).hexdigest()[:8]
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap">')
@@ -40,7 +44,7 @@ def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts
 <link rel="icon" href="{base}media/profile.png">
 <link rel="apple-touch-icon" href="{base}apple-touch-icon.png">
 {FONTS}
-<link rel="stylesheet" href="{base}styles.css">
+<link rel="stylesheet" href="{base}styles.css?v={V}">
 {extra_head}</head>
 <body>
 <canvas class="stars" id="stars" aria-hidden="true"></canvas>
@@ -61,7 +65,7 @@ def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts
 {body}
 </main>
 {footer(base)}
-{''.join(f'<script src="{base}{s}"></script>' + chr(10) for s in scripts)}<script>CO.wireMoney();</script>
+{''.join(f'<script src="{base}{s}?v={V}"></script>' + chr(10) for s in scripts)}<script>CO.wireMoney();</script>
 </body>
 </html>
 '''
@@ -302,8 +306,16 @@ ADMIN = '''<section class="wrap admin" id="admin">
   <div id="admin-app" hidden></div>
 </section>'''
 
+def stamp_home():
+    # index.html is hand-written: refresh the ?v= on its local CSS/JS links
+    f = PUB / 'index.html'; t = f.read_text()
+    t = re.sub(r'((?:href|src)="(?:styles|home)\.css)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
+    t = re.sub(r'(src="js/[\w-]+\.js)(?:\?v=\w+)?"', rf'\1?v={V}"', t)
+    f.write_text(t)
+
 def main():
     write_catalog_js()
+    stamp_home()
     (PUB / 'facts').mkdir(exist_ok=True)
     for old in (PUB / 'facts').glob('day-*.html'): old.unlink()
     for i, d in enumerate(made):
