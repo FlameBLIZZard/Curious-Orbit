@@ -51,7 +51,11 @@ for m in re.finditer(r'^Day (\d+) · (\w+ \d+ \w+) · (\w+) at (\d+ pm)\n\nWhat 
     days.append(d)
 # Facts 12+ come from the numbered post plan (Post 001 = fact 12). A post is on the site once its folder
 # /mnt/project-files/curious-orbit/post-NNN/ exists; MADE lists the date each one was made. The next few show as "coming up".
-MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '2026-10-08'}
+MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '2026-10-08', 6: '2026-10-08'}
+# posts Aditya has confirmed are on Instagram (the PC-control thread reports each one); the rest show as "New"
+POSTED = set()
+# sources a post uses beyond its fact-bank entries (from the research thread's post-NNN/fact.md)
+EXTRA_SRC = {6: [{'name': 'Encyclopaedia Britannica: Mount Everest', 'url': 'https://www.britannica.com/place/Mount-Everest'}]}
 # sources come from the verified fact bank, one per fact the post uses
 BANK = {}
 for f in pathlib.Path('/mnt/project-files/curious-orbit-shop/facts').glob('*.json'):
@@ -65,14 +69,16 @@ def sources_for(r):
     for i in ids:
         x = BANK.get(i)
         if x and all(s['url'] != x['url'] for s in src): src.append({'name': x['source'], 'url': x['url']})
-    return {'claims': max(1, len(ids)), 'sources': src or [{'name': r['source'], 'url': r['url']}]}
+    src = src or [{'name': r['source'], 'url': r['url']}]
+    extra = EXTRA_SRC.get(int(r['post'].split()[1]), [])
+    return {'claims': max(1, len(ids)) + len(extra), 'sources': src + extra}
 for r in plan:
     k = int(r['post'].split()[1]); n = r['n']; folder = CO / f'post-{k:03d}'
     d = {'n': n, 'post': k, 'format': r['format'], 'topic': r['pillar'].split(' & ')[0], 'time': '7 pm' if r['format'] == 'reel' else '1 pm'}
     if k in MADE and (folder / 'caption.txt').exists():
         raw = (folder / 'caption.txt').read_text()
         paras = [emoji.sub('', p).strip() for p in raw.split('\n\n') if p.strip() and not p.strip().startswith('#')]
-        d.update({'date': MADE[k], 'posted': True, 'title': r['title'], 'summary': r['fact'],
+        d.update({'date': MADE[k], 'made': True, 'posted': k in POSTED, 'title': r['title'], 'summary': r['fact'],
                   'caption': [re.sub(r'\s+', ' ', p) for p in paras], 'tags': re.findall(r'#\w+', raw),
                   'check': sources_for(r)})
         if r['format'] == 'reel':

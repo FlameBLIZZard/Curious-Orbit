@@ -151,7 +151,7 @@ def fact_page(d, i):
     <div class="fact-text">
       <p class="label">{e(d['topic'])} · Fact {pad(n)} · {d['format']}</p>
       <h1>{e(d['title'])}</h1>
-      <p class="meta">{'On Instagram now' if d.get('posted') else 'Posted ' + when}</p>
+      <p class="meta">{'On Instagram now' if d.get('posted') else 'New · coming to Instagram soon' if d.get('made') else 'Posted ' + when}</p>
       <div class="story">{caption}</div>
       <aside class="sources" aria-labelledby="src-{n}">
         <h2 id="src-{n}">How we checked this</h2>

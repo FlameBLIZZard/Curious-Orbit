@@ -507,7 +507,8 @@ window.CO_DAYS = [
   "topic": "Space",
   "time": "7 pm",
   "date": "2026-10-08",
-  "posted": true,
+  "made": true,
+  "posted": false,
   "title": "About 1.3 million Earths could fit inside the Sun.",
   "summary": "It would take about 1.3 million Earths to fill the Sun.",
   "caption": [
@@ -544,7 +545,8 @@ window.CO_DAYS = [
   "topic": "Myths",
   "time": "1 pm",
   "date": "2026-10-08",
-  "posted": true,
+  "made": true,
+  "posted": false,
   "title": "4 body myths you probably still believe.",
   "summary": "Cracking knuckles probably doesn't cause arthritis, shaving doesn't thicken hair, the tongue map is false, and dim light doesn't damage your eyes.",
   "caption": [
@@ -599,7 +601,8 @@ window.CO_DAYS = [
   "topic": "Earth",
   "time": "7 pm",
   "date": "2026-10-08",
-  "posted": true,
+  "made": true,
+  "posted": false,
   "title": "A fluffy cloud weighs about 500 tonnes.",
   "summary": "A puffy cumulus cloud about 1 km across holds water droplets weighing roughly 500 tonnes.",
   "caption": [
@@ -636,7 +639,8 @@ window.CO_DAYS = [
   "topic": "Animals",
   "time": "1 pm",
   "date": "2026-10-08",
-  "posted": true,
+  "made": true,
+  "posted": false,
   "title": "A group of flamingos is called a flamboyance.",
   "summary": "A group of flamingos is called a flamboyance, and their pink comes from pigments in the shrimp and algae they eat.",
   "caption": [
@@ -674,7 +678,8 @@ window.CO_DAYS = [
   "topic": "Space",
   "time": "7 pm",
   "date": "2026-10-08",
-  "posted": true,
+  "made": true,
+  "posted": false,
   "title": "About 44 tonnes of space dust falls on Earth every day.",
   "summary": "Scientists estimate about 44 tonnes of meteoritic material falls on Earth every day.",
   "caption": [
@@ -711,8 +716,47 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Earth",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Mount Everest would vanish in the deepest sea.",
+  "summary": "The ocean's deepest point, Challenger Deep, is about 10,935 metres down: deeper than Mount Everest is tall.",
+  "caption": [
+   "The deepest point in the ocean is about 10,935 m down.",
+   "Everest is about 8,849 m tall, so its peak would still sit around 2 km underwater.",
+   "Save this for your next quiz night."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#ocean",
+   "#earth",
+   "#geography"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NOAA Ocean Service: How deep is the ocean?",
+     "url": "https://oceanservice.noaa.gov/facts/oceandepth.html"
+    },
+    {
+     "name": "Encyclopaedia Britannica: Mount Everest",
+     "url": "https://www.britannica.com/place/Mount-Everest"
+    }
+   ]
+  },
+  "images": [
+   "media/day17-slide-01.webp",
+   "media/day17-slide-02.webp",
+   "media/day17-slide-03.webp",
+   "media/day17-slide-04.webp",
+   "media/day17-slide-05.webp",
+   "media/day17-slide-06.webp"
+  ]
  },
  {
   "n": 18,
@@ -773,6 +817,15 @@ window.CO_DAYS = [
   "post": 13,
   "format": "post",
   "topic": "Body",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 25,
+  "post": 14,
+  "format": "carousel",
+  "topic": "Quiz",
   "time": "1 pm",
   "date": null,
   "summary": ""

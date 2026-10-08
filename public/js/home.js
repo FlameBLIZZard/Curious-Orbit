@@ -12,7 +12,7 @@
   // ---------- schedule ----------
   // posts after Fact 11 have no fixed day: they carry a date only once made, and go live when marked posted
   const postTime = (d) => (d.date ? new Date(`${d.date}T${d.time.startsWith('7') ? '19' : '13'}:00:00`) : null);
-  const isLive = (d) => !!d.title && (preview || d.posted || (!!d.date && Date.now() >= postTime(d)));
+  const isLive = (d) => !!d.title && (preview || d.posted || d.made || (!!d.date && Date.now() >= postTime(d)));
   const live = DAYS.filter(isLive);
   const current = live[live.length - 1] || null;
   const next = DAYS.find((d) => !isLive(d)) || null;
@@ -174,7 +174,7 @@
       h('button', on ? { type: 'button', 'aria-label': `Open fact ${d.n}: ${d.title}`, 'data-cursor': d.format === 'reel' ? 'Play' : 'Open', onclick: () => openViewer(d) }
                      : { type: 'button', 'aria-disabled': 'true', tabindex: '-1' },
         h('span', { class: 'pic' }, on ? h('img', { src: thumb, alt: '', loading: 'lazy' }) : ring()),
-        h('span', { class: 'meta-k' }, h('span', { text: `${d.topic} · ${d.format}` }), h('span', { text: on ? (d.posted ? 'On Instagram' : fmtDate(d)) : !d.date ? (isNext ? 'Up next' : 'Soon') : isNext ? `in ${until(postTime(d))}` : fmtDate(d) })),
+        h('span', { class: 'meta-k' }, h('span', { text: `${d.topic} · ${d.format}` }), h('span', { text: on ? (d.posted ? 'On Instagram' : d.made ? 'New' : fmtDate(d)) : !d.date ? (isNext ? 'Up next' : 'Soon') : isNext ? `in ${until(postTime(d))}` : fmtDate(d) })),
         h('span', { class: 't', text: on ? d.title : isNext ? 'Next drop' : 'Coming soon' })));
     logTrack.append(li);
   });
