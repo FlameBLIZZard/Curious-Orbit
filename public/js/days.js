@@ -513,7 +513,7 @@ window.CO_DAYS = [
   "summary": "It would take about 1.3 million Earths to fill the Sun.",
   "caption": [
    "Hollow out the Sun and start pouring Earths in.",
-   "You would need about 1.3 million of them to fill it. (By mass it is \"only\" about 330,000 Earths, because the Sun is less dense than our rocky planet.)",
+   "You would need about 1.3 million of them to fill it. (By mass it is “only” about 330,000 Earths, because the Sun is less dense than our rocky planet.)",
    "Follow @curiousorbit.daily for a fact a day."
   ],
   "tags": [
@@ -764,8 +764,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Your brain is 2% of you but burns 20%.",
+  "summary": "Your brain is about 2% of your body weight but uses around 20% of your energy at rest, roughly 20 watts.",
+  "caption": [
+   "Your brain is about 2% of your body weight.",
+   "But at rest it uses around 20% of your energy, roughly 20 watts. That's less than an old light bulb.",
+   "Follow @curiousorbit.daily and feed your brain daily."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#brain",
+   "#neuroscience",
+   "#humanbody"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Raichle & Gusnard (2002), PNAS: Appraising the brain's energy budget",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC124895/"
+    },
+    {
+     "name": "Kováč (2010), EMBO Reports: The 20 W sleep-walkers",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2816633/"
+    }
+   ]
+  },
+  "video": "media/day18.mp4",
+  "poster": "media/day18-cover.webp"
  },
  {
   "n": 19,
@@ -773,8 +806,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "This shrimp punches at 8,000 times gravity.",
+  "summary": "A peacock mantis shrimp's club strikes with up to about 8,000 times the acceleration of gravity, and captive ones have broken the glass of their tanks.",
+  "caption": [
+   "The mantis shrimp hunts with a club-shaped arm.",
+   "Its strike hits up to about 8,000 times the acceleration of gravity, at up to 23 metres a second. Captive ones have even broken the glass of their tanks.",
+   "Send this to the friend who thinks they punch hard."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#ocean",
+   "#marinebiology"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "UC Berkeley News (Patek et al. 2004, Nature)",
+     "url": "https://newsarchive.berkeley.edu/news/media/releases/2004/04/21_shrimp.shtml"
+    }
+   ]
+  },
+  "video": "media/day19.mp4",
+  "poster": "media/day19-cover.webp"
  },
  {
   "n": 20,
@@ -782,8 +844,42 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Space",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Saturn is less dense than water.",
+  "summary": "Saturn is less dense than water, so in a big enough bathtub it would float.",
+  "caption": [
+   "Saturn's average density is 0.69 g/cm³. Water's is 1.",
+   "So in a bathtub big enough to hold it, Saturn would float. Finding the bathtub is your problem.",
+   "Send this to someone who loves space."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#saturn",
+   "#planets"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: Saturn Facts",
+     "url": "https://science.nasa.gov/saturn/facts/"
+    },
+    {
+     "name": "NASA NSSDCA: Saturn Fact Sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+    }
+   ]
+  },
+  "images": [
+   "media/day20-post.webp"
+  ]
  },
  {
   "n": 21,
@@ -791,8 +887,50 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Animals",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "3 animal “facts” that are completely wrong.",
+  "summary": "Bats are not blind, ostriches never bury their heads in sand, and a camel's hump stores fat, not water.",
+  "caption": [
+   "Three animal “facts” most of us grew up with.",
+   "Swipe to see what is actually true. Which one got you?",
+   "Save this and use it to win an argument."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#myths",
+   "#wildlife"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "US Geological Survey (USGS): Are bats blind?",
+     "url": "https://www.usgs.gov/faqs/are-bats-blind"
+    },
+    {
+     "name": "San Diego Zoo Wildlife Alliance: Ostrich",
+     "url": "https://animals.sandiegozoo.org/animals/ostrich"
+    },
+    {
+     "name": "San Diego Zoo Wildlife Alliance Library: Camels fact sheet, physical characteristics",
+     "url": "https://ielc.libguides.com/sdzg/factsheets/extantcamels/characteristics"
+    }
+   ]
+  },
+  "images": [
+   "media/day21-slide-01.webp",
+   "media/day21-slide-02.webp",
+   "media/day21-slide-03.webp",
+   "media/day21-slide-04.webp",
+   "media/day21-slide-05.webp"
+  ]
  },
  {
   "n": 22,
@@ -800,8 +938,45 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Some neutron stars spin hundreds of times a second.",
+  "summary": "Some neutron stars, only about 20 km wide, spin hundreds of times every second.",
+  "caption": [
+   "Remember the teaspoon that weighs a billion tonnes? Here is part 2.",
+   "Some neutron stars, a ball only about 20 km wide, spin hundreds of times every second.",
+   "Follow @curiousorbit.daily so you catch the next one."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#neutronstar",
+   "#astrophysics"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "NASA Goddard: New NASA mission to study mysterious neutron stars (NICER)",
+     "url": "https://www.nasa.gov/centers-and-facilities/goddard/new-nasa-mission-to-study-mysterious-neutron-stars-aid-in-deep-space-navigation/"
+    },
+    {
+     "name": "NASA Imagine the Universe: Neutron Stars",
+     "url": "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html"
+    },
+    {
+     "name": "ESA: Neutron stars, pulsars and magnetars",
+     "url": "https://www.esa.int/Science_Exploration/Space_Science/Neutron_stars_pulsars_and_magnetars"
+    }
+   ]
+  },
+  "video": "media/day22.mp4",
+  "poster": "media/day22-cover.webp"
  },
  {
   "n": 23,
@@ -827,6 +1002,51 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Quiz",
   "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 26,
+  "post": 15,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 27,
+  "post": 16,
+  "format": "carousel",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 28,
+  "post": 17,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 29,
+  "post": 18,
+  "format": "post",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 30,
+  "post": 19,
+  "format": "reel",
+  "topic": "Body",
+  "time": "7 pm",
   "date": null,
   "summary": ""
  }

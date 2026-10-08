@@ -12,6 +12,8 @@ titles = {1:'A day on Venus is longer than its year.',2:'5 things that are older
           7:'Wombat poop is cube-shaped.',8:'Your body, by the numbers.',9:'A teaspoon of neutron star weighs a billion tonnes.',
           10:'More chess games than atoms in the universe.',11:'5 facts school got wrong.'}
 emoji = re.compile(r'\s*[\U0001F000-\U0001FFFF⌀-⏿☀-➿️‍]+')
+# straight double quotes render as two closing quotes in the display font, so curl them
+def curly(t): return re.sub(r'"(?=\w)', '“', t).replace('"', '”')
 # Days 1-11 were all on Instagram by 7 Oct 2026 (Aditya posted ahead of the plan).
 # The rest follow one a day from the next morning.
 POSTED, POSTED_BY = 11, datetime.date(2026, 10, 7)
@@ -51,11 +53,16 @@ for m in re.finditer(r'^Day (\d+) · (\w+ \d+ \w+) · (\w+) at (\d+ pm)\n\nWhat 
     days.append(d)
 # Facts 12+ come from the numbered post plan (Post 001 = fact 12). A post is on the site once its folder
 # /mnt/project-files/curious-orbit/post-NNN/ exists; MADE lists the date each one was made. The next few show as "coming up".
-MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '2026-10-08', 6: '2026-10-08'}
+MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '2026-10-08', 6: '2026-10-08',
+        7: '2026-10-08', 8: '2026-10-08', 9: '2026-10-08', 10: '2026-10-08', 11: '2026-10-08'}
 # posts Aditya has confirmed are on Instagram (the PC-control thread reports each one); the rest show as "New"
 POSTED = set()
 # sources a post uses beyond its fact-bank entries (from the research thread's post-NNN/fact.md)
-EXTRA_SRC = {6: [{'name': 'Encyclopaedia Britannica: Mount Everest', 'url': 'https://www.britannica.com/place/Mount-Everest'}]}
+EXTRA_SRC = {6: [{'name': 'Encyclopaedia Britannica: Mount Everest', 'url': 'https://www.britannica.com/place/Mount-Everest'}],
+             7: [{'name': 'Kováč (2010), EMBO Reports: The 20 W sleep-walkers', 'url': 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2816633/'}],
+             9: [{'name': 'NASA NSSDCA: Saturn Fact Sheet', 'url': 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html'}],
+             11: [{'name': 'NASA Imagine the Universe: Neutron Stars', 'url': 'https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html'},
+                  {'name': 'ESA: Neutron stars, pulsars and magnetars', 'url': 'https://www.esa.int/Science_Exploration/Space_Science/Neutron_stars_pulsars_and_magnetars'}]}
 # sources come from the verified fact bank, one per fact the post uses
 BANK = {}
 for f in pathlib.Path('/mnt/project-files/curious-orbit-shop/facts').glob('*.json'):
@@ -78,8 +85,8 @@ for r in plan:
     if k in MADE and (folder / 'caption.txt').exists():
         raw = (folder / 'caption.txt').read_text()
         paras = [emoji.sub('', p).strip() for p in raw.split('\n\n') if p.strip() and not p.strip().startswith('#')]
-        d.update({'date': MADE[k], 'made': True, 'posted': k in POSTED, 'title': r['title'], 'summary': r['fact'],
-                  'caption': [re.sub(r'\s+', ' ', p) for p in paras], 'tags': re.findall(r'#\w+', raw),
+        d.update({'date': MADE[k], 'made': True, 'posted': k in POSTED, 'title': curly(r['title']), 'summary': curly(r['fact']),
+                  'caption': [curly(re.sub(r'\s+', ' ', p)) for p in paras], 'tags': re.findall(r'#\w+', raw),
                   'check': sources_for(r)})
         if r['format'] == 'reel':
             d['video'] = f'media/day{n:02d}.mp4'; d['poster'] = f'media/day{n:02d}-cover.webp'

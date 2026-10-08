@@ -145,7 +145,7 @@ def fact_page(d, i):
     nav += (f'<a href="day-{pad(prev_d["n"])}.html"><small>← Fact {pad(prev_d["n"])}</small>{e(prev_d["title"])}</a>' if prev_d else '<span></span>')
     nav += (f'<a class="next" href="day-{pad(next_d["n"])}.html"><small>Fact {pad(next_d["n"])} →</small>{e(next_d["title"])}</a>' if next_d else '<span></span>')
     nav += '</nav>'
-    body = f'''<article class="fact wrap" data-day="{n}" data-post="{d['date']}T{'00' if d.get('posted') else '19' if d['time'].startswith('7') else '13'}:00:00">
+    body = f'''<article class="fact wrap" data-day="{n}" data-post="{d['date']}T{'00' if d.get('posted') or d.get('made') else '19' if d['time'].startswith('7') else '13'}:00:00">
   <div class="fact-grid">
     <div class="fact-media">{media_html(d, base)}</div>
     <div class="fact-text">
