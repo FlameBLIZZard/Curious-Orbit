@@ -673,8 +673,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "posted": true,
+  "title": "About 44 tonnes of space dust falls on Earth every day.",
+  "summary": "Scientists estimate about 44 tonnes of meteoritic material falls on Earth every day.",
+  "caption": [
+   "Bits of space rock and dust hit our air all day, every day.",
+   "Scientists estimate about 44 tonnes of it falls on Earth daily. That's roughly 44,000 kg.",
+   "Most pieces are tiny, and they burn up in the atmosphere as shooting stars.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#meteors",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Meteors and Meteorites Facts",
+     "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/"
+    }
+   ]
+  },
+  "video": "media/day16.mp4",
+  "poster": "media/day16-cover.webp"
  },
  {
   "n": 17,
@@ -736,6 +765,15 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 24,
+  "post": 13,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
   "date": null,
   "summary": ""
  }

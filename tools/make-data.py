@@ -51,7 +51,7 @@ for m in re.finditer(r'^Day (\d+) · (\w+ \d+ \w+) · (\w+) at (\d+ pm)\n\nWhat 
     days.append(d)
 # Facts 12+ come from the numbered post plan (Post 001 = fact 12). A post is on the site once its folder
 # /mnt/project-files/curious-orbit/post-NNN/ exists; MADE lists the date each one was made. The next few show as "coming up".
-MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08'}
+MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '2026-10-08'}
 # sources come from the verified fact bank, one per fact the post uses
 BANK = {}
 for f in pathlib.Path('/mnt/project-files/curious-orbit-shop/facts').glob('*.json'):
