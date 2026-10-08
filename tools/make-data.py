@@ -51,10 +51,21 @@ for m in re.finditer(r'^Day (\d+) · (\w+ \d+ \w+) · (\w+) at (\d+ pm)\n\nWhat 
     days.append(d)
 # Facts 12+ come from the numbered post plan (Post 001 = fact 12). A post is on the site once its folder
 # /mnt/project-files/curious-orbit/post-NNN/ exists; MADE lists the date each one was made. The next few show as "coming up".
-MADE = {1: '2026-10-08'}
+MADE = {1: '2026-10-08', 2: '2026-10-08'}
+# sources come from the verified fact bank, one per fact the post uses
+BANK = {}
+for f in pathlib.Path('/mnt/project-files/curious-orbit-shop/facts').glob('*.json'):
+    for x in json.loads(f.read_text()): BANK[x['id']] = x
 UPCOMING = 8
 plan = json.loads((CO / 'plan-100/plan-100.json').read_text())
 shown_next = 0
+def sources_for(r):
+    ids = [i.strip() for i in r['fact_id'].split(',') if i.strip()]
+    src = []
+    for i in ids:
+        x = BANK.get(i)
+        if x and all(s['url'] != x['url'] for s in src): src.append({'name': x['source'], 'url': x['url']})
+    return {'claims': max(1, len(ids)), 'sources': src or [{'name': r['source'], 'url': r['url']}]}
 for r in plan:
     k = int(r['post'].split()[1]); n = r['n']; folder = CO / f'post-{k:03d}'
     d = {'n': n, 'post': k, 'format': r['format'], 'topic': r['pillar'].split(' & ')[0], 'time': '7 pm' if r['format'] == 'reel' else '1 pm'}
@@ -63,7 +74,7 @@ for r in plan:
         paras = [emoji.sub('', p).strip() for p in raw.split('\n\n') if p.strip() and not p.strip().startswith('#')]
         d.update({'date': MADE[k], 'posted': True, 'title': r['title'], 'summary': r['fact'],
                   'caption': [re.sub(r'\s+', ' ', p) for p in paras], 'tags': re.findall(r'#\w+', raw),
-                  'check': {'claims': 1, 'sources': [{'name': r['source'], 'url': r['url']}]}})
+                  'check': sources_for(r)})
         if r['format'] == 'reel':
             d['video'] = f'media/day{n:02d}.mp4'; d['poster'] = f'media/day{n:02d}-cover.webp'
         else:

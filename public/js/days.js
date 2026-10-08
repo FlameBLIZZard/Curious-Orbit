@@ -543,8 +543,54 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Myths",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "posted": true,
+  "title": "4 body myths you probably still believe.",
+  "summary": "Cracking knuckles probably doesn't cause arthritis, shaving doesn't thicken hair, the tongue map is false, and dim light doesn't damage your eyes.",
+  "caption": [
+   "Your relatives have been passing these on for years.",
+   "Which one did you believe until today?",
+   "Save this, then send it to the family group chat."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#humanbody",
+   "#health"
+  ],
+  "check": {
+   "claims": 4,
+   "sources": [
+    {
+     "name": "Harvard Health Publishing: Does cracking knuckles cause arthritis?",
+     "url": "https://www.health.harvard.edu/pain/does-cracking-knuckles-cause-arthritis"
+    },
+    {
+     "name": "Mayo Clinic: Does shaving make hair grow back thicker?",
+     "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/hair-removal/faq-20058427"
+    },
+    {
+     "name": "BrainFacts.org (Society for Neuroscience): Do different parts of the tongue taste different things?",
+     "url": "https://www.brainfacts.org/thinking-sensing-and-behaving/taste/2018/do-different-parts-of-the-tongue-taste-different-things-010319"
+    },
+    {
+     "name": "American Academy of Ophthalmology: Common eye and vision myths",
+     "url": "https://www.aao.org/eye-health/tips-prevention/common-eye-vision-myths-facts"
+    }
+   ]
+  },
+  "images": [
+   "media/day13-slide-01.webp",
+   "media/day13-slide-02.webp",
+   "media/day13-slide-03.webp",
+   "media/day13-slide-04.webp",
+   "media/day13-slide-05.webp",
+   "media/day13-slide-06.webp"
+  ]
  },
  {
   "n": 14,
@@ -605,6 +651,15 @@ window.CO_DAYS = [
   "post": 9,
   "format": "post",
   "topic": "Space",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 21,
+  "post": 10,
+  "format": "carousel",
+  "topic": "Animals",
   "time": "1 pm",
   "date": null,
   "summary": ""
