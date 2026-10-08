@@ -60,6 +60,7 @@
         h('div', { class: 'ord-main' },
           h('p', { class: 'label', text: `${o.id} · ${o.kind} · ${when(o.createdAt)}` }),
           h('h3', {}, `${o.product} `, h('span', { class: 'ember', text: rupees(o.amount) })),
+          (o.items && o.items.length > 1) || o.discount ? h('p', { class: 'ord-dl', text: [o.items && o.items.length > 1 ? `${o.items.length} items` : '', o.discount ? `${rupees(o.discount)} off${o.code ? ` incl. code ${o.code}` : ''}` : ''].filter(Boolean).join(' · ') }) : null,
           h('p', { class: 'ord-who' }, h('b', { text: o.name }), ' · ', h('a', { href: `mailto:${o.email}`, text: o.email })),
           h('p', { class: 'ord-utr' }, 'UTR ', h('code', { text: o.utr }),
             h('button', { type: 'button', class: 'linkish', text: 'copy', onclick: () => navigator.clipboard.writeText(o.utr).then(() => toast('UTR copied')) })),

@@ -1,0 +1,75 @@
+{
+  "upiId": "adityadevdotcom@upi",
+  "payee": "Curious Orbit",
+  "offers": {
+    "tiers": [
+      {
+        "min": 3,
+        "off": 15
+      },
+      {
+        "min": 5,
+        "off": 25
+      }
+    ],
+    "codes": {
+      "ORBIT10": {
+        "off": 10,
+        "label": "Follower code: 10% off"
+      }
+    },
+    "note": "Tiers count single items (bundles are already discounted). One code per order, applied after the tier discount."
+  },
+  "themes": {
+    "space": "Space",
+    "ocean": "Ocean",
+    "earth": "Earth & Weather",
+    "physics": "Physics & Chemistry",
+    "body": "Human Body",
+    "animals": "Animals",
+    "dinosaurs": "Dinosaurs",
+    "plants": "Plants & Fungi",
+    "brain": "Brain & Mind",
+    "tech": "Tech & Numbers",
+    "food": "Food & Everyday Science",
+    "history": "History of Science",
+    "bugs": "Bugs & Microbes",
+    "myths": "Myths",
+    "mixed": "Best of Curious Orbit"
+  },
+  "products": [
+    {
+      "sku": "myth-book",
+      "name": "Myth-Busters Mini Book",
+      "price": 79,
+      "unit": "24 myths, A5 PDF",
+      "text": "24 things almost everyone believes, and what's actually true, with the science and a source for each. Read it on your phone or print it as a mini book.",
+      "category": "Printables",
+      "theme": "myths",
+      "family": "book",
+      "handmade": true
+    },
+    {
+      "sku": "poster-solar",
+      "name": "Solar System Poster",
+      "price": 99,
+      "unit": "A3 + A4 PDF",
+      "text": "Every planet with its strangest true fact, in the Curious Orbit look. Prints sharp at A3 for a wall, or A4 for a notebook.",
+      "category": "Posters",
+      "theme": "space",
+      "family": "poster",
+      "handmade": true
+    },
+    {
+      "sku": "wallpapers-space",
+      "name": "Space Wallpapers",
+      "price": 49,
+      "unit": "10 phone wallpapers",
+      "text": "Ten phone wallpapers, each with one mind-bending space fact. Sized for modern phones.",
+      "category": "Wallpapers",
+      "theme": "space",
+      "family": "walls",
+      "handmade": true
+    }
+  ]
+}

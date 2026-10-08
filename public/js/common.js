@@ -156,63 +156,9 @@
   const UPI_ID = CAT.upiId || (CFG.upi && CFG.upi.id) || '';
   const rupees = (n) => `₹${Number(n).toLocaleString('en-IN')}`;
   const PRODUCTS = CAT.products;
-  const ready = (p) => !!UPI_ID && p.fileCount > 0;
-  function productCard(p) {
-    const buy = h('button', { class: 'btn', type: 'button', text: ready(p) ? `Buy for ${rupees(p.price)}` : 'Coming soon', 'data-cursor': 'Buy' });
-    if (ready(p)) buy.addEventListener('click', () => checkout(p)); else buy.disabled = true;
-    const shots = (p.shots || []).slice(0, 2);
-    const shot = shots.length
-      ? h('div', { class: 'shot' }, shots.map((src) => h('img', { src: asset(src), alt: '', loading: 'lazy' })))
-      : h('div', { class: 'shot shot-type' }, h('span', { class: 'label', text: p.unit }), h('strong', { text: p.name }));
-    return h('li', { class: 'product', id: p.sku },
-      shot,
-      h('div', { class: 'body' },
-        h('h3', { text: p.name }), h('p', { text: p.text }),
-        h('div', { class: 'row' }, h('span', { class: 'price' }, rupees(p.price), h('small', { text: p.unit })), buy)));
-  }
-  function renderShop(listEl) {
-    if (!listEl) return;
-    const all = listEl.hasAttribute('data-all');
-    const list = all ? PRODUCTS : PRODUCTS.filter((p) => p.featured);
-    list.forEach((p) => listEl.append(productCard(p)));
-    if (!all && PRODUCTS.length > list.length) listEl.after(h('p', { class: 'shop-more' },
-      h('a', { class: 'cta', href: asset('shop.html'), 'data-cursor': 'Shop' }, h('span', { text: `See all ${PRODUCTS.length} products` }), h('i', { 'aria-hidden': 'true', text: '→' }))));
-  }
-
-  // ---------- checkout: pay by UPI, then send the reference ----------
-  let coEl;
-  function checkout(p) {
-    if (coEl) coEl.remove();
-    const link = upiLink(p.price, `Curious Orbit ${p.name}`.slice(0, 50));
-    const qr = h('div', { class: 'tip-qr' });
-    loadQr().then(() => { qr.innerHTML = qrSvg(link); }).catch(() => qr.remove());
-    const copy = h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Copy UPI ID', onclick: async () => {
-      try { await navigator.clipboard.writeText(UPI_ID); copy.textContent = 'Copied'; } catch (err) { copy.textContent = 'Select and copy it'; }
-      setTimeout(() => { copy.textContent = 'Copy UPI ID'; }, 2000);
-    } });
-    coEl = h('dialog', { class: 'viewer tipjar checkout', 'aria-labelledby': 'co-title' },
-      h('div', { class: 'tip-inner' },
-        h('div', { class: 'tip-text' },
-          h('p', { class: 'label', text: `Checkout · ${p.unit}` }),
-          h('h3', { id: 'co-title', text: p.name }),
-          h('p', { class: 'co-price' }, h('b', { text: rupees(p.price) }), h('span', { text: ' by UPI' })),
-          h('p', { class: 'co-step', text: '1. Pay the exact amount' }),
-          h('a', { class: 'btn', href: link, text: `Pay ${rupees(p.price)} with a UPI app` }),
-          h('p', { class: 'tip-id' }, h('span', { text: 'UPI ID ' }), h('code', { text: UPI_ID }), copy),
-          h('p', { class: 'tip-note', text: 'On a computer? Scan the code with your phone. Any UPI app works: GPay, PhonePe, Paytm, BHIM.' }),
-          h('p', { class: 'co-step', text: '2. Tell us you paid' }),
-          h('p', { class: 'tip-note', text: 'Find the 12-digit UPI reference (UTR or UPI Ref No.) in your app under this payment.' }),
-          paidForm({ kind: 'order', sku: p.sku, amount: p.price, button: 'I have paid, unlock my order',
-            done: (r) => `Saved as ${r.id}. Taking you to your order page…` })),
-        qr),
-      h('button', { class: 'close', type: 'button', 'aria-label': 'Close', text: '×', onclick: () => coEl.close() }));
-    coEl.addEventListener('click', (e) => { if (e.target === coEl) coEl.close(); });
-    document.body.append(coEl); coEl.showModal();
-  }
-
   // ---------- "I've paid" form: name, email, UPI reference -> /api/order ----------
-  function paidForm({ kind, sku, amount, button, done }) {
-    const uid = `${kind}-${sku || 'tip'}`;
+  function paidForm({ kind, sku, items, code, amount, button, done }) {
+    const uid = `${kind}-${sku || (items ? 'cart' : 'tip')}`;
     const field = (name, label, attrs) => h('label', { class: 'pf-field' }, h('span', { text: label }), h('input', { name, id: `${uid}-${name}`, required: true, ...attrs }));
     const msg = h('p', { class: 'form-msg', 'aria-live': 'polite' });
     const f = h('form', { class: 'paid-form', novalidate: true },
@@ -230,7 +176,7 @@
       const btn = f.querySelector('button'); btn.disabled = true; btn.classList.add('busy'); msg.textContent = 'Saving…';
       try {
         const r = await fetch('/api/order', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ ...data, kind, sku, amount: typeof amount === 'function' ? amount() : amount }) });
+          body: JSON.stringify({ ...data, kind, sku, items, code, amount: typeof amount === 'function' ? amount() : amount }) });
         const j = await r.json().catch(() => ({}));
         if (!r.ok) throw new Error(j.error || 'Something went wrong. Try again in a minute.');
         msg.textContent = done(j); f.querySelectorAll('input').forEach((i) => { i.disabled = true; });
@@ -314,5 +260,5 @@
     if (CFG.demo) document.querySelectorAll('[data-demo-banner]').forEach((el) => { el.hidden = false; });
   }
 
-  window.CO = { M, CFG, IG, reduce, $, h, pad, asset, run, onceVisible, toast, reel, carousel, post, media, wireForm, signupForm, moneyLink, renderShop, wireMoney, PRODUCTS, paidForm, upiLink, qrSvg, loadQr, rupees, checkout, CAT };
+  window.CO = { M, CFG, IG, reduce, $, h, pad, asset, run, onceVisible, toast, reel, carousel, post, media, wireForm, signupForm, moneyLink, wireMoney, PRODUCTS, paidForm, upiLink, qrSvg, loadQr, rupees, CAT };
 })();

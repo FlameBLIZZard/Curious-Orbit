@@ -19,9 +19,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=c6652e56">
-<link rel="stylesheet" href="chrome.css?v=c6652e56">
-<link rel="stylesheet" href="micro.css?v=c6652e56">
+<link rel="stylesheet" href="styles.css?v=5ea213d0">
+<link rel="stylesheet" href="chrome.css?v=5ea213d0">
+<link rel="stylesheet" href="micro.css?v=5ea213d0">
 </head>
 <body class="sub">
 <canvas class="stars" id="stars" aria-hidden="true"></canvas>
@@ -34,6 +34,7 @@
     <span>Curious Orbit</span>
   </a>
   <nav class="hud-nav" aria-label="Sections"><a href="index.html#log" data-cursor="Go">The log</a><a href="shop.html" data-cursor="Go">Shop</a><a href="media-kit.html" data-cursor="Go">Advertise</a></nav>
+  <button class="cart-btn" id="cart-btn" type="button" hidden data-cursor="Cart">Cart <b>0</b></button>
   <a class="pill" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener" data-cursor="Follow">Follow</a>
   <button class="menu-btn" id="menu-btn" type="button" aria-controls="menu" aria-expanded="false">Menu</button>
 </header>
@@ -44,8 +45,8 @@
   <h1>Take the facts <span class="ember">offline.</span></h1>
   <p class="lede">Quiz packs, printable cards, posters and wallpapers, every fact checked against a real source. Pay with any UPI app; your download unlocks as soon as we confirm the payment.</p>
   <ol class="how">
-    <li><b>Pick</b> a product and tap Buy.</li>
-    <li><b>Pay</b> the exact amount by UPI (scan or tap).</li>
+    <li><b>Add</b> anything to your cart. 3+ items save more.</li>
+    <li><b>Pay</b> the total by UPI (scan or tap).</li>
     <li><b>Send</b> us the 12-digit UPI reference.</li>
     <li><b>Download</b> from your order page once we've checked it.</li>
   </ol>
@@ -66,14 +67,15 @@
   <p class="wordmark" aria-hidden="true">Curious<span class="o"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="9"/><circle cx="83" cy="31" r="9" class="ember-fill"/></svg></span>rbit</p>
   <div class="wrap foot-bottom"><span>© 2026 Curious Orbit</span><span>Made on Earth. Checked against space.</span></div>
 </footer>
-<script src="vendor/lenis.min.js?v=c6652e56"></script>
-<script src="js/config.js?v=c6652e56"></script>
-<script src="js/catalog.js?v=c6652e56"></script>
-<script src="js/motion.js?v=c6652e56"></script>
-<script src="js/common.js?v=c6652e56"></script>
-<script src="js/chrome.js?v=c6652e56"></script>
-<script src="js/micro.js?v=c6652e56"></script>
-<script src="js/shop.js?v=c6652e56"></script>
+<script src="vendor/lenis.min.js?v=5ea213d0"></script>
+<script src="js/config.js?v=5ea213d0"></script>
+<script src="js/catalog.js?v=5ea213d0"></script>
+<script src="js/motion.js?v=5ea213d0"></script>
+<script src="js/common.js?v=5ea213d0"></script>
+<script src="js/cart.js?v=5ea213d0"></script>
+<script src="js/chrome.js?v=5ea213d0"></script>
+<script src="js/micro.js?v=5ea213d0"></script>
+<script src="js/shop.js?v=5ea213d0"></script>
 <script>CO.wireMoney();</script>
 </body>
 </html>

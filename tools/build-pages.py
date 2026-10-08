@@ -24,7 +24,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel
 
 def page(title, desc, body, *, base='', path='', og=None, extra_head='', scripts=()):
     og = og or 'media/og/home.jpg'
-    scripts = ['vendor/lenis.min.js', 'js/config.js', 'js/catalog.js', 'js/motion.js', 'js/common.js', 'js/chrome.js', 'js/micro.js', *scripts]
+    scripts = ['vendor/lenis.min.js', 'js/config.js', 'js/catalog.js', 'js/motion.js', 'js/common.js', 'js/cart.js', 'js/chrome.js', 'js/micro.js', *scripts]
     return f'''<!doctype html>
 <html lang="en" data-base="{base}">
 <head>
@@ -75,6 +75,7 @@ def hud(base=''):
     <span>Curious Orbit</span>
   </a>
   <nav class="hud-nav" aria-label="Sections">{nav}</nav>
+  <button class="cart-btn" id="cart-btn" type="button" hidden data-cursor="Cart">Cart <b>0</b></button>
   <a class="pill" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener" data-cursor="Follow">Follow</a>
   <button class="menu-btn" id="menu-btn" type="button" aria-controls="menu" aria-expanded="false">Menu</button>
 </header>
@@ -282,9 +283,10 @@ def write_catalog_js():
         found = []
         for i in (1, 2):
             for ext in ('webp', 'jpg', 'png'):
-                if (PUB / f'media/shop/{sku}-{i}.{ext}').exists(): found.append(f'media/shop/{sku}-{i}.{ext}'); break
+                f = PUB / f'media/shop/{sku}-{i}.{ext}'
+                if f.exists(): found.append(f'media/shop/{sku}-{i}.{ext}?v={hashlib.sha1(f.read_bytes()).hexdigest()[:6]}'); break
         return found
-    pub = {'upiId': CATALOG['upiId'], 'payee': CATALOG['payee'], 'products': [
+    pub = {'upiId': CATALOG['upiId'], 'payee': CATALOG['payee'], 'offers': CATALOG.get('offers', {}), 'themes': CATALOG.get('themes', {}), 'products': [
         {k: v for k, v in p.items() if k != 'files'} | {'shots': shots(p['sku'])} | {'fileCount': len(p.get('files', [])) if 'includes' not in p else
                                                       sum(len(q.get('files', [])) for q in CATALOG['products'] if q['sku'] in p['includes'])}
         for p in CATALOG['products']]}
@@ -296,8 +298,8 @@ SHOP = '''<section class="shop-page wrap">
   <h1>Take the facts <span class="ember">offline.</span></h1>
   <p class="lede">Quiz packs, printable cards, posters and wallpapers, every fact checked against a real source. Pay with any UPI app; your download unlocks as soon as we confirm the payment.</p>
   <ol class="how">
-    <li><b>Pick</b> a product and tap Buy.</li>
-    <li><b>Pay</b> the exact amount by UPI (scan or tap).</li>
+    <li><b>Add</b> anything to your cart. 3+ items save more.</li>
+    <li><b>Pay</b> the total by UPI (scan or tap).</li>
     <li><b>Send</b> us the 12-digit UPI reference.</li>
     <li><b>Download</b> from your order page once we've checked it.</li>
   </ol>

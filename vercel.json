@@ -28,11 +28,24 @@
           "value": "noindex"
         }
       ]
+    },
+    {
+      "source": "/p/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=600"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     }
   ],
   "functions": {
     "api/*.js": {
-      "includeFiles": "{lib,products}/**"
+      "includeFiles": "lib/**"
     }
   }
 }
