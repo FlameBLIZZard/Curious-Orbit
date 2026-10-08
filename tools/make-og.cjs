@@ -1,5 +1,5 @@
 // Renders 1200x630 share images into public/media/og/ (home, media kit, one per made day).
-// Run: NODE_PATH=$(npm root -g) node tools/make-og.js
+// Run: NODE_PATH=$(npm root -g) node tools/make-og.cjs
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 const PUB = path.join(__dirname, '..', 'public');
@@ -24,10 +24,10 @@ h1 span{color:#FF6B3D}
 for(let i=0;i<110;i++){c.globalAlpha=.12+r()*.35;c.fillStyle='#F3EEE4';c.beginPath();c.arc(r()*1200,r()*630,r()<.9?1:1.8,0,7);c.fill()}</script></body></html>`;
 (async () => {
   const out = path.join(PUB, 'media/og'); fs.mkdirSync(out, { recursive: true });
-  const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1200, height: 630 } });
+  const b = await chromium.launch(process.env.CHROMIUM ? { executablePath: process.env.CHROMIUM } : {}); const p = await b.newPage({ viewport: { width: 1200, height: 630 } });
   const jobs = [['home', 'Science · one fact a day', 'One surprising, true science fact.', 'Every single day.'],
                 ['media-kit', 'Media kit', 'Reach people who', 'love learning.'],
-                ...window.CO_DAYS.filter((d) => d.title).map((d) => [`day${String(d.n).padStart(2, '0')}`, `${d.topic} · Day ${String(d.n).padStart(2, '0')}`, d.title, ''])];
+                ...window.CO_DAYS.filter((d) => d.title).map((d) => [`day${String(d.n).padStart(2, '0')}`, `${d.topic} · Fact ${String(d.n).padStart(2, '0')}`, d.title, ''])];
   for (const [name, label, title, accent] of jobs) {
     await p.setContent(card(label, title, accent), { waitUntil: 'networkidle' });
     await p.screenshot({ path: path.join(out, `${name}.jpg`), type: 'jpeg', quality: 86 });

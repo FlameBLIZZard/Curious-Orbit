@@ -70,7 +70,7 @@
   // ---------- media ----------
   function reel(d, { autoplay = true, withSound = false } = {}) {
     const v = h('video', { src: asset(d.video), poster: asset(d.poster), playsinline: true, loop: true, preload: autoplay ? 'auto' : 'metadata',
-      'aria-label': `Day ${d.n} reel: ${d.title}` });
+      'aria-label': `Fact ${d.n} reel: ${d.title}` });
     v.muted = !withSound;
     if (withSound) v.controls = true;
     const frame = h('div', { class: 'frame reel' }, v);
@@ -88,8 +88,8 @@
     return frame;
   }
   function carousel(d) {
-    const imgs = d.images.map((src, i) => h('img', { src: asset(src), alt: `Day ${d.n}, slide ${i + 1} of ${d.images.length}`, loading: i ? 'lazy' : 'eager', draggable: 'false' }));
-    const track = h('div', { class: 'track', tabindex: '0', 'aria-label': `Day ${d.n} carousel, swipe for more` }, imgs);
+    const imgs = d.images.map((src, i) => h('img', { src: asset(src), alt: `Fact ${d.n}, slide ${i + 1} of ${d.images.length}`, loading: i ? 'lazy' : 'eager', draggable: 'false' }));
+    const track = h('div', { class: 'track', tabindex: '0', 'aria-label': `Fact ${d.n} carousel, swipe for more` }, imgs);
     const dots = h('div', { class: 'dots', 'aria-hidden': 'true' }, imgs.map(() => h('i')));
     const prev = h('button', { class: 'arrow prev', type: 'button', 'aria-label': 'Previous slide', text: '←' });
     const nxt = h('button', { class: 'arrow next', type: 'button', 'aria-label': 'Next slide', text: '→' });
@@ -106,7 +106,7 @@
     sync();
     return h('div', { class: 'frame carousel' }, track, prev, nxt, dots);
   }
-  const post = (d) => h('div', { class: 'frame post' }, h('img', { src: asset(d.images[0]), alt: `Day ${d.n} post: ${d.title}` }));
+  const post = (d) => h('div', { class: 'frame post' }, h('img', { src: asset(d.images[0]), alt: `Fact ${d.n} post: ${d.title}` }));
   const media = (d, opts) => (d.format === 'reel' ? reel(d, opts) : d.format === 'carousel' ? carousel(d) : post(d));
 
   // ---------- email list ----------

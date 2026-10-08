@@ -10,8 +10,9 @@
   if (gsap && ST) gsap.registerPlugin(ST);
 
   // ---------- schedule ----------
-  const postTime = (d) => new Date(`${d.date}T${d.time.startsWith('7') ? '19' : '13'}:00:00`);
-  const isLive = (d) => !!d.title && (preview || d.posted || Date.now() >= postTime(d));
+  // posts after Fact 11 have no fixed day: they carry a date only once made, and go live when marked posted
+  const postTime = (d) => (d.date ? new Date(`${d.date}T${d.time.startsWith('7') ? '19' : '13'}:00:00`) : null);
+  const isLive = (d) => !!d.title && (preview || d.posted || (!!d.date && Date.now() >= postTime(d)));
   const live = DAYS.filter(isLive);
   const current = live[live.length - 1] || null;
   const next = DAYS.find((d) => !isLive(d)) || null;
@@ -22,7 +23,7 @@
     const m = Math.floor(ms / 60000), dd = Math.floor(m / 1440), hh = Math.floor((m % 1440) / 60), mm = m % 60;
     return dd ? `${dd}d ${hh}h` : hh ? `${hh}h ${mm}m` : `${mm}m`;
   };
-  const kicker = (d) => `Day ${pad(d.n)} · ${d.topic}`;
+  const kicker = (d) => `Fact ${pad(d.n)} · ${d.topic}`;
   window.CO_STATE = { day: current ? current.n : 0 };
 
   // ---------- split text into characters ----------
@@ -111,14 +112,14 @@
     todayMedia.append(media(current));
     current.caption.forEach((p) => cap.append(h('p', { text: p })));
     acts.append(btn('Full story and sources', `facts/day-${pad(current.n)}.html`, false, 'Read'), btn('On Instagram', IG, true, 'Open'));
-    $('#orbit-text-path').textContent = `DAY ${pad(current.n)} · ${current.topic.toUpperCase()} · ONE TRUE THING · DAY ${pad(current.n)} · ${current.topic.toUpperCase()} · ONE TRUE THING · `;
+    $('#orbit-text-path').textContent = `FACT ${pad(current.n)} · ${current.topic.toUpperCase()} · ONE TRUE THING · FACT ${pad(current.n)} · ${current.topic.toUpperCase()} · ONE TRUE THING · `;
   } else {
     $('#today-kicker').textContent = 'Launching Thursday 8 October';
     $('#today-title').innerHTML = '';
     $('#today-title').append('The first fact ', h('span', { class: 'ember', text: 'drops Thursday.' }));
     todayMedia.append(window.CO.reel({ n: 0, format: 'reel', title: 'Welcome to Curious Orbit', video: 'media/welcome.mp4', poster: 'media/welcome-cover.webp' }));
     cap.append(h('p', { text: 'For 20 days there is a new fact every day: reels at 7 pm, carousels and posts at 1 pm. Space, the human body, animals, everyday physics and a few myths school got wrong.' }));
-    if (next) cap.append(h('p', { text: `Day ${next.n} lands ${fmtDate(next)} at ${next.time}, in ${until(postTime(next))}.` }));
+    if (next && next.date) cap.append(h('p', { text: `Fact ${next.n} lands ${fmtDate(next)} at ${next.time}, in ${until(postTime(next))}.` }));
     acts.append(btn('Get it by email', '#daily', false, 'Join'), btn('Follow on Instagram', IG, true, 'Follow'));
   }
   // tilt the floating frame toward the pointer with a kit spring
@@ -156,7 +157,7 @@
     });
   }
 
-  // ---------- the log: stations along the 20-day orbit ----------
+  // ---------- the log: one station per fact, then the next few coming up ----------
   const ring = () => {
     const NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('viewBox', '0 0 100 100'); svg.setAttribute('aria-hidden', 'true');
@@ -170,10 +171,10 @@
     const thumb = on ? (d.format === 'reel' ? d.poster : d.images[0]) : null;
     const li = h('li', { class: `station${on ? '' : ' locked'}${isNext ? ' next' : ''}` },
       h('span', { class: 'num', 'aria-hidden': 'true', text: pad(d.n) }),
-      h('button', on ? { type: 'button', 'aria-label': `Open day ${d.n}: ${d.title}`, 'data-cursor': d.format === 'reel' ? 'Play' : 'Open', onclick: () => openViewer(d) }
+      h('button', on ? { type: 'button', 'aria-label': `Open fact ${d.n}: ${d.title}`, 'data-cursor': d.format === 'reel' ? 'Play' : 'Open', onclick: () => openViewer(d) }
                      : { type: 'button', 'aria-disabled': 'true', tabindex: '-1' },
         h('span', { class: 'pic' }, on ? h('img', { src: thumb, alt: '', loading: 'lazy' }) : ring()),
-        h('span', { class: 'meta-k' }, h('span', { text: `${d.topic} · ${d.format}` }), h('span', { text: on ? (d.posted ? 'On Instagram' : fmtDate(d)) : isNext ? `in ${until(postTime(d))}` : fmtDate(d) })),
+        h('span', { class: 'meta-k' }, h('span', { text: `${d.topic} · ${d.format}` }), h('span', { text: on ? (d.posted ? 'On Instagram' : fmtDate(d)) : !d.date ? (isNext ? 'Up next' : 'Soon') : isNext ? `in ${until(postTime(d))}` : fmtDate(d) })),
         h('span', { class: 't', text: on ? d.title : isNext ? 'Next drop' : 'Coming soon' })));
     logTrack.append(li);
   });
@@ -238,7 +239,7 @@
   // ---------- HUD clock ----------
   function clock() {
     $('#hud-clock').textContent = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-    $('#hud-next').textContent = next ? `Day ${pad(next.n)} in ${until(postTime(next))}` : 'All 20 days are out';
+    $('#hud-next').textContent = !next ? 'All caught up' : next.date ? `Fact ${pad(next.n)} in ${until(postTime(next))}` : `Fact ${pad(next.n)} up next`;
   }
   clock(); setInterval(clock, 1000);
 

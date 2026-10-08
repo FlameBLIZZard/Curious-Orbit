@@ -119,9 +119,9 @@ def signup_band(source):
 def media_html(d, base):
     if d['format'] == 'reel':
         return (f'<div class="frame reel"><video controls playsinline preload="metadata" poster="{base}{d["poster"]}" '
-                f'src="{base}{d["video"]}" aria-label="Day {d["n"]} reel: {e(d["title"])}"></video></div>')
+                f'src="{base}{d["video"]}" aria-label="Fact {d["n"]} reel: {e(d["title"])}"></video></div>')
     if d['format'] == 'post':
-        return f'<div class="frame post"><img src="{base}{d["images"][0]}" alt="Day {d["n"]} post: {e(d["title"])}"></div>'
+        return f'<div class="frame post"><img src="{base}{d["images"][0]}" alt="Fact {d["n"]} post: {e(d["title"])}"></div>'
     imgs = ''.join(f'<img src="{base}{src}" alt="Slide {i + 1} of {len(d["images"])}" loading="{"eager" if i == 0 else "lazy"}">'
                    for i, src in enumerate(d['images']))
     return f'<div class="frame carousel" data-carousel="{d["n"]}"><div class="track" tabindex="0">{imgs}</div></div>'
@@ -142,14 +142,14 @@ def fact_page(d, i):
           'author': {'@type': 'Organization', 'name': 'Curious Orbit'},
           'citation': [s['url'] for s in check['sources']]}
     nav = '<nav class="pager" aria-label="More facts">'
-    nav += (f'<a href="day-{pad(prev_d["n"])}.html"><small>← Day {pad(prev_d["n"])}</small>{e(prev_d["title"])}</a>' if prev_d else '<span></span>')
-    nav += (f'<a class="next" href="day-{pad(next_d["n"])}.html"><small>Day {pad(next_d["n"])} →</small>{e(next_d["title"])}</a>' if next_d else '<span></span>')
+    nav += (f'<a href="day-{pad(prev_d["n"])}.html"><small>← Fact {pad(prev_d["n"])}</small>{e(prev_d["title"])}</a>' if prev_d else '<span></span>')
+    nav += (f'<a class="next" href="day-{pad(next_d["n"])}.html"><small>Fact {pad(next_d["n"])} →</small>{e(next_d["title"])}</a>' if next_d else '<span></span>')
     nav += '</nav>'
     body = f'''<article class="fact wrap" data-day="{n}" data-post="{d['date']}T{'00' if d.get('posted') else '19' if d['time'].startswith('7') else '13'}:00:00">
   <div class="fact-grid">
     <div class="fact-media">{media_html(d, base)}</div>
     <div class="fact-text">
-      <p class="label">{e(d['topic'])} · Day {pad(n)} · {d['format']}</p>
+      <p class="label">{e(d['topic'])} · Fact {pad(n)} · {d['format']}</p>
       <h1>{e(d['title'])}</h1>
       <p class="meta">{'On Instagram now' if d.get('posted') else 'Posted ' + when}</p>
       <div class="story">{caption}</div>
@@ -166,7 +166,7 @@ def fact_page(d, i):
     </div>
   </div>
   <div class="fact-locked" hidden>
-    <p class="label">Day {pad(n)} · {d['format']}</p>
+    <p class="label">Fact {pad(n)} · {d['format']}</p>
     <h1>This fact drops <span class="ember">{datetime.date.fromisoformat(d['date']).strftime('%a %-d %b')}, {d['time']}.</span></h1>
     <p>No spoilers. Get it in your inbox the morning after, or follow along on Instagram.</p>
   </div>
