@@ -635,8 +635,37 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Animals",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "posted": true,
+  "title": "A group of flamingos is called a flamboyance.",
+  "summary": "A group of flamingos is called a flamboyance, and their pink comes from pigments in the shrimp and algae they eat.",
+  "caption": [
+   "Honestly the best group name in the animal kingdom.",
+   "A group of flamingos is called a flamboyance. Their pink comes from pigments in the algae and brine shrimp they eat.",
+   "Comment your favourite animal group name."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#birds",
+   "#flamingo"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Smithsonian's National Zoo: Why are flamingos pink? And other flamingo facts",
+     "url": "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts"
+    }
+   ]
+  },
+  "images": [
+   "media/day15-post.webp"
+  ]
  },
  {
   "n": 16,
@@ -697,6 +726,15 @@ window.CO_DAYS = [
   "post": 11,
   "format": "reel",
   "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 23,
+  "post": 12,
+  "format": "reel",
+  "topic": "Earth",
   "time": "7 pm",
   "date": null,
   "summary": ""
