@@ -598,8 +598,36 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "posted": true,
+  "title": "A fluffy cloud weighs about 500 tonnes.",
+  "summary": "A puffy cumulus cloud about 1 km across holds water droplets weighing roughly 500 tonnes.",
+  "caption": [
+   "A puffy cloud about 1 km across is packed with tiny water droplets.",
+   "All together they weigh roughly 500 tonnes. It still floats, because moist air is less dense than the dry air around it.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#weather",
+   "#clouds",
+   "#physics"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS Water Science School: How Much Does a Cloud Weigh?",
+     "url": "https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh"
+    }
+   ]
+  },
+  "video": "media/day14.mp4",
+  "poster": "media/day14-cover.webp"
  },
  {
   "n": 15,
@@ -661,6 +689,15 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Animals",
   "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 22,
+  "post": 11,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
   "date": null,
   "summary": ""
  }
