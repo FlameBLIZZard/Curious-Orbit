@@ -54,7 +54,8 @@ for m in re.finditer(r'^Day (\d+) · (\w+ \d+ \w+) · (\w+) at (\d+ pm)\n\nWhat 
 # Facts 12+ come from the numbered post plan (Post 001 = fact 12). A post is on the site once its folder
 # /mnt/project-files/curious-orbit/post-NNN/ exists; MADE lists the date each one was made. The next few show as "coming up".
 MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '2026-10-08', 6: '2026-10-08',
-        7: '2026-10-08', 8: '2026-10-08', 9: '2026-10-08', 10: '2026-10-08', 11: '2026-10-08'}
+        7: '2026-10-08', 8: '2026-10-08', 9: '2026-10-08', 10: '2026-10-08', 11: '2026-10-08',
+        12: '2026-10-08', 13: '2026-10-08', 14: '2026-10-08', 15: '2026-10-08', 16: '2026-10-08', 17: '2026-10-11', 18: '2026-10-08'}
 # posts Aditya has confirmed are on Instagram (the PC-control thread reports each one); the rest show as "New"
 POSTED = set()
 # sources a post uses beyond its fact-bank entries (from the research thread's post-NNN/fact.md)
@@ -62,7 +63,11 @@ EXTRA_SRC = {6: [{'name': 'Encyclopaedia Britannica: Mount Everest', 'url': 'htt
              7: [{'name': 'Kováč (2010), EMBO Reports: The 20 W sleep-walkers', 'url': 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2816633/'}],
              9: [{'name': 'NASA NSSDCA: Saturn Fact Sheet', 'url': 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html'}],
              11: [{'name': 'NASA Imagine the Universe: Neutron Stars', 'url': 'https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html'},
-                  {'name': 'ESA: Neutron stars, pulsars and magnetars', 'url': 'https://www.esa.int/Science_Exploration/Space_Science/Neutron_stars_pulsars_and_magnetars'}]}
+                  {'name': 'ESA: Neutron stars, pulsars and magnetars', 'url': 'https://www.esa.int/Science_Exploration/Space_Science/Neutron_stars_pulsars_and_magnetars'}],
+             16: [{'name': 'Cleveland Clinic: Ossicles', 'url': 'https://my.clevelandclinic.org/health/body/ossicles'},
+                  {'name': 'Cleveland Clinic: Tooth enamel', 'url': 'https://my.clevelandclinic.org/health/body/24798-tooth-enamel'},
+                  {'name': 'Cleveland Clinic: Red blood cells', 'url': 'https://my.clevelandclinic.org/health/body/21691-function-of-red-blood-cells'},
+                  {'name': 'USGS: The water in you', 'url': 'https://www.usgs.gov/water-science-school/science/water-you-water-and-human-body'}]}
 # sources come from the verified fact bank, one per fact the post uses
 BANK = {}
 for f in pathlib.Path('/mnt/project-files/curious-orbit-shop/facts').glob('*.json'):

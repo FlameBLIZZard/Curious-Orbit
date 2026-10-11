@@ -984,8 +984,39 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Sound moves over 4 times faster underwater.",
+  "summary": "Sound travels over four times faster in seawater than in air, about 1,500 metres a second versus 340, and blue whale calls can be picked up hundreds of kilometres away.",
+  "caption": [
+   "Water is far harder to squeeze than air, so it passes sound along faster. In seawater sound moves about 1,500 m a second. In air, about 340. That is how blue whale calls can be picked up hundreds of kilometres away. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#physics",
+   "#ocean",
+   "#whales"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "DOSITS (University of Rhode Island): How fast does sound travel?",
+     "url": "https://dosits.org/tutorials/science/tutorial-speed/"
+    },
+    {
+     "name": "NOAA Ocean Explorer: Blue whale vocalization locations; DOSITS: Sound travel in the SOFAR channel",
+     "url": "https://oceanexplorer.noaa.gov/explorations/sound01/background/plan/media/septblue.html"
+    }
+   ]
+  },
+  "video": "media/day23.mp4",
+  "poster": "media/day23-cover.webp"
  },
  {
   "n": 24,
@@ -993,8 +1024,38 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Body",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Carrots won't give you night vision. It was wartime propaganda.",
+  "summary": "Carrots can't sharpen a healthy person's eyesight; the idea was spread by British wartime propaganda to hide radar.",
+  "caption": [
+   "In WWII, Britain credited a pilot's night-time wins to eating carrots.",
+   "The real secret was new aircraft radar. Carrots only help if you lack vitamin A.",
+   "Tag the person who told you to eat carrots for your eyes."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#history",
+   "#health"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Smithsonian Magazine: A WWII propaganda campaign popularised the myth that carrots help you see in the dark",
+     "url": "https://www.smithsonianmag.com/arts-culture/a-wwii-propaganda-campaign-popularized-the-myth-that-carrots-help-you-see-in-the-dark-28812484/"
+    }
+   ]
+  },
+  "images": [
+   "media/day24-post.webp"
+  ]
  },
  {
   "n": 25,
@@ -1002,8 +1063,64 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Quiz",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "5 questions. How many can you get?",
+  "summary": "Recap quiz on recent facts: Earths in the Sun, cloud weight, daily space dust, Saturn's density and sound in water.",
+  "caption": [
+   "Quiz time. Guess before you swipe.",
+   "Comment your score out of 5. No Googling."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#quiz",
+   "#sciencequiz",
+   "#trivia"
+  ],
+  "check": {
+   "claims": 5,
+   "sources": [
+    {
+     "name": "NASA Science: Sun Facts",
+     "url": "https://science.nasa.gov/sun/facts/"
+    },
+    {
+     "name": "USGS Water Science School: How Much Does a Cloud Weigh?",
+     "url": "https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh"
+    },
+    {
+     "name": "NASA Science: Meteors and Meteorites Facts",
+     "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/"
+    },
+    {
+     "name": "NASA Science: Saturn Facts",
+     "url": "https://science.nasa.gov/saturn/facts/"
+    },
+    {
+     "name": "DOSITS (University of Rhode Island): How fast does sound travel?",
+     "url": "https://dosits.org/tutorials/science/tutorial-speed/"
+    }
+   ]
+  },
+  "images": [
+   "media/day25-slide-01.webp",
+   "media/day25-slide-02.webp",
+   "media/day25-slide-03.webp",
+   "media/day25-slide-04.webp",
+   "media/day25-slide-05.webp",
+   "media/day25-slide-06.webp",
+   "media/day25-slide-07.webp",
+   "media/day25-slide-08.webp",
+   "media/day25-slide-09.webp",
+   "media/day25-slide-10.webp",
+   "media/day25-slide-11.webp",
+   "media/day25-slide-12.webp"
+  ]
  },
  {
   "n": 26,
@@ -1011,8 +1128,35 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Saturn's vast rings are only about 10 metres thick.",
+  "summary": "Saturn's ring system reaches up to 282,000 km from the planet, yet the main rings are typically only about 10 metres thick.",
+  "caption": [
+   "Saturn's rings reach up to 282,000 km from the planet. Yet the main rings are typically only about 10 metres thick. Seen edge-on, they almost disappear. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#saturn",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Saturn Facts",
+     "url": "https://science.nasa.gov/saturn/facts/"
+    }
+   ]
+  },
+  "video": "media/day26.mp4",
+  "poster": "media/day26-cover.webp"
  },
  {
   "n": 27,
@@ -1020,8 +1164,60 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Body",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Your body by the numbers, part 2.",
+  "summary": "Your body has more than 600 muscles, its smallest bone (the stapes in your ear) measures just a few millimetres, and tooth enamel is the hardest substance in it, harder than bone.",
+  "caption": [
+   "Part 2 of your body in numbers.",
+   "Which number surprised you most?",
+   "Save this one for later."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#biology",
+   "#anatomy"
+  ],
+  "check": {
+   "claims": 5,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Muscles",
+     "url": "https://my.clevelandclinic.org/health/body/21887-muscle"
+    },
+    {
+     "name": "Cleveland Clinic: Ossicles",
+     "url": "https://my.clevelandclinic.org/health/body/ossicles"
+    },
+    {
+     "name": "Cleveland Clinic: Tooth enamel",
+     "url": "https://my.clevelandclinic.org/health/body/24798-tooth-enamel"
+    },
+    {
+     "name": "Cleveland Clinic: Red blood cells",
+     "url": "https://my.clevelandclinic.org/health/body/21691-function-of-red-blood-cells"
+    },
+    {
+     "name": "USGS: The water in you",
+     "url": "https://www.usgs.gov/water-science-school/science/water-you-water-and-human-body"
+    }
+   ]
+  },
+  "images": [
+   "media/day27-slide-01.webp",
+   "media/day27-slide-02.webp",
+   "media/day27-slide-03.webp",
+   "media/day27-slide-04.webp",
+   "media/day27-slide-05.webp",
+   "media/day27-slide-06.webp",
+   "media/day27-slide-07.webp"
+  ]
  },
  {
   "n": 28,
@@ -1029,8 +1225,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-11",
+  "made": true,
+  "posted": false,
+  "title": "These tiny animals survived 10 days in open space.",
+  "summary": "In 2007, dried tardigrades survived 10 days exposed to open space, and some later reproduced.",
+  "caption": [
+   "In 2007, scientists sent dried tardigrades into orbit on the outside of a spacecraft.",
+   "They spent 10 days exposed to open space, and some later reproduced.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#tardigrade",
+   "#space"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "EU CORDIS: Water bears survive space environment (Jonsson et al. 2008, Current Biology)",
+     "url": "https://cordis.europa.eu/article/id/29839-water-bears-survive-space-environment-study-shows"
+    }
+   ]
+  },
+  "video": "media/day28.mp4",
+  "poster": "media/day28-cover.webp"
  },
  {
   "n": 29,
@@ -1038,8 +1263,38 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Earth",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-08",
+  "made": true,
+  "posted": false,
+  "title": "Everest is not the farthest point from Earth's centre.",
+  "summary": "The point on Earth farthest from its centre is the top of Mount Chimborazo in Ecuador, not Mount Everest.",
+  "caption": [
+   "Earth bulges at the equator because it spins.",
+   "So Mount Chimborazo in Ecuador, near the equator, has its peak over 2 km farther from Earth's centre than Everest's.",
+   "Send this to the friend who loves geography."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#earth",
+   "#geography",
+   "#mountains"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NOAA Ocean Service: What is the highest point on Earth as measured from Earth's center?",
+     "url": "https://oceanservice.noaa.gov/facts/highestpoint.html"
+    }
+   ]
+  },
+  "images": [
+   "media/day29-post.webp"
+  ]
  },
  {
   "n": 30,
@@ -1047,6 +1302,69 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 31,
+  "post": 20,
+  "format": "carousel",
+  "topic": "Space",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 32,
+  "post": 21,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 33,
+  "post": 22,
+  "format": "carousel",
+  "topic": "Myths",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 34,
+  "post": 23,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 35,
+  "post": 24,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 36,
+  "post": 25,
+  "format": "reel",
+  "topic": "Body",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 37,
+  "post": 26,
+  "format": "post",
+  "topic": "Animals",
+  "time": "1 pm",
   "date": null,
   "summary": ""
  }
