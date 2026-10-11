@@ -263,6 +263,24 @@
   dlg.addEventListener('click', (e) => { if (e.target === dlg) closeViewer(); });
   dlg.addEventListener('close', () => { const v = $('#viewer-media video'); if (v) v.pause(); if (lenis) lenis.start(); });
 
+  // ---------- the film: muted loop while in view, sound on tap, frame opens up as it scrolls in ----------
+  {
+    const f = $('#film-frame'), v = $('#film-video'), b = f && f.querySelector('.sound');
+    if (f && v && b) {
+      b.addEventListener('click', () => {
+        v.muted = !v.muted; b.setAttribute('aria-pressed', String(!v.muted)); b.textContent = v.muted ? 'Tap for sound' : 'Sound on';
+        if (!v.muted) { v.currentTime = 0; v.play().catch(() => {}); }
+      });
+      if (!reduce && 'IntersectionObserver' in window) {
+        new IntersectionObserver((es) => es.forEach((e) => {
+          if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
+        }), { threshold: 0.35 }).observe(f);
+      } else v.controls = true;
+      if (motion && ST) gsap.fromTo(f, { scale: 0.86, borderRadius: 48 }, { scale: 1, borderRadius: 22, ease: 'none',
+        scrollTrigger: { trigger: f, start: 'top bottom', end: 'top 25%', scrub: true } });
+    }
+  }
+
   addEventListener('hashchange', () => { if (/preview/.test(location.hash) !== preview) location.reload(); });
   addEventListener('load', () => ST && ST.refresh());
 })();

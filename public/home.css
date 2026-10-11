@@ -57,6 +57,16 @@ html:not(.js) .loader, .seen .loader { display: none; }
 .manifesto-text em .w.on { color: var(--ember); }
 .no-motion .manifesto-text .w { color: var(--cream); }
 
+/* ---------- 2b. the film ---------- */
+.film-x { padding-block: clamp(20px, 4vh, 60px) clamp(100px, 16vh, 200px); }
+.film-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px 40px; margin-bottom: clamp(24px, 4vh, 48px); }
+.film-head .big { margin: 0; }
+.film-lede { margin: 0; max-width: 30ch; color: var(--muted); font-size: clamp(16px, 1.3vw, 19px); }
+.film-frame { aspect-ratio: 16 / 9; border-radius: 22px; transform-origin: 50% 0; }
+.film-frame video { display: block; background: var(--ink); }
+.film-frame .sound { left: auto; right: 16px; bottom: 16px; }
+@media (max-width: 760px) { .film-frame { border-radius: 16px; } .film-frame .sound { right: 10px; bottom: 10px; } }
+
 /* ---------- 3. today ---------- */
 .today-x { padding-block: clamp(60px, 12vh, 140px); }
 .today-stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 100px); align-items: center; }

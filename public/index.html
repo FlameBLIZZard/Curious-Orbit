@@ -15,10 +15,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=56d652d2">
-<link rel="stylesheet" href="home.css?v=56d652d2">
-<link rel="stylesheet" href="chrome.css?v=56d652d2">
-<link rel="stylesheet" href="micro.css?v=56d652d2">
+<link rel="stylesheet" href="styles.css?v=ac0c4210">
+<link rel="stylesheet" href="home.css?v=ac0c4210">
+<link rel="stylesheet" href="chrome.css?v=ac0c4210">
+<link rel="stylesheet" href="micro.css?v=ac0c4210">
 </head>
 <body class="home">
 <script>document.documentElement.classList.add("js","home-doc");try{if(sessionStorage.getItem("co-seen"))document.documentElement.classList.add("seen")}catch(e){}</script>
@@ -76,6 +76,24 @@
   <section class="manifesto wrap" aria-label="What Curious Orbit is">
     <p class="eyebrow"><span class="sq"></span>The mission</p>
     <p class="manifesto-text" id="manifesto">Every day we find one fact that <em>sounds completely fake.</em> Then we check it against NASA, ESA and peer-reviewed science, cut it down to twenty calm seconds, and send it into your orbit. No noise, no clickbait. Just <em>one true thing</em> you'll want to tell someone.</p>
+  </section>
+
+  <!-- 2b. THE FILM: the brand film, muted loop while in view, sound on tap -->
+  <section class="film-x wrap" id="film" aria-labelledby="film-title">
+    <div class="film-head">
+      <div>
+        <p class="eyebrow"><span class="sq"></span>The film · 25 seconds</p>
+        <h2 class="big" id="film-title">Step into the orbit.</h2>
+      </div>
+      <p class="film-lede">Four facts, one ring, every source checked. Turn the sound up.</p>
+    </div>
+    <div class="frame film-frame" id="film-frame">
+      <video id="film-video" muted playsinline loop preload="none" poster="media/brand-film-poster.webp" aria-label="Curious Orbit brand film: fact cards fly round a giant orbit ring, then the logo draws itself">
+        <source src="media/brand-film.webm" type="video/webm">
+        <source src="media/brand-film.mp4" type="video/mp4">
+      </video>
+      <button class="sound" type="button" aria-pressed="false">Tap for sound</button>
+    </div>
   </section>
 
   <!-- 3. TODAY: the reel in a floating frame with orbiting text -->
@@ -198,14 +216,14 @@
 <script src="vendor/gsap.min.js"></script>
 <script src="vendor/ScrollTrigger.min.js"></script>
 <script src="vendor/lenis.min.js"></script>
-<script src="js/config.js?v=56d652d2"></script>
-<script src="js/catalog.js?v=56d652d2"></script>
-<script src="js/motion.js?v=56d652d2"></script>
-<script src="js/days.js?v=56d652d2"></script>
-<script src="js/common.js?v=56d652d2"></script>
-<script src="js/chrome.js?v=56d652d2"></script>
-<script src="js/micro.js?v=56d652d2"></script>
-<script src="js/home.js?v=56d652d2"></script>
-<script type="module" src="js/space.js?v=56d652d2"></script>
+<script src="js/config.js?v=ac0c4210"></script>
+<script src="js/catalog.js?v=ac0c4210"></script>
+<script src="js/motion.js?v=ac0c4210"></script>
+<script src="js/days.js?v=ac0c4210"></script>
+<script src="js/common.js?v=ac0c4210"></script>
+<script src="js/chrome.js?v=ac0c4210"></script>
+<script src="js/micro.js?v=ac0c4210"></script>
+<script src="js/home.js?v=ac0c4210"></script>
+<script type="module" src="js/space.js?v=ac0c4210"></script>
 </body>
 </html>
