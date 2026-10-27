@@ -101,6 +101,10 @@ html:not(.js) .loader, .seen .loader { display: none; }
 .log-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 20px; width: 100%; }
 .log-head .eyebrow { grid-column: 1 / -1; margin-bottom: 0; }
 .log-head .big { font-size: clamp(40px, 5vw, 88px); }
+.log-goal { grid-column: 1 / -1; margin: 0; font: 700 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+.log-goal a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 4px; transition: color .3s, border-color .3s; }
+.log-goal a:hover, .log-goal a:focus-visible { color: var(--cream); border-color: var(--ember); }
+.log-goal b { color: var(--ember); }
 .log-hint { margin: 0; font: 400 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); max-width: 26ch; text-align: right; }
 .log-rail { position: relative; }
 .log-track { display: flex; gap: clamp(16px, 2vw, 28px); padding-inline: var(--gutter); width: max-content; will-change: transform; align-items: flex-end; }

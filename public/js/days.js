@@ -508,7 +508,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "About 1.3 million Earths could fit inside the Sun.",
   "summary": "It would take about 1.3 million Earths to fill the Sun.",
   "caption": [
@@ -546,7 +546,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "4 body myths you probably still believe.",
   "summary": "Cracking knuckles probably doesn't cause arthritis, shaving doesn't thicken hair, the tongue map is false, and dim light doesn't damage your eyes.",
   "caption": [
@@ -602,7 +602,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "A fluffy cloud weighs about 500 tonnes.",
   "summary": "A puffy cumulus cloud about 1 km across holds water droplets weighing roughly 500 tonnes.",
   "caption": [
@@ -640,7 +640,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "A group of flamingos is called a flamboyance.",
   "summary": "A group of flamingos is called a flamboyance, and their pink comes from pigments in the shrimp and algae they eat.",
   "caption": [
@@ -679,7 +679,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "About 44 tonnes of space dust falls on Earth every day.",
   "summary": "Scientists estimate about 44 tonnes of meteoritic material falls on Earth every day.",
   "caption": [
@@ -718,7 +718,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Mount Everest would vanish in the deepest sea.",
   "summary": "The ocean's deepest point, Challenger Deep, is about 10,935 metres down: deeper than Mount Everest is tall.",
   "caption": [
@@ -766,7 +766,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Your brain is 2% of you but burns 20%.",
   "summary": "Your brain is about 2% of your body weight but uses around 20% of your energy at rest, roughly 20 watts.",
   "caption": [
@@ -808,7 +808,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "This shrimp punches at 8,000 times gravity.",
   "summary": "A peacock mantis shrimp's club strikes with up to about 8,000 times the acceleration of gravity, and captive ones have broken the glass of their tanks.",
   "caption": [
@@ -846,7 +846,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Saturn is less dense than water.",
   "summary": "Saturn is less dense than water, so in a big enough bathtub it would float.",
   "caption": [
@@ -889,9 +889,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "3 animal “facts” that are completely wrong.",
-  "summary": "Bats are not blind, ostriches never bury their heads in sand, and a camel's hump stores fat, not water.",
+  "summary": "Bats aren't blind, ostriches never bury their heads in sand, and a camel's hump stores fat, not water.",
   "caption": [
    "Three animal “facts” most of us grew up with.",
    "Swipe to see what is actually true. Which one got you?",
@@ -940,7 +940,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Some neutron stars spin hundreds of times a second.",
   "summary": "Some neutron stars, only about 20 km wide, spin hundreds of times every second.",
   "caption": [
@@ -986,9 +986,9 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Sound moves over 4 times faster underwater.",
-  "summary": "Sound travels over four times faster in seawater than in air, about 1,500 metres a second versus 340, and blue whale calls can be picked up hundreds of kilometres away.",
+  "summary": "Sound travels over four times faster in seawater than in air (about 1,500 m/s versus 340 m/s), and blue whale calls can be picked up hundreds of kilometres away.",
   "caption": [
    "Water is far harder to squeeze than air, so it passes sound along faster. In seawater sound moves about 1,500 m a second. In air, about 340. That is how blue whale calls can be picked up hundreds of kilometres away. Follow @curiousorbit.daily for more."
   ],
@@ -1026,9 +1026,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Carrots won't give you night vision. It was wartime propaganda.",
-  "summary": "Carrots can't sharpen a healthy person's eyesight; the idea was spread by British wartime propaganda to hide radar.",
+  "summary": "Carrots can't sharpen a healthy person's eyesight; the idea was spread by British WWII propaganda to hide radar.",
   "caption": [
    "In WWII, Britain credited a pilot's night-time wins to eating carrots.",
    "The real secret was new aircraft radar. Carrots only help if you lack vitamin A.",
@@ -1065,9 +1065,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "5 questions. How many can you get?",
-  "summary": "Recap quiz on recent facts: Earths in the Sun, cloud weight, daily space dust, Saturn's density and sound in water.",
+  "summary": "Recap quiz: 1.3 million Earths in the Sun, a 1 km cloud weighs about 500 tonnes, about 44 tonnes of space material daily, Saturn floats, and sound is over 4 times faster in seawater.",
   "caption": [
    "Quiz time. Guess before you swipe.",
    "Comment your score out of 5. No Googling."
@@ -1130,7 +1130,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Saturn's vast rings are only about 10 metres thick.",
   "summary": "Saturn's ring system reaches up to 282,000 km from the planet, yet the main rings are typically only about 10 metres thick.",
   "caption": [
@@ -1166,9 +1166,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Your body by the numbers, part 2.",
-  "summary": "Your body has more than 600 muscles, its smallest bone (the stapes in your ear) measures just a few millimetres, and tooth enamel is the hardest substance in it, harder than bone.",
+  "summary": "Body by the numbers, part 2: 600+ muscles, the stapes is the smallest bone at just a few millimetres, enamel is the hardest substance in the body, red blood cells live about 120 days, and up to 60% of an adult is water.",
   "caption": [
    "Part 2 of your body in numbers.",
    "Which number surprised you most?",
@@ -1227,9 +1227,9 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-11",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "These tiny animals survived 10 days in open space.",
-  "summary": "In 2007, dried tardigrades survived 10 days exposed to open space, and some later reproduced.",
+  "summary": "In 2007, dried tardigrades spent 10 days exposed to open space in orbit, and some later reproduced.",
   "caption": [
    "In 2007, scientists sent dried tardigrades into orbit on the outside of a spacecraft.",
    "They spent 10 days exposed to open space, and some later reproduced.",
@@ -1265,7 +1265,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Everest is not the farthest point from Earth's centre.",
   "summary": "The point on Earth farthest from its centre is the top of Mount Chimborazo in Ecuador, not Mount Everest.",
   "caption": [
@@ -1302,8 +1302,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Your blood is never blue. Not even in your veins.",
+  "summary": "Human blood is always red: bright red when full of oxygen and a darker, muddy red on its way back to the heart. Veins look blue because of how light passes through skin.",
+  "caption": [
+   "Look at your wrist. Those veins look blue, right?",
+   "Your blood is always red: bright red with oxygen, darker red on the way back. The blue is a trick of light through skin.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#myths",
+   "#biology"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: What colour is your blood?",
+     "url": "https://health.clevelandclinic.org/what-color-is-blood"
+    }
+   ]
+  },
+  "video": "media/day30.mp4",
+  "poster": "media/day30-cover.webp"
  },
  {
   "n": 31,
@@ -1311,8 +1340,42 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Space",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "The Sun's core is about 15 million °C.",
+  "summary": "The Sun's core tops 15 million °C, while its visible surface is a relatively cool 5,500 °C; hydrogen fusing into helium in the core powers it.",
+  "caption": [
+   "Hydrogen fusing into helium is what heats the Sun's core. That core is about 15 million °C, while the surface is a relatively cool 5,500 °C. The core is also about 8 times denser than gold. Save this for your next science test."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#sun",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Sun Facts",
+     "url": "https://science.nasa.gov/sun/facts/"
+    }
+   ]
+  },
+  "images": [
+   "media/day31-slide-01.webp",
+   "media/day31-slide-02.webp",
+   "media/day31-slide-03.webp",
+   "media/day31-slide-04.webp",
+   "media/day31-slide-05.webp",
+   "media/day31-slide-06.webp",
+   "media/day31-slide-07.webp"
+  ]
  },
  {
   "n": 32,
@@ -1320,8 +1383,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "This jellyfish can turn back into a baby.",
+  "summary": "The jellyfish Turritopsis dohrnii can turn back into its young polyp form when it is injured or starving.",
+  "caption": [
+   "This jellyfish has a reset button.",
+   "When it's injured or starving, it can turn back into its young polyp form. Then it grows up all over again. Scientists have seen this in labs.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#ocean",
+   "#jellyfish"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "American Museum of Natural History: Immortal jellyfish",
+     "url": "https://www.amnh.org/explore/news-blogs/immortal-jellyfish"
+    }
+   ]
+  },
+  "video": "media/day32.mp4",
+  "poster": "media/day32-cover.webp"
  },
  {
   "n": 33,
@@ -1329,8 +1421,41 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Myths",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "There is gravity in space. Astronauts are falling.",
+  "summary": "At the space station, gravity is still about 90% as strong as on the ground; astronauts float because they are in free fall around Earth.",
+  "caption": [
+   "At the space station, gravity is still about 90% as strong as on the ground. Astronauts float because they are constantly falling around Earth, moving sideways so fast they keep missing it. Save this and send it to someone who thinks space has no gravity."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#space",
+   "#physics"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA: What is microgravity? (Grades 5-8)",
+     "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/"
+    }
+   ]
+  },
+  "images": [
+   "media/day33-slide-01.webp",
+   "media/day33-slide-02.webp",
+   "media/day33-slide-03.webp",
+   "media/day33-slide-04.webp",
+   "media/day33-slide-05.webp",
+   "media/day33-slide-06.webp"
+  ]
  },
  {
   "n": 34,
@@ -1338,8 +1463,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "The space station sees 16 sunrises every day.",
+  "summary": "The space station orbits Earth about every 90 minutes, so the crew passes through 16 sunrises and 16 sunsets every 24 hours.",
+  "caption": [
+   "The space station circles Earth about every 90 minutes.",
+   "So the crew passes through 16 sunrises and 16 sunsets every 24 hours. That's a new sunrise about every hour and a half.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#iss",
+   "#astronauts"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA: International Space Station Facts and Figures",
+     "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+    }
+   ]
+  },
+  "video": "media/day34.mp4",
+  "poster": "media/day34-cover.webp"
  },
  {
   "n": 35,
@@ -1347,8 +1501,41 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Earth",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Continents move as fast as your fingernails grow.",
+  "summary": "Earth's tectonic plates move at roughly the same rate that your fingernails grow.",
+  "caption": [
+   "Your fingernails grow about 4 cm a year. Earth's tectonic plates move at roughly that same rate, and satellite GPS tracks them to a fraction of a millimetre a year. Save this and look at your nails differently."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#earth",
+   "#geology",
+   "#tectonics"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS FAQ: How fast do tectonic plates move?",
+     "url": "https://www.usgs.gov/faqs/how-fast-do-tectonic-plates-move"
+    }
+   ]
+  },
+  "images": [
+   "media/day35-slide-01.webp",
+   "media/day35-slide-02.webp",
+   "media/day35-slide-03.webp",
+   "media/day35-slide-04.webp",
+   "media/day35-slide-05.webp",
+   "media/day35-slide-06.webp"
+  ]
  },
  {
   "n": 36,
@@ -1356,8 +1543,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "You can't tickle yourself. Your brain sees it coming.",
+  "summary": "You can't tickle yourself because your cerebellum turns down the brain's response to your own touch ahead of time.",
+  "caption": [
+   "Try tickling yourself right now. It feels weaker, right?",
+   "A part of your brain called the cerebellum turns the feeling down before your fingers even land. No surprise, no tickle.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#brain",
+   "#humanbody",
+   "#psychology"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Scientific American: Why can't you tickle yourself? (Blakemore, Wolpert & Frith 1998, UCL)",
+     "url": "https://www.scientificamerican.com/article/why-cant-you-tickle-yours/"
+    },
+    {
+     "name": "UCL News: Why can't I tickle myself?",
+     "url": "https://www.ucl.ac.uk/news/headlines/2016/sep/why-cant-i-tickle-myself"
+    }
+   ]
+  },
+  "video": "media/day36.mp4",
+  "poster": "media/day36-cover.webp"
  },
  {
   "n": 37,
@@ -1365,6 +1585,1911 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Animals",
   "time": "1 pm",
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Koalas have fingerprints almost like ours.",
+  "summary": "Koala fingerprints look remarkably similar to human fingerprints, even under a microscope.",
+  "caption": [
+   "Koalas have fingerprints. Their swirls and loops look remarkably like human ones, even under a microscope. Send this to someone who loves koalas."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#australia",
+   "#wildlife"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Nature: Fingerprints of a koala (Henneberg, Lambert & Leigh 1996)",
+     "url": "https://www.nature.com/search?q=fingerprints+of+a+koala"
+    },
+    {
+     "name": "Snopes: Have koala fingerprints been confused with humans' at crime scenes?",
+     "url": "https://www.snopes.com/fact-check/koala-fingerprints-crime-scene/"
+    }
+   ]
+  },
+  "images": [
+   "media/day37-post.webp"
+  ]
+ },
+ {
+  "n": 38,
+  "post": 27,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Jupiter has a storm bigger than the whole Earth.",
+  "summary": "Jupiter's Great Red Spot is a giant storm bigger than Earth, and about 1,000 Earths could fit inside Jupiter if it were a hollow shell.",
+  "caption": [
+   "Jupiter's Great Red Spot is a giant storm bigger than the whole Earth.",
+   "And Jupiter itself is so big that about 1,000 Earths could fit inside it, if it were a hollow shell.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#jupiter",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    }
+   ]
+  },
+  "video": "media/day38.mp4",
+  "poster": "media/day38-cover.webp"
+ },
+ {
+  "n": 39,
+  "post": 28,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-13",
+  "made": true,
+  "posted": true,
+  "title": "Scaled down, Saturn's rings are thinner than a razor blade.",
+  "summary": "In proportion, Saturn's rings are many times thinner than a razor blade. Seen edge-on from Earth they appear to disappear, which happens about every 15 years.",
+  "caption": [
+   "Scaled down, Saturn's rings are many times thinner than a razor blade.",
+   "They are so thin that when Earth lines up with their edge, about every 15 years, the rings appear to disappear.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#saturn",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 4,
+   "sources": [
+    {
+     "name": "NASA Science: Saturn Facts",
+     "url": "https://science.nasa.gov/saturn/facts/"
+    },
+    {
+     "name": "NASA Astronomy Picture of the Day (16 Nov 2025)",
+     "url": "https://science.nasa.gov/image-article/apod-2025-november-16-crossing-saturns-ring-plane"
+    },
+    {
+     "name": "NASA Hubble, Edge-On View of Saturn's Rings",
+     "url": "https://science.nasa.gov/missions/hubble/edge-on-view-of-saturns-rings/"
+    },
+    {
+     "name": "The Planetary Society, ring plane crossing",
+     "url": "https://www.planetary.org/articles/2084"
+    }
+   ]
+  },
+  "video": "media/day39.mp4",
+  "poster": "media/day39-cover.webp"
+ },
+ {
+  "n": 40,
+  "post": 29,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": "2026-10-14",
+  "made": true,
+  "posted": true,
+  "title": "Hotter or not? 3 questions.",
+  "summary": "Lightning can heat air to about 28,000 °C (50,000 °F), about 5 times hotter than the Sun's surface; Earth's core is around 6,000 °C, a bit hotter than the Sun's surface (about 5,500 °C).",
+  "caption": [
+   "Quiz time. Guess before you swipe.",
+   "Comment your score out of 3. No Googling."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#quiz",
+   "#sciencequiz",
+   "#physics"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "US National Weather Service: Lightning Science",
+     "url": "https://www.weather.gov/safety/lightning-science-overview"
+    },
+    {
+     "name": "ESRF: Earth's centre is 1,000 degrees hotter than previously thought (Anzellini et al. 2013, Science)",
+     "url": "https://www.esrf.fr/news/general/Earth-Center-Hotter"
+    },
+    {
+     "name": "NASA Science: Sun Facts",
+     "url": "https://science.nasa.gov/sun/facts/"
+    }
+   ]
+  },
+  "images": [
+   "media/day40-slide-01.webp",
+   "media/day40-slide-02.webp",
+   "media/day40-slide-03.webp",
+   "media/day40-slide-04.webp",
+   "media/day40-slide-05.webp",
+   "media/day40-slide-06.webp",
+   "media/day40-slide-07.webp",
+   "media/day40-slide-08.webp"
+  ]
+ },
+ {
+  "n": 41,
+  "post": 30,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-14",
+  "made": true,
+  "posted": true,
+  "title": "Neptune takes 165 years to circle the Sun.",
+  "summary": "Neptune takes about 165 Earth years to orbit the Sun, and in 2011 it completed its first lap since its discovery in 1846.",
+  "caption": [
+   "Neptune takes about 165 Earth years to circle the Sun.",
+   "Found in 1846, it only finished its first lap since discovery in 2011.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#neptune",
+   "#planets"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: Neptune Facts",
+     "url": "https://science.nasa.gov/neptune/neptune-facts/"
+    },
+    {
+     "name": "NASA Science: Neptune Facts",
+     "url": "https://science.nasa.gov/neptune/facts/"
+    }
+   ]
+  },
+  "video": "media/day41.mp4",
+  "poster": "media/day41-cover.webp"
+ },
+ {
+  "n": 42,
+  "post": 31,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": "2026-10-16",
+  "made": true,
+  "posted": true,
+  "title": "One bee makes only 1/12 of a teaspoon of honey, ever.",
+  "summary": "An average worker honeybee makes about one-twelfth of a teaspoon of honey in her whole lifetime.",
+  "caption": [
+   "A worker honeybee spends its whole life making honey.",
+   "Its lifetime total: only about one-twelfth of a teaspoon.",
+   "Think of that next time you spread some on toast. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#bees",
+   "#nature"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "University of California ANR Bug Squad: A Honey of a Day",
+     "url": "https://ucanr.edu/node/155127"
+    }
+   ]
+  },
+  "video": "media/day42.mp4",
+  "poster": "media/day42-cover.webp"
+ },
+ {
+  "n": 43,
+  "post": 32,
+  "format": "carousel",
+  "topic": "Space",
+  "time": "1 pm",
+  "date": "2026-10-16",
+  "made": true,
+  "posted": true,
+  "title": "Uranus rolls round the Sun on its side.",
+  "summary": "Uranus spins tipped on its side and takes about 84 Earth years to orbit the Sun, so half the planet can be plunged into a 21-year-long dark winter.",
+  "caption": [
+   "Uranus spins tipped almost on its side.",
+   "So half the planet can be plunged into a dark winter that lasts 21 years.",
+   "Save this and send it to someone who hates winter."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#uranus",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Uranus Facts",
+     "url": "https://science.nasa.gov/uranus/facts/"
+    }
+   ]
+  },
+  "images": [
+   "media/day43-slide-01.webp",
+   "media/day43-slide-02.webp",
+   "media/day43-slide-03.webp",
+   "media/day43-slide-04.webp",
+   "media/day43-slide-05.webp",
+   "media/day43-slide-06.webp"
+  ]
+ },
+ {
+  "n": 44,
+  "post": 33,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": "2026-10-16",
+  "made": true,
+  "posted": true,
+  "title": "Bananas are slightly radioactive.",
+  "summary": "Bananas are slightly radioactive because a small fraction of their potassium is radioactive; eating one gives a tiny dose of about 0.1 microsieverts.",
+  "caption": [
+   "Bananas are slightly radioactive.",
+   "A small part of all potassium is naturally radioactive, and bananas are full of potassium.",
+   "Eating one gives you about 0.1 microsieverts. Tiny and harmless. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#physics",
+   "#radiation",
+   "#foodfacts"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "US EPA RadTown: Natural Radioactivity in Food",
+     "url": "https://www.epa.gov/radtown/natural-radioactivity-food"
+    }
+   ]
+  },
+  "video": "media/day44.mp4",
+  "poster": "media/day44-cover.webp"
+ },
+ {
+  "n": 45,
+  "post": 34,
+  "format": "post",
+  "topic": "Myths",
+  "time": "1 pm",
+  "date": "2026-10-17",
+  "made": true,
+  "posted": true,
+  "title": "Summer isn't when Earth is closest to the Sun.",
+  "summary": "Seasons come from Earth's tilted axis, not from its distance from the Sun.",
+  "caption": [
+   "Seasons come from Earth's tilt, not its distance from the Sun. Proof: when it is summer in India, it is winter in Australia, on the same planet at the same distance. Send this to someone who got this wrong in school."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#earth",
+   "#seasons"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Space Place: What causes the seasons?",
+     "url": "https://spaceplace.nasa.gov/seasons/en/"
+    }
+   ]
+  },
+  "images": [
+   "media/day45-post.webp"
+  ]
+ },
+ {
+  "n": 46,
+  "post": 35,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "The Andromeda light you see left 2.5 million years ago.",
+  "summary": "From a dark site you can see the Andromeda Galaxy with your own eyes, but its light left about 2.5 million years ago, when our earliest ancestors were figuring out stone tools.",
+  "caption": [
+   "Andromeda's light left about 2.5 million years ago.",
+   "From a dark sky site you can see it with your own eyes, no telescope needed.",
+   "When that light set off, our earliest ancestors were figuring out stone tools. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#galaxy",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science (Night Sky Network): October's Night Sky Notes: Catch Andromeda Rising!",
+     "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/catch-andromeda-rising/"
+    }
+   ]
+  },
+  "video": "media/day46.mp4",
+  "poster": "media/day46-cover.webp"
+ },
+ {
+  "n": 47,
+  "post": 36,
+  "format": "carousel",
+  "topic": "Animals",
+  "time": "1 pm",
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "Octopuses, part 2: their arms can think.",
+  "summary": "About two-thirds of an octopus's neurons are in its arms, not its head.",
+  "caption": [
+   "You already know octopuses have three hearts. Here is part 2. About two-thirds of their neurons sit in their arms, not their brain. Save this and follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#octopus",
+   "#marinebiology"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Smithsonian Magazine: Ten wild facts about octopuses",
+     "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/"
+    }
+   ]
+  },
+  "images": [
+   "media/day47-slide-01.webp",
+   "media/day47-slide-02.webp",
+   "media/day47-slide-03.webp",
+   "media/day47-slide-04.webp",
+   "media/day47-slide-05.webp",
+   "media/day47-slide-06.webp"
+  ]
+ },
+ {
+  "n": 48,
+  "post": 37,
+  "format": "reel",
+  "topic": "Body",
+  "time": "7 pm",
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "Your body glows. Your eyes just can't see it.",
+  "summary": "The human body gives off a very faint visible light, about 1,000 times weaker than our eyes can see.",
+  "caption": [
+   "Your body glows.",
+   "It gives off a tiny amount of visible light, about 1,000 times too faint for your eyes. Ultra-sensitive cameras have caught it.",
+   "Picture one dot of light where your eyes need a thousand. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#biology",
+   "#science"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Kobayashi et al. 2009, PLoS ONE: Imaging of ultraweak photon emission from the human body",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006256"
+    }
+   ]
+  },
+  "video": "media/day48.mp4",
+  "poster": "media/day48-cover.webp"
+ },
+ {
+  "n": 49,
+  "post": 38,
+  "format": "post",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "This metal melts in your hand.",
+  "summary": "Gallium is a metal that melts at about 30 °C, cooler than the inside of your body (37 °C), and solid gallium floats on its own liquid.",
+  "caption": [
+   "Gallium is a metal that melts at about 30 °C. That is cooler than the inside of your body, so on a hot day, keeping it in your pocket is a bad idea. Solid gallium even floats on its own liquid. Send this to someone who loves chemistry."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#chemistry",
+   "#physics",
+   "#elements"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "Royal Society of Chemistry: Periodic Table, Gallium",
+     "url": "https://periodic-table.rsc.org/element/31/gallium"
+    },
+    {
+     "name": "KidsHealth (Nemours): body temperature",
+     "url": "https://kidshealth.org/en/kids/sweat.html"
+    },
+    {
+     "name": "Appalachian State University Physics demo Gallium melts in your hand",
+     "url": "https://physics.appstate.edu/node/375:"
+    }
+   ]
+  },
+  "images": [
+   "media/day49-post.webp"
+  ]
+ },
+ {
+  "n": 50,
+  "post": 39,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "Sunsets on Mars are blue.",
+  "summary": "Sunsets on Mars look blue, because Martian dust lets blue light through better than red light.",
+  "caption": [
+   "On Earth, sunsets go orange and red. On Mars, they turn blue.",
+   "Martian dust lets blue light through better than red. NASA's Curiosity rover photographed one in 2015.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#mars",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Scientific Visualization Studio: NASA's Curiosity Sees Blue Sunset on Mars",
+     "url": "https://svs.gsfc.nasa.gov/11875"
+    },
+    {
+     "name": "NASA Photojournal PIA19400, Sunset in Mars' Gale Crater",
+     "url": "https://science.nasa.gov/photojournal/sunset-in-mars-gale-crater"
+    }
+   ]
+  },
+  "video": "media/day50.mp4",
+  "poster": "media/day50-cover.webp"
+ },
+ {
+  "n": 51,
+  "post": 40,
+  "format": "carousel",
+  "topic": "Myths",
+  "time": "1 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "4 science myths adults still repeat.",
+  "summary": "Microwaves don't make food radioactive, antibiotics can't cure colds, glass isn't a slow liquid, and sinks don't drain differently by hemisphere.",
+  "caption": [
+   "Four things grown-ups say with total confidence.",
+   "Which one did you still believe? Comment the number.",
+   "Save this for the family group chat. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#mythbusting",
+   "#science"
+  ],
+  "check": {
+   "claims": 4,
+   "sources": [
+    {
+     "name": "US Food and Drug Administration (FDA): Microwave oven radiation",
+     "url": "https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation"
+    },
+    {
+     "name": "US Centers for Disease Control and Prevention (CDC): Antibiotic use, about",
+     "url": "https://www.cdc.gov/antibiotic-use/about/index.html"
+    },
+    {
+     "name": "Scientific American: Fact or fiction? Glass is a (supercooled) liquid",
+     "url": "https://www.scientificamerican.com/article/fact-fiction-glass-liquid/"
+    },
+    {
+     "name": "Scientific American: Does water flowing down a drain spin differently depending on the hemisphere?",
+     "url": "https://www.scientificamerican.com/article/can-somebody-finally-sett/"
+    }
+   ]
+  },
+  "images": [
+   "media/day51-slide-01.webp",
+   "media/day51-slide-02.webp",
+   "media/day51-slide-03.webp",
+   "media/day51-slide-04.webp",
+   "media/day51-slide-05.webp",
+   "media/day51-slide-06.webp"
+  ]
+ },
+ {
+  "n": 52,
+  "post": 41,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "This shark can live at least 272 years.",
+  "summary": "Greenland sharks can live for at least 272 years, making them the longest-lived animals with a backbone known.",
+  "caption": [
+   "Scientists dated Greenland sharks from the lenses of their eyes.",
+   "They can live for at least 272 years, the longest known lifespan of any animal with a backbone.",
+   "How old do you feel next to this shark?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#sharks",
+   "#ocean"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "PBS NOVA: Greenland shark is officially the longest-living vertebrate on Earth",
+     "url": "https://www.pbs.org/wgbh/nova/article/greenland-shark-is-officially-the-longest-living-vertebrate-on-earth"
+    }
+   ]
+  },
+  "video": "media/day52.mp4",
+  "poster": "media/day52-cover.webp"
+ },
+ {
+  "n": 53,
+  "post": 42,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Pluto is smaller than our Moon.",
+  "summary": "Pluto is smaller than our Moon: it is only about two-thirds as wide.",
+  "caption": [
+   "Size Check #1: Pluto is only about two-thirds as wide as our Moon.",
+   "It was reclassified as a dwarf planet in 2006 and takes 248 years to orbit the Sun.",
+   "Is Pluto a planet in your heart? Tell me below.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#1",
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#pluto",
+   "#planets"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: Pluto Facts",
+     "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+    },
+    {
+     "name": "NASA Science, Earth's Moon Facts",
+     "url": "https://science.nasa.gov/moon/facts/"
+    }
+   ]
+  },
+  "video": "media/day53.mp4",
+  "poster": "media/day53-cover.webp"
+ },
+ {
+  "n": 54,
+  "post": 43,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "About half of Earth's oxygen is made in the ocean.",
+  "summary": "Scientists estimate that roughly half of the oxygen produced on Earth comes from the ocean.",
+  "caption": [
+   "Scientists estimate that about half of Earth's oxygen is made in the ocean.",
+   "Most of it comes from plankton, and one tiny bacterium, Prochlorococcus, makes up to 20% of the oxygen in our whole biosphere. Marine life uses up about as much as the ocean makes, so it is production, not a surplus.",
+   "Forests or the ocean: which did you think made more?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#ocean",
+   "#earth",
+   "#nature"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NOAA Ocean Service: How much oxygen comes from the ocean?",
+     "url": "https://oceanservice.noaa.gov/facts/ocean-oxygen.html"
+    },
+    {
+     "name": "USGS Water Science School: How Much Water is There on Earth?",
+     "url": "https://www.usgs.gov/water-science-school/science/how-much-water-there-earth"
+    }
+   ]
+  },
+  "video": "media/day54.mp4",
+  "poster": "media/day54-cover.webp"
+ },
+ {
+  "n": 55,
+  "post": 44,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "True or false? 5 quick ones.",
+  "summary": "Recap quiz on posts 26 to 54 using true/false statements.",
+  "caption": [
+   "True or false? Five quick ones from our last few posts.",
+   "Comment your score out of 5. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#quiz",
+   "#sciencequiz",
+   "#trivia"
+  ],
+  "check": {
+   "claims": 5,
+   "sources": [
+    {
+     "name": "NASA: International Space Station Facts and Figures",
+     "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+    },
+    {
+     "name": "NASA Science: Uranus Facts",
+     "url": "https://science.nasa.gov/uranus/facts/"
+    },
+    {
+     "name": "NASA Science: Pluto Facts",
+     "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+    },
+    {
+     "name": "Royal Society of Chemistry: Periodic Table, Gallium",
+     "url": "https://periodic-table.rsc.org/element/31/gallium"
+    },
+    {
+     "name": "NASA Space Place: What causes the seasons?",
+     "url": "https://spaceplace.nasa.gov/seasons/en/"
+    }
+   ]
+  },
+  "images": [
+   "media/day55-slide-01.webp",
+   "media/day55-slide-02.webp",
+   "media/day55-slide-03.webp",
+   "media/day55-slide-04.webp",
+   "media/day55-slide-05.webp",
+   "media/day55-slide-06.webp",
+   "media/day55-slide-07.webp",
+   "media/day55-slide-08.webp"
+  ]
+ },
+ {
+  "n": 56,
+  "post": 45,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Your brain can't feel pain itself.",
+  "summary": "Brain tissue has no pain receptors, which is why some brain surgery can be done while the patient is awake.",
+  "caption": [
+   "Your brain processes every pain you feel. But brain tissue itself has no pain receptors. That is why some brain surgery is done while the patient is awake.",
+   "Could you stay awake for brain surgery? Comment yes or never.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#brain",
+   "#neuroscience",
+   "#humanbody"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Awake brain surgery (craniotomy)",
+     "url": "https://my.clevelandclinic.org/search?q=awake%20craniotomy"
+    },
+    {
+     "name": "BrainFacts.org (Society for Neuroscience): Why Doesn't the Brain Have Nociceptors?",
+     "url": "https://brainfacts.org/thinking-sensing-and-behaving/pain/2021/why-doesnt-the-brain-have-nociceptors-020321"
+    }
+   ]
+  },
+  "images": [
+   "media/day56-post.webp"
+  ]
+ },
+ {
+  "n": 57,
+  "post": 46,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "One lightning flash stretched 829 km.",
+  "summary": "A single lightning flash in October 2017 stretched about 829 km, from eastern Texas to near Kansas City: the longest lightning flash on record, certified by the World Meteorological Organization in July 2025.",
+  "caption": [
+   "In October 2017, a single lightning flash ran from eastern Texas to near Kansas City.",
+   "It stretched about 829 km, about the distance from Paris to Venice, the longest on record, certified by the World Meteorological Organization in 2025. The old record was 768 km.",
+   "What is the biggest storm you have ever seen?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#weather",
+   "#lightning",
+   "#records"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "World Meteorological Organization: WMO certifies megaflash lightning record in USA",
+     "url": "https://wmo.int/media/news/wmo-certifies-megaflash-lightning-record-usa"
+    }
+   ]
+  },
+  "video": "media/day57.mp4",
+  "poster": "media/day57-cover.webp"
+ },
+ {
+  "n": 58,
+  "post": 47,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "A day on Mercury lasts just over two of its years.",
+  "summary": "One Mercury solar day (sunrise to sunrise) lasts 176 Earth days, which is just over two Mercury years (a Mercury year is 88 Earth days).",
+  "caption": [
+   "Mercury races round the Sun every 88 days, but it spins slowly.",
+   "One full day, sunrise to sunrise, lasts 176 Earth days: just over two Mercury years.",
+   "Could you last a 176-day day?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#mercury",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Mercury Facts",
+     "url": "https://science.nasa.gov/mercury/facts/"
+    }
+   ]
+  },
+  "video": "media/day58.mp4",
+  "poster": "media/day58-cover.webp"
+ },
+ {
+  "n": 59,
+  "post": 48,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Owls can turn their heads about 270 degrees.",
+  "summary": "Owls can turn their heads about 270 degrees, three-quarters of a circle and more than twice what a human can safely manage. They cannot turn all the way round (360).",
+  "caption": [
+   "No, owls can't turn their heads all the way round. But they get close.",
+   "They can turn them about 270 degrees, more than twice what a human can safely manage.",
+   "How far can YOU turn your head?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#birds",
+   "#owls"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NPR: How Owls Spin Their Heads Without Tearing Arteries",
+     "url": "https://www.npr.org/sections/health-shots/2013/01/31/170758750/how-owls-spin-their-heads-without-tearing-arteries"
+    }
+   ]
+  },
+  "video": "media/day59.mp4",
+  "poster": "media/day59-cover.webp"
+ },
+ {
+  "n": 60,
+  "post": 49,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Earth's north and south poles have swapped places.",
+  "summary": "Earth's magnetic field has flipped many times; the last reversal was about 780,000 years ago.",
+  "caption": [
+   "Earth's magnetic field has flipped many times.",
+   "North and south last swapped about 780,000 years ago.",
+   "Would you notice if your compass flipped? Comment yes or what compass. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#earth",
+   "#geology",
+   "#magnetism"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS FAQ: Is it true that Earth's magnetic field occasionally reverses its polarity?",
+     "url": "https://www.usgs.gov/faqs/it-true-earths-magnetic-field-occasionally-reverses-its-polarity"
+    }
+   ]
+  },
+  "images": [
+   "media/day60-slide-01.webp",
+   "media/day60-slide-02.webp",
+   "media/day60-slide-03.webp",
+   "media/day60-slide-04.webp",
+   "media/day60-slide-05.webp",
+   "media/day60-slide-06.webp"
+  ]
+ },
+ {
+  "n": 61,
+  "post": 50,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "On Titan, it rains, but not water.",
+  "summary": "Saturn's moon Titan has clouds, rain, rivers, lakes and seas, but they are liquid methane and ethane, not water.",
+  "caption": [
+   "Titan, Saturn's moon, has clouds, rain, rivers, lakes and seas. They are made of liquid methane and ethane, not water.",
+   "Would you visit a methane rainstorm?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#titan",
+   "#saturn"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Titan Facts",
+     "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    }
+   ]
+  },
+  "video": "media/day61.mp4",
+  "poster": "media/day61-cover.webp"
+ },
+ {
+  "n": 62,
+  "post": 51,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Axolotls can regrow legs, heart and brain parts.",
+  "summary": "Axolotls can regrow lost limbs, and parts of their heart and brain (without scar tissue).",
+  "caption": [
+   "Axolotls are the regrowing champions of the animal world. They can regrow lost legs, and parts of their heart and brain.",
+   "Which would you regrow?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#axolotl",
+   "#biology"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "Nature: Unlock your inner salamander",
+     "url": "https://www.nature.com/articles/540S58a"
+    },
+    {
+     "name": "Marine Biological Laboratory (Space Daily item)",
+     "url": "https://www.mbl.edu/news/axolotl-can-regrow-lost-leg-piece-its-heart-parts-its-spinal-cord-and-even-sections-its-brain-no-scarring-space-daily"
+    },
+    {
+     "name": "Science in Public (ARMI, Australian Regenerative Medicine Institute)",
+     "url": "https://stories.scienceinpublic.com.au/2014/axolotls-out-on-limb-for-future-human-hope/"
+    }
+   ]
+  },
+  "video": "media/day62.mp4",
+  "poster": "media/day62-cover.webp"
+ },
+ {
+  "n": 63,
+  "post": 52,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Babies are born without bony kneecaps.",
+  "summary": "Babies are born with kneecaps made of soft cartilage; they usually only start turning to bone at around age 5 or 6 (sometimes earlier) and finish in the teenage years.",
+  "caption": [
+   "Babies don't have bony kneecaps yet.",
+   "Theirs are soft cartilage. They usually start turning to bone at around age 5 or 6, and don't finish until the teen years.",
+   "Did you know this? Comment yes or no way. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#babies",
+   "#anatomy"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Kneecap (patella)",
+     "url": "https://my.clevelandclinic.org/search?q=kneecap"
+    },
+    {
+     "name": "Genetics of the patella, review article (PubMed Central, NIH)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6461774/"
+    }
+   ]
+  },
+  "images": [
+   "media/day63-post.webp"
+  ]
+ },
+ {
+  "n": 64,
+  "post": 53,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "The Moon drifts about 3.8 cm away every year.",
+  "summary": "The Moon is slowly moving away from Earth, by about 3.8 centimetres a year (about 1.5 inches), and ocean tides on Earth have a direct influence on its orbit.",
+  "caption": [
+   "The Moon feels like it never moves. It is slowly leaving us. It drifts about 3.8 cm (about an inch and a half) farther away from Earth every year, and ocean tides on Earth shape its orbit.",
+   "Would you miss the Moon?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#moon",
+   "#apollo"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: Earth's Moon Facts",
+     "url": "https://science.nasa.gov/moon/facts/"
+    },
+    {
+     "name": "NASA Goddard (eclipse site), Measuring the Moon's Distance",
+     "url": "https://eclipse.gsfc.nasa.gov/help/ApolloLaser.html"
+    }
+   ]
+  },
+  "video": "media/day64.mp4",
+  "poster": "media/day64-cover.webp"
+ },
+ {
+  "n": 65,
+  "post": 54,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "The speed of light is exact. Not measured.",
+  "summary": "The speed of light in a vacuum is exactly 299,792,458 metres per second, because since 1983 the metre has been defined using the speed of light.",
+  "caption": [
+   "The speed of light isn't “about” anything. In a vacuum it is exactly 299,792,458 m/s.",
+   "Since 1983 the metre itself has been defined by light, so the number is fixed.",
+   "Did you know the metre is defined by light? Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#physics",
+   "#light",
+   "#science"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NIST: SI Redefinition, Meter",
+     "url": "https://www.nist.gov/si-redefinition/meter"
+    }
+   ]
+  },
+  "images": [
+   "media/day65-slide-01.webp",
+   "media/day65-slide-02.webp",
+   "media/day65-slide-03.webp",
+   "media/day65-slide-04.webp",
+   "media/day65-slide-05.webp",
+   "media/day65-slide-06.webp"
+  ]
+ },
+ {
+  "n": 66,
+  "post": 55,
+  "format": "reel",
+  "topic": "Myths",
+  "time": "7 pm",
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "A hammer and a feather fall at the same speed.",
+  "summary": "Without air resistance, a hammer and a feather fall at the same rate. Apollo 15 Commander David Scott showed it on the Moon in 1971.",
+  "caption": [
+   "On Earth, air slows a feather far more than a hammer. Without air, everything falls at the same rate. Apollo 15 commander David Scott showed it on the Moon in 1971.",
+   "Which would you have bet on, the hammer or the feather?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#physics",
+   "#moon"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: The Apollo 15 hammer-feather drop",
+     "url": "https://science.nasa.gov/resource/the-apollo-15-hammer-feather-drop/"
+    },
+    {
+     "name": "NASA, Apollo 15",
+     "url": "https://www.nasa.gov/mission/apollo-15/"
+    }
+   ]
+  },
+  "video": "media/day66.mp4",
+  "poster": "media/day66-cover.webp"
+ },
+ {
+  "n": 67,
+  "post": 56,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-25",
+  "made": true,
+  "posted": true,
+  "title": "A moon of Jupiter is bigger than Mercury.",
+  "summary": "Jupiter's moon Ganymede is the largest moon in the Solar System and is bigger (wider) than the planet Mercury: about 5,260 km across against Mercury's 4,879 km.",
+  "caption": [
+   "Size Check #2: Ganymede, a moon of Jupiter, is the largest moon in the Solar System.",
+   "It is about 5,260 km wide, wider than the planet Mercury (4,879 km). It is a moon only because it orbits Jupiter, not the Sun.",
+   "Which surprised you more, the moon or the planet?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#2",
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#jupiter",
+   "#moons"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    {
+     "name": "NASA Science, Ganymede Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/"
+    },
+    {
+     "name": "NASA NSSDCA, Jovian Satellite Fact Sheet / Solar System Small Worlds Fact Sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/galileanfact_table.html"
+    }
+   ]
+  },
+  "video": "media/day67.mp4",
+  "poster": "media/day67-cover.webp"
+ },
+ {
+  "n": 68,
+  "post": 57,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": "2026-10-25",
+  "made": true,
+  "posted": true,
+  "title": "Identical twins don't have identical fingerprints.",
+  "summary": "Identical twins share the same DNA but have different fingerprints, because conditions in the womb shape the finer details of the ridges.",
+  "caption": [
+   "Identical twins share the same DNA.",
+   "But their fingerprints are different, because conditions in the womb shape the finer details of the ridges.",
+   "Do you know any identical twins? Tag one. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#genetics",
+   "#twins"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "MedlinePlus Genetics: Is fingerprint pattern determined by genetics?",
+     "url": "https://medlineplus.gov/genetics/understanding/traits/fingerprints/"
+    }
+   ]
+  },
+  "images": [
+   "media/day68-post.webp"
+  ]
+ },
+ {
+  "n": 69,
+  "post": 58,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": "2026-10-25",
+  "made": true,
+  "posted": true,
+  "title": "Crows remember your face and tell their friends.",
+  "summary": "Crows can recognise individual human faces and remember them for years. Crows that were never caught still scolded the person in the “dangerous” mask, which suggests they learn from other crows.",
+  "caption": [
+   "Crows remember your face.⬛",
+   "Researchers wore a mask while catching crows. Years later, crows still scolded and dive-bombed anyone in that mask. Even crows that were never caught joined in, so it seems they warn each other. A neutral mask was mostly ignored.",
+   "Have you ever been scolded by a crow?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#birds",
+   "#crows"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "University of Washington News: Crows remember human faces (Marzluff et al. 2010)",
+     "url": "https://www.washington.edu/news/?s=crows+faces"
+    }
+   ]
+  },
+  "video": "media/day69.mp4",
+  "poster": "media/day69-cover.webp"
+ },
+ {
+  "n": 70,
+  "post": 59,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": "2026-10-25",
+  "made": true,
+  "posted": false,
+  "title": "Can you beat this 5-question quiz?",
+  "summary": "Recap quiz on posts 043, 047, 049, 055, 056 (see post-059/fact.md).",
+  "caption": [
+   "Quiz time. Five questions from our last few posts.",
+   "Comment your score out of 5. Be honest.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#quiz",
+   "#sciencequiz",
+   "#trivia"
+  ],
+  "check": {
+   "claims": 5,
+   "sources": [
+    {
+     "name": "NASA Science: Mercury Facts",
+     "url": "https://science.nasa.gov/mercury/facts/"
+    },
+    {
+     "name": "NOAA Ocean Service: How much oxygen comes from the ocean?",
+     "url": "https://oceanservice.noaa.gov/facts/ocean-oxygen.html"
+    },
+    {
+     "name": "NASA Science: The Apollo 15 hammer-feather drop",
+     "url": "https://science.nasa.gov/resource/the-apollo-15-hammer-feather-drop/"
+    },
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    {
+     "name": "USGS FAQ: Is it true that Earth's magnetic field occasionally reverses its polarity?",
+     "url": "https://www.usgs.gov/faqs/it-true-earths-magnetic-field-occasionally-reverses-its-polarity"
+    }
+   ]
+  },
+  "images": [
+   "media/day70-slide-01.webp",
+   "media/day70-slide-02.webp",
+   "media/day70-slide-03.webp",
+   "media/day70-slide-04.webp",
+   "media/day70-slide-05.webp",
+   "media/day70-slide-06.webp",
+   "media/day70-slide-07.webp",
+   "media/day70-slide-08.webp"
+  ]
+ },
+ {
+  "n": 71,
+  "post": 60,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-25",
+  "made": true,
+  "posted": false,
+  "title": "Jupiter is the biggest planet but has the shortest day.",
+  "summary": "Jupiter, the biggest planet, has the shortest day: it spins once every 9.9 hours.",
+  "caption": [
+   "Jupiter is the biggest planet in our Solar System, yet it has the shortest day.",
+   "It spins once in about 9.9 hours, so in one Earth day (24 hours) Jupiter turns about 2.4 times.",
+   "Would you like a 9.9-hour day?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#jupiter",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    }
+   ]
+  },
+  "video": "media/day71.mp4",
+  "poster": "media/day71-cover.webp"
+ },
+ {
+  "n": 72,
+  "post": 61,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Raindrops look like burger buns, not tears.",
+  "summary": "Raindrops are not shaped like teardrops. Small ones are round, bigger ones flatten into something like a hamburger bun, and very big ones break apart into smaller drops.",
+  "caption": [
+   "Forget the teardrop emoji.",
+   "Small raindrops are round. Bigger ones get flattened from below, like a hamburger bun. Very big ones break apart.",
+   "Did you picture a teardrop?",
+   "Send this to someone who loves the rain.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#weather",
+   "#rain",
+   "#physics"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS Water Science School: Raindrops are different shapes",
+     "url": "https://www.usgs.gov/water-science-school/science/are-raindrops-shaped-teardrops"
+    }
+   ]
+  },
+  "video": "media/day72.mp4",
+  "poster": "media/day72-cover.webp"
+ },
+ {
+  "n": 73,
+  "post": 62,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Shrimp snap: nearly as hot as the Sun's surface.",
+  "summary": "A pistol (snapping) shrimp's claw snap makes a collapsing bubble that briefly reaches at least about 4,700 °C, close to the Sun's surface (about 5,500 °C).",
+  "caption": [
+   "The pistol shrimp snaps its claw so fast it makes a bubble that collapses with a bang. For an instant, the bubble reaches at least about 4,700 °C. The Sun's surface is about 5,500 °C.",
+   "Which animal should I do next? Tell me below.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#ocean",
+   "#marinebiology"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Lohse et al. 2001, Nature: Snapping shrimp make flashing bubbles",
+     "url": "https://www.nature.com/search?q=snapping+shrimp+make+flashing+bubbles"
+    },
+    {
+     "name": "Lohse, Schmitz & Versluis (2001), Nature 413: Snapping shrimp make flashing bubbles",
+     "url": "https://www.nature.com/articles/35097152"
+    }
+   ]
+  },
+  "video": "media/day73.mp4",
+  "poster": "media/day73-cover.webp"
+ },
+ {
+  "n": 74,
+  "post": 63,
+  "format": "carousel",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Up to 60% of you is water.",
+  "summary": "Up to 60% of an adult human body is water.",
+  "caption": [
+   "Your lungs are about 83% water. Muscles and kidneys: 79%. Brain and heart: 73%. Even bones are about 31%. Add it all up and up to 60% of an adult body is water.",
+   "Which number surprised you? Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#body",
+   "#water"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS Water Science School: The water in you",
+     "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body"
+    }
+   ]
+  },
+  "images": [
+   "media/day74-slide-01.webp",
+   "media/day74-slide-02.webp",
+   "media/day74-slide-03.webp",
+   "media/day74-slide-04.webp",
+   "media/day74-slide-05.webp",
+   "media/day74-slide-06.webp",
+   "media/day74-slide-07.webp",
+   "media/day74-slide-08.webp"
+  ]
+ },
+ {
+  "n": 75,
+  "post": 64,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Count to 3 after lightning. That's 1 km.",
+  "summary": "Count the seconds between a flash and its thunder: every 3 seconds means the lightning is about 1 km away.",
+  "caption": [
+   "Count the seconds between a flash of lightning and its thunder. Light reaches you practically instantly. Sound takes about 3 seconds to cover 1 kilometre. So 3 seconds is about 1 km, 6 seconds about 2 km, 9 seconds about 3 km. (In miles: divide by 5.)",
+   "Do you count after lightning? Tell me below.",
+   "Follow @curiousorbit.daily for more.",
+   "Thunder sound: “Rain + Long Thunder” by WuxiaScrub (CC0). Utility pole 3D model: Poly Haven “Modular Electricity Poles” by James Ray Cock (CC0)."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#physics",
+   "#lightning",
+   "#thunder"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "US National Weather Service: Understanding Lightning: Thunder",
+     "url": "https://www.weather.gov/safety/lightning-science-thunder"
+    }
+   ]
+  },
+  "video": "media/day75.mp4",
+  "poster": "media/day75-cover.webp"
+ },
+ {
+  "n": 76,
+  "post": 65,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Your cornea has no blood vessels. It breathes air.",
+  "summary": "The cornea, the clear front of your eye, has no blood vessels (except at its edges) and gets most of the oxygen it needs straight from the air.",
+  "caption": [
+   "The clear front of your eye, the cornea, has no blood vessels.",
+   "That keeps it see-through. It takes most of its oxygen straight from the air.",
+   "Do you wear contact lenses? Send this to someone who does. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#eyes",
+   "#biology"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Cornea",
+     "url": "https://my.clevelandclinic.org/health/body/21497-cornea"
+    },
+    {
+     "name": "National Research Council (NCBI Bookshelf): Contact Lens Use Under Adverse Conditions",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK234044/"
+    },
+    {
+     "name": "Encyclopaedia Britannica: Cornea",
+     "url": "https://www.britannica.com/science/cornea"
+    }
+   ]
+  },
+  "images": [
+   "media/day76-post.webp"
+  ]
+ },
+ {
+  "n": 77,
+  "post": 66,
+  "format": "reel",
+  "topic": "Body",
+  "time": "7 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Your liver can grow back.",
+  "summary": "A healthy liver can grow back to its former size after up to two-thirds of it is removed, over weeks to months.",
+  "caption": [
+   "You can't regrow a leg like an axolotl. But your liver has its own trick.",
+   "A healthy liver can lose up to two-thirds of its volume and still grow back to its former size, over weeks to months.",
+   "Did you know your liver could do this? Tell us below. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#biology",
+   "#health"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Liver",
+     "url": "https://my.clevelandclinic.org/health/body/21481-liver"
+    }
+   ]
+  },
+  "video": "media/day77.mp4",
+  "poster": "media/day77-cover.webp"
+ },
+ {
+  "n": 78,
+  "post": 67,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Cheetahs can't roar. They purr.",
+  "summary": "Cheetahs can't roar like lions; instead they purr, chirp and growl.",
+  "caption": [
+   "Lions roar. Cheetahs can't.",
+   "Instead, cheetahs purr, chirp and growl. Their purr is a close-range sound, a lot like a house cat's.",
+   "Cheetah purr or house cat purr: which would you rather hear? Tell us below. Send this to the cat person in your life. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#bigcats",
+   "#wildlife"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Smithsonian's National Zoo: Cheetah",
+     "url": "https://nationalzoo.si.edu/animals/cheetah"
+    }
+   ]
+  },
+  "video": "media/day78.mp4",
+  "poster": "media/day78-cover.webp"
+ },
+ {
+  "n": 79,
+  "post": 68,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Halley's Comet returns in 2061.",
+  "summary": "Halley's Comet comes back about every 76 years; it was last seen in 1986 and returns in 2061.",
+  "caption": [
+   "Halley's Comet comes back about every 76 years.",
+   "It was last seen in 1986 and returns in 2061. Its dust trail also gives us two meteor showers every year: the Eta Aquarids in May and the Orionids in October.",
+   "How old will you be in 2061? Tell us below. Send this to someone who will be there to watch. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#comets",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: 1P/Halley",
+     "url": "https://science.nasa.gov/solar-system/comets/1p-halley/"
+    }
+   ]
+  },
+  "video": "media/day79.mp4",
+  "poster": "media/day79-cover.webp"
+ },
+ {
+  "n": 80,
+  "post": 69,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 81,
+  "post": 70,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 82,
+  "post": 71,
+  "format": "reel",
+  "topic": "Myths",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 83,
+  "post": 72,
+  "format": "reel",
+  "topic": "Body",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 84,
+  "post": 73,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 85,
+  "post": 74,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 86,
+  "post": 75,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 87,
+  "post": 76,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
   "date": null,
   "summary": ""
  }

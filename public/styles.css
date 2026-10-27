@@ -489,3 +489,19 @@ section { scroll-margin-top: 80px; }
 
 .tabs-gap { flex: 1; }
 .shop-tabs { margin: 0 0 22px; }
+
+/* All facts page (facts/index.html) and the 1,000-fact goal bar */
+.all { padding-block: clamp(120px, 16vh, 180px) clamp(60px, 10vh, 110px); }
+.all h1 { font-size: clamp(40px, 7vw, 96px); line-height: .96; letter-spacing: -0.045em; margin: 18px 0 0; max-width: 14ch; }
+.goal { height: 6px; max-width: 640px; margin-top: 30px; border-radius: 6px; background: var(--line); overflow: hidden; }
+.goal i { display: block; height: 100%; width: calc(var(--p) * 100%); min-width: 6px; background: var(--ember); border-radius: 6px; }
+.goal-k { margin: 12px 0 0; font: 700 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.all .lede { margin-bottom: 0; }
+.all-grid { list-style: none; padding: 0; margin: 56px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 30px 18px; }
+@media (min-width: 700px) { .all-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+.all-grid a { display: grid; gap: 10px; color: inherit; text-decoration: none; }
+.all-grid .pic { aspect-ratio: 4 / 5; border-radius: 16px; overflow: hidden; background: var(--card); border: 1px solid var(--line); }
+.all-grid img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.06); transition: transform .9s cubic-bezier(.2, .8, .2, 1); }
+.all-grid a:hover img, .all-grid a:focus-visible img { transform: scale(1); }
+.all-grid .k { font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.all-grid .t { font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; font-size: clamp(15px, 1.3vw, 18px); }

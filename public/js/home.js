@@ -166,7 +166,11 @@
     svg.append(c1, c2); return svg;
   };
   const logTrack = $('#log-track');
-  DAYS.forEach((d) => {
+  // the latest 24 facts plus the next few coming up; the full list lives on facts/index.html
+  const LOG_SHOW = 24;
+  const cut = live.length > LOG_SHOW ? live[live.length - LOG_SHOW].n : 0;
+  const count = $('#log-count'); if (count) count.textContent = live.length;
+  DAYS.filter((d) => d.n >= cut).forEach((d) => {
     const on = isLive(d), isNext = next && d.n === next.n;
     const thumb = on ? (d.format === 'reel' ? d.poster : d.images[0]) : null;
     const li = h('li', { class: `station${on ? '' : ' locked'}${isNext ? ' next' : ''}` },
