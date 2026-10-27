@@ -1501,8 +1501,41 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Earth",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Continents move as fast as your fingernails grow.",
+  "summary": "Earth's tectonic plates move at roughly the same rate that your fingernails grow.",
+  "caption": [
+   "Your fingernails grow about 4 cm a year. Earth's tectonic plates move at roughly that same rate, and satellite GPS tracks them to a fraction of a millimetre a year. Save this and look at your nails differently."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#earth",
+   "#geology",
+   "#tectonics"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS FAQ: How fast do tectonic plates move?",
+     "url": "https://www.usgs.gov/faqs/how-fast-do-tectonic-plates-move"
+    }
+   ]
+  },
+  "images": [
+   "media/day35-slide-01.webp",
+   "media/day35-slide-02.webp",
+   "media/day35-slide-03.webp",
+   "media/day35-slide-04.webp",
+   "media/day35-slide-05.webp",
+   "media/day35-slide-06.webp"
+  ]
  },
  {
   "n": 36,
@@ -1510,8 +1543,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "You can't tickle yourself. Your brain sees it coming.",
+  "summary": "You can't tickle yourself because your cerebellum turns down the brain's response to your own touch ahead of time.",
+  "caption": [
+   "Try tickling yourself right now. It feels weaker, right?",
+   "A part of your brain called the cerebellum turns the feeling down before your fingers even land. No surprise, no tickle.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#brain",
+   "#humanbody",
+   "#psychology"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Scientific American: Why can't you tickle yourself? (Blakemore, Wolpert & Frith 1998, UCL)",
+     "url": "https://www.scientificamerican.com/article/why-cant-you-tickle-yours/"
+    },
+    {
+     "name": "UCL News: Why can't I tickle myself?",
+     "url": "https://www.ucl.ac.uk/news/headlines/2016/sep/why-cant-i-tickle-myself"
+    }
+   ]
+  },
+  "video": "media/day36.mp4",
+  "poster": "media/day36-cover.webp"
  },
  {
   "n": 37,
@@ -1519,8 +1585,40 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Animals",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Koalas have fingerprints almost like ours.",
+  "summary": "Koala fingerprints look remarkably similar to human fingerprints, even under a microscope.",
+  "caption": [
+   "Koalas have fingerprints. Their swirls and loops look remarkably like human ones, even under a microscope. Send this to someone who loves koalas."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#australia",
+   "#wildlife"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Nature: Fingerprints of a koala (Henneberg, Lambert & Leigh 1996)",
+     "url": "https://www.nature.com/search?q=fingerprints+of+a+koala"
+    },
+    {
+     "name": "Snopes: Have koala fingerprints been confused with humans' at crime scenes?",
+     "url": "https://www.snopes.com/fact-check/koala-fingerprints-crime-scene/"
+    }
+   ]
+  },
+  "images": [
+   "media/day37-post.webp"
+  ]
  },
  {
   "n": 38,
@@ -1528,8 +1626,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Jupiter has a storm bigger than the whole Earth.",
+  "summary": "Jupiter's Great Red Spot is a giant storm bigger than Earth, and about 1,000 Earths could fit inside Jupiter if it were a hollow shell.",
+  "caption": [
+   "Jupiter's Great Red Spot is a giant storm bigger than the whole Earth.",
+   "And Jupiter itself is so big that about 1,000 Earths could fit inside it, if it were a hollow shell.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#jupiter",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    }
+   ]
+  },
+  "video": "media/day38.mp4",
+  "poster": "media/day38-cover.webp"
  },
  {
   "n": 39,
@@ -1537,8 +1664,49 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-13",
+  "made": true,
+  "posted": true,
+  "title": "Scaled down, Saturn's rings are thinner than a razor blade.",
+  "summary": "In proportion, Saturn's rings are many times thinner than a razor blade. Seen edge-on from Earth they appear to disappear, which happens about every 15 years.",
+  "caption": [
+   "Scaled down, Saturn's rings are many times thinner than a razor blade.",
+   "They are so thin that when Earth lines up with their edge, about every 15 years, the rings appear to disappear.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#saturn",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 4,
+   "sources": [
+    {
+     "name": "NASA Science: Saturn Facts",
+     "url": "https://science.nasa.gov/saturn/facts/"
+    },
+    {
+     "name": "NASA Astronomy Picture of the Day (16 Nov 2025)",
+     "url": "https://science.nasa.gov/image-article/apod-2025-november-16-crossing-saturns-ring-plane"
+    },
+    {
+     "name": "NASA Hubble, Edge-On View of Saturn's Rings",
+     "url": "https://science.nasa.gov/missions/hubble/edge-on-view-of-saturns-rings/"
+    },
+    {
+     "name": "The Planetary Society, ring plane crossing",
+     "url": "https://www.planetary.org/articles/2084"
+    }
+   ]
+  },
+  "video": "media/day39.mp4",
+  "poster": "media/day39-cover.webp"
  },
  {
   "n": 40,
@@ -1564,6 +1732,51 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 43,
+  "post": 32,
+  "format": "carousel",
+  "topic": "Space",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 44,
+  "post": 33,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 45,
+  "post": 34,
+  "format": "post",
+  "topic": "Myths",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 46,
+  "post": 35,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 47,
+  "post": 36,
+  "format": "carousel",
+  "topic": "Animals",
+  "time": "1 pm",
   "date": null,
   "summary": ""
  }
