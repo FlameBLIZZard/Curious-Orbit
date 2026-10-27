@@ -2353,8 +2353,60 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Quiz",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "True or false? 5 quick ones.",
+  "summary": "Recap quiz on posts 26 to 54 using true/false statements.",
+  "caption": [
+   "True or false? Five quick ones from our last few posts.",
+   "Comment your score out of 5. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#quiz",
+   "#sciencequiz",
+   "#trivia"
+  ],
+  "check": {
+   "claims": 5,
+   "sources": [
+    {
+     "name": "NASA: International Space Station Facts and Figures",
+     "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+    },
+    {
+     "name": "NASA Science: Uranus Facts",
+     "url": "https://science.nasa.gov/uranus/facts/"
+    },
+    {
+     "name": "NASA Science: Pluto Facts",
+     "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+    },
+    {
+     "name": "Royal Society of Chemistry: Periodic Table, Gallium",
+     "url": "https://periodic-table.rsc.org/element/31/gallium"
+    },
+    {
+     "name": "NASA Space Place: What causes the seasons?",
+     "url": "https://spaceplace.nasa.gov/seasons/en/"
+    }
+   ]
+  },
+  "images": [
+   "media/day55-slide-01.webp",
+   "media/day55-slide-02.webp",
+   "media/day55-slide-03.webp",
+   "media/day55-slide-04.webp",
+   "media/day55-slide-05.webp",
+   "media/day55-slide-06.webp",
+   "media/day55-slide-07.webp",
+   "media/day55-slide-08.webp"
+  ]
  },
  {
   "n": 56,
@@ -2362,8 +2414,42 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Body",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Your brain can't feel pain itself.",
+  "summary": "Brain tissue has no pain receptors, which is why some brain surgery can be done while the patient is awake.",
+  "caption": [
+   "Your brain processes every pain you feel. But brain tissue itself has no pain receptors. That is why some brain surgery is done while the patient is awake.",
+   "Could you stay awake for brain surgery? Comment yes or never.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#brain",
+   "#neuroscience",
+   "#humanbody"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Awake brain surgery (craniotomy)",
+     "url": "https://my.clevelandclinic.org/search?q=awake%20craniotomy"
+    },
+    {
+     "name": "BrainFacts.org (Society for Neuroscience): Why Doesn't the Brain Have Nociceptors?",
+     "url": "https://brainfacts.org/thinking-sensing-and-behaving/pain/2021/why-doesnt-the-brain-have-nociceptors-020321"
+    }
+   ]
+  },
+  "images": [
+   "media/day56-post.webp"
+  ]
  },
  {
   "n": 57,
@@ -2371,8 +2457,38 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "One lightning flash stretched 829 km.",
+  "summary": "A single lightning flash in October 2017 stretched about 829 km, from eastern Texas to near Kansas City: the longest lightning flash on record, certified by the World Meteorological Organization in July 2025.",
+  "caption": [
+   "In October 2017, a single lightning flash ran from eastern Texas to near Kansas City.",
+   "It stretched about 829 km, about the distance from Paris to Venice, the longest on record, certified by the World Meteorological Organization in 2025. The old record was 768 km.",
+   "What is the biggest storm you have ever seen?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#weather",
+   "#lightning",
+   "#records"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "World Meteorological Organization: WMO certifies megaflash lightning record in USA",
+     "url": "https://wmo.int/media/news/wmo-certifies-megaflash-lightning-record-usa"
+    }
+   ]
+  },
+  "video": "media/day57.mp4",
+  "poster": "media/day57-cover.webp"
  },
  {
   "n": 58,
@@ -2380,8 +2496,38 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "A day on Mercury lasts just over two of its years.",
+  "summary": "One Mercury solar day (sunrise to sunrise) lasts 176 Earth days, which is just over two Mercury years (a Mercury year is 88 Earth days).",
+  "caption": [
+   "Mercury races round the Sun every 88 days, but it spins slowly.",
+   "One full day, sunrise to sunrise, lasts 176 Earth days: just over two Mercury years.",
+   "Could you last a 176-day day?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#mercury",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Mercury Facts",
+     "url": "https://science.nasa.gov/mercury/facts/"
+    }
+   ]
+  },
+  "video": "media/day58.mp4",
+  "poster": "media/day58-cover.webp"
  },
  {
   "n": 59,
@@ -2389,8 +2535,38 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Owls can turn their heads about 270 degrees.",
+  "summary": "Owls can turn their heads about 270 degrees, three-quarters of a circle and more than twice what a human can safely manage. They cannot turn all the way round (360).",
+  "caption": [
+   "No, owls can't turn their heads all the way round. But they get close.",
+   "They can turn them about 270 degrees, more than twice what a human can safely manage.",
+   "How far can YOU turn your head?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#birds",
+   "#owls"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NPR: How Owls Spin Their Heads Without Tearing Arteries",
+     "url": "https://www.npr.org/sections/health-shots/2013/01/31/170758750/how-owls-spin-their-heads-without-tearing-arteries"
+    }
+   ]
+  },
+  "video": "media/day59.mp4",
+  "poster": "media/day59-cover.webp"
  },
  {
   "n": 60,
@@ -2415,6 +2591,51 @@ window.CO_DAYS = [
   "post": 51,
   "format": "reel",
   "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 63,
+  "post": 52,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 64,
+  "post": 53,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 65,
+  "post": 54,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 66,
+  "post": 55,
+  "format": "reel",
+  "topic": "Myths",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 67,
+  "post": 56,
+  "format": "reel",
+  "topic": "Space",
   "time": "7 pm",
   "date": null,
   "summary": ""
