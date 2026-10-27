@@ -3227,8 +3227,38 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Count to 3 after lightning. That's 1 km.",
+  "summary": "Count the seconds between a flash and its thunder: every 3 seconds means the lightning is about 1 km away.",
+  "caption": [
+   "Count the seconds between a flash of lightning and its thunder. Light reaches you practically instantly. Sound takes about 3 seconds to cover 1 kilometre. So 3 seconds is about 1 km, 6 seconds about 2 km, 9 seconds about 3 km. (In miles: divide by 5.)",
+   "Do you count after lightning? Tell me below.",
+   "Follow @curiousorbit.daily for more.",
+   "Thunder sound: “Rain + Long Thunder” by WuxiaScrub (CC0). Utility pole 3D model: Poly Haven “Modular Electricity Poles” by James Ray Cock (CC0)."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#physics",
+   "#lightning",
+   "#thunder"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "US National Weather Service: Understanding Lightning: Thunder",
+     "url": "https://www.weather.gov/safety/lightning-science-thunder"
+    }
+   ]
+  },
+  "video": "media/day75.mp4",
+  "poster": "media/day75-cover.webp"
  },
  {
   "n": 76,
@@ -3236,8 +3266,46 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Body",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Your cornea has no blood vessels. It breathes air.",
+  "summary": "The cornea, the clear front of your eye, has no blood vessels (except at its edges) and gets most of the oxygen it needs straight from the air.",
+  "caption": [
+   "The clear front of your eye, the cornea, has no blood vessels.",
+   "That keeps it see-through. It takes most of its oxygen straight from the air.",
+   "Do you wear contact lenses? Send this to someone who does. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#eyes",
+   "#biology"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Cornea",
+     "url": "https://my.clevelandclinic.org/health/body/21497-cornea"
+    },
+    {
+     "name": "National Research Council (NCBI Bookshelf): Contact Lens Use Under Adverse Conditions",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK234044/"
+    },
+    {
+     "name": "Encyclopaedia Britannica: Cornea",
+     "url": "https://www.britannica.com/science/cornea"
+    }
+   ]
+  },
+  "images": [
+   "media/day76-post.webp"
+  ]
  },
  {
   "n": 77,
@@ -3245,8 +3313,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Your liver can grow back.",
+  "summary": "A healthy liver can grow back to its former size after up to two-thirds of it is removed, over weeks to months.",
+  "caption": [
+   "You can't regrow a leg like an axolotl. But your liver has its own trick.",
+   "A healthy liver can lose up to two-thirds of its volume and still grow back to its former size, over weeks to months.",
+   "Did you know your liver could do this? Tell us below. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#biology",
+   "#health"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Liver",
+     "url": "https://my.clevelandclinic.org/health/body/21481-liver"
+    }
+   ]
+  },
+  "video": "media/day77.mp4",
+  "poster": "media/day77-cover.webp"
  },
  {
   "n": 78,
@@ -3254,8 +3351,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Cheetahs can't roar. They purr.",
+  "summary": "Cheetahs can't roar like lions; instead they purr, chirp and growl.",
+  "caption": [
+   "Lions roar. Cheetahs can't.",
+   "Instead, cheetahs purr, chirp and growl. Their purr is a close-range sound, a lot like a house cat's.",
+   "Cheetah purr or house cat purr: which would you rather hear? Tell us below. Send this to the cat person in your life. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#bigcats",
+   "#wildlife"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Smithsonian's National Zoo: Cheetah",
+     "url": "https://nationalzoo.si.edu/animals/cheetah"
+    }
+   ]
+  },
+  "video": "media/day78.mp4",
+  "poster": "media/day78-cover.webp"
  },
  {
   "n": 79,
@@ -3263,8 +3389,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Halley's Comet returns in 2061.",
+  "summary": "Halley's Comet comes back about every 76 years; it was last seen in 1986 and returns in 2061.",
+  "caption": [
+   "Halley's Comet comes back about every 76 years.",
+   "It was last seen in 1986 and returns in 2061. Its dust trail also gives us two meteor showers every year: the Eta Aquarids in May and the Orionids in October.",
+   "How old will you be in 2061? Tell us below. Send this to someone who will be there to watch. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#comets",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: 1P/Halley",
+     "url": "https://science.nasa.gov/solar-system/comets/1p-halley/"
+    }
+   ]
+  },
+  "video": "media/day79.mp4",
+  "poster": "media/day79-cover.webp"
  },
  {
   "n": 80,
@@ -3289,6 +3444,51 @@ window.CO_DAYS = [
   "post": 71,
   "format": "reel",
   "topic": "Myths",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 83,
+  "post": 72,
+  "format": "reel",
+  "topic": "Body",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 84,
+  "post": 73,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 85,
+  "post": 74,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 86,
+  "post": 75,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 87,
+  "post": 76,
+  "format": "reel",
+  "topic": "Earth",
   "time": "7 pm",
   "date": null,
   "summary": ""
