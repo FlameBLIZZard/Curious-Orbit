@@ -86,6 +86,7 @@ def footer(base=''):
   <div class="wrap foot-top">
     <p class="foot-line">Follow for <span class="ember">a fact a day.</span></p>
     <nav class="foot-links" aria-label="Site">
+      <a href="{base}facts/index.html">All facts</a>
       <a href="{base}shop.html">Shop</a>
       <a href="{base}media-kit.html">Media kit</a>
       <a href="{base}privacy.html">Privacy</a>
@@ -161,7 +162,7 @@ def fact_page(d, i):
       <p class="tags">{e(tags)}</p>
       <div class="actions">
         <a class="btn" data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">See it on Instagram</a>
-        <a class="btn btn-ghost" href="../index.html#log">All facts</a>
+        <a class="btn btn-ghost" href="index.html">All facts</a>
       </div>
     </div>
   </div>
@@ -180,6 +181,29 @@ def fact_page(d, i):
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>\n'
     return page(f'{d["title"]} | Curious Orbit', d['summary'], body, base=base, path=f'facts/day-{pad(n)}',
                 og=f'media/og/day{pad(n)}.jpg', extra_head=head, scripts=['js/days.js', 'js/fact.js'])
+
+
+GOAL = 1000  # the plan runs to Fact 1,000 (Post 989)
+
+
+def all_facts_page():
+    base = '../'
+    n = len(made)
+    cards = ''.join(
+        f'<li><a href="day-{pad(d["n"])}.html" data-cursor="Open"><span class="pic"><img src="{base}{d["poster"] if d["format"] == "reel" else d["images"][0]}" alt="" loading="lazy"></span>'
+        f'<span class="k">Fact {pad(d["n"])} · {e(d["topic"])} · {d["format"]}</span><span class="t">{e(d["title"])}</span></a></li>'
+        for d in reversed(made))
+    body = f'''<section class="all wrap" aria-labelledby="all-title">
+  <p class="label">The log · every fact so far</p>
+  <h1 id="all-title">{n} facts down. <span class="ember">{GOAL:,} is the goal.</span></h1>
+  <div class="goal" role="progressbar" aria-label="Facts posted out of {GOAL:,}" aria-valuemin="0" aria-valuemax="{GOAL}" aria-valuenow="{n}"><i style="--p:{n / GOAL:.4f}"></i></div>
+  <p class="goal-k">{n} of {GOAL:,} · {n / GOAL:.1%}</p>
+  <p class="lede">One true science fact at a time, each one checked against its source before it goes out. Newest first.</p>
+  <ul class="all-grid">{cards}</ul>
+</section>
+{signup_band('all')}'''
+    return page(f'All {n} facts | Curious Orbit', f'Every Curious Orbit fact so far: {n} of {GOAL:,}, each checked against its source.', body,
+                base=base, path='facts')
 
 
 MEDIA_KIT = '''<section class="mk wrap">
@@ -335,6 +359,7 @@ def main():
     for old in (PUB / 'facts').glob('day-*.html'): old.unlink()
     for i, d in enumerate(made):
         (PUB / 'facts' / f'day-{pad(d["n"])}.html').write_text(fact_page(d, i))
+    (PUB / 'facts' / 'index.html').write_text(all_facts_page())
     (PUB / 'media-kit.html').write_text(page('Advertise with Curious Orbit', 'Sponsored reels, newsletter slots and story mentions on a fact-checked science page for curious 16 to 35 year olds.', MEDIA_KIT, path='media-kit', og='media/og/media-kit.jpg'))
     (PUB / 'privacy.html').write_text(page('Privacy | Curious Orbit', 'How Curious Orbit handles your email address and data.', PRIVACY, path='privacy'))
     (PUB / 'terms.html').write_text(page('Terms | Curious Orbit', 'Terms of use for the Curious Orbit site and shop.', TERMS, path='terms'))
@@ -343,7 +368,7 @@ def main():
     (PUB / 'order.html').write_text(page('Your order | Curious Orbit', 'Check your Curious Orbit order and download your files.', ORDER, path='order', scripts=shop_js, extra_head='<meta name="robots" content="noindex">\n'))
     (PUB / 'admin.html').write_text(page('Orders | Curious Orbit', 'Private.', ADMIN, path='admin', scripts=['js/admin.js'], extra_head='<meta name="robots" content="noindex">\n'))
     (PUB / '404.html').write_text(page('Lost in space | Curious Orbit', 'This page does not exist.', NOT_FOUND, path='404'))
-    urls = ['', 'shop', 'media-kit', 'privacy', 'terms'] + [f'facts/day-{pad(d["n"])}' for d in made]
+    urls = ['', 'facts', 'shop', 'media-kit', 'privacy', 'terms'] + [f'facts/day-{pad(d["n"])}' for d in made]
     (PUB / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + ''.join(f'  <url><loc>{SITE}/{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls) + '</urlset>\n')
     (PUB / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /order\nSitemap: {SITE}/sitemap.xml\n')
