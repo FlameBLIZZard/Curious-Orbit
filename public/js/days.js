@@ -2574,8 +2574,43 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Earth",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Earth's north and south poles have swapped places.",
+  "summary": "Earth's magnetic field has flipped many times; the last reversal was about 780,000 years ago.",
+  "caption": [
+   "Earth's magnetic field has flipped many times.",
+   "North and south last swapped about 780,000 years ago.",
+   "Would you notice if your compass flipped? Comment yes or what compass. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#earth",
+   "#geology",
+   "#magnetism"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS FAQ: Is it true that Earth's magnetic field occasionally reverses its polarity?",
+     "url": "https://www.usgs.gov/faqs/it-true-earths-magnetic-field-occasionally-reverses-its-polarity"
+    }
+   ]
+  },
+  "images": [
+   "media/day60-slide-01.webp",
+   "media/day60-slide-02.webp",
+   "media/day60-slide-03.webp",
+   "media/day60-slide-04.webp",
+   "media/day60-slide-05.webp",
+   "media/day60-slide-06.webp"
+  ]
  },
  {
   "n": 61,
@@ -2583,8 +2618,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "On Titan, it rains, but not water.",
+  "summary": "Saturn's moon Titan has clouds, rain, rivers, lakes and seas, but they are liquid methane and ethane, not water.",
+  "caption": [
+   "Titan, Saturn's moon, has clouds, rain, rivers, lakes and seas. They are made of liquid methane and ethane, not water.",
+   "Would you visit a methane rainstorm?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#titan",
+   "#saturn"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Titan Facts",
+     "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    }
+   ]
+  },
+  "video": "media/day61.mp4",
+  "poster": "media/day61-cover.webp"
  },
  {
   "n": 62,
@@ -2592,8 +2656,45 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Axolotls can regrow legs, heart and brain parts.",
+  "summary": "Axolotls can regrow lost limbs, and parts of their heart and brain (without scar tissue).",
+  "caption": [
+   "Axolotls are the regrowing champions of the animal world. They can regrow lost legs, and parts of their heart and brain.",
+   "Which would you regrow?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#axolotl",
+   "#biology"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "Nature: Unlock your inner salamander",
+     "url": "https://www.nature.com/articles/540S58a"
+    },
+    {
+     "name": "Marine Biological Laboratory (Space Daily item)",
+     "url": "https://www.mbl.edu/news/axolotl-can-regrow-lost-leg-piece-its-heart-parts-its-spinal-cord-and-even-sections-its-brain-no-scarring-space-daily"
+    },
+    {
+     "name": "Science in Public (ARMI, Australian Regenerative Medicine Institute)",
+     "url": "https://stories.scienceinpublic.com.au/2014/axolotls-out-on-limb-for-future-human-hope/"
+    }
+   ]
+  },
+  "video": "media/day62.mp4",
+  "poster": "media/day62-cover.webp"
  },
  {
   "n": 63,
@@ -2601,8 +2702,42 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Body",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Babies are born without bony kneecaps.",
+  "summary": "Babies are born with kneecaps made of soft cartilage; they usually only start turning to bone at around age 5 or 6 (sometimes earlier) and finish in the teenage years.",
+  "caption": [
+   "Babies don't have bony kneecaps yet.",
+   "Theirs are soft cartilage. They usually start turning to bone at around age 5 or 6, and don't finish until the teen years.",
+   "Did you know this? Comment yes or no way. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#babies",
+   "#anatomy"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: Kneecap (patella)",
+     "url": "https://my.clevelandclinic.org/search?q=kneecap"
+    },
+    {
+     "name": "Genetics of the patella, review article (PubMed Central, NIH)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6461774/"
+    }
+   ]
+  },
+  "images": [
+   "media/day63-post.webp"
+  ]
  },
  {
   "n": 64,
@@ -2610,8 +2745,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "The Moon drifts about 3.8 cm away every year.",
+  "summary": "The Moon is slowly moving away from Earth, by about 3.8 centimetres a year (about 1.5 inches), and ocean tides on Earth have a direct influence on its orbit.",
+  "caption": [
+   "The Moon feels like it never moves. It is slowly leaving us. It drifts about 3.8 cm (about an inch and a half) farther away from Earth every year, and ocean tides on Earth shape its orbit.",
+   "Would you miss the Moon?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#moon",
+   "#apollo"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: Earth's Moon Facts",
+     "url": "https://science.nasa.gov/moon/facts/"
+    },
+    {
+     "name": "NASA Goddard (eclipse site), Measuring the Moon's Distance",
+     "url": "https://eclipse.gsfc.nasa.gov/help/ApolloLaser.html"
+    }
+   ]
+  },
+  "video": "media/day64.mp4",
+  "poster": "media/day64-cover.webp"
  },
  {
   "n": 65,
@@ -2636,6 +2804,51 @@ window.CO_DAYS = [
   "post": 56,
   "format": "reel",
   "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 68,
+  "post": 57,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 69,
+  "post": 58,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 70,
+  "post": 59,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 71,
+  "post": 60,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 72,
+  "post": 61,
+  "format": "reel",
+  "topic": "Earth",
   "time": "7 pm",
   "date": null,
   "summary": ""
