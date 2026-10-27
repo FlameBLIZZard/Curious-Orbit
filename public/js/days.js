@@ -508,7 +508,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "About 1.3 million Earths could fit inside the Sun.",
   "summary": "It would take about 1.3 million Earths to fill the Sun.",
   "caption": [
@@ -546,7 +546,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "4 body myths you probably still believe.",
   "summary": "Cracking knuckles probably doesn't cause arthritis, shaving doesn't thicken hair, the tongue map is false, and dim light doesn't damage your eyes.",
   "caption": [
@@ -602,7 +602,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "A fluffy cloud weighs about 500 tonnes.",
   "summary": "A puffy cumulus cloud about 1 km across holds water droplets weighing roughly 500 tonnes.",
   "caption": [
@@ -640,7 +640,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "A group of flamingos is called a flamboyance.",
   "summary": "A group of flamingos is called a flamboyance, and their pink comes from pigments in the shrimp and algae they eat.",
   "caption": [
@@ -679,7 +679,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "About 44 tonnes of space dust falls on Earth every day.",
   "summary": "Scientists estimate about 44 tonnes of meteoritic material falls on Earth every day.",
   "caption": [
@@ -718,7 +718,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Mount Everest would vanish in the deepest sea.",
   "summary": "The ocean's deepest point, Challenger Deep, is about 10,935 metres down: deeper than Mount Everest is tall.",
   "caption": [
@@ -766,7 +766,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Your brain is 2% of you but burns 20%.",
   "summary": "Your brain is about 2% of your body weight but uses around 20% of your energy at rest, roughly 20 watts.",
   "caption": [
@@ -808,7 +808,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "This shrimp punches at 8,000 times gravity.",
   "summary": "A peacock mantis shrimp's club strikes with up to about 8,000 times the acceleration of gravity, and captive ones have broken the glass of their tanks.",
   "caption": [
@@ -846,7 +846,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Saturn is less dense than water.",
   "summary": "Saturn is less dense than water, so in a big enough bathtub it would float.",
   "caption": [
@@ -889,9 +889,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "3 animal “facts” that are completely wrong.",
-  "summary": "Bats are not blind, ostriches never bury their heads in sand, and a camel's hump stores fat, not water.",
+  "summary": "Bats aren't blind, ostriches never bury their heads in sand, and a camel's hump stores fat, not water.",
   "caption": [
    "Three animal “facts” most of us grew up with.",
    "Swipe to see what is actually true. Which one got you?",
@@ -940,7 +940,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Some neutron stars spin hundreds of times a second.",
   "summary": "Some neutron stars, only about 20 km wide, spin hundreds of times every second.",
   "caption": [
@@ -986,9 +986,9 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Sound moves over 4 times faster underwater.",
-  "summary": "Sound travels over four times faster in seawater than in air, about 1,500 metres a second versus 340, and blue whale calls can be picked up hundreds of kilometres away.",
+  "summary": "Sound travels over four times faster in seawater than in air (about 1,500 m/s versus 340 m/s), and blue whale calls can be picked up hundreds of kilometres away.",
   "caption": [
    "Water is far harder to squeeze than air, so it passes sound along faster. In seawater sound moves about 1,500 m a second. In air, about 340. That is how blue whale calls can be picked up hundreds of kilometres away. Follow @curiousorbit.daily for more."
   ],
@@ -1026,9 +1026,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Carrots won't give you night vision. It was wartime propaganda.",
-  "summary": "Carrots can't sharpen a healthy person's eyesight; the idea was spread by British wartime propaganda to hide radar.",
+  "summary": "Carrots can't sharpen a healthy person's eyesight; the idea was spread by British WWII propaganda to hide radar.",
   "caption": [
    "In WWII, Britain credited a pilot's night-time wins to eating carrots.",
    "The real secret was new aircraft radar. Carrots only help if you lack vitamin A.",
@@ -1065,9 +1065,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "5 questions. How many can you get?",
-  "summary": "Recap quiz on recent facts: Earths in the Sun, cloud weight, daily space dust, Saturn's density and sound in water.",
+  "summary": "Recap quiz: 1.3 million Earths in the Sun, a 1 km cloud weighs about 500 tonnes, about 44 tonnes of space material daily, Saturn floats, and sound is over 4 times faster in seawater.",
   "caption": [
    "Quiz time. Guess before you swipe.",
    "Comment your score out of 5. No Googling."
@@ -1130,7 +1130,7 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Saturn's vast rings are only about 10 metres thick.",
   "summary": "Saturn's ring system reaches up to 282,000 km from the planet, yet the main rings are typically only about 10 metres thick.",
   "caption": [
@@ -1166,9 +1166,9 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Your body by the numbers, part 2.",
-  "summary": "Your body has more than 600 muscles, its smallest bone (the stapes in your ear) measures just a few millimetres, and tooth enamel is the hardest substance in it, harder than bone.",
+  "summary": "Body by the numbers, part 2: 600+ muscles, the stapes is the smallest bone at just a few millimetres, enamel is the hardest substance in the body, red blood cells live about 120 days, and up to 60% of an adult is water.",
   "caption": [
    "Part 2 of your body in numbers.",
    "Which number surprised you most?",
@@ -1227,9 +1227,9 @@ window.CO_DAYS = [
   "time": "7 pm",
   "date": "2026-10-11",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "These tiny animals survived 10 days in open space.",
-  "summary": "In 2007, dried tardigrades survived 10 days exposed to open space, and some later reproduced.",
+  "summary": "In 2007, dried tardigrades spent 10 days exposed to open space in orbit, and some later reproduced.",
   "caption": [
    "In 2007, scientists sent dried tardigrades into orbit on the outside of a spacecraft.",
    "They spent 10 days exposed to open space, and some later reproduced.",
@@ -1265,7 +1265,7 @@ window.CO_DAYS = [
   "time": "1 pm",
   "date": "2026-10-08",
   "made": true,
-  "posted": false,
+  "posted": true,
   "title": "Everest is not the farthest point from Earth's centre.",
   "summary": "The point on Earth farthest from its centre is the top of Mount Chimborazo in Ecuador, not Mount Everest.",
   "caption": [
@@ -1302,8 +1302,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "Your blood is never blue. Not even in your veins.",
+  "summary": "Human blood is always red: bright red when full of oxygen and a darker, muddy red on its way back to the heart. Veins look blue because of how light passes through skin.",
+  "caption": [
+   "Look at your wrist. Those veins look blue, right?",
+   "Your blood is always red: bright red with oxygen, darker red on the way back. The blue is a trick of light through skin.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#myths",
+   "#biology"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Cleveland Clinic: What colour is your blood?",
+     "url": "https://health.clevelandclinic.org/what-color-is-blood"
+    }
+   ]
+  },
+  "video": "media/day30.mp4",
+  "poster": "media/day30-cover.webp"
  },
  {
   "n": 31,
@@ -1311,8 +1340,42 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Space",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "The Sun's core is about 15 million °C.",
+  "summary": "The Sun's core tops 15 million °C, while its visible surface is a relatively cool 5,500 °C; hydrogen fusing into helium in the core powers it.",
+  "caption": [
+   "Hydrogen fusing into helium is what heats the Sun's core. That core is about 15 million °C, while the surface is a relatively cool 5,500 °C. The core is also about 8 times denser than gold. Save this for your next science test."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#sun",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Sun Facts",
+     "url": "https://science.nasa.gov/sun/facts/"
+    }
+   ]
+  },
+  "images": [
+   "media/day31-slide-01.webp",
+   "media/day31-slide-02.webp",
+   "media/day31-slide-03.webp",
+   "media/day31-slide-04.webp",
+   "media/day31-slide-05.webp",
+   "media/day31-slide-06.webp",
+   "media/day31-slide-07.webp"
+  ]
  },
  {
   "n": 32,
@@ -1320,8 +1383,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "This jellyfish can turn back into a baby.",
+  "summary": "The jellyfish Turritopsis dohrnii can turn back into its young polyp form when it is injured or starving.",
+  "caption": [
+   "This jellyfish has a reset button.",
+   "When it's injured or starving, it can turn back into its young polyp form. Then it grows up all over again. Scientists have seen this in labs.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#ocean",
+   "#jellyfish"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "American Museum of Natural History: Immortal jellyfish",
+     "url": "https://www.amnh.org/explore/news-blogs/immortal-jellyfish"
+    }
+   ]
+  },
+  "video": "media/day32.mp4",
+  "poster": "media/day32-cover.webp"
  },
  {
   "n": 33,
@@ -1329,8 +1421,41 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Myths",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "There is gravity in space. Astronauts are falling.",
+  "summary": "At the space station, gravity is still about 90% as strong as on the ground; astronauts float because they are in free fall around Earth.",
+  "caption": [
+   "At the space station, gravity is still about 90% as strong as on the ground. Astronauts float because they are constantly falling around Earth, moving sideways so fast they keep missing it. Save this and send it to someone who thinks space has no gravity."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#space",
+   "#physics"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA: What is microgravity? (Grades 5-8)",
+     "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/"
+    }
+   ]
+  },
+  "images": [
+   "media/day33-slide-01.webp",
+   "media/day33-slide-02.webp",
+   "media/day33-slide-03.webp",
+   "media/day33-slide-04.webp",
+   "media/day33-slide-05.webp",
+   "media/day33-slide-06.webp"
+  ]
  },
  {
   "n": 34,
@@ -1338,8 +1463,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-12",
+  "made": true,
+  "posted": true,
+  "title": "The space station sees 16 sunrises every day.",
+  "summary": "The space station orbits Earth about every 90 minutes, so the crew passes through 16 sunrises and 16 sunsets every 24 hours.",
+  "caption": [
+   "The space station circles Earth about every 90 minutes.",
+   "So the crew passes through 16 sunrises and 16 sunsets every 24 hours. That's a new sunrise about every hour and a half.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#iss",
+   "#astronauts"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA: International Space Station Facts and Figures",
+     "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+    }
+   ]
+  },
+  "video": "media/day34.mp4",
+  "poster": "media/day34-cover.webp"
  },
  {
   "n": 35,
@@ -1365,6 +1519,51 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Animals",
   "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 38,
+  "post": 27,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 39,
+  "post": 28,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 40,
+  "post": 29,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 41,
+  "post": 30,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 42,
+  "post": 31,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
   "date": null,
   "summary": ""
  }

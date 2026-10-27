@@ -55,9 +55,19 @@ for m in re.finditer(r'^Day (\d+) · (\w+ \d+ \w+) · (\w+) at (\d+ pm)\n\nWhat 
 # /mnt/project-files/curious-orbit/post-NNN/ exists; MADE lists the date each one was made. The next few show as "coming up".
 MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '2026-10-08', 6: '2026-10-08',
         7: '2026-10-08', 8: '2026-10-08', 9: '2026-10-08', 10: '2026-10-08', 11: '2026-10-08',
-        12: '2026-10-08', 13: '2026-10-08', 14: '2026-10-08', 15: '2026-10-08', 16: '2026-10-08', 17: '2026-10-11', 18: '2026-10-08'}
+        12: '2026-10-08', 13: '2026-10-08', 14: '2026-10-08', 15: '2026-10-08', 16: '2026-10-08', 17: '2026-10-11', 18: '2026-10-08',
+        19: '2026-10-12', 20: '2026-10-12', 21: '2026-10-12', 22: '2026-10-12', 23: '2026-10-12', 24: '2026-10-12', 25: '2026-10-12',
+        26: '2026-10-12', 27: '2026-10-12', 28: '2026-10-13', 29: '2026-10-14', 30: '2026-10-14', 31: '2026-10-16', 32: '2026-10-16',
+        33: '2026-10-16', 34: '2026-10-17', 35: '2026-10-19', 36: '2026-10-19', 37: '2026-10-19', 38: '2026-10-19', 39: '2026-10-19',
+        40: '2026-10-23', 41: '2026-10-23', 42: '2026-10-23', 43: '2026-10-23', 44: '2026-10-23', 45: '2026-10-23', 46: '2026-10-23',
+        47: '2026-10-23', 48: '2026-10-23', 49: '2026-10-23', 50: '2026-10-23', 51: '2026-10-23', 52: '2026-10-23', 53: '2026-10-23',
+        54: '2026-10-23', 55: '2026-10-23', 56: '2026-10-25', 57: '2026-10-25', 58: '2026-10-25', 59: '2026-10-25', 60: '2026-10-25',
+        61: '2026-10-26', 62: '2026-10-26', 63: '2026-10-26', 64: '2026-10-26', 65: '2026-10-26', 66: '2026-10-26', 67: '2026-10-26',
+        68: '2026-10-26'}
+# Fact pages go live in batches of 5 (project rule): posts in MADE above this number stay hidden until it is raised
+MADE_THROUGH = 23
 # posts Aditya has confirmed are on Instagram (the PC-control thread reports each one); the rest show as "New"
-POSTED = set()
+POSTED = set(range(1, 59))  # Posts 001-058 are on Instagram (Aditya, by 2026-10-26)
 # sources a post uses beyond its fact-bank entries (from the research thread's post-NNN/fact.md)
 EXTRA_SRC = {6: [{'name': 'Encyclopaedia Britannica: Mount Everest', 'url': 'https://www.britannica.com/place/Mount-Everest'}],
              7: [{'name': 'Kováč (2010), EMBO Reports: The 20 W sleep-walkers', 'url': 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2816633/'}],
@@ -68,12 +78,27 @@ EXTRA_SRC = {6: [{'name': 'Encyclopaedia Britannica: Mount Everest', 'url': 'htt
                   {'name': 'Cleveland Clinic: Tooth enamel', 'url': 'https://my.clevelandclinic.org/health/body/24798-tooth-enamel'},
                   {'name': 'Cleveland Clinic: Red blood cells', 'url': 'https://my.clevelandclinic.org/health/body/21691-function-of-red-blood-cells'},
                   {'name': 'USGS: The water in you', 'url': 'https://www.usgs.gov/water-science-school/science/water-you-water-and-human-body'}]}
+# wording the research thread corrected after the plan row was written (fact.md wins)
+TITLE_FIX = {53: 'The Moon drifts about 3.8 cm away every year.'}
+SUMMARY_FIX = {66: 'A healthy liver can grow back to its former size after up to two-thirds of it is removed, over weeks to months.'}
+def claim(k):
+    f = CO / f'post-{k:03d}/fact.md'
+    m = re.search(r'^## Claim\s*\n+(.+)', f.read_text(), re.M) if f.exists() else None
+    return m.group(1).strip() if m else None
+def fact_md_sources(k):
+    f = CO / f'post-{k:03d}/fact.md'
+    out = []
+    if not f.exists(): return out
+    for m in re.finditer(r'^\s*\d+\.\s+(?:\*\*)?(.+?)(?:\*\*)?,\s*(https?://[^\s)]+)', f.read_text(), re.M):
+        name = re.sub(r'[*"]', '', m.group(1)).strip()
+        if len(name) < 90: out.append({'name': name, 'url': m.group(2).rstrip('.,')})
+    return out[:4]
 # sources come from the verified fact bank, one per fact the post uses
 BANK = {}
 for f in pathlib.Path('/mnt/project-files/curious-orbit-shop/facts').glob('*.json'):
     for x in json.loads(f.read_text()): BANK[x['id']] = x
 UPCOMING = 8
-plan = json.loads((CO / 'plan-100/plan-100.json').read_text())
+plan = json.loads((CO / 'plan-1000/plan-1000.json').read_text())  # the 1,000-post plan (Post 989 = Fact 1,000)
 shown_next = 0
 def sources_for(r):
     ids = [i.strip() for i in (r['fact_id'] or '').split(',') if i.strip()]
@@ -82,15 +107,18 @@ def sources_for(r):
         x = BANK.get(i)
         if x and all(s['url'] != x['url'] for s in src): src.append({'name': x['source'], 'url': x['url']})
     src = src or [{'name': r['source'], 'url': r['url']}]
-    extra = EXTRA_SRC.get(int(r['post'].split()[1]), [])
+    extra = [s for s in EXTRA_SRC.get(int(r['post'].split()[1]), []) + fact_md_sources(int(r['post'].split()[1]))
+             if all(s['url'] != x['url'] for x in src)]
+    extra = [s for i, s in enumerate(extra) if all(s['url'] != x['url'] for x in extra[:i])]
     return {'claims': max(1, len(ids)) + len(extra), 'sources': src + extra}
 for r in plan:
     k = int(r['post'].split()[1]); n = r['n']; folder = CO / f'post-{k:03d}'
     d = {'n': n, 'post': k, 'format': r['format'], 'topic': r['pillar'].split(' & ')[0], 'time': '7 pm' if r['format'] == 'reel' else '1 pm'}
-    if k in MADE and (folder / 'caption.txt').exists():
+    if k in MADE and k <= MADE_THROUGH and (folder / 'caption.txt').exists():
         raw = (folder / 'caption.txt').read_text()
         paras = [emoji.sub('', p).strip() for p in raw.split('\n\n') if p.strip() and not p.strip().startswith('#')]
-        d.update({'date': MADE[k], 'made': True, 'posted': k in POSTED, 'title': curly(r['title']), 'summary': curly(r['fact']),
+        d.update({'date': MADE[k], 'made': True, 'posted': k in POSTED, 'title': curly(TITLE_FIX.get(k, r['title'])),
+                  'summary': curly(SUMMARY_FIX.get(k) or claim(k) or r['fact']),
                   'caption': [curly(re.sub(r'\s+', ' ', p)) for p in paras], 'tags': re.findall(r'#\w+', raw),
                   'check': sources_for(r)})
         if r['format'] == 'reel':
