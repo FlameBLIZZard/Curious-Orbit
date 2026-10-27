@@ -2999,8 +2999,61 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Quiz",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-25",
+  "made": true,
+  "posted": false,
+  "title": "Can you beat this 5-question quiz?",
+  "summary": "Recap quiz on posts 043, 047, 049, 055, 056 (see post-059/fact.md).",
+  "caption": [
+   "Quiz time. Five questions from our last few posts.",
+   "Comment your score out of 5. Be honest.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#quiz",
+   "#sciencequiz",
+   "#trivia"
+  ],
+  "check": {
+   "claims": 5,
+   "sources": [
+    {
+     "name": "NASA Science: Mercury Facts",
+     "url": "https://science.nasa.gov/mercury/facts/"
+    },
+    {
+     "name": "NOAA Ocean Service: How much oxygen comes from the ocean?",
+     "url": "https://oceanservice.noaa.gov/facts/ocean-oxygen.html"
+    },
+    {
+     "name": "NASA Science: The Apollo 15 hammer-feather drop",
+     "url": "https://science.nasa.gov/resource/the-apollo-15-hammer-feather-drop/"
+    },
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    {
+     "name": "USGS FAQ: Is it true that Earth's magnetic field occasionally reverses its polarity?",
+     "url": "https://www.usgs.gov/faqs/it-true-earths-magnetic-field-occasionally-reverses-its-polarity"
+    }
+   ]
+  },
+  "images": [
+   "media/day70-slide-01.webp",
+   "media/day70-slide-02.webp",
+   "media/day70-slide-03.webp",
+   "media/day70-slide-04.webp",
+   "media/day70-slide-05.webp",
+   "media/day70-slide-06.webp",
+   "media/day70-slide-07.webp",
+   "media/day70-slide-08.webp"
+  ]
  },
  {
   "n": 71,
@@ -3008,8 +3061,38 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-25",
+  "made": true,
+  "posted": false,
+  "title": "Jupiter is the biggest planet but has the shortest day.",
+  "summary": "Jupiter, the biggest planet, has the shortest day: it spins once every 9.9 hours.",
+  "caption": [
+   "Jupiter is the biggest planet in our Solar System, yet it has the shortest day.",
+   "It spins once in about 9.9 hours, so in one Earth day (24 hours) Jupiter turns about 2.4 times.",
+   "Would you like a 9.9-hour day?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#jupiter",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    }
+   ]
+  },
+  "video": "media/day71.mp4",
+  "poster": "media/day71-cover.webp"
  },
  {
   "n": 72,
@@ -3017,8 +3100,39 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Raindrops look like burger buns, not tears.",
+  "summary": "Raindrops are not shaped like teardrops. Small ones are round, bigger ones flatten into something like a hamburger bun, and very big ones break apart into smaller drops.",
+  "caption": [
+   "Forget the teardrop emoji.",
+   "Small raindrops are round. Bigger ones get flattened from below, like a hamburger bun. Very big ones break apart.",
+   "Did you picture a teardrop?",
+   "Send this to someone who loves the rain.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#weather",
+   "#rain",
+   "#physics"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS Water Science School: Raindrops are different shapes",
+     "url": "https://www.usgs.gov/water-science-school/science/are-raindrops-shaped-teardrops"
+    }
+   ]
+  },
+  "video": "media/day72.mp4",
+  "poster": "media/day72-cover.webp"
  },
  {
   "n": 73,
@@ -3026,8 +3140,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Shrimp snap: nearly as hot as the Sun's surface.",
+  "summary": "A pistol (snapping) shrimp's claw snap makes a collapsing bubble that briefly reaches at least about 4,700 °C, close to the Sun's surface (about 5,500 °C).",
+  "caption": [
+   "The pistol shrimp snaps its claw so fast it makes a bubble that collapses with a bang. For an instant, the bubble reaches at least about 4,700 °C. The Sun's surface is about 5,500 °C.",
+   "Which animal should I do next? Tell me below.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#ocean",
+   "#marinebiology"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "Lohse et al. 2001, Nature: Snapping shrimp make flashing bubbles",
+     "url": "https://www.nature.com/search?q=snapping+shrimp+make+flashing+bubbles"
+    },
+    {
+     "name": "Lohse, Schmitz & Versluis (2001), Nature 413: Snapping shrimp make flashing bubbles",
+     "url": "https://www.nature.com/articles/35097152"
+    }
+   ]
+  },
+  "video": "media/day73.mp4",
+  "poster": "media/day73-cover.webp"
  },
  {
   "n": 74,
@@ -3035,8 +3182,44 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Body",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-26",
+  "made": true,
+  "posted": false,
+  "title": "Up to 60% of you is water.",
+  "summary": "Up to 60% of an adult human body is water.",
+  "caption": [
+   "Your lungs are about 83% water. Muscles and kidneys: 79%. Brain and heart: 73%. Even bones are about 31%. Add it all up and up to 60% of an adult body is water.",
+   "Which number surprised you? Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#body",
+   "#water"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "USGS Water Science School: The water in you",
+     "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body"
+    }
+   ]
+  },
+  "images": [
+   "media/day74-slide-01.webp",
+   "media/day74-slide-02.webp",
+   "media/day74-slide-03.webp",
+   "media/day74-slide-04.webp",
+   "media/day74-slide-05.webp",
+   "media/day74-slide-06.webp",
+   "media/day74-slide-07.webp",
+   "media/day74-slide-08.webp"
+  ]
  },
  {
   "n": 75,
@@ -3061,6 +3244,51 @@ window.CO_DAYS = [
   "post": 66,
   "format": "reel",
   "topic": "Body",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 78,
+  "post": 67,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 79,
+  "post": 68,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 80,
+  "post": 69,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 81,
+  "post": 70,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 82,
+  "post": 71,
+  "format": "reel",
+  "topic": "Myths",
   "time": "7 pm",
   "date": null,
   "summary": ""

@@ -65,7 +65,7 @@ MADE = {1: '2026-10-08', 2: '2026-10-08', 3: '2026-10-08', 4: '2026-10-08', 5: '
         61: '2026-10-26', 62: '2026-10-26', 63: '2026-10-26', 64: '2026-10-26', 65: '2026-10-26', 66: '2026-10-26', 67: '2026-10-26',
         68: '2026-10-26'}
 # Fact pages go live in batches of 5 (project rule): posts in MADE above this number stay hidden until it is raised
-MADE_THROUGH = 58
+MADE_THROUGH = 63
 # posts Aditya has confirmed are on Instagram (the PC-control thread reports each one); the rest show as "New"
 POSTED = set(range(1, 59))  # Posts 001-058 are on Instagram (Aditya, by 2026-10-26)
 # sources a post uses beyond its fact-bank entries (from the research thread's post-NNN/fact.md)
