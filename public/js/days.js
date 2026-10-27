@@ -2787,8 +2787,43 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Earth",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "The speed of light is exact. Not measured.",
+  "summary": "The speed of light in a vacuum is exactly 299,792,458 metres per second, because since 1983 the metre has been defined using the speed of light.",
+  "caption": [
+   "The speed of light isn't “about” anything. In a vacuum it is exactly 299,792,458 m/s.",
+   "Since 1983 the metre itself has been defined by light, so the number is fixed.",
+   "Did you know the metre is defined by light? Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#physics",
+   "#light",
+   "#science"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NIST: SI Redefinition, Meter",
+     "url": "https://www.nist.gov/si-redefinition/meter"
+    }
+   ]
+  },
+  "images": [
+   "media/day65-slide-01.webp",
+   "media/day65-slide-02.webp",
+   "media/day65-slide-03.webp",
+   "media/day65-slide-04.webp",
+   "media/day65-slide-05.webp",
+   "media/day65-slide-06.webp"
+  ]
  },
  {
   "n": 66,
@@ -2796,8 +2831,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Myths",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "A hammer and a feather fall at the same speed.",
+  "summary": "Without air resistance, a hammer and a feather fall at the same rate. Apollo 15 Commander David Scott showed it on the Moon in 1971.",
+  "caption": [
+   "On Earth, air slows a feather far more than a hammer. Without air, everything falls at the same rate. Apollo 15 commander David Scott showed it on the Moon in 1971.",
+   "Which would you have bet on, the hammer or the feather?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#physics",
+   "#moon"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: The Apollo 15 hammer-feather drop",
+     "url": "https://science.nasa.gov/resource/the-apollo-15-hammer-feather-drop/"
+    },
+    {
+     "name": "NASA, Apollo 15",
+     "url": "https://www.nasa.gov/mission/apollo-15/"
+    }
+   ]
+  },
+  "video": "media/day66.mp4",
+  "poster": "media/day66-cover.webp"
  },
  {
   "n": 67,
@@ -2805,8 +2873,47 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-25",
+  "made": true,
+  "posted": true,
+  "title": "A moon of Jupiter is bigger than Mercury.",
+  "summary": "Jupiter's moon Ganymede is the largest moon in the Solar System and is bigger (wider) than the planet Mercury: about 5,260 km across against Mercury's 4,879 km.",
+  "caption": [
+   "Size Check #2: Ganymede, a moon of Jupiter, is the largest moon in the Solar System.",
+   "It is about 5,260 km wide, wider than the planet Mercury (4,879 km). It is a moon only because it orbits Jupiter, not the Sun.",
+   "Which surprised you more, the moon or the planet?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#2",
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#jupiter",
+   "#moons"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "NASA Science: Jupiter Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    {
+     "name": "NASA Science, Ganymede Facts",
+     "url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/"
+    },
+    {
+     "name": "NASA NSSDCA, Jovian Satellite Fact Sheet / Solar System Small Worlds Fact Sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/galileanfact_table.html"
+    }
+   ]
+  },
+  "video": "media/day67.mp4",
+  "poster": "media/day67-cover.webp"
  },
  {
   "n": 68,
@@ -2814,8 +2921,38 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Body",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-25",
+  "made": true,
+  "posted": true,
+  "title": "Identical twins don't have identical fingerprints.",
+  "summary": "Identical twins share the same DNA but have different fingerprints, because conditions in the womb shape the finer details of the ridges.",
+  "caption": [
+   "Identical twins share the same DNA.",
+   "But their fingerprints are different, because conditions in the womb shape the finer details of the ridges.",
+   "Do you know any identical twins? Tag one. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#genetics",
+   "#twins"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "MedlinePlus Genetics: Is fingerprint pattern determined by genetics?",
+     "url": "https://medlineplus.gov/genetics/understanding/traits/fingerprints/"
+    }
+   ]
+  },
+  "images": [
+   "media/day68-post.webp"
+  ]
  },
  {
   "n": 69,
@@ -2823,8 +2960,38 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-25",
+  "made": true,
+  "posted": true,
+  "title": "Crows remember your face and tell their friends.",
+  "summary": "Crows can recognise individual human faces and remember them for years. Crows that were never caught still scolded the person in the “dangerous” mask, which suggests they learn from other crows.",
+  "caption": [
+   "Crows remember your face.⬛",
+   "Researchers wore a mask while catching crows. Years later, crows still scolded and dive-bombed anyone in that mask. Even crows that were never caught joined in, so it seems they warn each other. A neutral mask was mostly ignored.",
+   "Have you ever been scolded by a crow?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#birds",
+   "#crows"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "University of Washington News: Crows remember human faces (Marzluff et al. 2010)",
+     "url": "https://www.washington.edu/news/?s=crows+faces"
+    }
+   ]
+  },
+  "video": "media/day69.mp4",
+  "poster": "media/day69-cover.webp"
  },
  {
   "n": 70,
@@ -2849,6 +3016,51 @@ window.CO_DAYS = [
   "post": 61,
   "format": "reel",
   "topic": "Earth",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 73,
+  "post": 62,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 74,
+  "post": 63,
+  "format": "carousel",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 75,
+  "post": 64,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 76,
+  "post": 65,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 77,
+  "post": 66,
+  "format": "reel",
+  "topic": "Body",
   "time": "7 pm",
   "date": null,
   "summary": ""
