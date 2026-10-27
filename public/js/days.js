@@ -1929,8 +1929,36 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Myths",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-17",
+  "made": true,
+  "posted": true,
+  "title": "Summer isn't when Earth is closest to the Sun.",
+  "summary": "Seasons come from Earth's tilted axis, not from its distance from the Sun.",
+  "caption": [
+   "Seasons come from Earth's tilt, not its distance from the Sun. Proof: when it is summer in India, it is winter in Australia, on the same planet at the same distance. Send this to someone who got this wrong in school."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#earth",
+   "#seasons"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Space Place: What causes the seasons?",
+     "url": "https://spaceplace.nasa.gov/seasons/en/"
+    }
+   ]
+  },
+  "images": [
+   "media/day45-post.webp"
+  ]
  },
  {
   "n": 46,
@@ -1938,8 +1966,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "The Andromeda light you see left 2.5 million years ago.",
+  "summary": "From a dark site you can see the Andromeda Galaxy with your own eyes, but its light left about 2.5 million years ago, when our earliest ancestors were figuring out stone tools.",
+  "caption": [
+   "Andromeda's light left about 2.5 million years ago.",
+   "From a dark sky site you can see it with your own eyes, no telescope needed.",
+   "When that light set off, our earliest ancestors were figuring out stone tools. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#galaxy",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science (Night Sky Network): October's Night Sky Notes: Catch Andromeda Rising!",
+     "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/catch-andromeda-rising/"
+    }
+   ]
+  },
+  "video": "media/day46.mp4",
+  "poster": "media/day46-cover.webp"
  },
  {
   "n": 47,
@@ -1947,8 +2004,41 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Animals",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "Octopuses, part 2: their arms can think.",
+  "summary": "About two-thirds of an octopus's neurons are in its arms, not its head.",
+  "caption": [
+   "You already know octopuses have three hearts. Here is part 2. About two-thirds of their neurons sit in their arms, not their brain. Save this and follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#octopus",
+   "#marinebiology"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Smithsonian Magazine: Ten wild facts about octopuses",
+     "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/"
+    }
+   ]
+  },
+  "images": [
+   "media/day47-slide-01.webp",
+   "media/day47-slide-02.webp",
+   "media/day47-slide-03.webp",
+   "media/day47-slide-04.webp",
+   "media/day47-slide-05.webp",
+   "media/day47-slide-06.webp"
+  ]
  },
  {
   "n": 48,
@@ -1956,8 +2046,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Body",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "Your body glows. Your eyes just can't see it.",
+  "summary": "The human body gives off a very faint visible light, about 1,000 times weaker than our eyes can see.",
+  "caption": [
+   "Your body glows.",
+   "It gives off a tiny amount of visible light, about 1,000 times too faint for your eyes. Ultra-sensitive cameras have caught it.",
+   "Picture one dot of light where your eyes need a thousand. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#humanbody",
+   "#biology",
+   "#science"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "Kobayashi et al. 2009, PLoS ONE: Imaging of ultraweak photon emission from the human body",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006256"
+    }
+   ]
+  },
+  "video": "media/day48.mp4",
+  "poster": "media/day48-cover.webp"
  },
  {
   "n": 49,
@@ -1965,8 +2084,44 @@ window.CO_DAYS = [
   "format": "post",
   "topic": "Earth",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "This metal melts in your hand.",
+  "summary": "Gallium is a metal that melts at about 30 °C, cooler than the inside of your body (37 °C), and solid gallium floats on its own liquid.",
+  "caption": [
+   "Gallium is a metal that melts at about 30 °C. That is cooler than the inside of your body, so on a hot day, keeping it in your pocket is a bad idea. Solid gallium even floats on its own liquid. Send this to someone who loves chemistry."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#chemistry",
+   "#physics",
+   "#elements"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "Royal Society of Chemistry: Periodic Table, Gallium",
+     "url": "https://periodic-table.rsc.org/element/31/gallium"
+    },
+    {
+     "name": "KidsHealth (Nemours): body temperature",
+     "url": "https://kidshealth.org/en/kids/sweat.html"
+    },
+    {
+     "name": "Appalachian State University Physics demo Gallium melts in your hand",
+     "url": "https://physics.appstate.edu/node/375:"
+    }
+   ]
+  },
+  "images": [
+   "media/day49-post.webp"
+  ]
  },
  {
   "n": 50,
@@ -1991,6 +2146,51 @@ window.CO_DAYS = [
   "post": 41,
   "format": "reel",
   "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 53,
+  "post": 42,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 54,
+  "post": 43,
+  "format": "reel",
+  "topic": "Earth",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 55,
+  "post": 44,
+  "format": "carousel",
+  "topic": "Quiz",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 56,
+  "post": 45,
+  "format": "post",
+  "topic": "Body",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 57,
+  "post": 46,
+  "format": "reel",
+  "topic": "Earth",
   "time": "7 pm",
   "date": null,
   "summary": ""
