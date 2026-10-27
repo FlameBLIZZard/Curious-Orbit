@@ -2129,8 +2129,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-19",
+  "made": true,
+  "posted": true,
+  "title": "Sunsets on Mars are blue.",
+  "summary": "Sunsets on Mars look blue, because Martian dust lets blue light through better than red light.",
+  "caption": [
+   "On Earth, sunsets go orange and red. On Mars, they turn blue.",
+   "Martian dust lets blue light through better than red. NASA's Curiosity rover photographed one in 2015.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#mars",
+   "#astronomy"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Scientific Visualization Studio: NASA's Curiosity Sees Blue Sunset on Mars",
+     "url": "https://svs.gsfc.nasa.gov/11875"
+    },
+    {
+     "name": "NASA Photojournal PIA19400, Sunset in Mars' Gale Crater",
+     "url": "https://science.nasa.gov/photojournal/sunset-in-mars-gale-crater"
+    }
+   ]
+  },
+  "video": "media/day50.mp4",
+  "poster": "media/day50-cover.webp"
  },
  {
   "n": 51,
@@ -2138,8 +2171,55 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Myths",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "4 science myths adults still repeat.",
+  "summary": "Microwaves don't make food radioactive, antibiotics can't cure colds, glass isn't a slow liquid, and sinks don't drain differently by hemisphere.",
+  "caption": [
+   "Four things grown-ups say with total confidence.",
+   "Which one did you still believe? Comment the number.",
+   "Save this for the family group chat. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#myths",
+   "#mythbusting",
+   "#science"
+  ],
+  "check": {
+   "claims": 4,
+   "sources": [
+    {
+     "name": "US Food and Drug Administration (FDA): Microwave oven radiation",
+     "url": "https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation"
+    },
+    {
+     "name": "US Centers for Disease Control and Prevention (CDC): Antibiotic use, about",
+     "url": "https://www.cdc.gov/antibiotic-use/about/index.html"
+    },
+    {
+     "name": "Scientific American: Fact or fiction? Glass is a (supercooled) liquid",
+     "url": "https://www.scientificamerican.com/article/fact-fiction-glass-liquid/"
+    },
+    {
+     "name": "Scientific American: Does water flowing down a drain spin differently depending on the hemisphere?",
+     "url": "https://www.scientificamerican.com/article/can-somebody-finally-sett/"
+    }
+   ]
+  },
+  "images": [
+   "media/day51-slide-01.webp",
+   "media/day51-slide-02.webp",
+   "media/day51-slide-03.webp",
+   "media/day51-slide-04.webp",
+   "media/day51-slide-05.webp",
+   "media/day51-slide-06.webp"
+  ]
  },
  {
   "n": 52,
@@ -2147,8 +2227,38 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "This shark can live at least 272 years.",
+  "summary": "Greenland sharks can live for at least 272 years, making them the longest-lived animals with a backbone known.",
+  "caption": [
+   "Scientists dated Greenland sharks from the lenses of their eyes.",
+   "They can live for at least 272 years, the longest known lifespan of any animal with a backbone.",
+   "How old do you feel next to this shark?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#sharks",
+   "#ocean"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "PBS NOVA: Greenland shark is officially the longest-living vertebrate on Earth",
+     "url": "https://www.pbs.org/wgbh/nova/article/greenland-shark-is-officially-the-longest-living-vertebrate-on-earth"
+    }
+   ]
+  },
+  "video": "media/day52.mp4",
+  "poster": "media/day52-cover.webp"
  },
  {
   "n": 53,
@@ -2156,8 +2266,43 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "Pluto is smaller than our Moon.",
+  "summary": "Pluto is smaller than our Moon: it is only about two-thirds as wide.",
+  "caption": [
+   "Size Check #1: Pluto is only about two-thirds as wide as our Moon.",
+   "It was reclassified as a dwarf planet in 2006 and takes 248 years to orbit the Sun.",
+   "Is Pluto a planet in your heart? Tell me below.",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#1",
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#pluto",
+   "#planets"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: Pluto Facts",
+     "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+    },
+    {
+     "name": "NASA Science, Earth's Moon Facts",
+     "url": "https://science.nasa.gov/moon/facts/"
+    }
+   ]
+  },
+  "video": "media/day53.mp4",
+  "poster": "media/day53-cover.webp"
  },
  {
   "n": 54,
@@ -2165,8 +2310,42 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-23",
+  "made": true,
+  "posted": true,
+  "title": "About half of Earth's oxygen is made in the ocean.",
+  "summary": "Scientists estimate that roughly half of the oxygen produced on Earth comes from the ocean.",
+  "caption": [
+   "Scientists estimate that about half of Earth's oxygen is made in the ocean.",
+   "Most of it comes from plankton, and one tiny bacterium, Prochlorococcus, makes up to 20% of the oxygen in our whole biosphere. Marine life uses up about as much as the ocean makes, so it is production, not a surplus.",
+   "Forests or the ocean: which did you think made more?",
+   "Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#ocean",
+   "#earth",
+   "#nature"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NOAA Ocean Service: How much oxygen comes from the ocean?",
+     "url": "https://oceanservice.noaa.gov/facts/ocean-oxygen.html"
+    },
+    {
+     "name": "USGS Water Science School: How Much Water is There on Earth?",
+     "url": "https://www.usgs.gov/water-science-school/science/how-much-water-there-earth"
+    }
+   ]
+  },
+  "video": "media/day54.mp4",
+  "poster": "media/day54-cover.webp"
  },
  {
   "n": 55,
@@ -2191,6 +2370,51 @@ window.CO_DAYS = [
   "post": 46,
   "format": "reel",
   "topic": "Earth",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 58,
+  "post": 47,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 59,
+  "post": 48,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 60,
+  "post": 49,
+  "format": "carousel",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 61,
+  "post": 50,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 62,
+  "post": 51,
+  "format": "reel",
+  "topic": "Animals",
   "time": "7 pm",
   "date": null,
   "summary": ""
