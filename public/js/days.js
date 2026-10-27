@@ -1714,8 +1714,52 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Quiz",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-14",
+  "made": true,
+  "posted": true,
+  "title": "Hotter or not? 3 questions.",
+  "summary": "Lightning can heat air to about 28,000 °C (50,000 °F), about 5 times hotter than the Sun's surface; Earth's core is around 6,000 °C, a bit hotter than the Sun's surface (about 5,500 °C).",
+  "caption": [
+   "Quiz time. Guess before you swipe.",
+   "Comment your score out of 3. No Googling."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#quiz",
+   "#sciencequiz",
+   "#physics"
+  ],
+  "check": {
+   "claims": 3,
+   "sources": [
+    {
+     "name": "US National Weather Service: Lightning Science",
+     "url": "https://www.weather.gov/safety/lightning-science-overview"
+    },
+    {
+     "name": "ESRF: Earth's centre is 1,000 degrees hotter than previously thought (Anzellini et al. 2013, Science)",
+     "url": "https://www.esrf.fr/news/general/Earth-Center-Hotter"
+    },
+    {
+     "name": "NASA Science: Sun Facts",
+     "url": "https://science.nasa.gov/sun/facts/"
+    }
+   ]
+  },
+  "images": [
+   "media/day40-slide-01.webp",
+   "media/day40-slide-02.webp",
+   "media/day40-slide-03.webp",
+   "media/day40-slide-04.webp",
+   "media/day40-slide-05.webp",
+   "media/day40-slide-06.webp",
+   "media/day40-slide-07.webp",
+   "media/day40-slide-08.webp"
+  ]
  },
  {
   "n": 41,
@@ -1723,8 +1767,41 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Space",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-14",
+  "made": true,
+  "posted": true,
+  "title": "Neptune takes 165 years to circle the Sun.",
+  "summary": "Neptune takes about 165 Earth years to orbit the Sun, and in 2011 it completed its first lap since its discovery in 1846.",
+  "caption": [
+   "Neptune takes about 165 Earth years to circle the Sun.",
+   "Found in 1846, it only finished its first lap since discovery in 2011.",
+   "Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#neptune",
+   "#planets"
+  ],
+  "check": {
+   "claims": 2,
+   "sources": [
+    {
+     "name": "NASA Science: Neptune Facts",
+     "url": "https://science.nasa.gov/neptune/neptune-facts/"
+    },
+    {
+     "name": "NASA Science: Neptune Facts",
+     "url": "https://science.nasa.gov/neptune/facts/"
+    }
+   ]
+  },
+  "video": "media/day41.mp4",
+  "poster": "media/day41-cover.webp"
  },
  {
   "n": 42,
@@ -1732,8 +1809,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Animals",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-16",
+  "made": true,
+  "posted": true,
+  "title": "One bee makes only 1/12 of a teaspoon of honey, ever.",
+  "summary": "An average worker honeybee makes about one-twelfth of a teaspoon of honey in her whole lifetime.",
+  "caption": [
+   "A worker honeybee spends its whole life making honey.",
+   "Its lifetime total: only about one-twelfth of a teaspoon.",
+   "Think of that next time you spread some on toast. Follow @curiousorbit.daily for more."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#animalfacts",
+   "#bees",
+   "#nature"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "University of California ANR Bug Squad: A Honey of a Day",
+     "url": "https://ucanr.edu/node/155127"
+    }
+   ]
+  },
+  "video": "media/day42.mp4",
+  "poster": "media/day42-cover.webp"
  },
  {
   "n": 43,
@@ -1741,8 +1847,43 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Space",
   "time": "1 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-16",
+  "made": true,
+  "posted": true,
+  "title": "Uranus rolls round the Sun on its side.",
+  "summary": "Uranus spins tipped on its side and takes about 84 Earth years to orbit the Sun, so half the planet can be plunged into a 21-year-long dark winter.",
+  "caption": [
+   "Uranus spins tipped almost on its side.",
+   "So half the planet can be plunged into a dark winter that lasts 21 years.",
+   "Save this and send it to someone who hates winter."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#space",
+   "#uranus",
+   "#planets"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "NASA Science: Uranus Facts",
+     "url": "https://science.nasa.gov/uranus/facts/"
+    }
+   ]
+  },
+  "images": [
+   "media/day43-slide-01.webp",
+   "media/day43-slide-02.webp",
+   "media/day43-slide-03.webp",
+   "media/day43-slide-04.webp",
+   "media/day43-slide-05.webp",
+   "media/day43-slide-06.webp"
+  ]
  },
  {
   "n": 44,
@@ -1750,8 +1891,37 @@ window.CO_DAYS = [
   "format": "reel",
   "topic": "Earth",
   "time": "7 pm",
-  "date": null,
-  "summary": ""
+  "date": "2026-10-16",
+  "made": true,
+  "posted": true,
+  "title": "Bananas are slightly radioactive.",
+  "summary": "Bananas are slightly radioactive because a small fraction of their potassium is radioactive; eating one gives a tiny dose of about 0.1 microsieverts.",
+  "caption": [
+   "Bananas are slightly radioactive.",
+   "A small part of all potassium is naturally radioactive, and bananas are full of potassium.",
+   "Eating one gives you about 0.1 microsieverts. Tiny and harmless. Follow @curiousorbit.daily for a fact a day."
+  ],
+  "tags": [
+   "#sciencefacts",
+   "#didyouknow",
+   "#funfacts",
+   "#mindblown",
+   "#learnsomethingnew",
+   "#physics",
+   "#radiation",
+   "#foodfacts"
+  ],
+  "check": {
+   "claims": 1,
+   "sources": [
+    {
+     "name": "US EPA RadTown: Natural Radioactivity in Food",
+     "url": "https://www.epa.gov/radtown/natural-radioactivity-food"
+    }
+   ]
+  },
+  "video": "media/day44.mp4",
+  "poster": "media/day44-cover.webp"
  },
  {
   "n": 45,
@@ -1777,6 +1947,51 @@ window.CO_DAYS = [
   "format": "carousel",
   "topic": "Animals",
   "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 48,
+  "post": 37,
+  "format": "reel",
+  "topic": "Body",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 49,
+  "post": 38,
+  "format": "post",
+  "topic": "Earth",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 50,
+  "post": 39,
+  "format": "reel",
+  "topic": "Space",
+  "time": "7 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 51,
+  "post": 40,
+  "format": "carousel",
+  "topic": "Myths",
+  "time": "1 pm",
+  "date": null,
+  "summary": ""
+ },
+ {
+  "n": 52,
+  "post": 41,
+  "format": "reel",
+  "topic": "Animals",
+  "time": "7 pm",
   "date": null,
   "summary": ""
  }
