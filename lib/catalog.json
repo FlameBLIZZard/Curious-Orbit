@@ -1,129 +1,3784 @@
 {
-  "upiId": "adityadevdotcom@upi",
-  "payee": "Curious Orbit",
-  "products": [
+ "upiId": "adityadevdotcom@upi",
+ "payee": "Curious Orbit",
+ "products": [
+  {
+   "sku": "quiz-space",
+   "name": "Space Quiz Night Pack",
+   "theme": "space",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice space questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Space",
+   "files": [
     {
-      "sku": "quiz-pack",
-      "name": "Quiz Night Pack",
-      "price": 149,
-      "unit": "PDF host sheet + slides",
-      "featured": true,
-      "text": "50 fact-checked trivia questions in five rounds: space, body, animals, earth and myths. Host sheet with answers and sources, plus ready-to-show slides for a pub night, classroom or family game.",
-      "files": [],
-      "category": "Games"
-    },
-    {
-      "sku": "trivia-bingo",
-      "name": "Science Trivia Bingo",
-      "price": 99,
-      "unit": "30 cards + caller sheet",
-      "text": "Read a question, players hunt for the answer on their card. 30 different bingo cards and a caller sheet with every answer and its source. Prints on A4.",
-      "files": [],
-      "category": "Games"
-    },
-    {
-      "sku": "fact-cards",
-      "name": "Classroom Fact Cards",
-      "price": 199,
-      "unit": "60 printable cards",
-      "featured": true,
-      "text": "A question on the front, the answer and its source on the back. Prints double-sided on A4 and cuts into 60 cards. Made for teachers, parents and dinner tables.",
-      "files": [],
-      "category": "Printables"
-    },
-    {
-      "sku": "myth-book",
-      "name": "Myth-Busters Mini Book",
-      "price": 79,
-      "unit": "24 myths, A5 PDF",
-      "text": "24 things almost everyone believes, and what's actually true, with the science and a source for each. Read it on your phone or print it as a mini book.",
-      "files": [],
-      "category": "Printables"
-    },
-    {
-      "sku": "poster-solar",
-      "name": "Solar System Poster",
-      "price": 99,
-      "unit": "A3 + A4 PDF",
-      "text": "Every planet with its strangest true fact, in the Curious Orbit look. Prints sharp at A3 for a wall, or A4 for a notebook.",
-      "files": [],
-      "category": "Posters"
-    },
-    {
-      "sku": "poster-body",
-      "name": "Your Body by the Numbers Poster",
-      "price": 99,
-      "unit": "A3 + A4 PDF",
-      "text": "The most surprising numbers inside you, checked against medical sources. A3 for the wall, A4 for the desk.",
-      "files": [],
-      "category": "Posters"
-    },
-    {
-      "sku": "poster-animals",
-      "name": "Wild Animals Poster",
-      "price": 99,
-      "unit": "A3 + A4 PDF",
-      "text": "The animal kingdom's weirdest true talents on one page. A3 and A4, ready to print.",
-      "files": [],
-      "category": "Posters"
-    },
-    {
-      "sku": "wallpapers-space",
-      "name": "Space Wallpapers",
-      "price": 49,
-      "unit": "10 phone wallpapers",
-      "text": "Ten phone wallpapers, each with one mind-bending space fact. Sized for modern phones.",
-      "files": [],
-      "category": "Wallpapers"
-    },
-    {
-      "sku": "wallpapers-life",
-      "name": "Earth & Life Wallpapers",
-      "price": 49,
-      "unit": "10 phone wallpapers",
-      "text": "Ten wallpapers about your body, animals and our planet. A new 'wait, what?' every time you unlock.",
-      "files": [],
-      "category": "Wallpapers"
-    },
-    {
-      "sku": "kids-pack",
-      "name": "Kids' Science Activity Pack",
-      "price": 129,
-      "unit": "10 worksheets + answers",
-      "featured": true,
-      "text": "Ten printable worksheets for ages 8 to 12: true or false, match-ups, word searches and fill-the-gap, all built on checked facts, with an answer key.",
-      "files": [],
-      "category": "Printables"
-    },
-    {
-      "sku": "journal",
-      "name": "30-Day Curiosity Journal",
-      "price": 99,
-      "unit": "30 printable pages",
-      "text": "One true fact a day for 30 days, each with a question to think about and space to write. Print it or fill it in on a tablet.",
-      "files": [],
-      "category": "Printables"
-    },
-    {
-      "sku": "bundle",
-      "name": "Everything Bundle",
-      "price": 699,
-      "unit": "all 11 products",
-      "text": "Every product in the shop in one go. Worth ₹1,149 bought separately.",
-      "includes": [
-        "quiz-pack",
-        "trivia-bingo",
-        "fact-cards",
-        "myth-book",
-        "poster-solar",
-        "poster-body",
-        "poster-animals",
-        "wallpapers-space",
-        "wallpapers-life",
-        "kids-pack",
-        "journal"
-      ],
-      "category": "Bundle"
+     "name": "quiz-space.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-space/quiz-space.pdf",
+     "size": 104901,
+     "type": "application/pdf"
     }
-  ]
+   ]
+  },
+  {
+   "sku": "tf-space",
+   "name": "Space True or False Game",
+   "theme": "space",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false space statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Space",
+   "files": [
+    {
+     "name": "tf-space.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-space/tf-space.pdf",
+     "size": 103944,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-space",
+   "name": "Space Science Bingo",
+   "theme": "space",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 40,
+   "text": "30 unique 5 × 5 space bingo cards plus a caller sheet with 40 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Space",
+   "files": [
+    {
+     "name": "bingo-space.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-space/bingo-space.pdf",
+     "size": 147928,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-space",
+   "name": "Space Fact Cards",
+   "theme": "space",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable space fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Space",
+   "files": [
+    {
+     "name": "cards-space.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-space/cards-space.pdf",
+     "size": 168046,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-space",
+   "name": "Space Kids Activity Pack",
+   "theme": "space",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable space activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Space",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-space.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-space/kids-space.pdf",
+     "size": 112752,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-space",
+   "name": "Space Facts Poster",
+   "theme": "space",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 space facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Space",
+   "files": [
+    {
+     "name": "poster-space-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-space/poster-space-a3.pdf",
+     "size": 31043,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-space-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-space/poster-space-a4.pdf",
+     "size": 30835,
+     "type": "application/pdf"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "sku": "poster-solar",
+   "name": "Solar System Poster",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "text": "Every planet with its strangest true fact, in the Curious Orbit look. Prints sharp at A3 for a wall, or A4 for a notebook.",
+   "category": "Posters",
+   "family": "poster",
+   "theme": "space",
+   "type": "Posters",
+   "themeName": "Space",
+   "files": [
+    {
+     "name": "solar-system-poster-A3.pdf",
+     "label": "Poster, A3 (PDF)",
+     "path": "poster-solar/solar-system-poster-A3.pdf",
+     "size": 70258,
+     "type": "application/pdf"
+    },
+    {
+     "name": "solar-system-poster-A4.pdf",
+     "label": "Poster, A4 (PDF)",
+     "path": "poster-solar/solar-system-poster-A4.pdf",
+     "size": 63783,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-space",
+   "name": "Space Phone Wallpapers",
+   "theme": "space",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced space fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Space",
+   "files": [
+    {
+     "name": "walls-space-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-space/walls-space-01.jpg",
+     "size": 135087,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-space-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-space/walls-space-02.jpg",
+     "size": 127190,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-space-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-space/walls-space-03.jpg",
+     "size": 138890,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-space-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-space/walls-space-04.jpg",
+     "size": 134293,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-space-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-space/walls-space-05.jpg",
+     "size": 141351,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-space-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-space/walls-space-06.jpg",
+     "size": 142953,
+     "type": "image/jpeg"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "sku": "wallpapers-space",
+   "name": "Space Wallpapers",
+   "price": 49,
+   "unit": "10 phone wallpapers",
+   "text": "Ten phone wallpapers, each with one mind-bending space fact. Sized for modern phones.",
+   "category": "Wallpapers",
+   "family": "walls",
+   "theme": "space",
+   "type": "Phone wallpapers",
+   "themeName": "Space",
+   "files": [
+    {
+     "name": "space-wallpaper-01.jpg",
+     "label": "Wallpaper 01: Venus day",
+     "path": "wallpapers-space/space-wallpaper-01.jpg",
+     "size": 178336,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-02.jpg",
+     "label": "Wallpaper 02: Neutron star teaspoon",
+     "path": "wallpapers-space/space-wallpaper-02.jpg",
+     "size": 179689,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-03.jpg",
+     "label": "Wallpaper 03: Nearest star",
+     "path": "wallpapers-space/space-wallpaper-03.jpg",
+     "size": 193657,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-04.jpg",
+     "label": "Wallpaper 04: Eight-minute sunlight",
+     "path": "wallpapers-space/space-wallpaper-04.jpg",
+     "size": 183770,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-05.jpg",
+     "label": "Wallpaper 05: Water bears in space",
+     "path": "wallpapers-space/space-wallpaper-05.jpg",
+     "size": 188147,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-06.jpg",
+     "label": "Wallpaper 06: Methane rain on Titan",
+     "path": "wallpapers-space/space-wallpaper-06.jpg",
+     "size": 165622,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-07.jpg",
+     "label": "Wallpaper 07: Saturn's thin rings",
+     "path": "wallpapers-space/space-wallpaper-07.jpg",
+     "size": 193693,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-08.jpg",
+     "label": "Wallpaper 08: Sixteen sunrises",
+     "path": "wallpapers-space/space-wallpaper-08.jpg",
+     "size": 183239,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-09.jpg",
+     "label": "Wallpaper 09: Voyager 1",
+     "path": "wallpapers-space/space-wallpaper-09.jpg",
+     "size": 175423,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "space-wallpaper-10.jpg",
+     "label": "Wallpaper 10: Planets between Earth and Moon",
+     "path": "wallpapers-space/space-wallpaper-10.jpg",
+     "size": 210653,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-ocean",
+   "name": "Ocean Quiz Night Pack",
+   "theme": "ocean",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice ocean questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Ocean",
+   "files": [
+    {
+     "name": "quiz-ocean.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-ocean/quiz-ocean.pdf",
+     "size": 105023,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-ocean",
+   "name": "Ocean True or False Game",
+   "theme": "ocean",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false ocean statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Ocean",
+   "files": [
+    {
+     "name": "tf-ocean.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-ocean/tf-ocean.pdf",
+     "size": 105120,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-ocean",
+   "name": "Ocean Science Bingo",
+   "theme": "ocean",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 35,
+   "text": "30 unique 5 × 5 ocean bingo cards plus a caller sheet with 35 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Ocean",
+   "files": [
+    {
+     "name": "bingo-ocean.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-ocean/bingo-ocean.pdf",
+     "size": 151339,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-ocean",
+   "name": "Ocean Fact Cards",
+   "theme": "ocean",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable ocean fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Ocean",
+   "files": [
+    {
+     "name": "cards-ocean.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-ocean/cards-ocean.pdf",
+     "size": 171794,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-ocean",
+   "name": "Ocean Kids Activity Pack",
+   "theme": "ocean",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable ocean activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Ocean",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-ocean.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-ocean/kids-ocean.pdf",
+     "size": 112479,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-ocean",
+   "name": "Ocean Facts Poster",
+   "theme": "ocean",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 ocean facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Ocean",
+   "files": [
+    {
+     "name": "poster-ocean-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-ocean/poster-ocean-a3.pdf",
+     "size": 32393,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-ocean-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-ocean/poster-ocean-a4.pdf",
+     "size": 32091,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-ocean",
+   "name": "Ocean Phone Wallpapers",
+   "theme": "ocean",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced ocean fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Ocean",
+   "files": [
+    {
+     "name": "walls-ocean-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-ocean/walls-ocean-01.jpg",
+     "size": 119680,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-ocean-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-ocean/walls-ocean-02.jpg",
+     "size": 156060,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-ocean-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-ocean/walls-ocean-03.jpg",
+     "size": 158298,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-ocean-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-ocean/walls-ocean-04.jpg",
+     "size": 122051,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-ocean-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-ocean/walls-ocean-05.jpg",
+     "size": 147385,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-ocean-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-ocean/walls-ocean-06.jpg",
+     "size": 130501,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-earth",
+   "name": "Earth & Weather Quiz Night Pack",
+   "theme": "earth",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice earth & weather questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Earth & Weather",
+   "files": [
+    {
+     "name": "quiz-earth.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-earth/quiz-earth.pdf",
+     "size": 107931,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-earth",
+   "name": "Earth & Weather True or False Game",
+   "theme": "earth",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false earth & weather statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Earth & Weather",
+   "files": [
+    {
+     "name": "tf-earth.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-earth/tf-earth.pdf",
+     "size": 106698,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-earth",
+   "name": "Earth & Weather Science Bingo",
+   "theme": "earth",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 40,
+   "text": "30 unique 5 × 5 earth & weather bingo cards plus a caller sheet with 40 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Earth & Weather",
+   "files": [
+    {
+     "name": "bingo-earth.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-earth/bingo-earth.pdf",
+     "size": 157196,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-earth",
+   "name": "Earth & Weather Fact Cards",
+   "theme": "earth",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable earth & weather fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Earth & Weather",
+   "files": [
+    {
+     "name": "cards-earth.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-earth/cards-earth.pdf",
+     "size": 176608,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-earth",
+   "name": "Earth & Weather Kids Activity Pack",
+   "theme": "earth",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable earth & weather activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Earth & Weather",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-earth.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-earth/kids-earth.pdf",
+     "size": 113388,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-earth",
+   "name": "Earth & Weather Facts Poster",
+   "theme": "earth",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 earth & weather facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Earth & Weather",
+   "files": [
+    {
+     "name": "poster-earth-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-earth/poster-earth-a3.pdf",
+     "size": 34301,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-earth-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-earth/poster-earth-a4.pdf",
+     "size": 34122,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-earth",
+   "name": "Earth & Weather Phone Wallpapers",
+   "theme": "earth",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced earth & weather fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Earth & Weather",
+   "files": [
+    {
+     "name": "walls-earth-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-earth/walls-earth-01.jpg",
+     "size": 138178,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-earth-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-earth/walls-earth-02.jpg",
+     "size": 176212,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-earth-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-earth/walls-earth-03.jpg",
+     "size": 176741,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-earth-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-earth/walls-earth-04.jpg",
+     "size": 131876,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-earth-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-earth/walls-earth-05.jpg",
+     "size": 149338,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-earth-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-earth/walls-earth-06.jpg",
+     "size": 152991,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-physics",
+   "name": "Physics & Chemistry Quiz Night Pack",
+   "theme": "physics",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice physics & chemistry questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Physics & Chemistry",
+   "files": [
+    {
+     "name": "quiz-physics.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-physics/quiz-physics.pdf",
+     "size": 106963,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-physics",
+   "name": "Physics & Chemistry True or False Game",
+   "theme": "physics",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false physics & chemistry statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Physics & Chemistry",
+   "files": [
+    {
+     "name": "tf-physics.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-physics/tf-physics.pdf",
+     "size": 105818,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-physics",
+   "name": "Physics & Chemistry Science Bingo",
+   "theme": "physics",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 40,
+   "text": "30 unique 5 × 5 physics & chemistry bingo cards plus a caller sheet with 40 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Physics & Chemistry",
+   "files": [
+    {
+     "name": "bingo-physics.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-physics/bingo-physics.pdf",
+     "size": 154093,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-physics",
+   "name": "Physics & Chemistry Fact Cards",
+   "theme": "physics",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable physics & chemistry fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Physics & Chemistry",
+   "files": [
+    {
+     "name": "cards-physics.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-physics/cards-physics.pdf",
+     "size": 174270,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-physics",
+   "name": "Physics & Chemistry Kids Activity Pack",
+   "theme": "physics",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable physics & chemistry activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Physics & Chemistry",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-physics.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-physics/kids-physics.pdf",
+     "size": 113468,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-physics",
+   "name": "Physics & Chemistry Facts Poster",
+   "theme": "physics",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 physics & chemistry facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Physics & Chemistry",
+   "files": [
+    {
+     "name": "poster-physics-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-physics/poster-physics-a3.pdf",
+     "size": 33976,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-physics-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-physics/poster-physics-a4.pdf",
+     "size": 33803,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-physics",
+   "name": "Physics & Chemistry Phone Wallpapers",
+   "theme": "physics",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced physics & chemistry fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Physics & Chemistry",
+   "files": [
+    {
+     "name": "walls-physics-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-physics/walls-physics-01.jpg",
+     "size": 150233,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-physics-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-physics/walls-physics-02.jpg",
+     "size": 154124,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-physics-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-physics/walls-physics-03.jpg",
+     "size": 145450,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-physics-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-physics/walls-physics-04.jpg",
+     "size": 141606,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-physics-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-physics/walls-physics-05.jpg",
+     "size": 169186,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-physics-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-physics/walls-physics-06.jpg",
+     "size": 143019,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-body",
+   "name": "Human Body Quiz Night Pack",
+   "theme": "body",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 30 questions",
+   "factCount": 30,
+   "text": "30 multiple-choice human body questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Human Body",
+   "files": [
+    {
+     "name": "quiz-body.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-body/quiz-body.pdf",
+     "size": 100113,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-body",
+   "name": "Human Body True or False Game",
+   "theme": "body",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false human body statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Human Body",
+   "files": [
+    {
+     "name": "tf-body.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-body/tf-body.pdf",
+     "size": 102048,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-body",
+   "name": "Human Body Science Bingo",
+   "theme": "body",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 28,
+   "text": "30 unique 5 × 5 human body bingo cards plus a caller sheet with 28 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Human Body",
+   "files": [
+    {
+     "name": "bingo-body.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-body/bingo-body.pdf",
+     "size": 142724,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-body",
+   "name": "Human Body Fact Cards",
+   "theme": "body",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 printable human body fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Human Body",
+   "files": [
+    {
+     "name": "cards-body.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 30 cards)",
+     "path": "cards-body/cards-body.pdf",
+     "size": 162264,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-body",
+   "name": "Human Body Kids Activity Pack",
+   "theme": "body",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable human body activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Human Body",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-body.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-body/kids-body.pdf",
+     "size": 111214,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-body",
+   "name": "Human Body Facts Poster",
+   "theme": "body",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 human body facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Human Body",
+   "files": [
+    {
+     "name": "poster-body-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-body/poster-body-a3.pdf",
+     "size": 30756,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-body-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-body/poster-body-a4.pdf",
+     "size": 30554,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-body",
+   "name": "Human Body Phone Wallpapers",
+   "theme": "body",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced human body fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Human Body",
+   "files": [
+    {
+     "name": "walls-body-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-body/walls-body-01.jpg",
+     "size": 112369,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-body-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-body/walls-body-02.jpg",
+     "size": 127745,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-body-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-body/walls-body-03.jpg",
+     "size": 129122,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-body-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-body/walls-body-04.jpg",
+     "size": 140049,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-body-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-body/walls-body-05.jpg",
+     "size": 128684,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-body-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-body/walls-body-06.jpg",
+     "size": 137036,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-animals",
+   "name": "Animals Quiz Night Pack",
+   "theme": "animals",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 30 questions",
+   "factCount": 30,
+   "text": "30 multiple-choice animals questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Animals",
+   "files": [
+    {
+     "name": "quiz-animals.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-animals/quiz-animals.pdf",
+     "size": 101399,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-animals",
+   "name": "Animals True or False Game",
+   "theme": "animals",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false animals statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Animals",
+   "files": [
+    {
+     "name": "tf-animals.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-animals/tf-animals.pdf",
+     "size": 102233,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-animals",
+   "name": "Animals Science Bingo",
+   "theme": "animals",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 25,
+   "text": "30 unique 5 × 5 animals bingo cards plus a caller sheet with 25 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Animals",
+   "files": [
+    {
+     "name": "bingo-animals.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-animals/bingo-animals.pdf",
+     "size": 140608,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-animals",
+   "name": "Animals Fact Cards",
+   "theme": "animals",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 printable animals fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Animals",
+   "files": [
+    {
+     "name": "cards-animals.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 30 cards)",
+     "path": "cards-animals/cards-animals.pdf",
+     "size": 164008,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-animals",
+   "name": "Animals Kids Activity Pack",
+   "theme": "animals",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable animals activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Animals",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-animals.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-animals/kids-animals.pdf",
+     "size": 110851,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-animals",
+   "name": "Animals Facts Poster",
+   "theme": "animals",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 animals facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Animals",
+   "files": [
+    {
+     "name": "poster-animals-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-animals/poster-animals-a3.pdf",
+     "size": 30556,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-animals-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-animals/poster-animals-a4.pdf",
+     "size": 30414,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-animals",
+   "name": "Animals Phone Wallpapers",
+   "theme": "animals",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced animals fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Animals",
+   "files": [
+    {
+     "name": "walls-animals-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-animals/walls-animals-01.jpg",
+     "size": 129763,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-animals-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-animals/walls-animals-02.jpg",
+     "size": 137826,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-animals-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-animals/walls-animals-03.jpg",
+     "size": 158822,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-animals-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-animals/walls-animals-04.jpg",
+     "size": 124627,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-animals-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-animals/walls-animals-05.jpg",
+     "size": 140423,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-animals-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-animals/walls-animals-06.jpg",
+     "size": 129122,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-dinosaurs",
+   "name": "Dinosaurs Quiz Night Pack",
+   "theme": "dinosaurs",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice dinosaurs questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Dinosaurs",
+   "files": [
+    {
+     "name": "quiz-dinosaurs.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-dinosaurs/quiz-dinosaurs.pdf",
+     "size": 106635,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-dinosaurs",
+   "name": "Dinosaurs True or False Game",
+   "theme": "dinosaurs",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false dinosaurs statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Dinosaurs",
+   "files": [
+    {
+     "name": "tf-dinosaurs.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-dinosaurs/tf-dinosaurs.pdf",
+     "size": 106678,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-dinosaurs",
+   "name": "Dinosaurs Science Bingo",
+   "theme": "dinosaurs",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 28,
+   "text": "30 unique 5 × 5 dinosaurs bingo cards plus a caller sheet with 28 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Dinosaurs",
+   "files": [
+    {
+     "name": "bingo-dinosaurs.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-dinosaurs/bingo-dinosaurs.pdf",
+     "size": 144904,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-dinosaurs",
+   "name": "Dinosaurs Fact Cards",
+   "theme": "dinosaurs",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable dinosaurs fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Dinosaurs",
+   "files": [
+    {
+     "name": "cards-dinosaurs.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-dinosaurs/cards-dinosaurs.pdf",
+     "size": 172508,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-dinosaurs",
+   "name": "Dinosaurs Kids Activity Pack",
+   "theme": "dinosaurs",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable dinosaurs activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Dinosaurs",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-dinosaurs.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-dinosaurs/kids-dinosaurs.pdf",
+     "size": 112461,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-dinosaurs",
+   "name": "Dinosaurs Facts Poster",
+   "theme": "dinosaurs",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 dinosaurs facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Dinosaurs",
+   "files": [
+    {
+     "name": "poster-dinosaurs-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-dinosaurs/poster-dinosaurs-a3.pdf",
+     "size": 32367,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-dinosaurs-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-dinosaurs/poster-dinosaurs-a4.pdf",
+     "size": 32104,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-dinosaurs",
+   "name": "Dinosaurs Phone Wallpapers",
+   "theme": "dinosaurs",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced dinosaurs fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Dinosaurs",
+   "files": [
+    {
+     "name": "walls-dinosaurs-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-dinosaurs/walls-dinosaurs-01.jpg",
+     "size": 154211,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-dinosaurs-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-dinosaurs/walls-dinosaurs-02.jpg",
+     "size": 152690,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-dinosaurs-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-dinosaurs/walls-dinosaurs-03.jpg",
+     "size": 162136,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-dinosaurs-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-dinosaurs/walls-dinosaurs-04.jpg",
+     "size": 146337,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-dinosaurs-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-dinosaurs/walls-dinosaurs-05.jpg",
+     "size": 141202,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-dinosaurs-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-dinosaurs/walls-dinosaurs-06.jpg",
+     "size": 143218,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-plants",
+   "name": "Plants & Fungi Quiz Night Pack",
+   "theme": "plants",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice plants & fungi questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Plants & Fungi",
+   "files": [
+    {
+     "name": "quiz-plants.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-plants/quiz-plants.pdf",
+     "size": 107869,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-plants",
+   "name": "Plants & Fungi True or False Game",
+   "theme": "plants",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false plants & fungi statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Plants & Fungi",
+   "files": [
+    {
+     "name": "tf-plants.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-plants/tf-plants.pdf",
+     "size": 106377,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-plants",
+   "name": "Plants & Fungi Science Bingo",
+   "theme": "plants",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 25,
+   "text": "30 unique 5 × 5 plants & fungi bingo cards plus a caller sheet with 25 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Plants & Fungi",
+   "files": [
+    {
+     "name": "bingo-plants.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-plants/bingo-plants.pdf",
+     "size": 147546,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-plants",
+   "name": "Plants & Fungi Fact Cards",
+   "theme": "plants",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable plants & fungi fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Plants & Fungi",
+   "files": [
+    {
+     "name": "cards-plants.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-plants/cards-plants.pdf",
+     "size": 172912,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-plants",
+   "name": "Plants & Fungi Kids Activity Pack",
+   "theme": "plants",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable plants & fungi activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Plants & Fungi",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-plants.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-plants/kids-plants.pdf",
+     "size": 112969,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-plants",
+   "name": "Plants & Fungi Facts Poster",
+   "theme": "plants",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 plants & fungi facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Plants & Fungi",
+   "files": [
+    {
+     "name": "poster-plants-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-plants/poster-plants-a3.pdf",
+     "size": 32376,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-plants-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-plants/poster-plants-a4.pdf",
+     "size": 32188,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-plants",
+   "name": "Plants & Fungi Phone Wallpapers",
+   "theme": "plants",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced plants & fungi fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Plants & Fungi",
+   "files": [
+    {
+     "name": "walls-plants-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-plants/walls-plants-01.jpg",
+     "size": 143205,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-plants-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-plants/walls-plants-02.jpg",
+     "size": 162064,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-plants-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-plants/walls-plants-03.jpg",
+     "size": 167137,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-plants-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-plants/walls-plants-04.jpg",
+     "size": 151504,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-plants-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-plants/walls-plants-05.jpg",
+     "size": 140774,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-plants-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-plants/walls-plants-06.jpg",
+     "size": 133302,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-brain",
+   "name": "Brain & Mind Quiz Night Pack",
+   "theme": "brain",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice brain & mind questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Brain & Mind",
+   "files": [
+    {
+     "name": "quiz-brain.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-brain/quiz-brain.pdf",
+     "size": 109049,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-brain",
+   "name": "Brain & Mind True or False Game",
+   "theme": "brain",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false brain & mind statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Brain & Mind",
+   "files": [
+    {
+     "name": "tf-brain.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-brain/tf-brain.pdf",
+     "size": 109015,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-brain",
+   "name": "Brain & Mind Science Bingo",
+   "theme": "brain",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 31,
+   "text": "30 unique 5 × 5 brain & mind bingo cards plus a caller sheet with 31 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Brain & Mind",
+   "files": [
+    {
+     "name": "bingo-brain.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-brain/bingo-brain.pdf",
+     "size": 148383,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-brain",
+   "name": "Brain & Mind Fact Cards",
+   "theme": "brain",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable brain & mind fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Brain & Mind",
+   "files": [
+    {
+     "name": "cards-brain.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-brain/cards-brain.pdf",
+     "size": 174812,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-brain",
+   "name": "Brain & Mind Kids Activity Pack",
+   "theme": "brain",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable brain & mind activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Brain & Mind",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-brain.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-brain/kids-brain.pdf",
+     "size": 112406,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-brain",
+   "name": "Brain & Mind Facts Poster",
+   "theme": "brain",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 brain & mind facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Brain & Mind",
+   "files": [
+    {
+     "name": "poster-brain-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-brain/poster-brain-a3.pdf",
+     "size": 34561,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-brain-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-brain/poster-brain-a4.pdf",
+     "size": 34340,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-brain",
+   "name": "Brain & Mind Phone Wallpapers",
+   "theme": "brain",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced brain & mind fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Brain & Mind",
+   "files": [
+    {
+     "name": "walls-brain-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-brain/walls-brain-01.jpg",
+     "size": 161133,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-brain-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-brain/walls-brain-02.jpg",
+     "size": 174235,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-brain-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-brain/walls-brain-03.jpg",
+     "size": 160221,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-brain-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-brain/walls-brain-04.jpg",
+     "size": 177790,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-brain-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-brain/walls-brain-05.jpg",
+     "size": 154638,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-brain-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-brain/walls-brain-06.jpg",
+     "size": 148723,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-tech",
+   "name": "Tech & Numbers Quiz Night Pack",
+   "theme": "tech",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice tech & numbers questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Tech & Numbers",
+   "files": [
+    {
+     "name": "quiz-tech.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-tech/quiz-tech.pdf",
+     "size": 107650,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-tech",
+   "name": "Tech & Numbers True or False Game",
+   "theme": "tech",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false tech & numbers statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Tech & Numbers",
+   "files": [
+    {
+     "name": "tf-tech.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-tech/tf-tech.pdf",
+     "size": 109833,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-tech",
+   "name": "Tech & Numbers Science Bingo",
+   "theme": "tech",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 34,
+   "text": "30 unique 5 × 5 tech & numbers bingo cards plus a caller sheet with 34 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Tech & Numbers",
+   "files": [
+    {
+     "name": "bingo-tech.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-tech/bingo-tech.pdf",
+     "size": 146889,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-tech",
+   "name": "Tech & Numbers Fact Cards",
+   "theme": "tech",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable tech & numbers fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Tech & Numbers",
+   "files": [
+    {
+     "name": "cards-tech.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-tech/cards-tech.pdf",
+     "size": 176851,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-tech",
+   "name": "Tech & Numbers Kids Activity Pack",
+   "theme": "tech",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable tech & numbers activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Tech & Numbers",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-tech.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-tech/kids-tech.pdf",
+     "size": 113923,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-tech",
+   "name": "Tech & Numbers Facts Poster",
+   "theme": "tech",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 tech & numbers facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Tech & Numbers",
+   "files": [
+    {
+     "name": "poster-tech-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-tech/poster-tech-a3.pdf",
+     "size": 34321,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-tech-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-tech/poster-tech-a4.pdf",
+     "size": 34281,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-tech",
+   "name": "Tech & Numbers Phone Wallpapers",
+   "theme": "tech",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced tech & numbers fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Tech & Numbers",
+   "files": [
+    {
+     "name": "walls-tech-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-tech/walls-tech-01.jpg",
+     "size": 152771,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-tech-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-tech/walls-tech-02.jpg",
+     "size": 153873,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-tech-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-tech/walls-tech-03.jpg",
+     "size": 145739,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-tech-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-tech/walls-tech-04.jpg",
+     "size": 147730,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-tech-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-tech/walls-tech-05.jpg",
+     "size": 158021,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-tech-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-tech/walls-tech-06.jpg",
+     "size": 150165,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-food",
+   "name": "Food & Everyday Science Quiz Night Pack",
+   "theme": "food",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice food & everyday science questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Food & Everyday Science",
+   "files": [
+    {
+     "name": "quiz-food.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-food/quiz-food.pdf",
+     "size": 109806,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-food",
+   "name": "Food & Everyday Science True or False Game",
+   "theme": "food",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false food & everyday science statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Food & Everyday Science",
+   "files": [
+    {
+     "name": "tf-food.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-food/tf-food.pdf",
+     "size": 108347,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-food",
+   "name": "Food & Everyday Science Science Bingo",
+   "theme": "food",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 32,
+   "text": "30 unique 5 × 5 food & everyday science bingo cards plus a caller sheet with 32 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Food & Everyday Science",
+   "files": [
+    {
+     "name": "bingo-food.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-food/bingo-food.pdf",
+     "size": 151197,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-food",
+   "name": "Food & Everyday Science Fact Cards",
+   "theme": "food",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable food & everyday science fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Food & Everyday Science",
+   "files": [
+    {
+     "name": "cards-food.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-food/cards-food.pdf",
+     "size": 176479,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-food",
+   "name": "Food & Everyday Science Kids Activity Pack",
+   "theme": "food",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable food & everyday science activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Food & Everyday Science",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-food.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-food/kids-food.pdf",
+     "size": 113196,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-food",
+   "name": "Food & Everyday Science Facts Poster",
+   "theme": "food",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 food & everyday science facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Food & Everyday Science",
+   "files": [
+    {
+     "name": "poster-food-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-food/poster-food-a3.pdf",
+     "size": 34212,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-food-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-food/poster-food-a4.pdf",
+     "size": 33912,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-food",
+   "name": "Food & Everyday Science Phone Wallpapers",
+   "theme": "food",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced food & everyday science fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Food & Everyday Science",
+   "files": [
+    {
+     "name": "walls-food-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-food/walls-food-01.jpg",
+     "size": 146520,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-food-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-food/walls-food-02.jpg",
+     "size": 176856,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-food-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-food/walls-food-03.jpg",
+     "size": 162078,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-food-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-food/walls-food-04.jpg",
+     "size": 157973,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-food-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-food/walls-food-05.jpg",
+     "size": 162751,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-food-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-food/walls-food-06.jpg",
+     "size": 168447,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-history",
+   "name": "History of Science Quiz Night Pack",
+   "theme": "history",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice history of science questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "History of Science",
+   "files": [
+    {
+     "name": "quiz-history.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-history/quiz-history.pdf",
+     "size": 111187,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-history",
+   "name": "History of Science True or False Game",
+   "theme": "history",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false history of science statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "History of Science",
+   "files": [
+    {
+     "name": "tf-history.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-history/tf-history.pdf",
+     "size": 110672,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-history",
+   "name": "History of Science Fact Cards",
+   "theme": "history",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable history of science fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "History of Science",
+   "files": [
+    {
+     "name": "cards-history.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-history/cards-history.pdf",
+     "size": 179587,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-history",
+   "name": "History of Science Kids Activity Pack",
+   "theme": "history",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable history of science activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "History of Science",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-history.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-history/kids-history.pdf",
+     "size": 113840,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-history",
+   "name": "History of Science Facts Poster",
+   "theme": "history",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 history of science facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "History of Science",
+   "files": [
+    {
+     "name": "poster-history-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-history/poster-history-a3.pdf",
+     "size": 33774,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-history-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-history/poster-history-a4.pdf",
+     "size": 33534,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-history",
+   "name": "History of Science Phone Wallpapers",
+   "theme": "history",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced history of science fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "History of Science",
+   "files": [
+    {
+     "name": "walls-history-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-history/walls-history-01.jpg",
+     "size": 154635,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-history-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-history/walls-history-02.jpg",
+     "size": 175363,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-history-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-history/walls-history-03.jpg",
+     "size": 160023,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-history-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-history/walls-history-04.jpg",
+     "size": 135356,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-history-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-history/walls-history-05.jpg",
+     "size": 167860,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-history-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-history/walls-history-06.jpg",
+     "size": 178258,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-bugs",
+   "name": "Bugs & Microbes Quiz Night Pack",
+   "theme": "bugs",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice bugs & microbes questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Bugs & Microbes",
+   "files": [
+    {
+     "name": "quiz-bugs.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-bugs/quiz-bugs.pdf",
+     "size": 108073,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-bugs",
+   "name": "Bugs & Microbes True or False Game",
+   "theme": "bugs",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false bugs & microbes statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Bugs & Microbes",
+   "files": [
+    {
+     "name": "tf-bugs.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-bugs/tf-bugs.pdf",
+     "size": 106537,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-bugs",
+   "name": "Bugs & Microbes Science Bingo",
+   "theme": "bugs",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 33,
+   "text": "30 unique 5 × 5 bugs & microbes bingo cards plus a caller sheet with 33 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Bugs & Microbes",
+   "files": [
+    {
+     "name": "bingo-bugs.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-bugs/bingo-bugs.pdf",
+     "size": 151240,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-bugs",
+   "name": "Bugs & Microbes Fact Cards",
+   "theme": "bugs",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable bugs & microbes fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Bugs & Microbes",
+   "files": [
+    {
+     "name": "cards-bugs.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-bugs/cards-bugs.pdf",
+     "size": 176277,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-bugs",
+   "name": "Bugs & Microbes Kids Activity Pack",
+   "theme": "bugs",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable bugs & microbes activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Bugs & Microbes",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-bugs.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-bugs/kids-bugs.pdf",
+     "size": 113021,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-bugs",
+   "name": "Bugs & Microbes Facts Poster",
+   "theme": "bugs",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 bugs & microbes facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Bugs & Microbes",
+   "files": [
+    {
+     "name": "poster-bugs-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-bugs/poster-bugs-a3.pdf",
+     "size": 33453,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-bugs-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-bugs/poster-bugs-a4.pdf",
+     "size": 33177,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-bugs",
+   "name": "Bugs & Microbes Phone Wallpapers",
+   "theme": "bugs",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced bugs & microbes fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Bugs & Microbes",
+   "files": [
+    {
+     "name": "walls-bugs-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-bugs/walls-bugs-01.jpg",
+     "size": 173664,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-bugs-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-bugs/walls-bugs-02.jpg",
+     "size": 154775,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-bugs-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-bugs/walls-bugs-03.jpg",
+     "size": 156361,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-bugs-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-bugs/walls-bugs-04.jpg",
+     "size": 176581,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-bugs-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-bugs/walls-bugs-05.jpg",
+     "size": 155085,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-bugs-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-bugs/walls-bugs-06.jpg",
+     "size": 178833,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-myths",
+   "name": "Myths Quiz Night Pack",
+   "theme": "myths",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 40 questions",
+   "factCount": 40,
+   "text": "40 multiple-choice myths questions in 4 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Myths",
+   "files": [
+    {
+     "name": "quiz-myths.pdf",
+     "label": "Quiz night pack (A4 PDF, 9 pages)",
+     "path": "quiz-myths/quiz-myths.pdf",
+     "size": 108831,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "tf-myths",
+   "name": "Myths True or False Game",
+   "theme": "myths",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false myths statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Myths",
+   "files": [
+    {
+     "name": "tf-myths.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-myths/tf-myths.pdf",
+     "size": 107739,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-myths",
+   "name": "Myths Science Bingo",
+   "theme": "myths",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 27,
+   "text": "30 unique 5 × 5 myths bingo cards plus a caller sheet with 27 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Myths",
+   "files": [
+    {
+     "name": "bingo-myths.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-myths/bingo-myths.pdf",
+     "size": 145870,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-myths",
+   "name": "Myths Fact Cards",
+   "theme": "myths",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable myths fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Myths",
+   "files": [
+    {
+     "name": "cards-myths.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-myths/cards-myths.pdf",
+     "size": 179894,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "myth-book",
+   "name": "Myth-Busters Mini Book",
+   "price": 79,
+   "unit": "24 myths, A5 PDF",
+   "text": "24 things almost everyone believes, and what's actually true, with the science and a source for each. Read it on your phone or print it as a mini book.",
+   "category": "Printables",
+   "family": "book",
+   "theme": "myths",
+   "factCount": 24,
+   "type": "Mini books",
+   "themeName": "Myths",
+   "files": [
+    {
+     "name": "myth-busters-mini-book.pdf",
+     "label": "Mini book (A5 PDF, 28 pages)",
+     "path": "myth-book/myth-busters-mini-book.pdf",
+     "size": 268726,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "kids-myths",
+   "name": "Myths Kids Activity Pack",
+   "theme": "myths",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable myths activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Myths",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-myths.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-myths/kids-myths.pdf",
+     "size": 111962,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "poster-myths",
+   "name": "Myths Facts Poster",
+   "theme": "myths",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 popular myths struck through and corrected on one dark poster, with every source in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Myths",
+   "files": [
+    {
+     "name": "poster-myths-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-myths/poster-myths-a3.pdf",
+     "size": 36167,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-myths-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-myths/poster-myths-a4.pdf",
+     "size": 35934,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-myths",
+   "name": "Myths Phone Wallpapers",
+   "theme": "myths",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced myth-busting fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Myths",
+   "files": [
+    {
+     "name": "walls-myths-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-myths/walls-myths-01.jpg",
+     "size": 179032,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-myths-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-myths/walls-myths-02.jpg",
+     "size": 190034,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-myths-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-myths/walls-myths-03.jpg",
+     "size": 197569,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-myths-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-myths/walls-myths-04.jpg",
+     "size": 182644,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-myths-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-myths/walls-myths-05.jpg",
+     "size": 195629,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-myths-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-myths/walls-myths-06.jpg",
+     "size": 164178,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "quiz-mixed",
+   "name": "Best of Curious Orbit Quiz Night Pack",
+   "theme": "mixed",
+   "family": "quiz",
+   "category": "Games",
+   "price": 79,
+   "unit": "A4 PDF · 50 questions",
+   "factCount": 50,
+   "text": "50 multiple-choice questions across science in 5 rounds, team answer sheet, and a host key with a source for every answer.",
+   "type": "Quiz packs",
+   "themeName": "Mixed Science",
+   "files": [
+    {
+     "name": "quiz-mixed.pdf",
+     "label": "Quiz night pack (A4 PDF, 11 pages)",
+     "path": "quiz-mixed/quiz-mixed.pdf",
+     "size": 129984,
+     "type": "application/pdf"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "sku": "tf-mixed",
+   "name": "Best of Curious Orbit True or False Game",
+   "theme": "mixed",
+   "family": "tf",
+   "category": "Games",
+   "price": 49,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 30,
+   "text": "30 true-or-false science statement cards to cut out, plus an answer sheet with a one-line explanation and source for each.",
+   "type": "True or False",
+   "themeName": "Mixed Science",
+   "files": [
+    {
+     "name": "tf-mixed.pdf",
+     "label": "True or false game (A4 PDF, 7 pages)",
+     "path": "tf-mixed/tf-mixed.pdf",
+     "size": 108039,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "bingo-mixed",
+   "name": "Best of Curious Orbit Science Bingo",
+   "theme": "mixed",
+   "family": "bingo",
+   "category": "Games",
+   "price": 69,
+   "unit": "A4 PDF · 30 cards",
+   "factCount": 40,
+   "text": "30 unique 5 × 5 science bingo cards plus a caller sheet with 40 questions and answers. Prints on A4.",
+   "type": "Bingo",
+   "themeName": "Mixed Science",
+   "files": [
+    {
+     "name": "bingo-mixed.pdf",
+     "label": "Bingo game (A4 PDF, 19 pages)",
+     "path": "bingo-mixed/bingo-mixed.pdf",
+     "size": 152744,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "cards-mixed",
+   "name": "Best of Curious Orbit Fact Cards",
+   "theme": "mixed",
+   "family": "cards",
+   "category": "Printables",
+   "price": 99,
+   "unit": "A4 PDF · 36 cards",
+   "factCount": 36,
+   "text": "36 printable science fact cards, 9 per A4 sheet: the fact on the front, the why and a source on the back.",
+   "type": "Fact cards",
+   "themeName": "Mixed Science",
+   "files": [
+    {
+     "name": "cards-mixed.pdf",
+     "label": "Fact cards (A4 PDF, 10 pages, 36 cards)",
+     "path": "cards-mixed/cards-mixed.pdf",
+     "size": 179083,
+     "type": "application/pdf"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "sku": "kids-mixed",
+   "name": "Best of Curious Orbit Kids Activity Pack",
+   "theme": "mixed",
+   "family": "kids",
+   "category": "Kids",
+   "price": 69,
+   "unit": "A4 PDF · 7 pages",
+   "factCount": 22,
+   "text": "5 printable science activities for kids: match-up, true or false, word search, and more, built on 22 checked facts, with answers.",
+   "type": "Kids activities",
+   "themeName": "Mixed Science",
+   "age": "6 to 12",
+   "files": [
+    {
+     "name": "kids-mixed.pdf",
+     "label": "Kids activity pack (A4 PDF, 7 pages)",
+     "path": "kids-mixed/kids-mixed.pdf",
+     "size": 113603,
+     "type": "application/pdf"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "sku": "poster-mixed",
+   "name": "Best of Curious Orbit Facts Poster",
+   "theme": "mixed",
+   "family": "poster",
+   "category": "Posters",
+   "price": 99,
+   "unit": "A3 + A4 PDF",
+   "factCount": 12,
+   "text": "12 science facts led by big numbers on one dark typographic poster, sources in small print. A3 and A4 PDFs.",
+   "type": "Posters",
+   "themeName": "Mixed Science",
+   "files": [
+    {
+     "name": "poster-mixed-a3.pdf",
+     "label": "Poster, A3 PDF (297 × 420 mm)",
+     "path": "poster-mixed/poster-mixed-a3.pdf",
+     "size": 33269,
+     "type": "application/pdf"
+    },
+    {
+     "name": "poster-mixed-a4.pdf",
+     "label": "Poster, A4 PDF (210 × 297 mm)",
+     "path": "poster-mixed/poster-mixed-a4.pdf",
+     "size": 33063,
+     "type": "application/pdf"
+    }
+   ]
+  },
+  {
+   "sku": "walls-mixed",
+   "name": "Best of Curious Orbit Phone Wallpapers",
+   "theme": "mixed",
+   "family": "walls",
+   "category": "Wallpapers",
+   "price": 49,
+   "unit": "6 phone wallpapers",
+   "factCount": 6,
+   "text": "6 dark phone wallpapers at 1290 × 2796, each with one sourced science fact and a calm top for your clock.",
+   "type": "Phone wallpapers",
+   "themeName": "Mixed Science",
+   "files": [
+    {
+     "name": "walls-mixed-01.jpg",
+     "label": "Wallpaper 1 of 6 (1290 × 2796 JPG)",
+     "path": "walls-mixed/walls-mixed-01.jpg",
+     "size": 144153,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-mixed-02.jpg",
+     "label": "Wallpaper 2 of 6 (1290 × 2796 JPG)",
+     "path": "walls-mixed/walls-mixed-02.jpg",
+     "size": 127745,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-mixed-03.jpg",
+     "label": "Wallpaper 3 of 6 (1290 × 2796 JPG)",
+     "path": "walls-mixed/walls-mixed-03.jpg",
+     "size": 129910,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-mixed-04.jpg",
+     "label": "Wallpaper 4 of 6 (1290 × 2796 JPG)",
+     "path": "walls-mixed/walls-mixed-04.jpg",
+     "size": 156195,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-mixed-05.jpg",
+     "label": "Wallpaper 5 of 6 (1290 × 2796 JPG)",
+     "path": "walls-mixed/walls-mixed-05.jpg",
+     "size": 132030,
+     "type": "image/jpeg"
+    },
+    {
+     "name": "walls-mixed-06.jpg",
+     "label": "Wallpaper 6 of 6 (1290 × 2796 JPG)",
+     "path": "walls-mixed/walls-mixed-06.jpg",
+     "size": 171653,
+     "type": "image/jpeg"
+    }
+   ]
+  },
+  {
+   "sku": "bundle-space",
+   "name": "Space Complete Pack",
+   "price": 389,
+   "worth": 661,
+   "unit": "9 products",
+   "text": "Every space product in one go: 9 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-space",
+    "tf-space",
+    "bingo-space",
+    "cards-space",
+    "kids-space",
+    "poster-space",
+    "poster-solar",
+    "walls-space",
+    "wallpapers-space"
+   ],
+   "theme": "space",
+   "themeName": "Space"
+  },
+  {
+   "sku": "bundle-ocean",
+   "name": "Ocean Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every ocean product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-ocean",
+    "tf-ocean",
+    "bingo-ocean",
+    "cards-ocean",
+    "kids-ocean",
+    "poster-ocean",
+    "walls-ocean"
+   ],
+   "theme": "ocean",
+   "themeName": "Ocean"
+  },
+  {
+   "sku": "bundle-earth",
+   "name": "Earth & Weather Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every earth & weather product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-earth",
+    "tf-earth",
+    "bingo-earth",
+    "cards-earth",
+    "kids-earth",
+    "poster-earth",
+    "walls-earth"
+   ],
+   "theme": "earth",
+   "themeName": "Earth & Weather"
+  },
+  {
+   "sku": "bundle-physics",
+   "name": "Physics & Chemistry Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every physics & chemistry product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-physics",
+    "tf-physics",
+    "bingo-physics",
+    "cards-physics",
+    "kids-physics",
+    "poster-physics",
+    "walls-physics"
+   ],
+   "theme": "physics",
+   "themeName": "Physics & Chemistry"
+  },
+  {
+   "sku": "bundle-body",
+   "name": "Human Body Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every human body product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-body",
+    "tf-body",
+    "bingo-body",
+    "cards-body",
+    "kids-body",
+    "poster-body",
+    "walls-body"
+   ],
+   "theme": "body",
+   "themeName": "Human Body"
+  },
+  {
+   "sku": "bundle-animals",
+   "name": "Animals Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every animals product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-animals",
+    "tf-animals",
+    "bingo-animals",
+    "cards-animals",
+    "kids-animals",
+    "poster-animals",
+    "walls-animals"
+   ],
+   "theme": "animals",
+   "themeName": "Animals"
+  },
+  {
+   "sku": "bundle-dinosaurs",
+   "name": "Dinosaurs Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every dinosaurs product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-dinosaurs",
+    "tf-dinosaurs",
+    "bingo-dinosaurs",
+    "cards-dinosaurs",
+    "kids-dinosaurs",
+    "poster-dinosaurs",
+    "walls-dinosaurs"
+   ],
+   "theme": "dinosaurs",
+   "themeName": "Dinosaurs"
+  },
+  {
+   "sku": "bundle-plants",
+   "name": "Plants & Fungi Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every plants & fungi product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-plants",
+    "tf-plants",
+    "bingo-plants",
+    "cards-plants",
+    "kids-plants",
+    "poster-plants",
+    "walls-plants"
+   ],
+   "theme": "plants",
+   "themeName": "Plants & Fungi"
+  },
+  {
+   "sku": "bundle-brain",
+   "name": "Brain & Mind Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every brain & mind product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-brain",
+    "tf-brain",
+    "bingo-brain",
+    "cards-brain",
+    "kids-brain",
+    "poster-brain",
+    "walls-brain"
+   ],
+   "theme": "brain",
+   "themeName": "Brain & Mind"
+  },
+  {
+   "sku": "bundle-tech",
+   "name": "Tech & Numbers Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every tech & numbers product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-tech",
+    "tf-tech",
+    "bingo-tech",
+    "cards-tech",
+    "kids-tech",
+    "poster-tech",
+    "walls-tech"
+   ],
+   "theme": "tech",
+   "themeName": "Tech & Numbers"
+  },
+  {
+   "sku": "bundle-food",
+   "name": "Food & Everyday Science Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every food & everyday science product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-food",
+    "tf-food",
+    "bingo-food",
+    "cards-food",
+    "kids-food",
+    "poster-food",
+    "walls-food"
+   ],
+   "theme": "food",
+   "themeName": "Food & Everyday Science"
+  },
+  {
+   "sku": "bundle-history",
+   "name": "History of Science Complete Pack",
+   "price": 259,
+   "worth": 444,
+   "unit": "6 products",
+   "text": "Every history of science product in one go: 6 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-history",
+    "tf-history",
+    "cards-history",
+    "kids-history",
+    "poster-history",
+    "walls-history"
+   ],
+   "theme": "history",
+   "themeName": "History of Science"
+  },
+  {
+   "sku": "bundle-bugs",
+   "name": "Bugs & Microbes Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every bugs & microbes product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-bugs",
+    "tf-bugs",
+    "bingo-bugs",
+    "cards-bugs",
+    "kids-bugs",
+    "poster-bugs",
+    "walls-bugs"
+   ],
+   "theme": "bugs",
+   "themeName": "Bugs & Microbes"
+  },
+  {
+   "sku": "bundle-myths",
+   "name": "Myths Complete Pack",
+   "price": 349,
+   "worth": 592,
+   "unit": "8 products",
+   "text": "Every myths product in one go: 8 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-myths",
+    "tf-myths",
+    "bingo-myths",
+    "cards-myths",
+    "myth-book",
+    "kids-myths",
+    "poster-myths",
+    "walls-myths"
+   ],
+   "theme": "myths",
+   "themeName": "Myths"
+  },
+  {
+   "sku": "bundle-mixed",
+   "name": "Mixed Science Complete Pack",
+   "price": 299,
+   "worth": 513,
+   "unit": "7 products",
+   "text": "Every mixed science product in one go: 7 products, from quiz night to phone wallpapers, with one payment and one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-mixed",
+    "tf-mixed",
+    "bingo-mixed",
+    "cards-mixed",
+    "kids-mixed",
+    "poster-mixed",
+    "walls-mixed"
+   ],
+   "theme": "mixed",
+   "themeName": "Mixed Science"
+  },
+  {
+   "sku": "bundle-all-quiz",
+   "name": "All Quiz Night Packs",
+   "price": 589,
+   "worth": 1185,
+   "unit": "15 products",
+   "text": "All 15 quiz night packs across every topic, at half the price of buying them one by one.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-space",
+    "quiz-ocean",
+    "quiz-earth",
+    "quiz-physics",
+    "quiz-body",
+    "quiz-animals",
+    "quiz-dinosaurs",
+    "quiz-plants",
+    "quiz-brain",
+    "quiz-tech",
+    "quiz-food",
+    "quiz-history",
+    "quiz-bugs",
+    "quiz-myths",
+    "quiz-mixed"
+   ],
+   "familyBundle": "quiz"
+  },
+  {
+   "sku": "bundle-all-tf",
+   "name": "All True or False Games",
+   "price": 359,
+   "worth": 735,
+   "unit": "15 products",
+   "text": "All 15 true or false games across every topic, at half the price of buying them one by one.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "tf-space",
+    "tf-ocean",
+    "tf-earth",
+    "tf-physics",
+    "tf-body",
+    "tf-animals",
+    "tf-dinosaurs",
+    "tf-plants",
+    "tf-brain",
+    "tf-tech",
+    "tf-food",
+    "tf-history",
+    "tf-bugs",
+    "tf-myths",
+    "tf-mixed"
+   ],
+   "familyBundle": "tf"
+  },
+  {
+   "sku": "bundle-all-bingo",
+   "name": "All Science Bingo Sets",
+   "price": 479,
+   "worth": 966,
+   "unit": "14 products",
+   "text": "All 14 science bingo sets across every topic, at half the price of buying them one by one.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "bingo-space",
+    "bingo-ocean",
+    "bingo-earth",
+    "bingo-physics",
+    "bingo-body",
+    "bingo-animals",
+    "bingo-dinosaurs",
+    "bingo-plants",
+    "bingo-brain",
+    "bingo-tech",
+    "bingo-food",
+    "bingo-bugs",
+    "bingo-myths",
+    "bingo-mixed"
+   ],
+   "familyBundle": "bingo"
+  },
+  {
+   "sku": "bundle-all-cards",
+   "name": "All Fact Card Decks",
+   "price": 739,
+   "worth": 1485,
+   "unit": "15 products",
+   "text": "All 15 fact card decks across every topic, at half the price of buying them one by one.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "cards-space",
+    "cards-ocean",
+    "cards-earth",
+    "cards-physics",
+    "cards-body",
+    "cards-animals",
+    "cards-dinosaurs",
+    "cards-plants",
+    "cards-brain",
+    "cards-tech",
+    "cards-food",
+    "cards-history",
+    "cards-bugs",
+    "cards-myths",
+    "cards-mixed"
+   ],
+   "familyBundle": "cards"
+  },
+  {
+   "sku": "bundle-all-kids",
+   "name": "All Kids Activity Packs",
+   "price": 509,
+   "worth": 1035,
+   "unit": "15 products",
+   "text": "All 15 kids activity packs across every topic, at half the price of buying them one by one.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "kids-space",
+    "kids-ocean",
+    "kids-earth",
+    "kids-physics",
+    "kids-body",
+    "kids-animals",
+    "kids-dinosaurs",
+    "kids-plants",
+    "kids-brain",
+    "kids-tech",
+    "kids-food",
+    "kids-history",
+    "kids-bugs",
+    "kids-myths",
+    "kids-mixed"
+   ],
+   "familyBundle": "kids"
+  },
+  {
+   "sku": "bundle-all-poster",
+   "name": "All Facts Posters",
+   "price": 789,
+   "worth": 1584,
+   "unit": "16 products",
+   "text": "All 16 facts posters across every topic, at half the price of buying them one by one.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "poster-space",
+    "poster-solar",
+    "poster-ocean",
+    "poster-earth",
+    "poster-physics",
+    "poster-body",
+    "poster-animals",
+    "poster-dinosaurs",
+    "poster-plants",
+    "poster-brain",
+    "poster-tech",
+    "poster-food",
+    "poster-history",
+    "poster-bugs",
+    "poster-myths",
+    "poster-mixed"
+   ],
+   "familyBundle": "poster"
+  },
+  {
+   "sku": "bundle-all-walls",
+   "name": "All Phone Wallpaper Sets",
+   "price": 389,
+   "worth": 784,
+   "unit": "16 products",
+   "text": "All 16 phone wallpaper sets across every topic, at half the price of buying them one by one.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "walls-space",
+    "wallpapers-space",
+    "walls-ocean",
+    "walls-earth",
+    "walls-physics",
+    "walls-body",
+    "walls-animals",
+    "walls-dinosaurs",
+    "walls-plants",
+    "walls-brain",
+    "walls-tech",
+    "walls-food",
+    "walls-history",
+    "walls-bugs",
+    "walls-myths",
+    "walls-mixed"
+   ],
+   "familyBundle": "walls"
+  },
+  {
+   "sku": "bundle-teacher",
+   "name": "Teacher's Classroom Kit",
+   "price": 269,
+   "worth": 464,
+   "unit": "6 products",
+   "text": "Quiz pack, fact cards, true-or-false, bingo, a kids activity pack and a poster, all mixed-science and ready to print for the classroom.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-mixed",
+    "cards-mixed",
+    "tf-mixed",
+    "bingo-mixed",
+    "kids-mixed",
+    "poster-mixed"
+   ],
+   "featured": true
+  },
+  {
+   "sku": "bundle-kids-mega",
+   "name": "Kids Mega Pack",
+   "price": 649,
+   "worth": 1084,
+   "unit": "16 products",
+   "text": "Every kids activity pack plus a true-or-false game: worksheets, word searches and match-ups for ages 6 to 12, with answers.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "kids-space",
+    "kids-ocean",
+    "kids-earth",
+    "kids-physics",
+    "kids-body",
+    "kids-animals",
+    "kids-dinosaurs",
+    "kids-plants",
+    "kids-brain",
+    "kids-tech",
+    "kids-food",
+    "kids-history",
+    "kids-bugs",
+    "kids-myths",
+    "tf-mixed",
+    "kids-mixed"
+   ],
+   "age": "6 to 12"
+  },
+  {
+   "sku": "bundle-everything",
+   "name": "Everything Bundle",
+   "price": 1959,
+   "worth": 7853,
+   "unit": "107 products",
+   "text": "Every product in the shop: 107 quiz packs, card decks, posters, games, kids packs and wallpapers. One payment, one order page.",
+   "category": "Bundles",
+   "family": "bundle",
+   "type": "Bundles",
+   "includes": [
+    "quiz-space",
+    "tf-space",
+    "bingo-space",
+    "cards-space",
+    "kids-space",
+    "poster-space",
+    "poster-solar",
+    "walls-space",
+    "wallpapers-space",
+    "quiz-ocean",
+    "tf-ocean",
+    "bingo-ocean",
+    "cards-ocean",
+    "kids-ocean",
+    "poster-ocean",
+    "walls-ocean",
+    "quiz-earth",
+    "tf-earth",
+    "bingo-earth",
+    "cards-earth",
+    "kids-earth",
+    "poster-earth",
+    "walls-earth",
+    "quiz-physics",
+    "tf-physics",
+    "bingo-physics",
+    "cards-physics",
+    "kids-physics",
+    "poster-physics",
+    "walls-physics",
+    "quiz-body",
+    "tf-body",
+    "bingo-body",
+    "cards-body",
+    "kids-body",
+    "poster-body",
+    "walls-body",
+    "quiz-animals",
+    "tf-animals",
+    "bingo-animals",
+    "cards-animals",
+    "kids-animals",
+    "poster-animals",
+    "walls-animals",
+    "quiz-dinosaurs",
+    "tf-dinosaurs",
+    "bingo-dinosaurs",
+    "cards-dinosaurs",
+    "kids-dinosaurs",
+    "poster-dinosaurs",
+    "walls-dinosaurs",
+    "quiz-plants",
+    "tf-plants",
+    "bingo-plants",
+    "cards-plants",
+    "kids-plants",
+    "poster-plants",
+    "walls-plants",
+    "quiz-brain",
+    "tf-brain",
+    "bingo-brain",
+    "cards-brain",
+    "kids-brain",
+    "poster-brain",
+    "walls-brain",
+    "quiz-tech",
+    "tf-tech",
+    "bingo-tech",
+    "cards-tech",
+    "kids-tech",
+    "poster-tech",
+    "walls-tech",
+    "quiz-food",
+    "tf-food",
+    "bingo-food",
+    "cards-food",
+    "kids-food",
+    "poster-food",
+    "walls-food",
+    "quiz-history",
+    "tf-history",
+    "cards-history",
+    "kids-history",
+    "poster-history",
+    "walls-history",
+    "quiz-bugs",
+    "tf-bugs",
+    "bingo-bugs",
+    "cards-bugs",
+    "kids-bugs",
+    "poster-bugs",
+    "walls-bugs",
+    "quiz-myths",
+    "tf-myths",
+    "bingo-myths",
+    "cards-myths",
+    "myth-book",
+    "kids-myths",
+    "poster-myths",
+    "walls-myths",
+    "quiz-mixed",
+    "tf-mixed",
+    "bingo-mixed",
+    "cards-mixed",
+    "kids-mixed",
+    "poster-mixed",
+    "walls-mixed"
+   ]
+  }
+ ]
 }
