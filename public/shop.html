@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Orbit Shop | Curious Orbit</title>
-<meta name="description" content="Fact-checked quiz packs, printable fact cards, posters and wallpapers. Pay by UPI.">
+<meta name="description" content="132 fact-checked quiz packs, fact cards, posters, wallpapers and kids activity packs. Pay by UPI, download instantly.">
 <meta name="theme-color" content="#0B0E17">
 <link rel="canonical" href="https://curiousorbit.aditya-dev.com/shop">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Curious Orbit">
 <meta property="og:title" content="Orbit Shop | Curious Orbit">
-<meta property="og:description" content="Fact-checked quiz packs, printable fact cards, posters and wallpapers. Pay by UPI.">
+<meta property="og:description" content="132 fact-checked quiz packs, fact cards, posters, wallpapers and kids activity packs. Pay by UPI, download instantly.">
 <meta property="og:image" content="https://curiousorbit.aditya-dev.com/media/og/home.jpg">
 <meta property="og:url" content="https://curiousorbit.aditya-dev.com/shop">
 <meta name="twitter:card" content="summary_large_image">
@@ -19,9 +19,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=4e20e5e8">
-<link rel="stylesheet" href="chrome.css?v=4e20e5e8">
-<link rel="stylesheet" href="micro.css?v=4e20e5e8">
+<link rel="stylesheet" href="styles.css?v=ed2bc433">
+<link rel="stylesheet" href="chrome.css?v=ed2bc433">
+<link rel="stylesheet" href="micro.css?v=ed2bc433">
+<link rel="stylesheet" href="shop.css?v=ed2bc433">
+<script type="module" src="js/shop-orbit.js?v=ed2bc433"></script>
 </head>
 <body class="sub">
 <canvas class="stars" id="stars" aria-hidden="true"></canvas>
@@ -39,17 +41,41 @@
 </header>
 <nav class="menu" id="menu" aria-label="Menu"><a href="index.html">Home</a><a href="index.html#log">The log</a><a href="shop.html">Shop</a><a href="media-kit.html">Advertise</a><a data-ig href="https://www.instagram.com/curiousorbit.daily/" target="_blank" rel="noopener">Instagram</a><p class="menu-foot">@curiousorbit.daily · one true fact at a time</p></nav>
 <main>
-<section class="shop-page wrap">
-  <p class="label">Orbit Shop · pay by UPI</p>
-  <h1>Take the facts <span class="ember">offline.</span></h1>
-  <p class="lede">Quiz packs, printable cards, posters and wallpapers, every fact checked against a real source. Pay with any UPI app; your download unlocks as soon as we confirm the payment.</p>
+<section class="shop-hero wrap">
+  <div class="hero-copy">
+    <p class="label">Orbit Shop · pay by UPI</p>
+    <h1>Take the facts <span class="ember">offline.</span></h1>
+    <p class="lede">Quiz nights, fact cards, posters, wallpapers and kids' activity packs. Every fact checked against a real source. Pay with any UPI app and download straight away.</p>
+    <form class="shop-search" id="shop-search" role="search">
+      <label class="sr" for="shop-q">Search the shop</label>
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+      <input id="shop-q" type="search" placeholder="Search dinosaurs, quiz, kids, ocean…" autocomplete="off" maxlength="60">
+      <button type="button" id="shop-q-clear" aria-label="Clear search" hidden>×</button>
+    </form>
+    <ul class="shop-stats"><li><b>107</b>products</li><li><b>14</b>topics</li><li><b>25</b>bundles</li><li><b>100%</b>sourced facts</li></ul>
+  </div>
+  <div class="orbit-wrap" aria-hidden="true">
+    <div class="orbit-box" id="orbit-box"><canvas id="orbit-field"></canvas></div>
+    <p class="orbit-cap"><span>Every dot is a product</span><b id="orbit-n"></b></p>
+  </div>
+</section>
+<div class="wrap shop-bar" id="shop-bar"></div>
+<div class="wrap shop-layout">
+  <aside class="filters" id="filters" aria-label="Filters"></aside>
+  <div class="shop-results">
+    <div class="results-top"><p class="count" id="shop-count" aria-live="polite"></p><div class="chips" id="shop-chips"></div></div>
+    <ul class="products shop-grid" id="products" data-all></ul>
+    <div class="none" id="shop-none" hidden><h3>Nothing in orbit here.</h3><p>Try fewer filters or a different word.</p></div>
+    <div class="more" id="shop-more" hidden><button class="btn btn-ghost" type="button">Show more</button></div>
+  </div>
+</div>
+<section class="wrap how-wrap">
   <ol class="how">
     <li><b>Pick</b> a product and tap Buy.</li>
-    <li><b>Pay</b> the exact amount by UPI (scan or tap).</li>
-    <li><b>Send</b> us the 12-digit UPI reference.</li>
-    <li><b>Download</b> from your order page once we've checked it.</li>
+    <li><b>Pay</b> by UPI: scan, tap, or use the checkout page.</li>
+    <li><b>Wait</b> a minute while the bank confirms.</li>
+    <li><b>Download</b> from your order page. The link keeps working.</li>
   </ol>
-  <ul class="products shop-grid" id="products" data-all></ul>
 </section>
 </main>
 <footer class="big-foot">
@@ -67,14 +93,15 @@
   <p class="wordmark" aria-hidden="true">Curious<span class="o"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="9"/><circle cx="83" cy="31" r="9" class="ember-fill"/></svg></span>rbit</p>
   <div class="wrap foot-bottom"><span>© 2026 Curious Orbit</span><span>Made on Earth. Checked against space.</span></div>
 </footer>
-<script src="vendor/lenis.min.js?v=4e20e5e8"></script>
-<script src="js/config.js?v=4e20e5e8"></script>
-<script src="js/catalog.js?v=4e20e5e8"></script>
-<script src="js/motion.js?v=4e20e5e8"></script>
-<script src="js/common.js?v=4e20e5e8"></script>
-<script src="js/chrome.js?v=4e20e5e8"></script>
-<script src="js/micro.js?v=4e20e5e8"></script>
-<script src="js/shop.js?v=4e20e5e8"></script>
+<script src="vendor/lenis.min.js?v=ed2bc433"></script>
+<script src="js/config.js?v=ed2bc433"></script>
+<script src="js/catalog.js?v=ed2bc433"></script>
+<script src="js/motion.js?v=ed2bc433"></script>
+<script src="js/common.js?v=ed2bc433"></script>
+<script src="js/chrome.js?v=ed2bc433"></script>
+<script src="js/micro.js?v=ed2bc433"></script>
+<script src="vendor/gsap.min.js?v=ed2bc433"></script>
+<script src="js/shop.js?v=ed2bc433"></script>
 <script>CO.wireMoney();</script>
 </body>
 </html>
