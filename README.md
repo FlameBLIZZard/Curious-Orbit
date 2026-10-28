@@ -10,9 +10,21 @@ Static site, no build step. Vercel serves `public/` (see `vercel.json`).
 ## Making money (all in `public/js/config.js`)
 Everything marked DUMMY is a placeholder. `demo: true` shows an orange "Demo mode" banner and makes buy/tip buttons and signup forms show a notice instead of doing anything. To go live: fill in the real values, set `demo: false`, then rebuild (below).
 - Email list "The Daily Orbit": forms post to `api/subscribe.js` (beehiiv). Set `BEEHIIV_API_KEY` and `BEEHIIV_PUBLICATION_ID` in Vercel, then `newsletterLive: true`.
-- Orbit Shop: each product's Gumroad / Lemon Squeezy link in `shop`. Empty = waitlist signup instead of a buy button. The products themselves still need making.
+- Orbit Shop: see **The shop** below. (The old Gumroad links in `shop` are unused.)
 - `upi.id` (tip jar: UPI ID, shown with a QR code; Indian payments only), `sponsorEmail`, `siteUrl` (real domain, used in sitemap and share links).
 - Media kit (`tools/build-pages.py`, MEDIA_KIT): audience numbers and rates are SAMPLE figures. Replace them with real ones before pitching brands.
+
+## The shop (marketplace)
+About 130 listings: 107 products (quiz packs, fact cards, posters, wallpapers, true-or-false, bingo, kids packs across 15 topics) and 25 bundles. Files are made by the generator in the project's shop folder (`build/gen/gen.js`), then:
+
+    PRODUCT_KEY=<64 hex> node tools/shop-build.mjs   # merges lib/catalog-base.json + catalog-gen.json, adds bundles, encrypts files into products/, copies previews
+    python3 tools/build-pages.py                       # shop.html, shop/<sku>.html (one page per listing), catalog.js, sitemap
+
+- `PRODUCT_KEY` must equal the `PRODUCT_KEY` env var on Vercel (api/download.js decrypts with it). Encryption is deterministic, so re-running with the same key changes nothing in git. To rotate: new key, re-run, set the same value on Vercel, redeploy.
+- Bundle prices come from the `BUNDLE_RATE` table at the top of `tools/shop-build.mjs`.
+- `public/shop.css`, `js/shop.js` (search, filters, sort, URL state), `js/shop-orbit.js` (three.js product orbit), `js/product.js`, `js/order.js`.
+- Payments: UPI. Manual mode (pay the UPI ID, send the UTR, approve on /admin) always works; an optional self-hosted gateway auto-approves paid orders. See `docs/UPI-GATEWAY.md`.
+- Local preview with the API: `node tools/dev-server.mjs`; checks: `node tools/test-shop.mjs`.
 
 ## Rebuild after changes (adding a day, new siteUrl)
     python3 tools/make-data.py      # days.js from the playbook, day folders and fact-check sources

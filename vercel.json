@@ -32,6 +32,9 @@
   ],
   "functions": {
     "api/*.js": {
+      "includeFiles": "lib/**"
+    },
+    "api/download.js": {
       "includeFiles": "{lib,products}/**"
     }
   }
