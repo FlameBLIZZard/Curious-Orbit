@@ -34,7 +34,7 @@
     document.body.append(a); a.click(); a.remove();
   }
 
-  const TABS = ['pending', 'approved', 'rejected', 'all'];
+  const TABS = ['pending', 'approved', 'rejected', 'awaiting', 'failed', 'all'];   // awaiting/failed: gateway checkouts nobody paid (yet)
   let shell;
   function render() {
     const { orders, totals } = data;
@@ -48,7 +48,7 @@
         h('button', { type: 'button', class: 'btn btn-ghost btn-small', text: 'Download CSV', onclick: csv }),
         h('button', { type: 'button', class: 'btn btn-ghost btn-small', text: 'Refresh', onclick: () => load() }));
       app.replaceChildren(shell.stats, shell.tabs, shell.list,
-        h('p', { class: 'tip-note', text: 'Before approving: open your UPI app, find a payment with this UTR and the same amount. Then tap Approve and the buyer\'s download unlocks straight away.' }));
+        h('p', { class: 'tip-note', text: 'Before approving: open your UPI app, find a payment with this UTR and the same amount. Then tap Approve and the buyer\'s download unlocks straight away. Gateway orders approve themselves once the bank confirms the payment; only the ones that need a human land in To check.' }));
     }
     shell.stats.replaceChildren(
       stat('Earned', rupees(totals.earned), `${totals.approvedCount} approved`),
@@ -58,17 +58,18 @@
     if (window.CO.ink) window.CO.ink(shell.tabs, '[role=tab]', '[aria-selected=true]');
     const list = shown.length ? h('ul', { class: 'orders' }, shown.map((o) => h('li', { class: `ord ord-${o.status}` },
         h('div', { class: 'ord-main' },
-          h('p', { class: 'label', text: `${o.id} · ${o.kind} · ${when(o.createdAt)}` }),
+          h('p', { class: 'label', text: `${o.id} · ${o.kind} · ${when(o.createdAt)}${o.via === 'gateway' ? ` · gateway${o.gateway && o.gateway.state ? ': ' + o.gateway.state : ''}` : ''}` }),
           h('h3', {}, `${o.product} `, h('span', { class: 'ember', text: rupees(o.amount) })),
           h('p', { class: 'ord-who' }, h('b', { text: o.name }), ' · ', h('a', { href: `mailto:${o.email}`, text: o.email })),
-          h('p', { class: 'ord-utr' }, 'UTR ', h('code', { text: o.utr }),
-            h('button', { type: 'button', class: 'linkish', text: 'copy', onclick: () => navigator.clipboard.writeText(o.utr).then(() => toast('UTR copied')) })),
+          o.utr ? h('p', { class: 'ord-utr' }, 'UTR ', h('code', { text: o.utr }),
+            h('button', { type: 'button', class: 'linkish', text: 'copy', onclick: () => navigator.clipboard.writeText(o.utr).then(() => toast('UTR copied')) })) : null,
+          o.note ? h('p', { class: 'ord-dl', text: o.note }) : null,
           o.status === 'approved' && o.kind === 'order' ? h('p', { class: 'ord-dl', text: `Downloaded ${o.downloads || 0} time${o.downloads === 1 ? '' : 's'}` }) : null),
         h('div', { class: 'ord-act' },
           o.status !== 'approved' && h('button', { class: 'btn btn-small', type: 'button', text: 'Approve', onclick: () => setStatus(o, 'approved') }),
           o.status !== 'rejected' && h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Not paid', onclick: () => setStatus(o, 'rejected') }),
           o.status !== 'pending' && h('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Back to pending', onclick: () => setStatus(o, 'pending') })))))
-      : h('p', { class: 'empty', text: tab === 'pending' ? 'Nothing waiting. New payments show up here.' : 'No records here yet.' });
+      : h('p', { class: 'empty', text: tab === 'pending' ? 'Nothing waiting. New payments show up here.' : tab === 'awaiting' ? 'No unpaid gateway checkouts.' : 'No records here yet.' });
     shell.list.replaceChildren(list);
     list.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 420, easing: 'cubic-bezier(.2,.9,.2,1)' });
   }

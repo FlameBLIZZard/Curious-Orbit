@@ -173,13 +173,43 @@
   function renderShop(listEl) {
     if (!listEl) return;
     const all = listEl.hasAttribute('data-all');
-    const list = all ? PRODUCTS : PRODUCTS.filter((p) => p.featured);
+    const list = all ? PRODUCTS : PRODUCTS.filter((p) => p.featured).slice(0, 6);
     list.forEach((p) => listEl.append(productCard(p)));
     if (!all && PRODUCTS.length > list.length) listEl.after(h('p', { class: 'shop-more' },
       h('a', { class: 'cta', href: asset('shop.html'), 'data-cursor': 'Shop' }, h('span', { text: `See all ${PRODUCTS.length} products` }), h('i', { 'aria-hidden': 'true', text: '→' }))));
   }
 
   // ---------- checkout: pay by UPI, then send the reference ----------
+  // The gateway (api/checkout.js, lib/gateway.js) is optional: when the server has one switched on the buyer pays on its
+  // checkout page and the order approves itself; the UPI ID + reference form below stays as the fallback.
+  let gatewayOn;
+  const hasGateway = () => gatewayOn !== undefined ? Promise.resolve(gatewayOn)
+    : fetch('/api/checkout', { cache: 'no-store' }).then((r) => r.json()).then((j) => (gatewayOn = !!j.gateway)).catch(() => false);
+  function gatewayForm(p) {
+    const uid = `gw-${p.sku}`;
+    const field = (name, label, attrs) => h('label', { class: 'pf-field' }, h('span', { text: label }), h('input', { name, id: `${uid}-${name}`, required: true, ...attrs }));
+    const msg = h('p', { class: 'form-msg', 'aria-live': 'polite' });
+    const f = h('form', { class: 'paid-form gw', novalidate: true },
+      field('name', 'Your name', { autocomplete: 'name', maxlength: 80 }),
+      field('email', 'Email (your download link goes here)', { type: 'email', autocomplete: 'email', maxlength: 120 }),
+      h('button', { class: 'btn', type: 'submit', text: `Pay ${rupees(p.price)} by UPI` }), msg);
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(f));
+      if (!data.name.trim()) { msg.textContent = 'Add your name so we can match your payment.'; return; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { msg.textContent = 'That email address does not look right.'; return; }
+      const btn = f.querySelector('button'); btn.disabled = true; btn.classList.add('busy'); msg.textContent = 'Opening the checkout…';
+      try {
+        const r = await fetch('/api/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...data, sku: p.sku }) });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error(j.error || 'Something went wrong. Try again in a minute.');
+        try { localStorage.setItem('co-last-order', j.url); } catch (err) {}
+        location.href = j.checkoutUrl;
+      } catch (err) { msg.textContent = err.message; btn.disabled = false; btn.classList.remove('busy'); }
+    });
+    return f;
+  }
+
   let coEl;
   function checkout(p) {
     if (coEl) coEl.remove();
@@ -190,24 +220,37 @@
       try { await navigator.clipboard.writeText(UPI_ID); copy.textContent = 'Copied'; } catch (err) { copy.textContent = 'Select and copy it'; }
       setTimeout(() => { copy.textContent = 'Copy UPI ID'; }, 2000);
     } });
+    const manual = h('div', { class: 'manual' },
+      h('p', { class: 'co-step', text: '1. Pay the exact amount' }),
+      h('a', { class: 'btn', href: link, text: `Pay ${rupees(p.price)} with a UPI app` }),
+      h('p', { class: 'tip-id' }, h('span', { text: 'UPI ID ' }), h('code', { text: UPI_ID }), copy),
+      h('p', { class: 'tip-note', text: 'On a computer? Scan the code with your phone. Any UPI app works: GPay, PhonePe, Paytm, BHIM.' }),
+      h('p', { class: 'co-step', text: '2. Tell us you paid' }),
+      h('p', { class: 'tip-note', text: 'Find the 12-digit UPI reference (UTR or UPI Ref No.) in your app under this payment.' }),
+      paidForm({ kind: 'order', sku: p.sku, amount: p.price, button: 'I have paid, unlock my order',
+        done: (r) => `Saved as ${r.id}. Taking you to your order page…` }));
+    const slot = h('div', { class: 'co-slot' }, manual);
     coEl = h('dialog', { class: 'viewer tipjar checkout', 'aria-labelledby': 'co-title' },
       h('div', { class: 'tip-inner' },
         h('div', { class: 'tip-text' },
           h('p', { class: 'label', text: `Checkout · ${p.unit}` }),
           h('h3', { id: 'co-title', text: p.name }),
           h('p', { class: 'co-price' }, h('b', { text: rupees(p.price) }), h('span', { text: ' by UPI' })),
-          h('p', { class: 'co-step', text: '1. Pay the exact amount' }),
-          h('a', { class: 'btn', href: link, text: `Pay ${rupees(p.price)} with a UPI app` }),
-          h('p', { class: 'tip-id' }, h('span', { text: 'UPI ID ' }), h('code', { text: UPI_ID }), copy),
-          h('p', { class: 'tip-note', text: 'On a computer? Scan the code with your phone. Any UPI app works: GPay, PhonePe, Paytm, BHIM.' }),
-          h('p', { class: 'co-step', text: '2. Tell us you paid' }),
-          h('p', { class: 'tip-note', text: 'Find the 12-digit UPI reference (UTR or UPI Ref No.) in your app under this payment.' }),
-          paidForm({ kind: 'order', sku: p.sku, amount: p.price, button: 'I have paid, unlock my order',
-            done: (r) => `Saved as ${r.id}. Taking you to your order page…` })),
+          slot),
         qr),
       h('button', { class: 'close', type: 'button', 'aria-label': 'Close', text: '×', onclick: () => coEl.close() }));
     coEl.addEventListener('click', (e) => { if (e.target === coEl) coEl.close(); });
     document.body.append(coEl); coEl.showModal();
+    hasGateway().then((on) => {
+      if (!on || !coEl.isConnected) return;
+      qr.hidden = true;   // the QR belongs to the pay-the-UPI-ID path below
+      const direct = h('details', { class: 'tip-log' }, h('summary', { text: 'Or pay the UPI ID directly and send the reference' }), manual);
+      direct.addEventListener('toggle', () => { qr.hidden = !direct.open; });
+      slot.replaceChildren(
+        h('p', { class: 'co-step', text: 'Pay on the secure checkout' }),
+        h('p', { class: 'tip-note', text: 'You will pick your UPI app on the next page. Your download unlocks by itself as soon as the bank confirms the payment, usually within a minute.' }),
+        gatewayForm(p), direct);
+    });
   }
 
   // ---------- "I've paid" form: name, email, UPI reference -> /api/order ----------
