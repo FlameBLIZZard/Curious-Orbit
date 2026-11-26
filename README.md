@@ -25,6 +25,7 @@ About 130 listings: 107 products (quiz packs, fact cards, posters, wallpapers, t
 - `public/shop.css`, `js/shop.js` (search, filters, sort, URL state), `js/shop-orbit.js` (three.js product orbit), `js/product.js`, `js/order.js`.
 - Payments: UPI. Manual mode (pay the UPI ID, send the UTR, approve on /admin) always works; an optional self-hosted gateway auto-approves paid orders. See `docs/UPI-GATEWAY.md`.
 - Local preview with the API: `node tools/dev-server.mjs`; checks: `node tools/test-shop.mjs`.
+- Selling on Teachers Pay Teachers, Etsy and Gumroad: `PRODUCT_KEY=<64 hex> node tools/marketplace-export.mjs` writes one folder per listing to `~/Curious-Orbit/03-marketplace` (titles, USD price, description, Etsy tags, TpT grades, JPG images, decrypted files, ZIPs split under 20 MB). `--listings-only` skips the files and needs no key.
 
 ## Rebuild after changes (adding a day, new siteUrl)
     python3 tools/make-data.py      # days.js from the playbook, day folders and fact-check sources
